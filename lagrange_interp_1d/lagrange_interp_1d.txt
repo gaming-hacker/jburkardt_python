@@ -1,0 +1,1952 @@
+Tue Oct 19 11:55:42 2021
+
+lagrange_interp_1d_test
+  Python version: 3.6.9
+  Test the lagrange_interp_1d library.
+
+p00_prob_num_test
+  Python version: 3.6.9
+  p00_prob_num returns the number of test problems.
+
+  test_interp_1d includes 8 test problems.
+
+p00_prob_num_test:
+  Normal end of execution.
+
+p00_title_test
+  Python version: 3.6.9
+  p00_title() returns the title of any test problems.
+
+  test_interp_1d includes 8 test problems.
+
+  #1  "f(x) = steps -1/2/1 at [0,1/3], [1/3,4/5], [4/5,1]."
+  #2  "f(x) = (1-3x), x < 1/3 (6x-2) if 1/3 < x"
+  #3  "f(x) = x (10*x-1) (5x-2) (5x-2) (4x-3.4) (x-1)"
+  #4  "f(x) = atan ( 40 * x - 15 )"
+  #5  "f(x) = cos(7*x)+5*cos(11.2*x)-2*cos(14*x)+5*cos(31.5*x)+7*cos(63*x)."
+  #6  "f(x) = exp ( - ( 4*x-1 )^2 )"
+  #7  "f(x) = exp ( 2 x ) if x < 0.5, 0 otherwise"
+  #8  "f(x) = 1 / ( 1 + ( 10 * (x-1/2) )^2 )"
+
+p00_title_test:
+  Normal end of execution.
+
+p00_f_test
+  Python version: 3.6.9
+  p00_f() evaluates any function at N points X.
+
+
+X, Y for problem 1
+
+       0:              0            -1
+       1:            0.1            -1
+       2:            0.2            -1
+       3:            0.3            -1
+       4:            0.4             2
+       5:            0.5             2
+       6:            0.6             2
+       7:            0.7             2
+       8:            0.8             1
+       9:            0.9             1
+      10:              1             1
+
+X, Y for problem 2
+
+       0:              0             1
+       1:            0.1           0.7
+       2:            0.2           0.4
+       3:            0.3           0.1
+       4:            0.4           0.4
+       5:            0.5             1
+       6:            0.6           1.6
+       7:            0.7           2.2
+       8:            0.8           2.8
+       9:            0.9           3.4
+      10:              1             4
+
+X, Y for problem 3
+
+       0:              0            -0
+       1:            0.1             0
+       2:            0.2         0.416
+       3:            0.3         0.231
+       4:            0.4             0
+       5:            0.5          0.35
+       6:            0.6           1.2
+       7:            0.7         1.701
+       8:            0.8         0.896
+       9:            0.9          -0.9
+      10:              1             0
+
+X, Y for problem 4
+
+       0:              0      -1.50423
+       1:            0.1      -1.48014
+       2:            0.2       -1.4289
+       3:            0.3      -1.24905
+       4:            0.4      0.785398
+       5:            0.5        1.3734
+       6:            0.6       1.46014
+       7:            0.7       1.49402
+       8:            0.8       1.51204
+       9:            0.9       1.52321
+      10:              1       1.53082
+
+X, Y for problem 5
+
+       0:              0            16
+       1:            0.1       4.60251
+       2:            0.2       10.9479
+       3:            0.3      -2.41286
+       4:            0.4       8.33648
+       5:            0.5       3.41326
+       6:            0.6       17.0369
+       7:            0.7       4.07749
+       8:            0.8       7.82541
+       9:            0.9      -3.02927
+      10:              1       13.3791
+
+X, Y for problem 6
+
+       0:              0      0.367879
+       1:            0.1      0.697676
+       2:            0.2      0.960789
+       3:            0.3      0.960789
+       4:            0.4      0.697676
+       5:            0.5      0.367879
+       6:            0.6      0.140858
+       7:            0.7     0.0391639
+       8:            0.8    0.00790705
+       9:            0.9    0.00115923
+      10:              1    0.00012341
+
+X, Y for problem 7
+
+       0:              0             1
+       1:            0.1       1.49182
+       2:            0.2       2.22554
+       3:            0.3       3.32012
+       4:            0.4       4.95303
+       5:            0.5             0
+       6:            0.6             0
+       7:            0.7             0
+       8:            0.8             0
+       9:            0.9             0
+      10:              1             0
+
+X, Y for problem 8
+
+       0:              0     0.0384615
+       1:            0.1     0.0588235
+       2:            0.2           0.1
+       3:            0.3           0.2
+       4:            0.4           0.5
+       5:            0.5             1
+       6:            0.6           0.5
+       7:            0.7           0.2
+       8:            0.8           0.1
+       9:            0.9     0.0588235
+      10:              1     0.0384615
+
+p00_f_test:
+  Normal end of execution.
+
+r8mat_print_test
+  Python version: 3.6.9
+  r8mat_print prints an R8MAT.
+
+  Here is an R8MAT:
+
+  Col:       0             1             2             3             4       
+  Row
+      0 :          11            12            13            14            15  
+      1 :          21            22            23            24            25  
+      2 :          31            32            33            34            35  
+      3 :          41            42            43            44            45  
+
+  Col:       5       
+  Row
+      0 :          16  
+      1 :          26  
+      2 :          36  
+      3 :          46  
+
+r8mat_print_test:
+  Normal end of execution.
+
+r8mat_print_SOME_test
+  Python version: 3.6.9
+  r8mat_print_SOME prints some of an R8MAT.
+
+  Here is an R8MAT:
+
+  Col:       3             4             5       
+  Row
+      0 :          14            15            16  
+      1 :          24            25            26  
+      2 :          34            35            36  
+
+r8mat_print_SOME_test:
+  Normal end of execution.
+
+r8vec_cheby_extreme_test
+  Python version: 3.6.9
+  r8vec_cheby_extreme returns Chebyshev Extreme values between A and B.
+
+  The vector:
+
+     0:            10
+     1:       11.4645
+     2:            15
+     3:       18.5355
+     4:            20
+
+r8vec_cheby_extreme_test
+  Normal end of execution.
+
+r8vec_print_test
+  Python version: 3.6.9
+  r8vec_print prints an r8vec.
+
+  Here is an r8vec:
+
+     0:       123.456
+     1:         5e-06
+     2:        -1e+06
+     3:       3.14159
+
+r8vec_print_test:
+  Normal end of execution.
+
+r8vec2_print_test
+  Python version: 3.6.9
+  r8vec2_print prints a pair of r8vec's.
+
+  Print a pair of r8vec's:
+
+       0:              0             0
+       1:            0.2          0.04
+       2:            0.4          0.16
+       3:            0.6          0.36
+       4:            0.8          0.64
+       5:              1             1
+
+r8vec2_print_test:
+  Normal end of execution.
+
+lagrange_basis_1d_test:
+  Python version: 3.6.9
+  lagrange_basis_1d evaluates the Lagrange 1D basis
+  functions.
+
+  The Lagrange basis functions:
+
+  Col:       0             1             2             3       
+  Row
+      0 :           1             0            -0             0  
+      1 :     0.64125      0.445312        -0.095     0.0084375  
+      2 :        0.36          0.75         -0.12          0.01  
+      3 :     0.14875      0.929688        -0.085     0.0065625  
+      4 :          -0             1             0            -0  
+      5 :    -0.09375      0.976563         0.125    -0.0078125  
+      6 :       -0.14         0.875          0.28        -0.015  
+      7 :    -0.14625      0.710938         0.455    -0.0196875  
+      8 :       -0.12           0.5          0.64         -0.02  
+      9 :    -0.06875      0.257812         0.825    -0.0140625  
+     10 :           0            -0             1             0  
+     11 :     0.07875     -0.257812         1.155     0.0240625  
+     12 :        0.16          -0.5          1.28          0.06  
+     13 :     0.23625     -0.710938         1.365      0.109688  
+     14 :         0.3        -0.875           1.4         0.175  
+     15 :     0.34375     -0.976562         1.375      0.257812  
+     16 :        0.36            -1          1.28          0.36  
+     17 :     0.34125     -0.929688         1.105      0.483437  
+     18 :        0.28         -0.75          0.84          0.63  
+     19 :     0.16875     -0.445312         0.475      0.801562  
+     20 :          -0             0            -0             1  
+
+lagrange_basis_1d_test:
+  Normal end of execution.
+
+lagrange_value_1d_test:
+  Python version: 3.6.9
+  lagrange_value_1d evaluates a Lagrange 1D interpolant.
+
+  Table of interpolant values:
+
+       0:              0           -28
+       1:            0.5       -11.375
+       2:              1             0
+       3:            1.5         6.875
+       4:              2            10
+       5:            2.5        10.125
+       6:              3             8
+       7:            3.5         4.375
+       8:              4   4.44089e-16
+       9:            4.5        -4.375
+      10:              5            -8
+      11:            5.5       -10.125
+      12:              6           -10
+      13:            6.5        -6.875
+      14:              7  -3.55271e-15
+      15:            7.5        11.375
+      16:              8            28
+      17:            8.5        50.625
+      18:              9            80
+      19:            9.5       116.875
+      20:             10           162
+
+lagrange_value_1d_test:
+  Normal end of execution.
+
+lagrange_interp_1d_test01:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #1.
+  Use even spacing for data points.
+  Number of data points = 4
+
+  Data array:
+
+       0:              0            -1
+       1:       0.333333            -1
+       2:       0.666667             2
+       3:              1             1
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 1.20185
+  Normalized length of polynomial interpolant       = 0.119535
+
+  Created plot file "p01_dataeven_4.png"
+  Created plot file "p01_lageven_4.png".
+
+lagrange_interp_1d_test01:
+  Normal end of execution.
+
+lagrange_interp_1d_test01:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #1.
+  Use even spacing for data points.
+  Number of data points = 8
+
+  Data array:
+
+       0:              0            -1
+       1:       0.142857            -1
+       2:       0.285714            -1
+       3:       0.428571             2
+       4:       0.571429             2
+       5:       0.714286             2
+       6:       0.857143             1
+       7:              1             1
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 1.11981
+  Normalized length of polynomial interpolant       = 0.374529
+
+  Created plot file "p01_dataeven_8.png"
+  Created plot file "p01_lageven_8.png".
+
+lagrange_interp_1d_test01:
+  Normal end of execution.
+
+lagrange_interp_1d_test01:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #1.
+  Use even spacing for data points.
+  Number of data points = 16
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 1.08525
+  Normalized length of polynomial interpolant       = 19.9076
+
+  Created plot file "p01_dataeven_16.png"
+  Created plot file "p01_lageven_16.png".
+
+lagrange_interp_1d_test01:
+  Normal end of execution.
+
+lagrange_interp_1d_test01:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #1.
+  Use even spacing for data points.
+  Number of data points = 32
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 1.06928
+  Normalized length of polynomial interpolant       = 202126
+
+  Created plot file "p01_dataeven_32.png"
+  Created plot file "p01_lageven_32.png".
+
+lagrange_interp_1d_test01:
+  Normal end of execution.
+
+lagrange_interp_1d_test01:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #1.
+  Use even spacing for data points.
+  Number of data points = 64
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 1.0616
+  Normalized length of polynomial interpolant       = 7.4247e+13
+
+  Created plot file "p01_dataeven_64.png"
+  Created plot file "p01_lageven_64.png".
+
+lagrange_interp_1d_test01:
+  Normal end of execution.
+
+lagrange_interp_1d_test01:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #2.
+  Use even spacing for data points.
+  Number of data points = 4
+
+  Data array:
+
+       0:              0             1
+       1:       0.333333             0
+       2:       0.666667             2
+       3:              1             4
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 0.946485
+  Normalized length of polynomial interpolant       = 0.0785014
+
+  Created plot file "p02_dataeven_4.png"
+  Created plot file "p02_lageven_4.png".
+
+lagrange_interp_1d_test01:
+  Normal end of execution.
+
+lagrange_interp_1d_test01:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #2.
+  Use even spacing for data points.
+  Number of data points = 8
+
+  Data array:
+
+       0:              0             1
+       1:       0.142857      0.571429
+       2:       0.285714      0.142857
+       3:       0.428571      0.571429
+       4:       0.571429       1.42857
+       5:       0.714286       2.28571
+       6:       0.857143       3.14286
+       7:              1             4
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 0.614349
+  Normalized length of polynomial interpolant       = 0.07441
+
+  Created plot file "p02_dataeven_8.png"
+  Created plot file "p02_lageven_8.png".
+
+lagrange_interp_1d_test01:
+  Normal end of execution.
+
+lagrange_interp_1d_test01:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #2.
+  Use even spacing for data points.
+  Number of data points = 16
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 0.423281
+  Normalized length of polynomial interpolant       = 1.25201
+
+  Created plot file "p02_dataeven_16.png"
+  Created plot file "p02_lageven_16.png".
+
+lagrange_interp_1d_test01:
+  Normal end of execution.
+
+lagrange_interp_1d_test01:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #2.
+  Use even spacing for data points.
+  Number of data points = 32
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 0.293926
+  Normalized length of polynomial interpolant       = 328.208
+
+  Created plot file "p02_dataeven_32.png"
+  Created plot file "p02_lageven_32.png".
+
+lagrange_interp_1d_test01:
+  Normal end of execution.
+
+lagrange_interp_1d_test01:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #2.
+  Use even spacing for data points.
+  Number of data points = 64
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 0.20654
+  Normalized length of polynomial interpolant       = 9.18535e+11
+
+  Created plot file "p02_dataeven_64.png"
+  Created plot file "p02_lageven_64.png".
+
+lagrange_interp_1d_test01:
+  Normal end of execution.
+
+lagrange_interp_1d_test01:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #3.
+  Use even spacing for data points.
+  Number of data points = 4
+
+  Data array:
+
+       0:              0            -0
+       1:       0.333333      0.119067
+       2:       0.666667        1.6417
+       3:              1             0
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 1.48284
+  Normalized length of polynomial interpolant       = 0.146831
+
+  Created plot file "p03_dataeven_4.png"
+  Created plot file "p03_lageven_4.png".
+
+lagrange_interp_1d_test01:
+  Normal end of execution.
+
+lagrange_interp_1d_test01:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #3.
+  Use even spacing for data points.
+  Number of data points = 8
+
+  Data array:
+
+       0:              0            -0
+       1:       0.142857      0.245377
+       2:       0.285714      0.279339
+       3:       0.428571     0.0276823
+       4:       0.571429      0.945157
+       5:       0.714286       1.68054
+       6:       0.857143     -0.138391
+       7:              1             0
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 1.26657
+  Normalized length of polynomial interpolant       = 0.250876
+
+  Created plot file "p03_dataeven_8.png"
+  Created plot file "p03_lageven_8.png".
+
+lagrange_interp_1d_test01:
+  Normal end of execution.
+
+lagrange_interp_1d_test01:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #3.
+  Use even spacing for data points.
+  Number of data points = 16
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 0.848727
+  Normalized length of polynomial interpolant       = 0.162677
+
+  Created plot file "p03_dataeven_16.png"
+  Created plot file "p03_lageven_16.png".
+
+lagrange_interp_1d_test01:
+  Normal end of execution.
+
+lagrange_interp_1d_test01:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #3.
+  Use even spacing for data points.
+  Number of data points = 32
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 0.627063
+  Normalized length of polynomial interpolant       = 0.159821
+
+  Created plot file "p03_dataeven_32.png"
+  Created plot file "p03_lageven_32.png".
+
+lagrange_interp_1d_test01:
+  Normal end of execution.
+
+lagrange_interp_1d_test01:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #3.
+  Use even spacing for data points.
+  Number of data points = 64
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 0.44584
+  Normalized length of polynomial interpolant       = 2.57159
+
+  Created plot file "p03_dataeven_64.png"
+  Created plot file "p03_lageven_64.png".
+
+lagrange_interp_1d_test01:
+  Normal end of execution.
+
+lagrange_interp_1d_test01:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #4.
+  Use even spacing for data points.
+  Number of data points = 4
+
+  Data array:
+
+       0:              0      -1.50423
+       1:       0.333333      -1.03038
+       2:       0.666667       1.48529
+       3:              1       1.53082
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 1.02224
+  Normalized length of polynomial interpolant       = 0.0924254
+
+  Created plot file "p04_dataeven_4.png"
+  Created plot file "p04_lageven_4.png".
+
+lagrange_interp_1d_test01:
+  Normal end of execution.
+
+lagrange_interp_1d_test01:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #4.
+  Use even spacing for data points.
+  Number of data points = 8
+
+  Data array:
+
+       0:              0      -1.50423
+       1:       0.142857      -1.46352
+       2:       0.285714      -1.29779
+       3:       0.428571       1.13417
+       4:       0.571429        1.4442
+       5:       0.714286       1.49725
+       6:       0.857143       1.51899
+       7:              1       1.53082
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 0.893809
+  Normalized length of polynomial interpolant       = 0.230606
+
+  Created plot file "p04_dataeven_8.png"
+  Created plot file "p04_lageven_8.png".
+
+lagrange_interp_1d_test01:
+  Normal end of execution.
+
+lagrange_interp_1d_test01:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #4.
+  Use even spacing for data points.
+  Number of data points = 16
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 0.683526
+  Normalized length of polynomial interpolant       = 7.47864
+
+  Created plot file "p04_dataeven_16.png"
+  Created plot file "p04_lageven_16.png".
+
+lagrange_interp_1d_test01:
+  Normal end of execution.
+
+lagrange_interp_1d_test01:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #4.
+  Use even spacing for data points.
+  Number of data points = 32
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 0.491728
+  Normalized length of polynomial interpolant       = 29302.4
+
+  Created plot file "p04_dataeven_32.png"
+  Created plot file "p04_lageven_32.png".
+
+lagrange_interp_1d_test01:
+  Normal end of execution.
+
+lagrange_interp_1d_test01:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #4.
+  Use even spacing for data points.
+  Number of data points = 64
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 0.349863
+  Normalized length of polynomial interpolant       = 6.95357e+11
+
+  Created plot file "p04_dataeven_64.png"
+  Created plot file "p04_lageven_64.png".
+
+lagrange_interp_1d_test01:
+  Normal end of execution.
+
+lagrange_interp_1d_test01:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #5.
+  Use even spacing for data points.
+  Number of data points = 4
+
+  Data array:
+
+       0:              0            16
+       1:       0.333333       -10.961
+       2:       0.666667      -1.70409
+       3:              1       13.3791
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 1.32823
+  Normalized length of polynomial interpolant       = 0.113135
+
+  Created plot file "p05_dataeven_4.png"
+  Created plot file "p05_lageven_4.png".
+
+lagrange_interp_1d_test01:
+  Normal end of execution.
+
+lagrange_interp_1d_test01:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #5.
+  Use even spacing for data points.
+  Number of data points = 8
+
+  Data array:
+
+       0:              0            16
+       1:       0.142857      -6.20529
+       2:       0.285714      -4.03377
+       3:       0.428571      -1.54321
+       4:       0.571429       7.00912
+       5:       0.714286      0.545036
+       6:       0.857143      -12.9168
+       7:              1       13.3791
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 1.38805
+  Normalized length of polynomial interpolant       = 0.218513
+
+  Created plot file "p05_dataeven_8.png"
+  Created plot file "p05_lageven_8.png".
+
+lagrange_interp_1d_test01:
+  Normal end of execution.
+
+lagrange_interp_1d_test01:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #5.
+  Use even spacing for data points.
+  Number of data points = 16
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 2.11791
+  Normalized length of polynomial interpolant       = 7.46356
+
+  Created plot file "p05_dataeven_16.png"
+  Created plot file "p05_lageven_16.png".
+
+lagrange_interp_1d_test01:
+  Normal end of execution.
+
+lagrange_interp_1d_test01:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #5.
+  Use even spacing for data points.
+  Number of data points = 32
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 1.94819
+  Normalized length of polynomial interpolant       = 10067.1
+
+  Created plot file "p05_dataeven_32.png"
+  Created plot file "p05_lageven_32.png".
+
+lagrange_interp_1d_test01:
+  Normal end of execution.
+
+lagrange_interp_1d_test01:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #5.
+  Use even spacing for data points.
+  Number of data points = 64
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 1.38309
+  Normalized length of polynomial interpolant       = 3.21525
+
+  Created plot file "p05_dataeven_64.png"
+  Created plot file "p05_lageven_64.png".
+
+lagrange_interp_1d_test01:
+  Normal end of execution.
+
+lagrange_interp_1d_test01:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #6.
+  Use even spacing for data points.
+  Number of data points = 4
+
+  Data array:
+
+       0:              0      0.367879
+       1:       0.333333      0.894839
+       2:       0.666667     0.0621765
+       3:              1    0.00012341
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 1.24544
+  Normalized length of polynomial interpolant       = 0.12361
+
+  Created plot file "p06_dataeven_4.png"
+  Created plot file "p06_lageven_4.png".
+
+lagrange_interp_1d_test01:
+  Normal end of execution.
+
+lagrange_interp_1d_test01:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #6.
+  Use even spacing for data points.
+  Number of data points = 8
+
+  Data array:
+
+       0:              0      0.367879
+       1:       0.142857      0.832208
+       2:       0.285714      0.979799
+       3:       0.428571      0.600373
+       4:       0.571429      0.191463
+       5:       0.714286      0.031778
+       6:       0.857143    0.00274504
+       7:              1    0.00012341
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 0.861315
+  Normalized length of polynomial interpolant       = 0.107281
+
+  Created plot file "p06_dataeven_8.png"
+  Created plot file "p06_lageven_8.png".
+
+lagrange_interp_1d_test01:
+  Normal end of execution.
+
+lagrange_interp_1d_test01:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #6.
+  Use even spacing for data points.
+  Number of data points = 16
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 0.595581
+  Normalized length of polynomial interpolant       = 0.103902
+
+  Created plot file "p06_dataeven_16.png"
+  Created plot file "p06_lageven_16.png".
+
+lagrange_interp_1d_test01:
+  Normal end of execution.
+
+lagrange_interp_1d_test01:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #6.
+  Use even spacing for data points.
+  Number of data points = 32
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 0.415424
+  Normalized length of polynomial interpolant       = 0.103614
+
+  Created plot file "p06_dataeven_32.png"
+  Created plot file "p06_lageven_32.png".
+
+lagrange_interp_1d_test01:
+  Normal end of execution.
+
+lagrange_interp_1d_test01:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #6.
+  Use even spacing for data points.
+  Number of data points = 64
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 0.291595
+  Normalized length of polynomial interpolant       = 5.99401
+
+  Created plot file "p06_dataeven_64.png"
+  Created plot file "p06_lageven_64.png".
+
+lagrange_interp_1d_test01:
+  Normal end of execution.
+
+lagrange_interp_1d_test01:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #7.
+  Use even spacing for data points.
+  Number of data points = 4
+
+  Data array:
+
+       0:              0             1
+       1:       0.333333       3.79367
+       2:       0.666667             0
+       3:              1             0
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 1.36953
+  Normalized length of polynomial interpolant       = 0.138318
+
+  Created plot file "p07_dataeven_4.png"
+  Created plot file "p07_lageven_4.png".
+
+lagrange_interp_1d_test01:
+  Normal end of execution.
+
+lagrange_interp_1d_test01:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #7.
+  Use even spacing for data points.
+  Number of data points = 8
+
+  Data array:
+
+       0:              0             1
+       1:       0.142857       1.77079
+       2:       0.285714       3.13571
+       3:       0.428571       5.55271
+       4:       0.571429             0
+       5:       0.714286             0
+       6:       0.857143             0
+       7:              1             0
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 1.18828
+  Normalized length of polynomial interpolant       = 0.452672
+
+  Created plot file "p07_dataeven_8.png"
+  Created plot file "p07_lageven_8.png".
+
+lagrange_interp_1d_test01:
+  Normal end of execution.
+
+lagrange_interp_1d_test01:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #7.
+  Use even spacing for data points.
+  Number of data points = 16
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 1.09364
+  Normalized length of polynomial interpolant       = 36.2035
+
+  Created plot file "p07_dataeven_16.png"
+  Created plot file "p07_lageven_16.png".
+
+lagrange_interp_1d_test01:
+  Normal end of execution.
+
+lagrange_interp_1d_test01:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #7.
+  Use even spacing for data points.
+  Number of data points = 32
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 1.04659
+  Normalized length of polynomial interpolant       = 940481
+
+  Created plot file "p07_dataeven_32.png"
+  Created plot file "p07_lageven_32.png".
+
+lagrange_interp_1d_test01:
+  Normal end of execution.
+
+lagrange_interp_1d_test01:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #7.
+  Use even spacing for data points.
+  Number of data points = 64
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 1.02322
+  Normalized length of polynomial interpolant       = 1.64881e+15
+
+  Created plot file "p07_dataeven_64.png"
+  Created plot file "p07_lageven_64.png".
+
+lagrange_interp_1d_test01:
+  Normal end of execution.
+
+lagrange_interp_1d_test01:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #8.
+  Use even spacing for data points.
+  Number of data points = 4
+
+  Data array:
+
+       0:              0     0.0384615
+       1:       0.333333      0.264706
+       2:       0.666667      0.264706
+       3:              1     0.0384615
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 1.52753
+  Normalized length of polynomial interpolant       = 0.124499
+
+  Created plot file "p08_dataeven_4.png"
+  Created plot file "p08_lageven_4.png".
+
+lagrange_interp_1d_test01:
+  Normal end of execution.
+
+lagrange_interp_1d_test01:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #8.
+  Use even spacing for data points.
+  Number of data points = 8
+
+  Data array:
+
+       0:              0     0.0384615
+       1:       0.142857     0.0727003
+       2:       0.285714      0.178832
+       3:       0.428571      0.662162
+       4:       0.571429      0.662162
+       5:       0.714286      0.178832
+       6:       0.857143     0.0727003
+       7:              1     0.0384615
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 1.18653
+  Normalized length of polynomial interpolant       = 0.191022
+
+  Created plot file "p08_dataeven_8.png"
+  Created plot file "p08_lageven_8.png".
+
+lagrange_interp_1d_test01:
+  Normal end of execution.
+
+lagrange_interp_1d_test01:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #8.
+  Use even spacing for data points.
+  Number of data points = 16
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 0.831493
+  Normalized length of polynomial interpolant       = 1.59912
+
+  Created plot file "p08_dataeven_16.png"
+  Created plot file "p08_lageven_16.png".
+
+lagrange_interp_1d_test01:
+  Normal end of execution.
+
+lagrange_interp_1d_test01:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #8.
+  Use even spacing for data points.
+  Number of data points = 32
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 0.560206
+  Normalized length of polynomial interpolant       = 752.153
+
+  Created plot file "p08_dataeven_32.png"
+  Created plot file "p08_lageven_32.png".
+
+lagrange_interp_1d_test01:
+  Normal end of execution.
+
+lagrange_interp_1d_test01:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #8.
+  Use even spacing for data points.
+  Number of data points = 64
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 0.389295
+  Normalized length of polynomial interpolant       = 2.20866e+08
+
+  Created plot file "p08_dataeven_64.png"
+  Created plot file "p08_lageven_64.png".
+
+lagrange_interp_1d_test01:
+  Normal end of execution.
+
+lagrange_interp_1d_test02:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #1.
+  Use Chebyshev spacing for data points.
+  Number of data points = 4
+
+  Data array:
+
+       0:              0            -1
+       1:           0.25            -1
+       2:           0.75             2
+       3:              1             1
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 1.21906
+  Normalized length of polynomial interpolant       = 0.0920452
+
+  Created plot file "p01_datacheby_4.png"
+  Created plot file "p01_lagcheby_4.png".
+
+lagrange_interp_1d_test02:
+  Normal end of execution.
+
+lagrange_interp_1d_test02:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #1.
+  Use Chebyshev spacing for data points.
+  Number of data points = 8
+
+  Data array:
+
+       0:              0            -1
+       1:      0.0495156            -1
+       2:       0.188255            -1
+       3:        0.38874             2
+       4:        0.61126             2
+       5:       0.811745             1
+       6:       0.950484             1
+       7:              1             1
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 1.13332
+  Normalized length of polynomial interpolant       = 0.127035
+
+  Created plot file "p01_datacheby_8.png"
+  Created plot file "p01_lagcheby_8.png".
+
+lagrange_interp_1d_test02:
+  Normal end of execution.
+
+lagrange_interp_1d_test02:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #1.
+  Use Chebyshev spacing for data points.
+  Number of data points = 16
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 1.09227
+  Normalized length of polynomial interpolant       = 0.181544
+
+  Created plot file "p01_datacheby_16.png"
+  Created plot file "p01_lagcheby_16.png".
+
+lagrange_interp_1d_test02:
+  Normal end of execution.
+
+lagrange_interp_1d_test02:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #1.
+  Use Chebyshev spacing for data points.
+  Number of data points = 32
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 1.07279
+  Normalized length of polynomial interpolant       = 0.254843
+
+  Created plot file "p01_datacheby_32.png"
+  Created plot file "p01_lagcheby_32.png".
+
+lagrange_interp_1d_test02:
+  Normal end of execution.
+
+lagrange_interp_1d_test02:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #1.
+  Use Chebyshev spacing for data points.
+  Number of data points = 64
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 1.06334
+  Normalized length of polynomial interpolant       = 0.367219
+
+  Created plot file "p01_datacheby_64.png"
+  Created plot file "p01_lagcheby_64.png".
+
+lagrange_interp_1d_test02:
+  Normal end of execution.
+
+lagrange_interp_1d_test02:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #2.
+  Use Chebyshev spacing for data points.
+  Number of data points = 4
+
+  Data array:
+
+       0:              0             1
+       1:           0.25          0.25
+       2:           0.75           2.5
+       3:              1             4
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 0.966954
+  Normalized length of polynomial interpolant       = 0.0737683
+
+  Created plot file "p02_datacheby_4.png"
+  Created plot file "p02_lagcheby_4.png".
+
+lagrange_interp_1d_test02:
+  Normal end of execution.
+
+lagrange_interp_1d_test02:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #2.
+  Use Chebyshev spacing for data points.
+  Number of data points = 8
+
+  Data array:
+
+       0:              0             1
+       1:      0.0495156      0.851453
+       2:       0.188255      0.435235
+       3:        0.38874      0.332437
+       4:        0.61126       1.66756
+       5:       0.811745       2.87047
+       6:       0.950484       3.70291
+       7:              1             4
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 0.6977
+  Normalized length of polynomial interpolant       = 0.0755187
+
+  Created plot file "p02_datacheby_8.png"
+  Created plot file "p02_lagcheby_8.png".
+
+lagrange_interp_1d_test02:
+  Normal end of execution.
+
+lagrange_interp_1d_test02:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #2.
+  Use Chebyshev spacing for data points.
+  Number of data points = 16
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 0.475482
+  Normalized length of polynomial interpolant       = 0.0741113
+
+  Created plot file "p02_datacheby_16.png"
+  Created plot file "p02_lagcheby_16.png".
+
+lagrange_interp_1d_test02:
+  Normal end of execution.
+
+lagrange_interp_1d_test02:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #2.
+  Use Chebyshev spacing for data points.
+  Number of data points = 32
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 0.330021
+  Normalized length of polynomial interpolant       = 0.0734597
+
+  Created plot file "p02_datacheby_32.png"
+  Created plot file "p02_lagcheby_32.png".
+
+lagrange_interp_1d_test02:
+  Normal end of execution.
+
+lagrange_interp_1d_test02:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #2.
+  Use Chebyshev spacing for data points.
+  Number of data points = 64
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 0.232709
+  Normalized length of polynomial interpolant       = 0.0735823
+
+  Created plot file "p02_datacheby_64.png"
+  Created plot file "p02_lagcheby_64.png".
+
+lagrange_interp_1d_test02:
+  Normal end of execution.
+
+lagrange_interp_1d_test02:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #3.
+  Use Chebyshev spacing for data points.
+  Number of data points = 4
+
+  Data array:
+
+       0:              0            -0
+       1:           0.25      0.379687
+       2:           0.75       1.49297
+       3:              1             0
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 1.4127
+  Normalized length of polynomial interpolant       = 0.125639
+
+  Created plot file "p03_datacheby_4.png"
+  Created plot file "p03_lagcheby_4.png".
+
+lagrange_interp_1d_test02:
+  Normal end of execution.
+
+lagrange_interp_1d_test02:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #3.
+  Use Chebyshev spacing for data points.
+  Number of data points = 8
+
+  Data array:
+
+       0:              0            -0
+       1:      0.0495156     -0.233633
+       2:       0.188255       0.40015
+       3:        0.38874    0.00401283
+       4:        0.61126       1.29446
+       5:       0.811745      0.705402
+       6:       0.950484      -1.21883
+       7:              1             0
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 1.18756
+  Normalized length of polynomial interpolant       = 0.18417
+
+  Created plot file "p03_datacheby_8.png"
+  Created plot file "p03_lagcheby_8.png".
+
+lagrange_interp_1d_test02:
+  Normal end of execution.
+
+lagrange_interp_1d_test02:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #3.
+  Use Chebyshev spacing for data points.
+  Number of data points = 16
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 0.876941
+  Normalized length of polynomial interpolant       = 0.168685
+
+  Created plot file "p03_datacheby_16.png"
+  Created plot file "p03_lagcheby_16.png".
+
+lagrange_interp_1d_test02:
+  Normal end of execution.
+
+lagrange_interp_1d_test02:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #3.
+  Use Chebyshev spacing for data points.
+  Number of data points = 32
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 0.603075
+  Normalized length of polynomial interpolant       = 0.160888
+
+  Created plot file "p03_datacheby_32.png"
+  Created plot file "p03_lagcheby_32.png".
+
+lagrange_interp_1d_test02:
+  Normal end of execution.
+
+lagrange_interp_1d_test02:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #3.
+  Use Chebyshev spacing for data points.
+  Number of data points = 64
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 0.422018
+  Normalized length of polynomial interpolant       = 0.159182
+
+  Created plot file "p03_datacheby_64.png"
+  Created plot file "p03_lagcheby_64.png".
+
+lagrange_interp_1d_test02:
+  Normal end of execution.
+
+lagrange_interp_1d_test02:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #4.
+  Use Chebyshev spacing for data points.
+  Number of data points = 4
+
+  Data array:
+
+       0:              0      -1.50423
+       1:           0.25       -1.3734
+       2:           0.75       1.50423
+       3:              1       1.53082
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 1.12955
+  Normalized length of polynomial interpolant       = 0.0793125
+
+  Created plot file "p04_datacheby_4.png"
+  Created plot file "p04_lagcheby_4.png".
+
+lagrange_interp_1d_test02:
+  Normal end of execution.
+
+lagrange_interp_1d_test02:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #4.
+  Use Chebyshev spacing for data points.
+  Number of data points = 8
+
+  Data array:
+
+       0:              0      -1.50423
+       1:      0.0495156      -1.49414
+       2:       0.188255      -1.43772
+       3:        0.38874      0.502522
+       4:        0.61126       1.46537
+       5:       0.811745       1.51362
+       6:       0.950484       1.52738
+       7:              1       1.53082
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 0.826593
+  Normalized length of polynomial interpolant       = 0.087745
+
+  Created plot file "p04_datacheby_8.png"
+  Created plot file "p04_lagcheby_8.png".
+
+lagrange_interp_1d_test02:
+  Normal end of execution.
+
+lagrange_interp_1d_test02:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #4.
+  Use Chebyshev spacing for data points.
+  Number of data points = 16
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 0.772687
+  Normalized length of polynomial interpolant       = 0.119154
+
+  Created plot file "p04_datacheby_16.png"
+  Created plot file "p04_lagcheby_16.png".
+
+lagrange_interp_1d_test02:
+  Normal end of execution.
+
+lagrange_interp_1d_test02:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #4.
+  Use Chebyshev spacing for data points.
+  Number of data points = 32
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 0.560809
+  Normalized length of polynomial interpolant       = 0.118522
+
+  Created plot file "p04_datacheby_32.png"
+  Created plot file "p04_lagcheby_32.png".
+
+lagrange_interp_1d_test02:
+  Normal end of execution.
+
+lagrange_interp_1d_test02:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #4.
+  Use Chebyshev spacing for data points.
+  Number of data points = 64
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 0.422904
+  Normalized length of polynomial interpolant       = 0.125374
+
+  Created plot file "p04_datacheby_64.png"
+  Created plot file "p04_lagcheby_64.png".
+
+lagrange_interp_1d_test02:
+  Normal end of execution.
+
+lagrange_interp_1d_test02:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #5.
+  Use Chebyshev spacing for data points.
+  Number of data points = 4
+
+  Data array:
+
+       0:              0            16
+       1:           0.25      -10.1153
+       2:           0.75      -7.76263
+       3:              1       13.3791
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 1.42776
+  Normalized length of polynomial interpolant       = 0.133294
+
+  Created plot file "p05_datacheby_4.png"
+  Created plot file "p05_lagcheby_4.png".
+
+lagrange_interp_1d_test02:
+  Normal end of execution.
+
+lagrange_interp_1d_test02:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #5.
+  Use Chebyshev spacing for data points.
+  Number of data points = 8
+
+  Data array:
+
+       0:              0            16
+       1:      0.0495156      -3.29024
+       2:       0.188255       9.45586
+       3:        0.38874       6.34917
+       4:        0.61126       14.5226
+       5:       0.811745       4.39835
+       6:       0.950484      -8.65807
+       7:              1       13.3791
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 1.55754
+  Normalized length of polynomial interpolant       = 0.307553
+
+  Created plot file "p05_datacheby_8.png"
+  Created plot file "p05_lagcheby_8.png".
+
+lagrange_interp_1d_test02:
+  Normal end of execution.
+
+lagrange_interp_1d_test02:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #5.
+  Use Chebyshev spacing for data points.
+  Number of data points = 16
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 1.06297
+  Normalized length of polynomial interpolant       = 0.270091
+
+  Created plot file "p05_datacheby_16.png"
+  Created plot file "p05_lagcheby_16.png".
+
+lagrange_interp_1d_test02:
+  Normal end of execution.
+
+lagrange_interp_1d_test02:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #5.
+  Use Chebyshev spacing for data points.
+  Number of data points = 32
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 1.47706
+  Normalized length of polynomial interpolant       = 0.438767
+
+  Created plot file "p05_datacheby_32.png"
+  Created plot file "p05_lagcheby_32.png".
+
+lagrange_interp_1d_test02:
+  Normal end of execution.
+
+lagrange_interp_1d_test02:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #5.
+  Use Chebyshev spacing for data points.
+  Number of data points = 64
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 1.51792
+  Normalized length of polynomial interpolant       = 0.524173
+
+  Created plot file "p05_datacheby_64.png"
+  Created plot file "p05_lagcheby_64.png".
+
+lagrange_interp_1d_test02:
+  Normal end of execution.
+
+lagrange_interp_1d_test02:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #6.
+  Use Chebyshev spacing for data points.
+  Number of data points = 4
+
+  Data array:
+
+       0:              0      0.367879
+       1:           0.25             1
+       2:           0.75     0.0183156
+       3:              1    0.00012341
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 1.31869
+  Normalized length of polynomial interpolant       = 0.107329
+
+  Created plot file "p06_datacheby_4.png"
+  Created plot file "p06_lagcheby_4.png".
+
+lagrange_interp_1d_test02:
+  Normal end of execution.
+
+lagrange_interp_1d_test02:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #6.
+  Use Chebyshev spacing for data points.
+  Number of data points = 8
+
+  Data array:
+
+       0:              0      0.367879
+       1:      0.0495156      0.525658
+       2:       0.188255      0.940824
+       3:        0.38874      0.734931
+       4:        0.61126      0.123917
+       5:       0.811745    0.00641628
+       6:       0.950484   0.000389419
+       7:              1    0.00012341
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 0.938964
+  Normalized length of polynomial interpolant       = 0.107515
+
+  Created plot file "p06_datacheby_8.png"
+  Created plot file "p06_lagcheby_8.png".
+
+lagrange_interp_1d_test02:
+  Normal end of execution.
+
+lagrange_interp_1d_test02:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #6.
+  Use Chebyshev spacing for data points.
+  Number of data points = 16
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 0.654428
+  Normalized length of polynomial interpolant       = 0.103527
+
+  Created plot file "p06_datacheby_16.png"
+  Created plot file "p06_lagcheby_16.png".
+
+lagrange_interp_1d_test02:
+  Normal end of execution.
+
+lagrange_interp_1d_test02:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #6.
+  Use Chebyshev spacing for data points.
+  Number of data points = 32
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 0.462404
+  Normalized length of polynomial interpolant       = 0.10381
+
+  Created plot file "p06_datacheby_32.png"
+  Created plot file "p06_lagcheby_32.png".
+
+lagrange_interp_1d_test02:
+  Normal end of execution.
+
+lagrange_interp_1d_test02:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #6.
+  Use Chebyshev spacing for data points.
+  Number of data points = 64
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 0.324459
+  Normalized length of polynomial interpolant       = 0.103527
+
+  Created plot file "p06_datacheby_64.png"
+  Created plot file "p06_lagcheby_64.png".
+
+lagrange_interp_1d_test02:
+  Normal end of execution.
+
+lagrange_interp_1d_test02:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #7.
+  Use Chebyshev spacing for data points.
+  Number of data points = 4
+
+  Data array:
+
+       0:              0             1
+       1:           0.25       2.71828
+       2:           0.75             0
+       3:              1             0
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 1.33213
+  Normalized length of polynomial interpolant       = 0.10836
+
+  Created plot file "p07_datacheby_4.png"
+  Created plot file "p07_lagcheby_4.png".
+
+lagrange_interp_1d_test02:
+  Normal end of execution.
+
+lagrange_interp_1d_test02:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #7.
+  Use Chebyshev spacing for data points.
+  Number of data points = 8
+
+  Data array:
+
+       0:              0             1
+       1:      0.0495156       1.21904
+       2:       0.188255        2.1234
+       3:        0.38874       4.73489
+       4:        0.61126             0
+       5:       0.811745             0
+       6:       0.950484             0
+       7:              1             0
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 1.23131
+  Normalized length of polynomial interpolant       = 0.139424
+
+  Created plot file "p07_datacheby_8.png"
+  Created plot file "p07_lagcheby_8.png".
+
+lagrange_interp_1d_test02:
+  Normal end of execution.
+
+lagrange_interp_1d_test02:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #7.
+  Use Chebyshev spacing for data points.
+  Number of data points = 16
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 1.12473
+  Normalized length of polynomial interpolant       = 0.184733
+
+  Created plot file "p07_datacheby_16.png"
+  Created plot file "p07_lagcheby_16.png".
+
+lagrange_interp_1d_test02:
+  Normal end of execution.
+
+lagrange_interp_1d_test02:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #7.
+  Use Chebyshev spacing for data points.
+  Number of data points = 32
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 1.06381
+  Normalized length of polynomial interpolant       = 0.250088
+
+  Created plot file "p07_datacheby_32.png"
+  Created plot file "p07_lagcheby_32.png".
+
+lagrange_interp_1d_test02:
+  Normal end of execution.
+
+lagrange_interp_1d_test02:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #7.
+  Use Chebyshev spacing for data points.
+  Number of data points = 64
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 1.03217
+  Normalized length of polynomial interpolant       = 0.344771
+
+  Created plot file "p07_datacheby_64.png"
+  Created plot file "p07_lagcheby_64.png".
+
+lagrange_interp_1d_test02:
+  Normal end of execution.
+
+lagrange_interp_1d_test02:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #8.
+  Use Chebyshev spacing for data points.
+  Number of data points = 4
+
+  Data array:
+
+       0:              0     0.0384615
+       1:           0.25      0.137931
+       2:           0.75      0.137931
+       3:              1     0.0384615
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 1.5411
+  Normalized length of polynomial interpolant       = 0.144786
+
+  Created plot file "p08_datacheby_4.png"
+  Created plot file "p08_lagcheby_4.png".
+
+lagrange_interp_1d_test02:
+  Normal end of execution.
+
+lagrange_interp_1d_test02:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #8.
+  Use Chebyshev spacing for data points.
+  Number of data points = 8
+
+  Data array:
+
+       0:              0     0.0384615
+       1:      0.0495156     0.0469624
+       2:       0.188255     0.0932967
+       3:        0.38874       0.44685
+       4:        0.61126       0.44685
+       5:       0.811745     0.0932967
+       6:       0.950484     0.0469624
+       7:              1     0.0384615
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 1.30341
+  Normalized length of polynomial interpolant       = 0.143756
+
+  Created plot file "p08_datacheby_8.png"
+  Created plot file "p08_lagcheby_8.png".
+
+lagrange_interp_1d_test02:
+  Normal end of execution.
+
+lagrange_interp_1d_test02:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #8.
+  Use Chebyshev spacing for data points.
+  Number of data points = 16
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 1.02273
+  Normalized length of polynomial interpolant       = 0.155631
+
+  Created plot file "p08_datacheby_16.png"
+  Created plot file "p08_lagcheby_16.png".
+
+lagrange_interp_1d_test02:
+  Normal end of execution.
+
+lagrange_interp_1d_test02:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #8.
+  Use Chebyshev spacing for data points.
+  Number of data points = 32
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 0.69951
+  Normalized length of polynomial interpolant       = 0.145845
+
+  Created plot file "p08_datacheby_32.png"
+  Created plot file "p08_lagcheby_32.png".
+
+lagrange_interp_1d_test02:
+  Normal end of execution.
+
+lagrange_interp_1d_test02:
+  Python version: 3.6.9
+  Interpolate data from TEST_interp_1d problem #8.
+  Use Chebyshev spacing for data points.
+  Number of data points = 64
+
+  L2 interpolation error averaged per interpolant node = 0
+
+  Normalized length of piecewise linear interpolant = 0.479999
+  Normalized length of polynomial interpolant       = 0.139756
+
+  Created plot file "p08_datacheby_64.png"
+  Created plot file "p08_lagcheby_64.png".
+
+lagrange_interp_1d_test02:
+  Normal end of execution.
+
+lagrange_interp_1d_test:
+  Normal end of execution.
+Tue Oct 19 11:57:13 2021

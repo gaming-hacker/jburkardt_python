@@ -1,0 +1,27 @@
+Tue Oct 19 11:59:28 2021
+
+mandelbrot_test:
+  Python version: 3.6.9
+  Test mandelbrot()
+
+MANDELBROT_IMAGE:
+  Python version: 3.6.9
+  Compute the Mandelbrot set and display it.
+
+  X range: [ -2, 0.5 ]
+  Y range: [ -1.25, 1.25 ]
+  Xnum = 720 x Ynum = 720 = 518400 Pixels
+  Maximum number of iterations = 200
+
+  Compute time:
+  Wallclock: 9.46 sec.
+        CPU: 9.46 sec.
+
+  Plot saved in file "mandelbrot.png"
+
+MANDELBROT_IMAGE:
+  Normal end of execution.
+
+mandelbrot_test:
+  Normal end of execution.
+Tue Oct 19 11:59:38 2021

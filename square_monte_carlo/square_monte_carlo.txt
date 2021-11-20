@@ -1,0 +1,487 @@
+Tue Oct 19 17:11:11 2021
+
+square_monte_carlo_test():
+  Python version: 3.6.9
+  Test square_monte_carlo().
+
+i4vec_print_test
+  Python version: 3.6.9
+  i4vec_print prints an I4VEC.
+
+  Here is an I4VEC:
+
+     0      91
+     1      92
+     2      93
+     3      94
+
+i4vec_print_test:
+  Normal end of execution.
+
+i4vec_transpose_print_test
+  Python version: 3.6.9
+  i4vec_transpose_print prints an I4VEC
+  with 5 entries to a row, and an optional title.
+
+  My array:  
+       1
+       2
+       3
+       4
+       5
+       6
+       7
+       8
+       9
+      10
+
+      11
+      12
+
+
+i4vec_transpose_print_test:
+  Normal end of execution.
+
+r8mat_print_test
+  Python version: 3.6.9
+  r8mat_print prints an R8MAT.
+
+  Here is an R8MAT:
+
+  Col: 
+      0       
+      1       
+      2       
+      3       
+      4       
+
+  Row
+      0 :
+          11  
+          12  
+          13  
+          14  
+          15  
+
+      1 :
+          21  
+          22  
+          23  
+          24  
+          25  
+
+      2 :
+          31  
+          32  
+          33  
+          34  
+          35  
+
+      3 :
+          41  
+          42  
+          43  
+          44  
+          45  
+
+
+  Col: 
+      5       
+
+  Row
+      0 :
+          16  
+
+      1 :
+          26  
+
+      2 :
+          36  
+
+      3 :
+          46  
+
+
+r8mat_print_test:
+  Normal end of execution.
+
+r8mat_print_some_test
+  Python version: 3.6.9
+  r8mat_print_some prints some of an R8MAT.
+
+  Here is an R8MAT:
+
+  Col: 
+      3       
+      4       
+      5       
+
+  Row
+      0 :
+          14  
+          15  
+          16  
+
+      1 :
+          24  
+          25  
+          26  
+
+      2 :
+          34  
+          35  
+          36  
+
+
+r8mat_print_some_test:
+  Normal end of execution.
+
+r8mat_transpose_print_test
+  Python version: 3.6.9
+  r8mat_transpose_print prints an R8MAT.
+
+  Here is an R8MAT, transposed:
+
+  Row: 
+      0       
+      1       
+      2       
+      3       
+
+  Col
+      0 :
+          11  
+          21  
+          31  
+          41  
+
+      1 :
+          12  
+          22  
+          32  
+          42  
+
+      2 :
+          13  
+          23  
+          33  
+          43  
+
+
+r8mat_transpose_print_test:
+  Normal end of execution.
+
+r8mat_transpose_print_some_test
+  Python version: 3.6.9
+  r8mat_transpose_print_some prints some of an R8MAT, transposed.
+
+  R8MAT, rows 0:2, cols 3:5:
+
+  Row: 
+      0       
+      1       
+      2       
+
+  Col
+      3 :
+          14  
+          24  
+          34  
+
+      4 :
+          15  
+          25  
+          35  
+
+      5 :
+          16  
+          26  
+          36  
+
+
+r8mat_transpose_print_some_test:
+  Normal end of execution.
+
+square01_area_test
+  Python version: 3.6.9
+  square01_area returns the area of the unit square.
+
+  square01_area() = 1
+
+square01_area_test
+  Normal end of execution.
+
+square01_monomial_integral_test
+  Python version: 3.6.9
+  square01_monomial_integral returns the integral of a monomial
+  over the interior of the unit square in 2D.
+  Compare with a Monte Carlo estimate.
+
+  Number of sample points used is 4192
+
+  Ex  Ey     MC-Estimate           Exact      Error
+
+   1   1        0.249061            0.25     0.00094
+   1   1        0.249061            0.25     0.00094
+   1   1        0.249061            0.25     0.00094
+   2   4       0.0646254       0.0666667       0.002
+   4   5       0.0312068       0.0333333      0.0021
+   3   7       0.0289487         0.03125      0.0023
+   7   3       0.0296735         0.03125      0.0016
+   1   3        0.123146           0.125      0.0019
+   6   5       0.0218615       0.0238095      0.0019
+   2   4       0.0646254       0.0666667       0.002
+   1   7       0.0599077          0.0625      0.0026
+   3   5       0.0394835       0.0416667      0.0022
+   3   4       0.0479676            0.05       0.002
+   6   7       0.0158595       0.0178571       0.002
+   6   6       0.0184186       0.0204082       0.002
+   3   3       0.0607362          0.0625      0.0018
+   1   6       0.0689343       0.0714286      0.0025
+   1   6       0.0689343       0.0714286      0.0025
+   7   2        0.040421       0.0416667      0.0012
+   2   2        0.109813        0.111111      0.0013
+
+square01_monomial_integral_test:
+  Normal end of execution.
+
+square01_monte_carlo_test
+  Python version: 3.6.9
+  Use square01_sample to estimate integrals 
+  along the interior of the unit square in 2D.
+
+         N
+           1
+              X^2
+             Y^2
+             X^4
+           X^2Y^2
+             Y^4
+           X^6
+
+
+         1
+               1
+       0.0982474
+        0.326923
+      0.00965254
+       0.0321194
+        0.106879
+     0.000948337
+
+         2
+               1
+        0.405505
+        0.285346
+        0.328776
+        0.150032
+       0.0885905
+        0.266603
+
+         4
+               1
+       0.0643035
+        0.192088
+      0.00968492
+      0.00643912
+       0.0675085
+      0.00172586
+
+         8
+               1
+        0.470839
+        0.166431
+        0.269913
+        0.076755
+       0.0860433
+        0.170623
+
+        16
+               1
+        0.202986
+        0.319699
+       0.0872827
+       0.0389988
+        0.179174
+       0.0462193
+
+        32
+               1
+        0.381958
+        0.286591
+        0.261522
+        0.126948
+        0.159551
+        0.202215
+
+        64
+               1
+        0.331209
+        0.327392
+        0.206476
+         0.10293
+        0.190475
+         0.14912
+
+       128
+               1
+        0.323881
+        0.336877
+        0.186442
+        0.104959
+        0.204868
+        0.128668
+
+       256
+               1
+        0.334904
+        0.322696
+        0.200028
+        0.106641
+        0.192089
+        0.143516
+
+       512
+               1
+        0.334745
+        0.336545
+        0.201859
+        0.109303
+        0.198432
+        0.145276
+
+      1024
+               1
+        0.333724
+        0.328496
+        0.200499
+        0.110187
+         0.19426
+        0.143908
+
+      2048
+               1
+        0.345905
+        0.336158
+        0.211505
+         0.11576
+        0.206473
+        0.152681
+
+      4096
+               1
+        0.330786
+        0.334201
+        0.200455
+          0.1102
+        0.202947
+        0.144628
+
+      8192
+               1
+        0.327909
+        0.333274
+        0.195657
+        0.108933
+        0.199313
+        0.139275
+
+     16384
+               1
+        0.329468
+        0.337826
+        0.196344
+        0.110382
+        0.204167
+        0.139745
+
+     32768
+               1
+         0.33282
+        0.334818
+         0.19963
+        0.110629
+        0.202204
+        0.142503
+
+     65536
+               1
+        0.334694
+        0.334531
+        0.201568
+        0.112143
+        0.201574
+        0.144406
+
+
+     Exact
+  %14.6g 1.0
+  %14.6g 0.3333333333333333
+  %14.6g 0.3333333333333333
+  %14.6g 0.2
+  %14.6g 0.1111111111111111
+  %14.6g 0.2
+  %14.6g 0.14285714285714285
+
+
+square01_monte_carlo_test:
+  Normal end of execution.
+
+square01_sample_test
+  Python version: 3.6.9
+  square01_sample samples the unit square.
+
+  Sample points in the unit square.
+
+  Row: 
+      0       
+      1       
+
+  Col
+      0 :
+    0.534681  
+    0.788426  
+
+      1 :
+  0.00866703  
+    0.868601  
+
+      2 :
+    0.607243  
+    0.372159  
+
+      3 :
+    0.158913  
+    0.678047  
+
+      4 :
+    0.301234  
+    0.757649  
+
+      5 :
+  0.00286368  
+    0.260761  
+
+      6 :
+    0.274755  
+    0.928831  
+
+      7 :
+   0.0295494  
+    0.891205  
+
+      8 :
+    0.254492  
+    0.384823  
+
+      9 :
+    0.275908  
+    0.106427  
+
+
+square01_sample_test
+  Normal end of execution.
+
+square_monte_carlo_test():
+  Normal end of execution.
+Tue Oct 19 17:11:12 2021

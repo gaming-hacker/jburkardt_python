@@ -1,0 +1,17 @@
+Tue Oct 19 11:33:55 2021
+
+euler_test():
+  Python version: 3.6.9
+  Test euler().
+
+humps_euler():
+  Solve the humps ODE system using euler().
+  Graphics saved as "humps_euler.png"
+
+predator_prey_euler:
+  Solve the predator prey ODE system using euler().
+  Graphics saved as "predator_prey_euler.png"
+
+euler_test():
+  Normal end of execution.
+Tue Oct 19 11:33:56 2021

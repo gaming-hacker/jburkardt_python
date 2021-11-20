@@ -1,0 +1,345 @@
+Tue Oct 19 17:07:58 2021
+
+random_sorted_test:
+  Python version: 3.6.9
+  Test random_sorted().
+
+r8poly_print_test
+  Python version: 3.6.9
+  r8poly_print prints an R8POLY.
+
+  The R8POLY:
+
+  p(x) =   9 * x^5
+         + 0.78 * x^4
+         + 56 * x^2
+         - 3.4 * x
+         + 12
+
+r8poly_print_test:
+  Normal end of execution.
+
+r8poly_value_horner_test
+  Python version: 3.6.9
+  r8poly_value_horner evaluates a polynomial at a point
+  using Horners method.
+
+  The polynomial coefficients:
+
+  p(x) =   1 * x^4
+         - 10 * x^3
+         + 35 * x^2
+         - 50 * x
+         + 24
+
+   I    X    P(X)
+
+   0    0.0000              24
+   1    0.3333         10.8642
+   2    0.6667         3.45679
+   3    1.0000               0
+   4    1.3333       -0.987654
+   5    1.6667       -0.691358
+   6    2.0000               0
+   7    2.3333        0.493827
+   8    2.6667        0.493827
+   9    3.0000               0
+  10    3.3333       -0.691358
+  11    3.6667       -0.987654
+  12    4.0000               0
+  13    4.3333         3.45679
+  14    4.6667         10.8642
+  15    5.0000              24
+
+r8poly_value_horner_test:
+  Normal end of execution.
+
+r8vec_normal_01_sorted_test:
+  Python version: 3.6.9
+  r8vec_normal_01_sorted generates a vector of N normal 01
+  random values in ascending sorted order.
+
+  Generate several examples:
+
+  R8VEC:
+  
+     -0.653115
+      -1.00447
+      0.946115
+       1.40183
+      0.174451
+
+  R8VEC:
+  
+     -0.565456
+      -2.72044
+      0.446922
+      0.910812
+      0.203555
+
+  R8VEC:
+  
+       1.10405
+       1.00361
+     -0.357899
+       1.32558
+      0.436564
+
+  R8VEC:
+  
+       1.00313
+     -0.780806
+      0.500042
+      0.585413
+      0.144291
+
+  R8VEC:
+  
+      0.684395
+      -2.10613
+      0.998705
+       1.52936
+     -0.832585
+
+  R8VEC:
+  
+       2.15061
+      0.398436
+      0.802311
+     -0.461735
+      0.550531
+
+  R8VEC:
+  
+       2.18666
+     -0.825147
+       1.13107
+       1.11142
+      0.699409
+
+  R8VEC:
+  
+     -0.805546
+      0.537556
+       2.04659
+      -1.54139
+     -0.554918
+
+  R8VEC:
+  
+        1.4185
+       2.69063
+       2.51815
+     -0.389367
+     -0.166863
+
+  R8VEC:
+  
+     -0.295994
+     -0.582038
+      0.694889
+      0.486387
+      0.272556
+
+
+r8vec_normal_01_sorted_test
+  Normal end of execution.
+
+r8vec_print_test
+  Python version: 3.6.9
+  r8vec_print prints an R8VEC.
+
+  Here is an R8VEC:
+
+     0:       123.456
+     1:         5e-06
+     2:        -1e+06
+     3:       3.14159
+
+r8vec_print_test:
+  Normal end of execution.
+
+r8vec_uniform_01_sorted1_test:
+  Python version: 3.6.9
+  r8vec_uniform_01_sorted1 generates a vector of N random
+  values in ascending sorted order.
+
+  Generate several examples:
+
+  R8VEC:
+  
+      0.349457
+      0.409174
+      0.637687
+      0.676682
+       0.78657
+
+  R8VEC:
+  
+      0.274679
+       0.35889
+       0.45704
+      0.819317
+      0.989537
+
+  R8VEC:
+  
+      0.195722
+      0.405922
+      0.582185
+      0.739748
+      0.905521
+
+  R8VEC:
+  
+     0.0488644
+      0.295972
+      0.445251
+       0.81466
+       0.86936
+
+  R8VEC:
+  
+      0.353072
+      0.386577
+      0.409275
+      0.736475
+       0.93204
+
+  R8VEC:
+  
+      0.185999
+      0.212436
+      0.727601
+      0.978507
+      0.991417
+
+  R8VEC:
+  
+      0.275384
+      0.428634
+       0.58192
+      0.618865
+      0.792105
+
+  R8VEC:
+  
+       0.34259
+      0.458057
+      0.534072
+      0.558402
+       0.78629
+
+  R8VEC:
+  
+      0.379279
+      0.427461
+      0.756437
+      0.866145
+      0.903157
+
+  R8VEC:
+  
+     0.0150923
+      0.265634
+      0.337035
+      0.676044
+      0.979631
+
+
+r8vec_uniform_01_sorted1_test
+  Normal end of execution.
+
+r8vec_uniform_01_sorted2_test:
+  r8vec_uniform_01_sorted2 generates a vector of N random
+  values in ascending sorted order.
+
+  Generate several examples:
+
+  R8VEC:
+  
+     0.0386753
+        0.0923
+      0.234543
+      0.677761
+      0.685062
+
+  R8VEC:
+  
+     0.0357228
+      0.517315
+      0.766015
+      0.822609
+      0.938152
+
+  R8VEC:
+  
+     0.0715843
+       0.26568
+      0.524391
+      0.897284
+      0.961343
+
+  R8VEC:
+  
+       0.40347
+      0.460101
+      0.550454
+      0.779722
+      0.914553
+
+  R8VEC:
+  
+      0.461524
+      0.629773
+      0.631759
+      0.763358
+      0.998851
+
+  R8VEC:
+  
+      0.151725
+      0.435747
+      0.574365
+      0.728929
+      0.818835
+
+  R8VEC:
+  
+      0.305825
+      0.486792
+      0.567283
+      0.570237
+      0.803919
+
+  R8VEC:
+  
+      0.257844
+      0.324818
+      0.433221
+      0.529864
+      0.894186
+
+  R8VEC:
+  
+      0.131942
+      0.220697
+       0.33024
+      0.661494
+      0.879668
+
+  R8VEC:
+  
+      0.136889
+      0.163808
+      0.486821
+       0.56782
+        0.6424
+
+
+r8vec_uniform_01_sorted2_test
+  Normal end of execution.
+
+random_sorted_test:
+  Normal end of execution.
+Tue Oct 19 17:07:58 2021

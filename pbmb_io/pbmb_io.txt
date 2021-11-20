@@ -1,0 +1,18 @@
+Tue Oct 19 17:00:18 2021
+
+pbmb_io_test():
+  Python version: 3.6.9
+  Test pbmb_io()
+
+pbmb_write_test():
+  Python version: 3.6.9
+  pbmb_write() writes a binary PBM graphics file.
+
+  Graphics data stored in file "pbmb_io.pbm".
+
+pbmb_write_test():
+  Normal end of execution.
+
+pbmb_io_test:
+  Normal end of execution.
+Tue Oct 19 17:00:18 2021

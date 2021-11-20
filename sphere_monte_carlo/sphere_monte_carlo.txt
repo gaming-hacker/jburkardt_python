@@ -1,0 +1,562 @@
+Tue Oct 19 17:10:38 2021
+
+sphere_monte_carlo_tests():
+  Python version: 3.6.9
+  Test sphere_monte_carlo().
+
+i4vec_print_test
+  Python version: 3.6.9
+  i4vec_print prints an I4VEC.
+
+  Here is an I4VEC:
+
+     0      91
+     1      92
+     2      93
+     3      94
+
+i4vec_print_test:
+  Normal end of execution.
+
+i4vec_transpose_print_test
+  Python version: 3.6.9
+  i4vec_transpose_print prints an I4VEC
+  with 5 entries to a row, and an optional title.
+
+  My array:  
+       1
+       2
+       3
+       4
+       5
+       6
+       7
+       8
+       9
+      10
+
+      11
+      12
+
+
+i4vec_transpose_print_test:
+  Normal end of execution.
+
+r8mat_print_test
+  Python version: 3.6.9
+  r8mat_print prints an R8MAT.
+
+  Here is an R8MAT:
+
+  Col: 
+      0       
+      1       
+      2       
+      3       
+      4       
+
+  Row
+      0 :
+          11  
+          12  
+          13  
+          14  
+          15  
+
+      1 :
+          21  
+          22  
+          23  
+          24  
+          25  
+
+      2 :
+          31  
+          32  
+          33  
+          34  
+          35  
+
+      3 :
+          41  
+          42  
+          43  
+          44  
+          45  
+
+
+  Col: 
+      5       
+
+  Row
+      0 :
+          16  
+
+      1 :
+          26  
+
+      2 :
+          36  
+
+      3 :
+          46  
+
+
+r8mat_print_test:
+  Normal end of execution.
+
+r8mat_print_some_test
+  Python version: 3.6.9
+  r8mat_print_some prints some of an R8MAT.
+
+  Here is an R8MAT:
+
+  Col: 
+      3       
+      4       
+      5       
+
+  Row
+      0 :
+          14  
+          15  
+          16  
+
+      1 :
+          24  
+          25  
+          26  
+
+      2 :
+          34  
+          35  
+          36  
+
+
+r8mat_print_some_test:
+  Normal end of execution.
+
+r8mat_transpose_print_test
+  Python version: 3.6.9
+  r8mat_transpose_print prints an R8MAT.
+
+  Here is an R8MAT, transposed:
+
+  Row: 
+      0       
+      1       
+      2       
+      3       
+
+  Col
+      0 :
+          11  
+          21  
+          31  
+          41  
+
+      1 :
+          12  
+          22  
+          32  
+          42  
+
+      2 :
+          13  
+          23  
+          33  
+          43  
+
+
+r8mat_transpose_print_test:
+  Normal end of execution.
+
+r8mat_transpose_print_some_test
+  Python version: 3.6.9
+  r8mat_transpose_print_some prints some of an R8MAT, transposed.
+
+  R8MAT, rows 0:2, cols 3:5:
+
+  Row: 
+      0       
+      1       
+      2       
+
+  Col
+      3 :
+          14  
+          24  
+          34  
+
+      4 :
+          15  
+          25  
+          35  
+
+      5 :
+          16  
+          26  
+          36  
+
+
+r8mat_transpose_print_some_test:
+  Normal end of execution.
+
+r8vec_print_test
+  Python version: 3.6.9
+  r8vec_print prints an R8VEC.
+
+  Here is an R8VEC:
+
+     0:       123.456
+     1:         5e-06
+     2:        -1e+06
+     3:       3.14159
+
+r8vec_print_test:
+  Normal end of execution.
+
+sphere01_area_test
+  Python version: 3.6.9
+  sphere01_area returns the volume of the unit sphere.
+
+  sphere01_area() =  12.5664
+
+sphere01_area_test
+  Normal end of execution.
+
+sphere01_monomial_integral_test
+  Python version: 3.6.9
+  sphere01_monomial_integral returns the integral of a monomial
+  over the surface of the unit sphere in 3D.
+  Compare with a Monte Carlo estimate.
+
+  If any exponent is odd, the integral is zero.
+  We will restrict this test to randomly chosen even exponents.
+
+  Ex  Ey  Ez     MC-Estimate           Exact      Error
+
+   0
+   2
+   4
+        0.367012        0.359039       0.008
+   2
+   6
+   2
+       0.0179705       0.0181333     0.00016
+   8
+   6
+   6
+     2.22498e-05     2.15924e-05     6.6e-07
+   2
+   4
+   6
+      0.00433129      0.00418461     0.00015
+   4
+   2
+   6
+      0.00427276      0.00418461     8.8e-05
+   0
+   0
+   8
+         1.41206         1.39626       0.016
+   0
+   2
+   6
+        0.204166        0.199466      0.0047
+   2
+   2
+   0
+        0.828554        0.837758      0.0092
+   0
+   2
+   2
+        0.848132        0.837758        0.01
+   6
+   0
+   8
+      0.00983391      0.00976408       7e-05
+   8
+   4
+   4
+     0.000348238     0.000344615     3.6e-06
+   4
+   6
+   8
+     9.49214e-05      9.0688e-05     4.2e-06
+   0
+   0
+   2
+         4.24402         4.18879       0.055
+   4
+   6
+   6
+     0.000254856     0.000246153     8.7e-06
+   8
+   2
+   0
+        0.124358        0.126933      0.0026
+   2
+   6
+   0
+         0.19561        0.199466      0.0039
+   0
+   0
+   4
+         2.55025         2.51327       0.037
+   6
+   4
+   4
+      0.00085233     0.000836921     1.5e-05
+   0
+   8
+   8
+      0.00411073       0.0040205       9e-05
+   2
+   2
+   0
+        0.828554        0.837758      0.0092
+
+sphere01_monomial_integral_test
+  Normal end of execution.
+
+sphere01_monte_carlo_test
+  Use sphere01_sample to estimate integrals over 
+  the surface of the unit sphere.
+
+         N        1              X^2             Y^2
+             Z^2             X^4           X^2Y^2           Z^4
+
+         1
+       12.566371
+        7.161284
+        4.178211
+        1.226876
+        4.081050
+        2.381066
+        0.119782
+
+         2
+       12.566371
+        8.448666
+        3.988140
+        0.129565
+        5.754080
+        2.616296
+        0.002389
+
+         4
+       12.566371
+        1.867551
+        6.360111
+        4.338709
+        0.509519
+        1.183588
+        2.736324
+
+         8
+       12.566371
+        2.060910
+        3.355648
+        7.149812
+        0.814697
+        0.668027
+        5.495903
+
+        16
+       12.566371
+        3.408256
+        5.530310
+        3.627805
+        1.576063
+        1.119217
+        1.785104
+
+        32
+       12.566371
+        4.217100
+        4.207281
+        4.141989
+        2.461332
+        0.912744
+        2.380183
+
+        64
+       12.566371
+        4.204504
+        4.083083
+        4.278784
+        2.438576
+        0.814067
+        2.414674
+
+       128
+       12.566371
+        4.631872
+        3.805924
+        4.128575
+        2.829701
+        0.853364
+        2.456211
+
+       256
+       12.566371
+        4.192838
+        4.044400
+        4.329133
+        2.566649
+        0.782253
+        2.638958
+
+       512
+       12.566371
+        4.069067
+        4.222999
+        4.274305
+        2.432634
+        0.795822
+        2.592655
+
+      1024
+       12.566371
+        4.269650
+        3.998881
+        4.297840
+        2.577979
+        0.805429
+        2.581159
+
+      2048
+       12.566371
+        4.252752
+        4.188047
+        4.125572
+        2.561073
+        0.848714
+        2.456583
+
+      4096
+       12.566371
+        4.158192
+        4.201363
+        4.206816
+        2.474718
+        0.827885
+        2.519128
+
+      8192
+       12.566371
+        4.218089
+        4.175543
+        4.172739
+        2.546873
+        0.822713
+        2.512544
+
+     16384
+       12.566371
+        4.224760
+        4.199765
+        4.141846
+        2.538058
+        0.844623
+        2.468182
+
+     32768
+       12.566371
+        4.222085
+        4.163837
+        4.180448
+        2.540099
+        0.839612
+        2.502344
+
+     65536
+       12.566371
+        4.202796
+        4.181339
+        4.182235
+        2.521027
+        0.838849
+        2.509632
+
+
+     Exact
+       12.566371
+        4.188790
+        4.188790
+        4.188790
+        2.513274
+        0.837758
+        2.513274
+
+
+sphere01_sample_test
+  Python version: 3.6.9
+  sphere01_sample samples the unit sphere.
+
+  Sample points on the unit sphere.
+
+  Row: 
+      0       
+      1       
+      2       
+
+  Col
+      0 :
+    -0.92934  
+    0.359464  
+   0.0843386  
+
+      1 :
+   -0.800564  
+   -0.490641  
+    0.344048  
+
+      2 :
+   -0.514984  
+   -0.309428  
+    0.799403  
+
+      3 :
+  -0.0522509  
+   -0.866019  
+   -0.497274  
+
+      4 :
+   -0.647325  
+   -0.349892  
+     0.67716  
+
+      5 :
+   -0.542996  
+    0.765072  
+    0.346152  
+
+      6 :
+   -0.697059  
+    0.139594  
+    0.703294  
+
+      7 :
+    0.529343  
+    0.371151  
+   -0.762917  
+
+      8 :
+   -0.539307  
+   -0.317651  
+   -0.779901  
+
+      9 :
+    0.109222  
+   -0.781219  
+    0.614627  
+
+
+sphere01_sample_test
+  Normal end of execution.
+
+sphere_monte_carlo_tests():
+  Normal end of execution.
+Tue Oct 19 17:10:40 2021

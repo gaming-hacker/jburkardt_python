@@ -1,0 +1,16 @@
+Tue Oct 19 11:53:12 2021
+
+hankel_inverse_test
+
+  Python version: 3.6.9
+  hankel_inverse() computes the inverse of a Hankel matrix.
+
+     N      ||A||      ||C||      ||I-AC||        ||I-AB||
+
+     5         7.1         1.8     1.12894e-15     2.13969e-15
+    10         5.6         7.6      5.4377e-15     2.13844e-14
+    20          17         6.9     1.59151e-14     6.26789e-14
+
+hankel_inverse_test
+  Normal end of execution.
+Tue Oct 19 11:53:12 2021

@@ -1,0 +1,22 @@
+Tue Oct 19 11:55:29 2021
+
+kepler_ode_test():
+  Python version: 3.6.9
+  Solve the kepler ODE.
+
+  Parameter values:
+    e     =  0.6
+    t0    =  0.0
+    y0    =  [0.4 0.  0.  2. ]
+    tstop =  120.0
+
+kepler_solve_ivp_test():
+  Use solve_ivp() to solve the Kepler ODE.
+  Graphics saved as "kepler_solve_ivp_plot.png"
+  Graphics saved as "kepler_solve_ivp_phase.png"
+  Graphics saved as "kepler_solve_ivp_h1.png"
+  Graphics saved as "kepler_solve_ivp_h2.png"
+
+kepler_ode_test():
+  Normal end of execution.
+Tue Oct 19 11:55:30 2021

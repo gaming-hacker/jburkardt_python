@@ -1,0 +1,253 @@
+Tue Oct 19 17:06:13 2021
+
+random_data_test():
+  Python version: 3.6.9
+  Test random_data().
+
+i4_modp_test
+  Python version: 3.6.9
+  i4_modp factors a number
+  into a multiple M and a positive remainder R.
+
+    Number   Divisor  Multiple Remainder
+
+       107        50         2         7
+       107       -50        -2         7
+      -107        50        -3        43
+      -107       -50         3        43
+
+  Repeat using Python % Operator:
+
+       107        50         2         7
+       107       -50        -3       -43
+      -107        50        -3        43
+      -107       -50         2        -7
+
+i4_modp_test
+  Normal end of execution.
+
+i4_to_halton_test
+  Python version: 3.6.9
+  i4_to_halton computes a Halton sequence.
+  The user specifies all data explicitly.
+
+  In this test, we call i4_to_halton repeatedly.
+  We use distinct primes as bases.
+
+   I    R(0)      R(1)      R(2)
+
+   0    0.0000    0.0000    0.0000
+   1    0.6667    0.3750    0.2083
+   2    0.3333    0.7500    0.4167
+   3    1.0000    0.1250    0.6250
+   4    0.1667    0.5000    0.8333
+   5    0.8333    0.8750    0.0417
+   6    0.5000    0.2500    0.2500
+   7    1.1667    0.6250    0.4583
+   8    0.0833    1.0000    0.6667
+   9    0.7500    0.0417    0.8750
+  10    0.4167    0.4167    0.0833
+
+i4_to_halton_test
+  Normal end of execution.
+
+i4vec_transpose_print_test
+  Python version: 3.6.9
+  i4vec_transpose_print prints an I4VEC
+  with 5 entries to a row, and an optional title.
+
+  My array:   1 2 3 4 5 6 7 8 9 10 11 12
+
+i4vec_transpose_print_test:
+  Normal end of execution.
+
+prime_test
+  Python version: 3.6.9
+  prime() returns primes from a table.
+
+  Number of primes stored is 1600
+
+     I    Prime(I)
+
+       1       2
+       2       3
+       3       5
+       4       7
+       5      11
+       6      13
+       7      17
+       8      19
+       9      23
+      10      29
+
+    1590   13411
+    1591   13417
+    1592   13421
+    1593   13441
+    1594   13451
+    1595   13457
+    1596   13463
+    1597   13469
+    1598   13477
+    1599   13487
+    1600   13499
+
+prime_test
+  Normal end of execution.
+
+r8mat_print_test
+  Python version: 3.6.9
+  r8mat_print prints an R8MAT.
+
+  Here is an R8MAT:
+
+  Col:       0             1             2             3             4       
+  Row
+      0 :          11            12            13            14            15  
+      1 :          21            22            23            24            25  
+      2 :          31            32            33            34            35  
+      3 :          41            42            43            44            45  
+
+  Col:       5       
+  Row
+      0 :          16  
+      1 :          26  
+      2 :          36  
+      3 :          46  
+
+r8mat_print_test:
+  Normal end of execution.
+
+r8mat_print_some_test
+  Python version: 3.6.9
+  r8mat_print_some prints some of an R8MAT.
+
+  Here is an R8MAT:
+
+  Col:       3             4             5       
+  Row
+      0 :          14            15            16  
+      1 :          24            25            26  
+      2 :          34            35            36  
+
+r8mat_print_some_test:
+  Normal end of execution.
+
+r8mat_transpose_write_test:
+  Python version: 3.6.9
+  Test r8mat_transpose_write, which writes the transpose of an R8MAT to a file.
+
+  Created file "r8mat_transpose_write_test.txt".
+
+r8mat_transpose_write_test:
+  Normal end of execution.
+
+r8mat_write_test:
+  Python version: 3.6.9
+  Test r8mat_write, which writes an R8MAT to a file.
+
+  Created file "r8mat_write_test.txt".
+
+r8mat_write_test:
+  Normal end of execution.
+
+r8vec_print_test
+  Python version: 3.6.9
+  r8vec_print prints an R8VEC.
+
+  Here is an R8VEC:
+
+     0:       123.456
+     1:         5e-06
+     2:        -1e+06
+     3:       3.14159
+
+r8vec_print_test:
+  Normal end of execution.
+
+uniform_in_sphere01_map_test
+  Python version: 3.6.9
+  uniform_in_sphere01_map computes points uniformly distributed
+  inside the M-dimensional unit sphere.
+
+  Random points inside unit 3-sphere
+
+  Row: 
+      0       
+      1       
+      2       
+
+  Col
+      0 :
+    0.636993  
+   -0.506686  
+    0.322443  
+
+      1 :
+  -0.0264009  
+     0.28913  
+  -0.0994723  
+
+      2 :
+   0.0414857  
+    0.264563  
+    0.450653  
+
+      3 :
+    0.311566  
+   -0.360224  
+     0.25251  
+
+      4 :
+    0.601136  
+   -0.515351  
+   -0.261287  
+
+      5 :
+    0.604509  
+    0.714658  
+   -0.114287  
+
+      6 :
+   -0.271494  
+     -0.4439  
+    0.372733  
+
+      7 :
+   -0.315392  
+    0.872086  
+   -0.203567  
+
+      8 :
+    0.219629  
+   -0.256722  
+  -0.0606207  
+
+      9 :
+     0.01198  
+    0.168623  
+    0.421515  
+
+
+uniform_in_sphere01_map_test
+  Normal end of execution.
+
+uniform_in_triangle_map1_test
+  Python version: 3.6.9
+  uniform_in_triangle_map1 maps uniform
+  points into a triangle.
+
+  Number of points N =          1000
+
+  V1 =     0.750000      0.900000
+  V2 =     0.000000      0.200000
+  V3 =     0.950000      0.650000
+
+  Data written to "uniform_in_triangle_map1.txt".
+
+uniform_in_triangle_map1_test:
+  Normal end of execution.
+
+random_data_test():
+  Normal end of execution.
+Tue Oct 19 17:06:13 2021

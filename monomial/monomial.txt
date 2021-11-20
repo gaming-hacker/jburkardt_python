@@ -1,0 +1,626 @@
+Tue Oct 19 11:59:42 2021
+
+monomial_test
+  Python version: 3.6.9
+  Test monomial().
+
+mono_between_enum_test
+  Python version: 3.6.9
+  mono_between_enum can enumerate the number of monomials
+  in M variables, of total degree between N1 and N2.
+
+  Using spatial dimension M = 3
+
+   N2:     0     1     2     3     4     5     6     7     8
+  N1 +---------------------------------------------------------------
+   0 |     1     4    10    20    35    56    84   120   165
+   1 |     0     3     9    19    34    55    83   119   164
+   2 |     0     0     6    16    31    52    80   116   161
+   3 |     0     0     0    10    25    46    74   110   155
+   4 |     0     0     0     0    15    36    64   100   145
+   5 |     0     0     0     0     0    21    49    85   130
+   6 |     0     0     0     0     0     0    28    64   109
+   7 |     0     0     0     0     0     0     0    36    81
+   8 |     0     0     0     0     0     0     0     0    45
+
+mono_between_enum_test:
+  Normal end of execution.
+
+mono_total_enum_test
+  Python version: 3.6.9
+  mono_total_enum can enumerate the number of monomials
+  in M variables, of total degree N.
+
+    N:     0     1     2     3     4     5     6     7     8
+   M +---------------------------------------------------------------
+   1 |     1     1     1     1     1     1     1     1     1
+   2 |     1     2     3     4     5     6     7     8     9
+   3 |     1     3     6    10    15    21    28    36    45
+   4 |     1     4    10    20    35    56    84   120   165
+   5 |     1     5    15    35    70   126   210   330   495
+   6 |     1     6    21    56   126   252   462   792  1287
+   7 |     1     7    28    84   210   462   924  1716  3003
+   8 |     1     8    36   120   330   792  1716  3432  6435
+
+mono_total_enum_test
+  Normal end of execution.
+
+mono_upto_enum_test
+  Python version: 3.6.9
+  mono_upto_enum can enumerate the number of monomials
+  in M variables, of total degree between 0 and N.
+
+    N:     0     1     2     3     4     5     6     7     8
+   M +---------------------------------------------------------------
+   1 |     1     2     3     4     5     6     7     8     9
+   2 |     1     3     6    10    15    21    28    36    45
+   3 |     1     4    10    20    35    56    84   120   165
+   4 |     1     5    15    35    70   126   210   330   495
+   5 |     1     6    21    56   126   252   462   792  1287
+   6 |     1     7    28    84   210   462   924  1716  3003
+   7 |     1     8    36   120   330   792  1716  3432  6435
+   8 |     1     9    45   165   495  1287  3003  6435 12870
+
+mono_upto_enum_test
+  Normal end of execution.
+
+mono_next_grevlex_test
+  Python version: 3.6.9
+  mono_next_grevlex computes the next monomial
+  in M variables in grevlex order.
+
+  Let M =  4
+   0   0  |   0   0   0   0
+   1   1  |   0   0   0   1
+   2   1  |   0   0   1   0
+   3   1  |   0   1   0   0
+   4   1  |   1   0   0   0
+   5   2  |   0   0   0   2
+   6   2  |   0   0   1   1
+   7   2  |   0   1   0   1
+   8   2  |   1   0   0   1
+   9   2  |   0   0   2   0
+  10   2  |   0   1   1   0
+  11   2  |   1   0   1   0
+  12   2  |   0   2   0   0
+  13   2  |   1   1   0   0
+  14   2  |   2   0   0   0
+  15   3  |   0   0   0   3
+  16   3  |   0   0   1   2
+  17   3  |   0   1   0   2
+  18   3  |   1   0   0   2
+  19   3  |   0   0   2   1
+  20   3  |   0   1   1   1
+  21   3  |   1   0   1   1
+  22   3  |   0   2   0   1
+  23   3  |   1   1   0   1
+  24   3  |   2   0   0   1
+  25   3  |   0   0   3   0
+  26   3  |   0   1   2   0
+  27   3  |   1   0   2   0
+  28   3  |   0   2   1   0
+  29   3  |   1   1   1   0
+  30   3  |   2   0   1   0
+  31   3  |   0   3   0   0
+  32   3  |   1   2   0   0
+  33   3  |   2   1   0   0
+  34   3  |   3   0   0   0
+
+mono_next_grevlex_test
+  Normal end of execution.
+
+mono_next_grlex_test
+  Python version: 3.6.9
+  mono_next_grlex computes the next monomial
+  in M variables in grlex order.
+
+  Let M =  4
+
+   1 2 1 3
+   1 2 2 2
+   1 2 3 1
+   1 2 4 0
+   1 3 0 3
+   1 3 1 2
+
+   3 2 0 1
+   3 2 1 0
+   3 3 0 0
+   4 0 0 2
+   4 0 1 1
+   4 0 2 0
+
+   0 2 1 0
+   0 3 0 0
+   1 0 0 2
+   1 0 1 1
+   1 0 2 0
+   1 1 0 1
+
+   1 3 2 3
+   1 3 3 2
+   1 3 4 1
+   1 3 5 0
+   1 4 0 4
+   1 4 1 3
+
+   1 1 3 1
+   1 1 4 0
+   1 2 0 3
+   1 2 1 2
+   1 2 2 1
+   1 2 3 0
+
+   0 1 3 2
+   0 1 4 1
+   0 1 5 0
+   0 2 0 4
+   0 2 1 3
+   0 2 2 2
+
+   2 1 0 3
+   2 1 1 2
+   2 1 2 1
+   2 1 3 0
+   2 2 0 2
+   2 2 1 1
+
+   3 1 0 2
+   3 1 1 1
+   3 1 2 0
+   3 2 0 1
+   3 2 1 0
+   3 3 0 0
+
+   1 0 3 2
+   1 0 4 1
+   1 0 5 0
+   1 1 0 4
+   1 1 1 3
+   1 1 2 2
+
+   0 3 0 0
+   1 0 0 2
+   1 0 1 1
+   1 0 2 0
+   1 1 0 1
+   1 1 1 0
+
+mono_next_grlex_test
+  Normal end of execution.
+
+mono_between_next_grevlex_test
+  Python version: 3.6.9
+  mono_between_next_grevlex can list the monomials
+  in M variables, of total degree N between N1 and N2,
+  in grevlex order, one at a time.
+
+  We start the process with (0,0,...,0,N1).
+  The process ends with (N2,0,...,0,0)
+
+  Let M =   3
+      N1 =  2
+      N2 =  3
+
+   1     0 0 2
+   2     0 1 1
+   3     1 0 1
+   4     0 2 0
+   5     1 1 0
+   6     2 0 0
+   7     0 0 3
+   8     0 1 2
+   9     1 0 2
+  10     0 2 1
+  11     1 1 1
+  12     2 0 1
+  13     0 3 0
+  14     1 2 0
+  15     2 1 0
+  16     3 0 0
+
+mono_between_next_grevlex_test
+  Normal end of execution.
+
+mono_between_next_grlex_test
+  Python version: 3.6.9
+  mono_between_next_grlex can list the monomials
+  in M variables, of total degree N between N1 and N2,
+  in grlex order, one at a time.
+
+  We start the process with (0,0,...,0,N1).
+  The process ends with (N2,0,...,0,0)
+
+  Let M =   3
+      N1 =  2
+      N2 =  3
+
+   1     0 0 2
+   2     0 1 1
+   3     0 2 0
+   4     1 0 1
+   5     1 1 0
+   6     2 0 0
+   7     0 0 3
+   8     0 1 2
+   9     0 2 1
+  10     0 3 0
+  11     1 0 2
+  12     1 1 1
+  13     1 2 0
+  14     2 0 1
+  15     2 1 0
+  16     3 0 0
+
+mono_between_next_grlex_test
+  Normal end of execution.
+
+mono_total_next_grevlex_test
+  Python version: 3.6.9
+  mono_total_next_grevlex can list the monomials
+  in M variables, of total degree N,
+  in grevlex order, one at a time.
+
+  We start the process with (0,0,...,0,N).
+  The process ends with (N,0,...,0,0)
+
+  Let M =   3
+      N =   3
+
+   1     0 0 3
+   2     0 1 2
+   3     1 0 2
+   4     0 2 1
+   5     1 1 1
+   6     2 0 1
+   7     0 3 0
+   8     1 2 0
+   9     2 1 0
+  10     3 0 0
+
+mono_total_next_grevlex_test
+  Normal end of execution.
+
+mono_total_next_grlex_test
+  Python version: 3.6.9
+  mono_total_next_grlex can list the monomials
+  in M variables, of total degree N,
+  in grlex order, one at a time.
+
+  We start the process with (0,0,...,0,N).
+  The process ends with (N,0,...,0,0)
+
+  Let M =   3
+      N =   3
+
+   1     0 0 3
+   2     0 1 2
+   3     0 2 1
+   4     0 3 0
+   5     1 0 2
+   6     1 1 1
+   7     1 2 0
+   8     2 0 1
+   9     2 1 0
+  10     3 0 0
+
+mono_total_next_grlex_test
+  Normal end of execution.
+
+mono_upto_next_grevlex_test
+  Python version: 3.6.9
+  mono_upto_next_grevlex can list the monomials
+  in M variables, of total degree up to N,
+  in grevlex order, one at a time.
+
+  We start the process with (0,0,...,0,0).
+  The process ends with (N,0,...,0,0)
+
+  Let M =   3
+      N =   4
+
+   1     0 0 0
+   2     0 0 1
+   3     0 1 0
+   4     1 0 0
+   5     0 0 2
+   6     0 1 1
+   7     1 0 1
+   8     0 2 0
+   9     1 1 0
+  10     2 0 0
+  11     0 0 3
+  12     0 1 2
+  13     1 0 2
+  14     0 2 1
+  15     1 1 1
+  16     2 0 1
+  17     0 3 0
+  18     1 2 0
+  19     2 1 0
+  20     3 0 0
+  21     0 0 4
+  22     0 1 3
+  23     1 0 3
+  24     0 2 2
+  25     1 1 2
+  26     2 0 2
+  27     0 3 1
+  28     1 2 1
+  29     2 1 1
+  30     3 0 1
+  31     0 4 0
+  32     1 3 0
+  33     2 2 0
+  34     3 1 0
+  35     4 0 0
+
+mono_upto_next_grevlex_test
+  Normal end of execution.
+
+mono_upto_next_grlex_test
+  Python version: 3.6.9
+  mono_upto_next_grlex can list the monomials
+  in M variables, of total degree up to N,
+  in grlex order, one at a time.
+
+  We start the process with (0,0,...,0,0).
+  The process ends with (N,0,...,0,0)
+
+  Let M =   3
+      N =   4
+
+   1     0 0 0
+   2     0 0 1
+   3     0 1 0
+   4     1 0 0
+   5     0 0 2
+   6     0 1 1
+   7     0 2 0
+   8     1 0 1
+   9     1 1 0
+  10     2 0 0
+  11     0 0 3
+  12     0 1 2
+  13     0 2 1
+  14     0 3 0
+  15     1 0 2
+  16     1 1 1
+  17     1 2 0
+  18     2 0 1
+  19     2 1 0
+  20     3 0 0
+  21     0 0 4
+  22     0 1 3
+  23     0 2 2
+  24     0 3 1
+  25     0 4 0
+  26     1 0 3
+  27     1 1 2
+  28     1 2 1
+  29     1 3 0
+  30     2 0 2
+  31     2 1 1
+  32     2 2 0
+  33     3 0 1
+  34     3 1 0
+  35     4 0 0
+
+mono_upto_next_grlex_test
+  Normal end of execution.
+
+mono_rank_grlex_test
+  Python version: 3.6.9
+  mono_rank_grlex returns the rank of a monomial in the sequence
+  of all monomials in M dimensions, in grlex order.
+
+  Print a monomial sequence with ranks assigned.
+
+  Let M = 3
+      N = 4
+
+   1     0 0 0
+   2     0 0 1
+   3     0 1 0
+   4     1 0 0
+   5     0 0 2
+   6     0 1 1
+   7     0 2 0
+   8     1 0 1
+   9     1 1 0
+  10     2 0 0
+  11     0 0 3
+  12     0 1 2
+  13     0 2 1
+  14     0 3 0
+  15     1 0 2
+  16     1 1 1
+  17     1 2 0
+  18     2 0 1
+  19     2 1 0
+  20     3 0 0
+  21     0 0 4
+  22     0 1 3
+  23     0 2 2
+  24     0 3 1
+  25     0 4 0
+  26     1 0 3
+  27     1 1 2
+  28     1 2 1
+  29     1 3 0
+  30     2 0 2
+  31     2 1 1
+  32     2 2 0
+  33     3 0 1
+  34     3 1 0
+  35     4 0 0
+
+  Now, given a monomial, retrieve its rank in the sequence:
+
+    1     0 0 0
+    4     1 0 0
+    2     0 0 1
+    7     0 2 0
+   15     1 0 2
+   24     0 3 1
+   77     3 2 1
+  158     5 2 1
+
+mono_rank_grlex_test
+  Normal end of execution.
+
+mono_unrank_grlex
+  Python version: 3.6.9
+  mono_unrank_grlex is given a rank, and returns the corresponding
+  monomial in the sequence of all monomials in M dimensions
+  in grlex order.
+
+  For reference, print a monomial sequence with ranks.
+
+  Let M = 3
+      N = 4
+
+   1     0 0 0
+   2     0 0 1
+   3     0 1 0
+   4     1 0 0
+   5     0 0 2
+   6     0 1 1
+   7     0 2 0
+   8     1 0 1
+   9     1 1 0
+  10     2 0 0
+  11     0 0 3
+  12     0 1 2
+  13     0 2 1
+  14     0 3 0
+  15     1 0 2
+  16     1 1 1
+  17     1 2 0
+  18     2 0 1
+  19     2 1 0
+  20     3 0 0
+  21     0 0 4
+  22     0 1 3
+  23     0 2 2
+  24     0 3 1
+  25     0 4 0
+  26     1 0 3
+  27     1 1 2
+  28     1 2 1
+  29     1 3 0
+  30     2 0 2
+  31     2 1 1
+  32     2 2 0
+  33     3 0 1
+  34     3 1 0
+  35     4 0 0
+
+  Now choose random ranks between 1 and 35
+
+  12     0 1 2
+  22     0 1 3
+  24     0 3 1
+   4     1 0 0
+   2     0 0 1
+
+mono_unrank_grlex_test
+  Normal end of execution.
+
+mono_between_random_test
+  Python version: 3.6.9
+  mono_between_random selects at random a monomial
+  in M dimensions of total degree between N1 and N2.
+
+  Let M =  3
+      N1 = 2
+      N2 = 3
+
+  14     0 3 0
+  10     2 0 0
+  10     2 0 0
+  15     1 0 2
+  19     2 1 0
+
+mono_between_random_test:
+  Normal end of execution.
+
+mono_total_random_test
+  Python version: 3.6.9
+  mono_total_random selects at random a monomial
+  in M dimensions of total degree N.
+
+  Let M = 3
+      N = 4
+
+  25     0 4 0
+  21     0 0 4
+  31     2 1 1
+  24     0 3 1
+  31     2 1 1
+
+mono_total_random_test:
+  Normal end of execution.
+
+mono_upto_random_test
+  Python version: 3.6.9
+  mono_upto_random selects at random a monomial
+  in M dimensions of total degree no greater than N.
+
+  Let M = 3
+      N = 4
+
+  18     2 0 1
+  25     0 4 0
+  34     3 1 0
+  35     4 0 0
+   4     1 0 0
+
+mono_upto_random_test:
+  Normal end of execution.
+
+mono_value_test
+  Python version: 3.6.9
+  mono_value evaluates a monomial.
+
+  Let M = 3
+      N = 6
+
+  M(X) =   x^(0,5,1)
+  M(1,2,3) = 96
+  M(-2,4,1) = 1024
+
+  M(X) =   x^(0,5,1)
+  M(1,2,3) = 96
+  M(-2,4,1) = 1024
+
+  M(X) =   x^(0,0,0)
+  M(1,2,3) = 1
+  M(-2,4,1) = 1
+
+  M(X) =   x^(2,1,1)
+  M(1,2,3) = 6
+  M(-2,4,1) = 16
+
+  M(X) =   x^(1,0,5)
+  M(1,2,3) = 243
+  M(-2,4,1) = -2
+
+mono_value_test:
+  Normal end of execution.
+
+mono_print_test
+  Python version: 3.6.9
+  mono_print can print out a monomial.
+
+  Monomial [5]:  x^5
+  Monomial [-5]:  x^(-5)
+  Monomial [2,1,0,3]:  x^(2,1,0,3)
+  Monomial [17,-3,199]:  x^(17,-3,199)
+
+mono_print_test
+  Normal end of execution.
+
+monomial_test:
+  Normal end of execution.
+Tue Oct 19 11:59:42 2021

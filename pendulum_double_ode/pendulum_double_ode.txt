@@ -1,0 +1,13 @@
+Tue Oct 19 17:00:19 2021
+
+pendulum_double_ode_test():
+  Python version: 3.6.9
+  Test pendulum_double_ode().
+  Graphics saved as "pendulum_double_x1y1.png"
+  Graphics saved as "pendulum_double_x2y2.png"
+  Graphics saved as "pendulum_double_phase.png"
+  Graphics saved as "pendulum_double_energy.png"
+
+pendulum_double_ode_test():
+  Normal end of execution.
+Tue Oct 19 17:00:19 2021

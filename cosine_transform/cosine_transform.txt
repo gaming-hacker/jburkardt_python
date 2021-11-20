@@ -1,0 +1,36 @@
+Tue Oct 19 11:26:21 2021
+
+cosine_transform_test()
+  Python version: 3.6.9
+  Test cosine_transform().
+
+COSINE_TRANSFORM_DATA_TEST:
+  Python version: 3.6.9
+  COSINE_TRANSFORM_DATA does a cosine transform of data
+  defined by a vector.
+
+  Apply the transform, then its inverse.
+  Let R be a random N vector.
+  Let S be the transform of D.
+  Let T be the transform of E.
+  Then R and T will be equal.
+
+     I      R(I)        S(I)        T(I)
+
+     0    0.924898    2.927705    0.924898
+     1    0.134742   -0.405531    0.134742
+     2    0.389565    0.041433    0.389565
+     3    0.604108    0.378236    0.604108
+     4    0.475247    0.072810    0.475247
+     5    0.772488    0.375352    0.772488
+     6    0.750649    0.227319    0.750649
+     7    0.985662    0.306876    0.985662
+     8    0.876842    0.146508    0.876842
+     9    0.632345   -0.090268    0.632345
+
+COSINE_TRANSFORM_DATA_TEST
+  Normal end of execution.
+
+cosine_transform_test():
+  Normal end of execution.
+Tue Oct 19 11:26:21 2021

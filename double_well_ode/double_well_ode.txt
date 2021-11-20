@@ -1,0 +1,20 @@
+Tue Oct 19 11:33:13 2021
+
+double_well_ode_test():
+  Python version: 3.6.9
+  Solve the double_well ODE.
+
+  Parameter values:
+    t0    =  0.0
+    y0    =  [1. 1.]
+    tstop =  10.0
+
+double_well_solve_ivp()
+  Solve the double_well ODE using solve_ivp().
+  Graphics saved as "double_well_solve_ivp_plot.png"
+  Graphics saved as "double_well_solve_ivp_phase.png"
+  Graphics saved as "double_well_solve_ivp_conservation.png"
+
+double_well_ode_test():
+  Normal end of execution.
+Tue Oct 19 11:33:14 2021

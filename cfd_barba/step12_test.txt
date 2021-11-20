@@ -1,0 +1,11 @@
+
+STEP12:
+  Python version: 3.6.9
+  The 2D Navier-Stokes equations for channel flow.
+  Number of steps taken was 499
+  Final UDIFF = 0.000997504
+  Saved solution in file "step12_trimmed.png".
+  Saved solution in file "step12_all.png".
+
+STEP12:
+  Normal end of execution.

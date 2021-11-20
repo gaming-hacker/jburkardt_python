@@ -1,0 +1,10 @@
+Tue Oct 19 11:24:39 2021
+
+brusselator_ode_test:
+  Python version: 3.6.9
+  Test brusselator_ode.
+  Graphics saved as "brusselator_ode_phase.png"
+
+brusselator_ode_test:
+  Normal end of execution.
+Tue Oct 19 11:24:40 2021

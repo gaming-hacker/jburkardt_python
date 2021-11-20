@@ -1,0 +1,48 @@
+Tue Oct 19 11:34:32 2021
+
+fire_simulation_test
+  Python version: 3.6.9
+  fire_simulation() simulates a forest fire.
+
+fire_simulation
+  Python version: 3.6.9
+  A probabilistic simulation of a forest fire.
+  The forest is a square grid with 20 trees on a side.
+  The probability of tree-to-tree spread is 0.5
+
+  Fire starts at tree[3,4]
+
+  Map of fire damage.
+  Fire started at "*".
+  Burned trees are indicated by "."
+  Unburned trees are indicated by "X".
+
+  XX....XXXXXXXXXXXXXX
+  XXXX..XXXXXXXXXXXXXX
+  XXXX.XXXXXXXXXXXXXXX
+  XXXX*..XXXXXXXXXXXXX
+  XXX....XXXXXXXXXXXXX
+  XXX....XXXXXXXXXXXXX
+  XXXX..XXXXXXXXXXXXXX
+  XXXX..XXXXXXXXXXXXXX
+  XXXXX..XXXXXXXXXXXXX
+  XXXXXXXXXXXXXXXXXXXX
+  XXXXXXXXXXXXXXXXXXXX
+  XXXXXXXXXXXXXXXXXXXX
+  XXXXXXXXXXXXXXXXXXXX
+  XXXXXXXXXXXXXXXXXXXX
+  XXXXXXXXXXXXXXXXXXXX
+  XXXXXXXXXXXXXXXXXXXX
+  XXXXXXXXXXXXXXXXXXXX
+  XXXXXXXXXXXXXXXXXXXX
+  XXXXXXXXXXXXXXXXXXXX
+  XXXXXXXXXXXXXXXXXXXX
+
+  Percentage of forest burned = 0.06
+
+fire_simulation:
+  Normal end of execution.
+
+fire_simulation_test
+  Normal end of execution.
+Tue Oct 19 11:34:32 2021

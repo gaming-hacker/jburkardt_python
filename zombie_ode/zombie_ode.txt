@@ -1,0 +1,23 @@
+Tue Oct 19 17:34:12 2021
+
+zombie_ode_test()
+  Python version: 3.6.9
+  zombie_ode models a zombie epidemic.
+
+  Parameter values:
+    alpha =  0.008
+    beta  =  0.0095
+    gamma =  0.02
+    delta =  0.0001
+    t0    =  0.0
+    y0    =  [500.   0.   0.]
+    tstop =  20.0
+
+zombie_euler:
+  Use the euler method on the zombie ODE.
+  Graphics saved as "zombie_euler_plot.png"
+  Graphics saved as "zombie_euler_conservation.png"
+
+zombie_ode_test
+  Normal end of execution.
+Tue Oct 19 17:34:13 2021

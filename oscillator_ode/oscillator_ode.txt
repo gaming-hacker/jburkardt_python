@@ -1,0 +1,12 @@
+Tue Oct 19 12:01:55 2021
+
+oscillator_ode_test():
+  Python version: 3.6.9
+  Test oscillator_ode.
+  Graphics saved as "oscillator_plot.png"
+  Graphics saved as "oscillator_phase.png"
+  Graphics saved as "oscillator_conservation.png"
+
+oscillator_ode_test:
+  Normal end of execution.
+Tue Oct 19 12:01:56 2021

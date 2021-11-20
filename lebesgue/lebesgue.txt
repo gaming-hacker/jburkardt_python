@@ -1,0 +1,418 @@
+Tue Oct 19 11:57:14 2021
+
+lebesgue_test:
+  Python version: 3.6.9
+  Test lebesgue()
+
+lebesgue_chebyshev1_test:
+  Python version: 3.6.9
+  Analyze chebyshev1 points.
+
+  chebyshev1 lebesgue constants:
+
+     0:             1
+     1:       1.41421
+     2:       1.66667
+     3:       1.84776
+     4:       1.98885
+     5:        2.1044
+     6:       2.20221
+     7:       2.28702
+     8:       2.36186
+     9:       2.42883
+    10:       2.48943
+    11:       2.54477
+    12:       2.59568
+    13:       2.64282
+    14:       2.68671
+    15:       2.72778
+    16:       2.76635
+    17:       2.80273
+    18:       2.83713
+    19:       2.86977
+    20:       2.90082
+
+  chebyshev1 lebesgue constants/log(N+1):
+
+     0:        1.4427
+     1:       1.28727
+     2:       1.20225
+     3:       1.14808
+     4:          1.11
+     5:       1.08145
+     6:       1.05904
+     7:       1.04087
+     8:       1.02574
+     9:        1.0129
+    10:       1.00182
+    11:      0.992131
+    12:      0.983563
+    13:      0.975913
+    14:      0.969028
+    15:      0.962786
+    16:      0.957093
+    17:      0.951871
+    18:      0.947058
+    19:      0.942602
+    20:      0.938462
+
+  chebyshev1 points for N = 11
+
+     0:      0.989821
+     1:      0.909632
+     2:       0.75575
+     3:      0.540641
+     4:      0.281733
+     5:   2.83277e-16
+     6:     -0.281733
+     7:     -0.540641
+     8:      -0.75575
+     9:     -0.909632
+    10:     -0.989821
+
+  Plot file saved as "chebyshev1.png"
+
+lebesgue_chebyshev1_test
+  Normal end of execution.
+
+lebesgue_chebyshev2_test:
+  Python version: 3.6.9
+  Analyze chebyshev2 points.
+
+  chebyshev2 lebesgue constants for N = 1 to 11:
+
+     0:             1
+     1:             1
+     2:          1.25
+     3:       1.66667
+     4:       1.79876
+     5:       1.98885
+     6:       2.08255
+     7:       2.20221
+     8:       2.27461
+     9:       2.36186
+    10:       2.42097
+
+  chebyshev2 lebesgue constants/log(N+1):
+
+     0:        1.4427
+     1:      0.910239
+     2:      0.901684
+     3:       1.03556
+     4:       1.00391
+     5:       1.02207
+     6:       1.00149
+     7:       1.00227
+     8:      0.987852
+     9:      0.984971
+    10:      0.974269
+
+  chebyshev2 points for N = 11
+
+     0:            -1
+     1:     -0.951057
+     2:     -0.809017
+     3:     -0.587785
+     4:     -0.309017
+     5:   6.12323e-17
+     6:      0.309017
+     7:      0.587785
+     8:      0.809017
+     9:      0.951057
+    10:             1
+
+  Plot file saved as "chebyshev2.png"
+
+lebesgue_chebyshev2_test
+  Normal end of execution.
+
+lebesgue_chebyshev3_test:
+  Python version: 3.6.9
+  Analyze chebyshev3 points.
+
+  chebyshev3 lebesgue constants for N = 1 to 11:
+
+     0:             1
+     1:       2.23607
+     2:       3.49396
+     3:       4.75877
+     4:       6.02667
+     5:       7.29623
+     6:       8.56677
+     7:       9.83795
+     8:       11.1096
+     9:       12.3815
+    10:       13.6536
+
+  chebyshev3 lebesgue constants/log(N+1):
+
+     0:        1.4427
+     1:       2.03536
+     2:       2.52036
+     3:       2.95679
+     4:       3.36355
+     5:       3.74952
+     6:       4.11975
+     7:       4.47744
+     8:       4.82482
+     9:       5.16348
+    10:       5.49463
+
+  chebyshev3 points for N = 11
+
+     0:     -0.962917
+     1:     -0.854419
+     2:     -0.682553
+     3:     -0.460065
+     4:     -0.203456
+     5:     0.0682424
+     6:       0.33488
+     7:       0.57668
+     8:      0.775711
+     9:      0.917211
+    10:      0.990686
+
+  Plot file saved as "chebyshev3.png"
+
+lebesgue_chebyshev3_test
+  Normal end of execution.
+
+lebesgue_chebyshev4_test:
+  Python version: 3.6.9
+  Analyze chebyshev4 points.
+
+  chebyshev4 lebesgue constants for N = 1 to 11:
+
+     0:             1
+     1:       2.23607
+     2:       3.49396
+     3:       4.75877
+     4:       6.02667
+     5:       7.29623
+     6:       8.56677
+     7:       9.83795
+     8:       11.1096
+     9:       12.3815
+    10:       13.6536
+
+  chebyshev4 lebesgue constants/log(N+1):
+
+     0:        1.4427
+     1:       2.03536
+     2:       2.52036
+     3:       2.95679
+     4:       3.36355
+     5:       3.74952
+     6:       4.11975
+     7:       4.47744
+     8:       4.82482
+     9:       5.16348
+    10:       5.49463
+
+  chebyshev4 points for N = 11
+
+     0:     -0.990686
+     1:     -0.917211
+     2:     -0.775711
+     3:      -0.57668
+     4:      -0.33488
+     5:    -0.0682424
+     6:      0.203456
+     7:      0.460065
+     8:      0.682553
+     9:      0.854419
+    10:      0.962917
+
+  Plot file saved as "chebyshev4.png"
+
+lebesgue_chebyshev4_test
+  Normal end of execution.
+
+lebesgue_equidistant1_test:
+  Python version: 3.6.9
+  Analyze equidistant1 points.
+
+  equidistant1 lebesgue constants for N = 1 to 11:
+
+     0:             1
+     1:             3
+     2:             7
+     3:            15
+     4:            31
+     5:            63
+     6:           127
+     7:           255
+     8:           511
+     9:          1023
+    10:          2047
+
+  equidistant1 points for N = 11
+
+     0:     -0.833333
+     1:     -0.666667
+     2:          -0.5
+     3:     -0.333333
+     4:     -0.166667
+     5:             0
+     6:      0.166667
+     7:      0.333333
+     8:           0.5
+     9:      0.666667
+    10:      0.833333
+
+  Plot file saved as "equidistant1.png"
+
+lebesgue_equidistant1_test
+  Normal end of execution.
+
+lebesgue_equidistant2_test:
+  Python version: 3.6.9
+  Analyze equidistant2 points.
+
+  equidistant2 lebesgue constants for N = 1 to 11:
+
+     0:             1
+     1:             1
+     2:          1.25
+     3:       1.63112
+     4:       2.20782
+     5:       3.10628
+     6:       4.54872
+     7:       6.92945
+     8:       10.9444
+     9:       17.8449
+    10:       29.8907
+
+  equidistant2 points for N = 11
+
+     0:            -1
+     1:          -0.8
+     2:          -0.6
+     3:          -0.4
+     4:          -0.2
+     5:             0
+     6:           0.2
+     7:           0.4
+     8:           0.6
+     9:           0.8
+    10:             1
+
+  Plot file saved as "equidistant2.png"
+
+lebesgue_equidistant2_test
+  Normal end of execution.
+
+lebesgue_equidistant3_test:
+  Python version: 3.6.9
+  Analyze equidistant3 points.
+
+  equidistant3 lebesgue constants for N = 1 to 11:
+
+     0:             1
+     1:             2
+     2:           3.5
+     3:             6
+     4:        10.375
+     5:         18.25
+     6:       32.6875
+     7:          59.5
+     8:       109.773
+     9:       204.734
+    10:        385.16
+
+  equidistant3 points for N = 11
+
+     0:     -0.909091
+     1:     -0.727273
+     2:     -0.545455
+     3:     -0.363636
+     4:     -0.181818
+     5:             0
+     6:      0.181818
+     7:      0.363636
+     8:      0.545455
+     9:      0.727273
+    10:      0.909091
+
+  Plot file saved as "equidistant3.png"
+
+lebesgue_equidistant3_test
+  Normal end of execution.
+
+lebesgue_fejer1_test:
+  Python version: 3.6.9
+  Analyze Fejer1 points.
+
+  Fejer1 lebesgue constants for N = 1 to 11:
+
+     0:             1
+     1:       1.41421
+     2:       1.66667
+     3:       1.84776
+     4:       1.98885
+     5:        2.1044
+     6:       2.20221
+     7:       2.28702
+     8:       2.36186
+     9:       2.42883
+    10:       2.48943
+
+  Fejer1 points for N = 11
+
+     0:     -0.989821
+     1:     -0.909632
+     2:      -0.75575
+     3:     -0.540641
+     4:     -0.281733
+     5:   2.83277e-16
+     6:      0.281733
+     7:      0.540641
+     8:       0.75575
+     9:      0.909632
+    10:      0.989821
+
+  Plot file saved as "fejer1.png"
+
+lebesgue_fejer1_test
+  Normal end of execution.
+
+lebesgue_fejer2_test:
+  Python version: 3.6.9
+  Analyze Fejer2 points.
+
+  Fejer2 lebesgue constants for N = 1 to 11:
+
+     0:             1
+     1:             2
+     2:             3
+     3:             4
+     4:             5
+     5:             6
+     6:             7
+     7:             8
+     8:             9
+     9:            10
+    10:            11
+
+  Fejer2 points for N = 11
+
+     0:     -0.965926
+     1:     -0.866025
+     2:     -0.707107
+     3:          -0.5
+     4:     -0.258819
+     5:   6.12323e-17
+     6:      0.258819
+     7:           0.5
+     8:      0.707107
+     9:      0.866025
+    10:      0.965926
+
+  Plot file saved as "fejer2.png"
+
+lebesgue_fejer2_test
+  Normal end of execution.
+
+lebesgue_test:
+  Normal end of execution.
+Tue Oct 19 11:57:18 2021

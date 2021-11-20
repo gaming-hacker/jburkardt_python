@@ -1,0 +1,9 @@
+
+STEP08:
+  Python version: 3.6.9
+  The 2D Burgers equation.
+  Saved initial solution in file "step08_initial.png".
+  Saved final solution in file "step08_final.png".
+
+STEP08:
+  Normal end of execution.

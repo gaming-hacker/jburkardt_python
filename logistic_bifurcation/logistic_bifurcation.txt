@@ -1,0 +1,11 @@
+Tue Oct 19 11:57:23 2021
+
+logistic_bifurcation_test():
+  Python version: 3.6.9
+  Draw the logistic map bifurcation diagram.
+
+  Graphics saved as "logistic_bifurcation.png"
+
+logistic_bifurcation_test:
+  Normal end of execution.
+Tue Oct 19 11:58:47 2021

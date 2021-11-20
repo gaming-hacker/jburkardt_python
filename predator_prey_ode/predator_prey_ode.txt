@@ -1,0 +1,42 @@
+Tue Oct 19 17:01:28 2021
+
+predator_prey_ode_test():
+  Python version: 3.6.9
+  Test predator_prey_ode.
+
+  Parameter values:
+    alpha =  2.0
+    beta  =  0.001
+    gamma =  10.0
+    delta =  0.002
+    t0    =  0.0
+    y0    =  [5000  100]
+    tstop =  5.0
+
+predator_prey_euler():
+
+  Solve the predator prey ODE system using euler().
+
+  Graphics saved as "predator_prey_euler_test.png"
+
+predator_prey_midpoint():
+
+  Solve the predator prey ODE system using midpoint_fixed().
+
+  Graphics saved as "predator_prey_midpoint_test.png"
+
+predator_prey_rk4:
+
+  Solve the predator prey ODE system using rk4().
+
+  Graphics saved as "predator_prey_rk4_test.png"
+
+predator_prey_solve_ivp():
+
+  Solve the predator prey ODE system using solve_ivp().
+
+  Graphics saved as "predator_prey_solve_ivp_test.png"
+
+predator_prey_ode_test():
+  Normal end of execution.
+Tue Oct 19 17:01:29 2021

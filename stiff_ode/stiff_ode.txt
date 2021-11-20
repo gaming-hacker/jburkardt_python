@@ -1,0 +1,27 @@
+Tue Oct 19 17:11:14 2021
+
+stiff_ode_test
+  Python version: 3.6.9
+  Test stiff_ode using euler(), euler_backward(), midpoint().
+
+  Parameter values:
+    lamda =  50.0
+    t0    =  0.0
+    y0    =  1.0
+    tstop =  1.0
+
+stiff_euler_test
+  Solve stiff ODE using the Euler method.
+  Graphics saved as "stiff_euler.png"
+
+stiff_backward_euler_test
+  Solve stiff ODE using the backward Euler method.
+  Graphics saved as "stiff_euler_backward.png"
+
+stiff_midpoint_test
+  Solve stiff ODE using the midpoint method.
+  Graphics saved as "stiff_midpoint.png"
+
+stiff_ode_test
+  Normal end of execution.
+Tue Oct 19 17:11:14 2021

@@ -1,0 +1,28 @@
+Tue Oct 19 11:33:14 2021
+
+duffing_ode_test():
+  Python version: 3.6.9
+  Solve the Duffing ODE.
+
+  Parameter values:
+    alpha =  1.0
+    beta  =  5.0
+    gamma =  8.0
+    delta =  0.02
+    omega =  0.5
+    t0    =  0.0
+    y0    =  [1. 0.]
+    tstop =  100.0
+
+duffing_solve_ivp:
+  Use solve_ivp() to solve the duffing ODE.
+  Graphics saved as "duffing_solve_ivp_y1.png"
+  Graphics saved as "duffing_solve_ivp_y2.png"
+  Graphics saved as "duffing_solve_ivp_phase.png"
+
+duffing_solve_ivp():
+  Normal end of execution.
+
+duffing_ode_test:
+  Normal end of execution.
+Tue Oct 19 11:33:15 2021

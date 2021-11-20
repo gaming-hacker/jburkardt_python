@@ -1,0 +1,273 @@
+Tue Oct 19 17:32:26 2021
+
+WALKER_SAMPLE_TEST:
+  Python version: 3.6.9
+  Test WALKER_SAMPLE()
+
+NORMALIZE_TEST
+  Python version: 3.6.9
+  NORMALIZE normalizes entries 1 through N of a vector
+  of length N+2.
+
+  Initial X:
+
+     0:      0.605639
+     1:     0.0224818
+     2:      0.713682
+     3:      0.787625
+     4:      0.676133
+     5:      0.165821
+     6:      0.457653
+
+  Initial L1 norm of X(1:5) =    2.36574
+
+  Normalized X:
+
+     0:      0.605639
+     1:    0.00950306
+     2:      0.301673
+     3:      0.332929
+     4:      0.285802
+     5:     0.0700924
+     6:      0.457653
+
+  Final L1 norm of X(1:5) =          1
+
+NORMALIZE_TEST
+  Normal end of execution.
+
+R8VEC_INDICATOR0_TEST
+  Python version: 3.6.9
+  R8VEC_INDICATOR0 returns an indicator matrix.
+
+  The indicator0 vector:
+
+     0:             0
+     1:             1
+     2:             2
+     3:             3
+     4:             4
+     5:             5
+     6:             6
+     7:             7
+     8:             8
+     9:             9
+
+R8VEC_INDICATOR0_TEST
+  Normal end of execution.
+
+RANDOM_PERMUTATION_TEST
+  Python version: 3.6.9
+  RANDOM_PERMUTATION randomly permutes entries 1 through N of
+  a vector X[0:N+1].
+
+  Initial X:
+
+     0:             0
+     1:             1
+     2:             2
+     3:             3
+     4:             4
+     5:             5
+     6:             6
+
+  Permuted X:
+
+     0:             0
+     1:             5
+     2:             4
+     3:             2
+     4:             3
+     5:             1
+     6:             6
+
+RANDOM_PERMUTATION_TEST
+  Normal end of execution.
+
+WALKER_BUILD_TEST
+  Python version: 3.6.9
+  WALKER_BUILD builds the Walker sampler data vectors Y and A,
+  given a probability vector X.
+
+  Binomial PDF (ignore first and last entries):
+
+     0:             0
+     1:        0.0625
+     2:          0.25
+     3:         0.375
+     4:          0.25
+     5:        0.0625
+     6:             0
+
+   I    A[I]    Y[i] (ignore first and last entries)
+
+   0   0           0
+   1   3      0.3125
+   2   2           1
+   3   4         0.5
+   4   2        0.75
+   5   3      0.3125
+   6   6           2
+
+WALKER_BUILD_TEST
+  Normal end of execution.
+
+WALKER_SAMPLER_TEST:
+  Python version: 3.6.9
+  WALKER_SAMPLER creates Walker sample vectors Y and A
+  for efficient sampling of a discrete probability vector.
+  Test the Walker sampler with a Zipf-type probability.
+
+  Zipf probabilities
+  for N = 10
+  and parameter P = 2
+
+     I     X[I]
+
+     1          0.645258
+     2          0.161314
+     3         0.0716953
+     4         0.0403286
+     5         0.0258103
+     6         0.0179238
+     7         0.0131685
+     8         0.0100822
+     9        0.00796615
+    10        0.00645258
+
+  Randomly permuted X:
+
+     I     X[I]
+
+     1        0.00796615
+     2          0.645258
+     3         0.0179238
+     4          0.161314
+     5         0.0100822
+     6         0.0258103
+     7         0.0131685
+     8         0.0716953
+     9        0.00645258
+    10         0.0403286
+
+  Built the sampler
+  i Y[i] A[i]:
+
+    0                 0     0
+    1         0.0796615     2
+    2                 1     2
+    3          0.179238     2
+    4          0.461784     2
+    5          0.100822     2
+    6          0.258103     2
+    7          0.131685     4
+    8          0.716953     4
+    9         0.0645258     2
+   10          0.403286     2
+   11                 2    11
+
+  100000 samples:
+  prob   #samples:
+
+        0.00796615     764
+          0.645258   64774
+         0.0179238    1818
+          0.161314   15892
+         0.0100822     975
+         0.0258103    2607
+         0.0131685    1313
+         0.0716953    7096
+        0.00645258     659
+         0.0403286    4102
+
+  sumvar = 0.980938, (should be about 1)
+
+WALKER_SAMPLER_TEST
+  Normal end of execution.
+
+WALKER_VERIFY_TEST
+  Python version: 3.6.9
+  WALKER_VERIFY verifies the Walker sampler data vectors Y and A,
+  for a given probability vector X.
+
+  Benford PDF (ignore first and last entries):
+
+     0:             0
+     1:       0.30103
+     2:      0.176091
+     3:      0.124939
+     4:       0.09691
+     5:     0.0791812
+     6:     0.0669468
+     7:     0.0579919
+     8:     0.0511525
+     9:     0.0457575
+    10:             0
+
+   I    A[I]    Y[i] (ignore first and last entries)
+
+   0   0           0
+   1   1           1
+   2   1      0.8966
+   3   2       0.727
+   4   2      0.8722
+   5   2      0.7126
+   6   3      0.6025
+   7   1      0.5219
+   8   1      0.4604
+   9   1      0.4118
+  10  10           2
+
+  The verification sum = 1.38778e-16
+  It should be very close to zero.
+
+WALKER_VERIFY_TEST
+  Normal end of execution.
+
+ZIPF_PROBABILITY_TEST
+  Python version: 3.6.9
+  ZIPF_PROBABILITY sets up a probablity vector X of N+2 elements
+  containing in X[1:N] the probabilities of outcomes 1 through N
+  in a Zipf distribution with parameter P.
+
+  X for N = 5, P = 1.0
+
+     0:             0
+     1:      0.437956
+     2:      0.218978
+     3:      0.145985
+     4:      0.109489
+     5:     0.0875912
+     6:             0
+
+  X for N = 5, P = 2.0
+
+     0:             0
+     1:      0.683242
+     2:       0.17081
+     3:     0.0759157
+     4:     0.0427026
+     5:     0.0273297
+     6:             0
+
+  X for N = 10, P = 2.0
+
+     0:             0
+     1:      0.645258
+     2:      0.161314
+     3:     0.0716953
+     4:     0.0403286
+     5:     0.0258103
+     6:     0.0179238
+     7:     0.0131685
+     8:     0.0100822
+     9:    0.00796615
+    10:    0.00645258
+    11:             0
+
+ZIPF_PROBABILITY_TEST
+  Normal end of execution.
+
+WALKER_SAMPLE_TEST:
+  Normal end of execution.
+Tue Oct 19 17:32:27 2021

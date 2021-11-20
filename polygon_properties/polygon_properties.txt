@@ -1,0 +1,834 @@
+Tue Oct 19 17:00:29 2021
+
+polygon_properties_test():
+  Python version: 3.6.9
+  Test polygon_properties().
+
+polygon_angles_test
+  Python version: 3.6.9
+  polygon_angles computes the angles of a polygon.
+
+  Number of polygonal vertices = 6
+
+  The polygon vertices:
+
+  Row:       0             1       
+  Col
+      0 :           0             0  
+      1 :           1             0  
+      2 :           2             1  
+      3 :           3             0  
+      4 :           3             2  
+      5 :           1             1  
+
+  Polygonal angles in degrees:
+
+         0              45
+         1             135
+         2             270
+         3              45
+         4         63.4349
+         5         161.565
+
+polygon_angles_test
+  Normal end of execution.
+
+polygon_area_test
+  Python version: 3.6.9
+  polygon_area computes the area of a polygon.
+
+  Number of polygonal vertices = 4
+
+  The polygon vertices:
+
+  Row:       0             1       
+  Col
+      0 :           1             0  
+      1 :           2             1  
+      2 :           1             2  
+      3 :           0             1  
+
+  Exact area is        2
+  The computed area is 2
+
+  Number of polygonal vertices = 8
+
+  The polygon vertices:
+
+  Row:       0             1       
+  Col
+      0 :           0             0  
+      1 :           3             0  
+      2 :           3             3  
+      3 :           2             3  
+      4 :           2             1  
+      5 :           1             1  
+      6 :           1             2  
+      7 :           0             2  
+
+  Exact area is        6
+  The computed area is 6
+
+polygon_area_test
+  Normal end of execution.
+
+polygon_area_2_test
+  Python version: 3.6.9
+  polygon_area_2 computes the area of a polygon.
+
+  Number of polygonal vertices = 4
+
+  The polygon vertices:
+
+  Row:       0             1       
+  Col
+      0 :           1             0  
+      1 :           2             1  
+      2 :           1             2  
+      3 :           0             1  
+
+  Exact area is        2
+  The computed area is 2
+
+  Number of polygonal vertices = 8
+
+  The polygon vertices:
+
+  Row:       0             1       
+  Col
+      0 :           0             0  
+      1 :           3             0  
+      2 :           3             3  
+      3 :           2             3  
+      4 :           2             1  
+      5 :           1             1  
+      6 :           1             2  
+      7 :           0             2  
+
+  Exact area is        6
+  The computed area is 6
+
+polygon_area_2_test
+  Normal end of execution.
+
+polygon_centroid_test
+  Python version: 3.6.9
+  polygon_centroid computes the centroid of a polygon.
+
+  The polygon vertices:
+
+  Row:       0             1       
+  Col
+      0 :           1             0  
+      1 :           2             1  
+      2 :           1             2  
+      3 :           0             1  
+
+  polygon_centroid:
+
+     0:             1
+     1:             1
+
+polygon_centroid_test
+  Normal end of execution.
+
+polygon_centroid_2_test
+  Python version: 3.6.9
+  polygon_centroid_2 computes the centroid of a polygon.
+
+  The polygon vertices:
+
+  Row:       0             1       
+  Col
+      0 :           1             0  
+      1 :           2             1  
+      2 :           1             2  
+      3 :           0             1  
+
+  polygon_centroid_2:
+
+     0:             1
+     1:             1
+
+polygon_centroid_2_test
+  Normal end of execution.
+
+polygon_contains_point_test
+  Python version: 3.6.9
+  polygon_contains_point determines if
+  a point is in a polygon.
+
+  The polygon vertices:
+
+       0:              0             0
+       1:              1             0
+       2:              2             1
+       3:              1             2
+       4:              0             2
+
+        X         Y     Inside?
+
+      1.00      1.00    True
+      3.00      4.00    False
+      0.00      2.00    False
+      0.50     -0.25    False
+
+polygon_contains_point_test
+  Normal end of execution.
+
+polygon_contains_point_2_test
+  Python version: 3.6.9
+  polygon_contains_point_2 determines if
+  a point is in a polygon.
+
+  The polygon vertices:
+
+  Row:       0             1       
+  Col
+      0 :           0             0  
+      1 :           1             0  
+      2 :           2             1  
+      3 :           1             2  
+      4 :           0             2  
+
+          P          Inside
+
+               1               1    1
+               3               4    0
+               0               2    1
+             0.5           -0.25    0
+
+polygon_contains_point_2_test
+  Normal end of execution.
+
+polygon_diameter_test
+  Python version: 3.6.9
+  polygon_diameter computes the diameter of a polygon.
+
+  The polygon vertices:
+
+  Row:       0             1       
+  Col
+      0 :           1             0  
+      1 :           2             1  
+      2 :           1             2  
+      3 :           0             1  
+
+  Diameter ( computed ) 2
+  Diameter ( exact )    2
+
+polygon_diameter_test
+  Normal end of execution.
+
+polygon_expand_test
+  Python version: 3.6.9
+  polygon_expand "expands" a polygon by an amount H.
+
+  The polygon vertices:
+
+  Row:       0             1       
+  Col
+      0 :           1             1  
+      1 :           5             1  
+      2 :           2             4  
+      3 :           1             3  
+
+  The expansion amount H = 0.5
+
+  The expanded polygon:
+
+  Row:       0             1       
+  Col
+      0 :         0.5           0.5  
+      1 :     6.20711           0.5  
+      2 :           2       4.70711  
+      3 :         0.5       3.20711  
+
+polygon_expand_test
+  Normal end of execution.
+
+polygon_inrad_data_test
+  Python version: 3.6.9
+  polygon_inrad_data uses the inradius of a regular polygon
+  to determine the area, outradius, and side length.
+
+  Number of polygonal sides = 3
+
+  Assuming RADIN = 1
+    AREA =   5.19615
+    RADOUT = 2
+    SIDE =   3.4641
+
+  Number of polygonal sides = 4
+
+  Assuming RADIN = 1
+    AREA =   4
+    RADOUT = 1.41421
+    SIDE =   2
+
+  Number of polygonal sides = 5
+
+  Assuming RADIN = 1
+    AREA =   3.63271
+    RADOUT = 1.23607
+    SIDE =   1.45309
+
+polygon_inrad_data_test
+  Normal end of execution.
+
+polygon_integral_1_test
+  Python version: 3.6.9
+  polygon_integral_1 integrates 1 over a polygon
+
+  The polygon vertices:
+
+  Row:       0             1       
+  Col
+      0 :           0             0  
+      1 :           1             0  
+      2 :           1             1  
+      3 :           0             1  
+
+  1:                 1
+
+  The polygon vertices:
+
+  Row:       0             1       
+  Col
+      0 :           1             1  
+      1 :           4             3  
+      2 :           2             5  
+
+  1:                 5
+
+polygon_integral_1_test
+  Normal end of execution.
+
+polygon_integral_x_test
+  Python version: 3.6.9
+  polygon_integral_x integrates x over a polygon
+
+  The polygon vertices:
+
+  Row:       0             1       
+  Col
+      0 :           0             0  
+      1 :           1             0  
+      2 :           1             1  
+      3 :           0             1  
+
+  x:               0.5
+
+  The polygon vertices:
+
+  Row:       0             1       
+  Col
+      0 :           1             1  
+      1 :           4             3  
+      2 :           2             5  
+
+  x:           11.6667
+
+polygon_integral_x_test
+  Normal end of execution.
+
+polygon_integral_xx_test
+  Python version: 3.6.9
+  polygon_integral_xx integrates x^2 over a polygon
+
+  The polygon vertices:
+
+  Row:       0             1       
+  Col
+      0 :           0             0  
+      1 :           1             0  
+      2 :           1             1  
+      3 :           0             1  
+
+  x^2:          0.333333
+
+  The polygon vertices:
+
+  Row:       0             1       
+  Col
+      0 :           1             1  
+      1 :           4             3  
+      2 :           2             5  
+
+  x^2:           29.1667
+
+polygon_integral_xx_test
+  Normal end of execution.
+
+polygon_integral_xy_test
+  Python version: 3.6.9
+  polygon_integral_xy integrates x*y over a polygon
+
+  The polygon vertices:
+
+  Row:       0             1       
+  Col
+      0 :           0             0  
+      1 :           1             0  
+      2 :           1             1  
+      3 :           0             1  
+
+  x*y:              0.25
+
+  The polygon vertices:
+
+  Row:       0             1       
+  Col
+      0 :           1             1  
+      1 :           4             3  
+      2 :           2             5  
+
+  x*y:           35.8333
+
+polygon_integral_xy_test
+  Normal end of execution.
+
+polygon_integral_y_test
+  Python version: 3.6.9
+  polygon_integral_y integrates y over a polygon
+
+  The polygon vertices:
+
+  Row:       0             1       
+  Col
+      0 :           0             0  
+      1 :           1             0  
+      2 :           1             1  
+      3 :           0             1  
+
+  y:               0.5
+
+  The polygon vertices:
+
+  Row:       0             1       
+  Col
+      0 :           1             1  
+      1 :           4             3  
+      2 :           2             5  
+
+  y:                15
+
+polygon_integral_y_test
+  Normal end of execution.
+
+polygon_integral_yy_test
+  Python version: 3.6.9
+  polygon_integral_yy integrates y^2 over a polygon
+
+  The polygon vertices:
+
+  Row:       0             1       
+  Col
+      0 :           0             0  
+      1 :           1             0  
+      2 :           1             1  
+      3 :           0             1  
+
+  y^2:          0.333333
+
+  The polygon vertices:
+
+  Row:       0             1       
+  Col
+      0 :           1             1  
+      1 :           4             3  
+      2 :           2             5  
+
+  y^2:           48.3333
+
+polygon_integral_yy_test
+  Normal end of execution.
+
+polygon_is_convex_test
+  Python version: 3.6.9
+  polygon_is_convex determines if a polygon is convex.
+
+  A point:
+
+  Row:       0             1       
+  Col
+      0 :           0             0  
+  The polygon is degenerate and convex.
+
+  A line:
+
+  Row:       0             1       
+  Col
+      0 :           0             0  
+      1 :           1             2  
+  The polygon is degenerate and convex.
+
+  A triangle:
+
+  Row:       0             1       
+  Col
+      0 :           0             0  
+      1 :           2             0  
+      2 :           1             0  
+  The polygon is convex and clockwise.
+
+  A CCW triangle:
+
+  Row:       0             1       
+  Col
+      0 :           0             0  
+      1 :           1             0  
+      2 :           0             2  
+  The polygon is convex and counterclockwise.
+
+  A CW triangle:
+
+  Row:       0             1       
+  Col
+      0 :           0             0  
+      1 :           0             2  
+      2 :           1             0  
+  The polygon is convex and clockwise.
+
+  Polygon with large angle:
+
+  Row:       0             1       
+  Col
+      0 :           1             0  
+      1 :           2             0  
+      2 :           3             1  
+      3 :           0             1  
+  The polygon is convex and counterclockwise.
+
+  Polygon with huge angle:
+
+  Row:       0             1       
+  Col
+      0 :           0             0  
+      1 :         0.5           0.5  
+      2 :           1             0  
+      3 :           1             1  
+      4 :           0             1  
+  The polygon is not convex.
+
+  A five-pointed star:
+
+  Row:       0             1       
+  Col
+      0 :           1             0  
+      1 :   -0.809017      0.587785  
+      2 :    0.309017     -0.951057  
+      3 :    0.309017      0.951057  
+      4 :   -0.809017     -0.587785  
+  The polygon is not convex.
+
+  A hexagon:
+
+  Row:       0             1       
+  Col
+      0 :           1             0  
+      1 :         0.5      0.866025  
+      2 :        -0.5      0.866025  
+      3 :          -1   1.22465e-16  
+      4 :        -0.5     -0.866025  
+      5 :         0.5     -0.866025  
+  The polygon is convex and counterclockwise.
+
+  A triangle twice:
+
+  Row:       0             1       
+  Col
+      0 :           0             0  
+      1 :           2             0  
+      2 :           1             1  
+      3 :           0             0  
+      4 :           2             0  
+      5 :           1             1  
+  The polygon is not convex.
+
+  Square knot:
+
+  Row:       0             1       
+  Col
+      0 :           1             0  
+      1 :           3             0  
+      2 :           3             3  
+      3 :           0             3  
+      4 :           0             1  
+      5 :           2             1  
+      6 :           2             2  
+      7 :           1             1  
+  The polygon is not convex.
+
+polygon_is_convex_test
+  Normal end of execution.
+
+polygon_lattice_area_test
+  Python version: 3.6.9
+  polygon_lattice_area returns the "area"
+  of a polygon, measured in lattice points.
+
+  Number of interior lattice points = 5
+  Number of boundary lattice points = 6
+  Area of polygon is 7
+
+polygon_lattice_area_test
+  Normal end of execution.
+
+polygon_outrad_data_test
+  Python version: 3.6.9
+  polygon_outrad_data uses the outradius of a regular polygon
+  to determine the area, inradius, and sidelength.
+
+  Number of polygonal sides = 3
+
+  Assuming RADOUT = 1
+    AREA =   1.29904
+    RADIN =  0.5
+    SIDE =   1.73205
+
+  Number of polygonal sides = 4
+
+  Assuming RADOUT = 1
+    AREA =   2
+    RADIN =  0.707107
+    SIDE =   1.41421
+
+  Number of polygonal sides = 5
+
+  Assuming RADOUT = 1
+    AREA =   2.37764
+    RADIN =  0.809017
+    SIDE =   1.17557
+
+polygon_outrad_data_test
+  Normal end of execution.
+
+polygon_perimeter_test
+  Python version: 3.6.9
+  polygon_perimeter computes the perimeter of a polygon.
+
+  Vertices of polygon V1:
+
+  Row:       0             1       
+  Col
+      0 :           0             0  
+      1 :           1             0  
+      2 :           1             1  
+      3 :           0             1  
+
+  Perimeter of V1 = 4
+
+  Vertices of polygon V2:
+
+  Row:       0             1       
+  Col
+      0 :           1             1  
+      1 :           4             3  
+      2 :           2             5  
+
+  Perimeter of V2 = 10.5571
+
+polygon_perimeter_test
+  Normal end of execution.
+
+polygon_perimeter_quad_test
+  Python version: 3.6.9
+  polygon_perimeter_quad estimates the integral of
+  a function over the perimeter of a polygon using
+  the composite midpoint rule over each side.
+
+  Vertices of polygon V1:
+
+  Row:       0             1       
+  Col
+      0 :           0             0  
+      1 :           1             0  
+      2 :           1             1  
+      3 :           0             1  
+
+  Using HMAX = 0.5, estimated integral of 1 over perimeter = 4
+
+  Using HMAX = 1, estimated integral of x^2 over perimeter = 1.5
+  Using HMAX = 0.5, estimated integral of x^2 over perimeter = 1.625
+  Using HMAX = 0.25, estimated integral of x^2 over perimeter = 1.65625
+
+  Vertices of polygon V2:
+
+  Row:       0             1       
+  Col
+      0 :           1             1  
+      1 :           4             3  
+      2 :           2             5  
+
+  Using HMAX = 0.5, estimated integral of 1 over perimeter = 10.5571
+
+  Using HMAX = 1, estimated integral of x^2 over perimeter = 60.9706
+  Using HMAX = 0.5, estimated integral of x^2 over perimeter = 61.1854
+  Using HMAX = 0.25, estimated integral of x^2 over perimeter = 61.2383
+
+polygon_perimeter_test
+  Normal end of execution.
+
+polygon_point_dist_test
+  Python version: 3.6.9
+  polygon_point_dist computes polygon-point distance.
+
+  Vertices of polygon:
+
+  Row:       0             1       
+  Col
+      0 :           1             1  
+      1 :           4             3  
+      2 :           2             5  
+
+       X             Y             DIST
+
+               4               5         1.41421
+               2               3        0.485071
+              -2              -1         3.60555
+
+polygon_point_dist_test
+  Normal end of execution.
+
+polygon_point_near_test
+  Python version: 3.6.9
+  polygon_point_near computes nearest point on polygon.
+
+  Vertices of polygon:
+
+  Row:       0             1       
+  Col
+      0 :           1             1  
+      1 :           4             3  
+      2 :           2             5  
+
+       X             Y             XN             YN
+
+               4               5               3               4
+               2               3         1.52941         3.11765
+              -2              -1               1               1
+
+polygon_point_near_test
+  Normal end of execution.
+
+polygon_sample_test
+  Python version: 3.6.9
+  polygon_sample samples a polygon.
+
+  Sample points:
+
+  Row:       0             1       
+  Col
+      0 :     1.80416      0.724433  
+      1 :     1.59908      0.529717  
+      2 :    0.294239      0.749291  
+      3 :    0.685036      0.765578  
+      4 :   0.0353217       0.32191  
+      5 :    0.604576      0.791912  
+      6 :    0.953187      0.778727  
+      7 :    0.178635      0.317331  
+      8 :   0.0116136      0.702394  
+      9 :    0.631028       1.53417  
+     10 :     1.85155      0.526881  
+     11 :     1.17149     0.0514107  
+     12 :    0.784218      0.585357  
+     13 :     1.04894       0.37621  
+     14 :     1.87772      0.958041  
+     15 :    0.627773      0.680644  
+     16 :    0.720847      0.609621  
+     17 :      1.6877      0.413077  
+     18 :     1.91422      0.896934  
+     19 :     1.37334      0.625194  
+
+polygon_sample_test
+  Normal end of execution.
+
+polygon_side_data_test
+  Python version: 3.6.9
+  polygon_side_data uses the side length of a regular polygon
+  to compute the area, inradius, and outradius.
+
+  Number of polygonal sides = 3
+
+  Assuming SIDE = 1
+    AREA =   0.866025
+    RADIN =  0.288675
+    RADOUT = 0.57735
+
+  Number of polygonal sides = 4
+
+  Assuming SIDE = 1
+    AREA =   2
+    RADIN =  0.5
+    RADOUT = 0.707107
+
+  Number of polygonal sides = 5
+
+  Assuming SIDE = 1
+    AREA =   3.44095
+    RADIN =  0.688191
+    RADOUT = 0.850651
+
+polygon_side_data_test
+  Normal end of execution.
+
+polygon_triangulate_test
+  Python version: 3.6.9
+  Triangulate the comb_10 polygon.
+
+  Triangles
+
+  Col: 
+      0  
+      1  
+      2  
+
+  Row
+    0: 
+      2  
+      0  
+      1  
+
+    1: 
+      4  
+      2  
+      3  
+
+    2: 
+      6  
+      4  
+      5  
+
+    3: 
+      8  
+      6  
+      7  
+
+    4: 
+      9  
+      6  
+      8  
+
+    5: 
+      2  
+      9  
+      0  
+
+    6: 
+      4  
+      9  
+      2  
+
+    7: 
+      6  
+      9  
+      4  
+
+
+polygon_triangulate_test:
+  Normal end of execution.
+
+polygon_properties_test:
+  Normal end of execution.
+Tue Oct 19 17:00:29 2021

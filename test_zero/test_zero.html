@@ -1,0 +1,283 @@
+<html>
+
+  <head>
+    <title>
+      test_zero
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      test_zero
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>test_zero</b>, 
+      a Python code which
+      defines a number of nonlinear functions.
+    </p>
+
+    <p>
+      The nonlinear functions are intended for use in demonstrating or
+      testing zero finder algorithms, that is, programs that seek a 
+      root of a scalar equation F(X)=0.  
+    </p>
+
+    <p>
+      The functions, which are accessible by number, are
+      <ol>
+        <li>
+          f(x) = sin ( x ) - x / 2.
+        </li>
+        <li>
+          f(x) = 2 * x - exp ( - x ).
+        </li>
+        <li>
+          f(x) = x * exp ( - x ).
+        </li>
+        <li>
+          f(x) = exp ( x ) - 1 / ( 10 * x )^2.
+        </li>
+        <li>
+          f(x) = ( x + 3 ) * ( x - 1 )^2.
+        </li>
+        <li>
+          f(x) = exp ( x ) - 2 - 1 / ( 10 * x )^2 + 2 / ( 100 * x )^3.
+        </li>
+        <li>
+          f(x) = x^3.
+        </li>
+        <li>
+          f(x) = cos ( x ) - x.
+        </li>
+        <li>
+          the Newton Baffler.
+        </li>
+        <li>
+          the Repeller.
+        </li>
+        <li>
+          the Pinhead.
+        </li>
+        <li>
+          Flat Stanley.
+        </li>
+        <li>
+          Lazy Boy.
+        </li>
+        <li>
+          the Camel.
+        </li>
+        <li>
+          a pathological function for Newton's method.
+        </li>
+        <li>
+          Kepler's Equation.
+        </li>
+        <li>
+          f(x) = x^3 - 2*x - 5, Wallis's function.
+        </li>
+        <li>
+          f(x) = (x-1)^7, written term by term.
+        </li>
+        <li>
+          f(x) = cos(100*x)-4*erf(30*x-10)
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page 
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>test_zero</b> is available in
+      <a href = "../../c_src/test_zero/test_zero.html">a C version</a> and
+      <a href = "../../cpp_src/test_zero/test_zero.html">a C++ version</a> and
+      <a href = "../../f_src/test_zero/test_zero.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/test_zero/test_zero.html">a MATLAB version</a> and
+      <a href = "../../octave_src/test_zero/test_zero.html">an Octave version</a> and
+      <a href = "../../py_src/test_zero/test_zero.html">a Python version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../py_src/bisection_rc/bisection_rc.html">
+      bisection_rc</a>,
+      a Python code which
+      seeks a solution to the equation F(X)=0 using bisection
+      within a user-supplied change of sign interval [A,B].
+      The procedure is written using reverse communication (RC).
+    </p>
+
+    <p>
+      <a href = "../..py_src/fsolve_test/fsolve_test.html">
+      fsolve_test</a>,
+      a Python code which
+      calls fsolve() which
+      seeks the solution x of one or more nonlinear equations f(x)=0.
+    </p>
+
+    <p>
+      <a href = "../../py_src/zero_rc/zero_rc.html">
+      zero_rc</a>,
+      a Python code which
+      seeks solutions of a scalar nonlinear equation f(x) = 0, 
+      or a system of nonlinear equations,
+      using reverse communication.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          George Donovan, Arnold Miller, Timothy Moreland,<br>
+          Pathological Functions for Newton's Method,<br>
+          American Mathematical Monthly, January 1993, pages 53-58.
+        </li>
+        <li>
+          Peter Colwell,<br>
+          Solving Kepler's Equation Over Three Centuries,<br>
+          Willmann-Bell, 1993
+        </li>
+        <li>
+          Arnold Krommer, Christoph Ueberhuber,<br>
+          Numerical Integration on Advanced Systems,<br>
+          Springer, 1994.
+        </li>
+      </ol>
+    </p>
+
+    <p>
+      PNG images of the graphs of some of the functions were made using MATLAB:
+      <ul>
+        <li>
+          <a href = "p01_fx.png">p01_fx.png</a>, 
+          an image of P01_FX(X) over [-4,+4].
+        </li>
+        <li>
+          <a href = "p02_fx.png">p02_fx.png</a>, 
+          an image of P02_FX(X) over [-0.5, +3.0].
+        </li>
+        <li>
+          <a href = "p03_fx.png">p03_fx.png</a>, 
+          an image of P03_FX(X) over [-0.1,+4].
+        </li>
+        <li>
+          <a href = "p04_fx.png">p04_fx.png</a>, 
+          an image of P04_FX(X) over [-4,+2].
+        </li>
+        <li>
+          <a href = "p05_fx.png">p05_fx.png</a>, 
+          an image of P05_FX(X) over [-4,+2].
+        </li>
+        <li>
+          <a href = "p06_fx.png">p06_fx.png</a>, 
+          an image of P06_FX(X) over [-4,+2].
+        </li>
+        <li>
+          <a href = "p07_fx.png">p07_fx.png</a>, 
+          an image of P07_FX(X) over [-1,+1].
+        </li>
+        <li>
+          <a href = "p08_fx.png">p08_fx.png</a>, 
+          an image of P08_FX(X) over [-4,+4].
+        </li>
+        <li>
+          <a href = "p09_fx.png">p09_fx.png</a>, 
+          an image of P09_FX(X) over [5,7].
+        </li>
+        <li>
+          <a href = "p10_fx.png">p10_fx.png</a>, 
+          an image of P10_FX(X) over [-2,+2].
+        </li>
+        <li>
+          <a href = "p11_fx.png">p11_fx.png</a>, 
+          an image of P11_FX(X) over [+1,+10].
+        </li>
+        <li>
+          <a href = "p12_fx.png">p12_fx.png</a>, 
+          an image of P12_FX(X) over [-0.5,+0.5].
+        </li>
+        <li>
+          <a href = "p13_fx.png">p13_fx.png</a>, 
+          an image of P13_FX(X) over [0,100].
+        </li>
+        <li>
+          <a href = "p14_fx.png">p14_fx.png</a>, 
+          an image of P14_FX(X) over [-0.5,+2.0].
+        </li>
+        <li>
+          <a href = "p15_fx.png">p15_fx.png</a>, 
+          an image of P15_FX(X) over [-4,+4].
+        </li>
+        <li>
+          <a href = "p16_fx.png">p16_fx.png</a>, 
+          an image of P16_FX(X) over [0,50].
+        </li>
+        <li>
+          <a href = "p17_fx.png">p17_fx.png</a>, 
+          an image of P17_FX(X) over [-2,+4].
+        </li>
+        <li>
+          <a href = "p18_fx.png">p18_fx.png</a>, 
+          an image of P18_FX(X) over [0.988,1.012].
+        </li>
+        <li>
+          <a href = "p19_fx.png">p19_fx.png</a>, 
+          an image of P19_FX(X) over [0.0,1.0].
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "test_zero.py">test_zero.py</a>, 
+          tests the code.
+        </li>
+        <li>
+          <a href = "test_zero.sh">test_zero.sh</a>, 
+          runs all the tests.
+        </li>
+        <li>
+          <a href = "test_zero.txt">test_zero.txt</a>, 
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 02 December 2016.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

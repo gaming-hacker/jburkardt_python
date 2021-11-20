@@ -1,0 +1,164 @@
+<html>
+
+  <head>
+    <title>
+      wathen
+    </title>
+  </head>
+
+  <body bgcolor="#eeeeee" link="#cc0000" alink="#ff3300" vlink="#000055">
+
+    <h1 align = "center">
+      wathen
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>wathen</b>,
+      a Python code which
+      compares storage schemes (full, banded, sparse triplet, sparse) and 
+      solution strategies (A\x, Linpack, conjugate gradient (CG)) 
+      for linear systems involving the Wathen matrix, 
+      which can arise when solving a problem using the 
+      finite element method (FEM).
+    </p>
+
+    <p>
+      The Wathen matrix is a typical example of a matrix that arises during
+      finite element computations.  The parameters NX and NY specify how many
+      elements are to be set up in the X and Y directions.  The number of
+      variables N is then
+      <pre>
+        N = 3 NX NY + 2 NX + 2 NY + 1
+      </pre>
+      and the full linear system will require N * N storage for the matrix.
+    </p>
+
+    <p>
+      However, the matrix is sparse, and a banded or sparse storage scheme
+      can be used to save storage.  However, even if storage is saved, a
+      revised program may eat up too much time because MATLAB's sparse storage
+      scheme is not efficiently used by inserting nonzero elements one at a time.
+      Moreover, if banded storage is employed, the user must provide a
+      suitable fast solver.  Simply "translating" a banded solver from another
+      language will probably not provide an efficient routine.
+    </p>
+
+    <p>
+      This code looks at how the complexity of the problem grows with
+      increasing NX and NY; how the computing time increases; how the
+      various full, banded and sparse approaches perform.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>wathen</b> is available in
+      <a href = "../../c_src/wathen/wathen.html">a C version</a> and
+      <a href = "../../cpp_src/wathen/wathen.html">a C++ version</a> and
+      <a href = "../../f_src/wathen/wathen.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/wathen/wathen.html">a MATLAB version</a> and
+      <a href = "../../py_src/wathen/wathen.html">a Python version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../fpy_src/jacobi/jacobi.html">
+      jacobi</a>,
+      a Python code which
+      implements the Jacobi iteration for solving symmetric positive definite 
+      (SPD) systems of linear equations.
+    </p>
+
+    <p>
+      <a href = "../../py_src/r8lib/r8lib.html">
+      r8lib</a>,
+      a Python code which
+      contains many utility routines 
+      using double precision real (R8) arithmetic.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Nicholas Higham,<br>
+          Algorithm 694: 
+          A Collection of Test Matrices in MATLAB,<br>
+          ACM Transactions on Mathematical Software,<br>
+          Volume 17, Number 3, September 1991, pages 289-305.
+        </li>
+        <li>
+          Andrew Wathen,<br>
+          Realistic eigenvalue bounds for the Galerkin mass matrix,<br>
+          IMA Journal of Numerical Analysis,<br>
+          Volume 7, Number 4, October 1987, pages 449-457.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "wathen.py">wathen.py</a>, 
+          the source code.
+        </li>
+        <li>
+          <a href = "wathen.sh">wathen.sh</a>,
+          runs all the tests;
+        </li>
+        <li>
+          <a href = "wathen.txt">wathen.txt</a>,
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "wathen_spy.png">wathen_spy.png</a>,
+          spy plots for wathen(1,1) through wathen(6,6).
+        </li>
+        <li>
+          <a href = "wathen_xy.png">wathen_xy.png</a>,
+          plots the node locations for a grid of 3x3 elements.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last modified on 04 September 2014
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>
+

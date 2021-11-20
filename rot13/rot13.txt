@@ -1,0 +1,65 @@
+Tue Oct 19 17:09:02 2021
+
+rot13_test
+  Python version: 3.6.9
+  Test rot13().
+
+ch_to_rot13_test
+  Python version: 3.6.9
+  ch_to_rot13 "encodes" characters using ROT13
+  (and digits using ROT5).
+  A second application of the function returns the
+  original character.
+
+            CH  : ABCDEFGHIJKLMNOPQRSTUVWXYZ
+      ROT13(CH) : NOPQRSTUVWXYZABCDEFGHIJKLM
+ROT13(ROT13(CH)): ABCDEFGHIJKLMNOPQRSTUVWXYZ
+
+            CH  : ch_to_rot13 "encodes" characters using ROT13
+      ROT13(CH) : pu_gb_ebg68 "rapbqrf" punenpgref hfvat EBG68
+ROT13(ROT13(CH)): ch_to_rot13 "encodes" characters using ROT13
+
+ch_to_rot13_test:
+  Normal end of execution.
+
+s_quote_test
+  Python version: 3.6.9
+  s_quote quotes a string S1 with a mark MARK.
+
+  ----S1----  ---MARK---  ----S2----
+
+  Hi, Bob!    "           "Hi, Bob!"
+  De          Loop        LoopDeLoop
+
+s_quote_test
+  Normal end of execution.
+
+s_to_rot13_test
+  Python version: 3.6.9
+  s_to_rot13 applies the ROT13 cipher to a string.
+
+  S2 = s_to_rot13 ( S1 ).
+
+  -------------------S1-------------------  -------------------S2-------------------
+
+  "abcdefghijklmnopqrstuvwxyz"              "nopqrstuvwxyzabcdefghijklm"            
+  "Cher"                                    "Pure"                                  
+  "James Thurston Howell III"               "Wnzrf Guhefgba Ubjryy VVV"             
+  "The bill is $1,205,837.49 so pay now!"   "Gur ovyy vf $6,750,382.94 fb cnl abj!" 
+
+  S2 = s_to_rot13 ( S1 ).
+  S3 = s_to_rot13 ( S2 ).
+
+  -------------------S1-------------------  -------------------S3-------------------
+
+  "abcdefghijklmnopqrstuvwxyz"              "abcdefghijklmnopqrstuvwxyz"            
+  "Cher"                                    "Cher"                                  
+  "James Thurston Howell III"               "James Thurston Howell III"             
+  "The bill is $1,205,837.49 so pay now!"   "The bill is $1,205,837.49 so pay now!" 
+
+s_to_rot13_test:
+  Normal end of execution.
+
+rot13_test:
+  Normal end of execution.
+Tue Oct 19 17:09:02 2021

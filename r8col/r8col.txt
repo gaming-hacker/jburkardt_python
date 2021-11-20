@@ -1,0 +1,401 @@
+Tue Oct 19 17:06:11 2021
+
+r8col_test():
+  Python version:
+  Test r8col().
+
+i4_log_10_test
+  i4_log_10: whole part of log base 10,
+
+  X, i4_log_10
+
+     0             0
+     1             0
+     2             0
+     3             0
+     9             0
+    10             1
+    11             1
+    99             1
+   101             2
+    -1             0
+    -2             0
+    -3             0
+    -9             0
+
+i4_log_10_test
+  Normal end of execution.
+
+r8col_flip_test:
+  r8col_flip flips the columns of an R8COL.
+
+  Matrix A:
+
+  Col:       0             1             2             3       
+  Row
+      0 :    0.179406     0.0191025      0.517409     0.0518068  
+      1 :    0.301632       0.39811       0.12821      0.273298  
+      2 :   0.0931801      0.619663      0.960433      0.548115  
+      3 :    0.626869      0.646939      0.497885      0.828037  
+      4 :     0.25691      0.874092       0.86413      0.607997  
+
+  Matrix after column flipping:
+
+  Col:       0             1             2             3       
+  Row
+      0 :     0.25691      0.874092       0.86413      0.607997  
+      1 :    0.626869      0.646939      0.497885      0.828037  
+      2 :   0.0931801      0.619663      0.960433      0.548115  
+      3 :    0.301632       0.39811       0.12821      0.273298  
+      4 :    0.179406     0.0191025      0.517409     0.0518068  
+
+r8col_flip_test:
+  Normal end of execution.
+
+r8col_indicator_test
+  r8col_indicator creates an "indicator" R8COL.
+
+  The indicator matrix:
+
+  Col:       0             1             2             3       
+  Row
+      0 :          11            12            13            14  
+      1 :          21            22            23            24  
+      2 :          31            32            33            34  
+      3 :          41            42            43            44  
+      4 :          51            52            53            54  
+
+r8col_indicator_test
+  Normal end of execution.
+
+r8col_max_test
+  For an R8COL, an array of column vectors
+  r8col_max computes maximums
+
+  The array:
+
+  Col:       0             1             2             3       
+  Row
+      0 :           1             2             3             4  
+      1 :           5             6             7             8  
+      2 :           9            10            11            12  
+
+  Column maximums:
+
+     0:             9
+     1:            10
+     2:            11
+     3:            12
+
+r8col_max_test
+  Normal end of execution.
+
+r8col_mean_test
+  For an R8COL, an array of column vectors
+  r8col_mean computes means
+
+  The array:
+
+  Col:       0             1             2             3       
+  Row
+      0 :           1             2             3             4  
+      1 :           5             6             7             8  
+      2 :           9            10            11            12  
+
+  Column means:
+
+     0:             5
+     1:             6
+     2:             7
+     3:             8
+
+r8col_mean_test
+  Normal end of execution.
+
+r8col_min_test
+  For an R8COL, an array of column vectors
+  r8col_min computes minimums
+
+  The array:
+
+  Col:       0             1             2             3       
+  Row
+      0 :           1             2             3             4  
+      1 :           5             6             7             8  
+      2 :           9            10            11            12  
+
+  Column minimums:
+
+     0:             1
+     1:             2
+     2:             3
+     3:             4
+
+r8col_min_test
+  Normal end of execution.
+
+r8col_normalize_li_test:
+  r8col_normalize_li normalizes an array A, dividing each
+  column by its maximum element.
+
+  Matrix A:
+
+  Col:       0             1             2             3       
+  Row
+      0 :   -0.104082       2.58016       3.44259      -1.93893  
+      1 :     4.36541       3.96798       1.09325     -0.504297  
+      2 :    -3.99834      -1.93271       1.55807      -4.91636  
+      3 :     2.25618      0.330769      -1.65402      -3.79478  
+      4 :     3.40369      -4.72497       3.31148       2.47686  
+
+  Matrix after column LI normalization:
+
+  Col:       0             1             2             3       
+  Row
+      0 :  -0.0238425     -0.546069             1      0.394383  
+      1 :           1     -0.839789      0.317567      0.102575  
+      2 :   -0.915914      0.409041      0.452588             1  
+      3 :    0.516831    -0.0700044     -0.480458      0.771868  
+      4 :    0.779696             1      0.961915       -0.5038  
+
+r8col_normalize_li_test:
+  Normale end of execution.
+
+r8col_print_test
+  r8col_print prints an R8COL.
+
+  Here is an R8COL:
+
+  Col:       0             1             2             3             4       
+  Row
+      0 :          11            12            13            14            15  
+      1 :          21            22            23            24            25  
+      2 :          31            32            33            34            35  
+      3 :          41            42            43            44            45  
+
+  Col:       5       
+  Row
+      0 :          16  
+      1 :          26  
+      2 :          36  
+      3 :          46  
+
+r8col_print_test:
+  Normal end of execution.
+
+r8col_print_some_test
+  r8col_print_some prints some of an R8COL.
+
+  Here is an R8COL:
+
+  Col:       3             4             5       
+  Row
+      0 :          14            15            16  
+      1 :          24            25            26  
+      2 :          34            35            36  
+
+r8col_print_some_test:
+  Normal end of execution.
+
+r8col_sum_test
+  For an R8COL, an array of column vectors
+  r8col_sum computes sums
+
+  The array:
+
+  Col:       0             1             2             3       
+  Row
+      0 :           1             2             3             4  
+      1 :           5             6             7             8  
+      2 :           9            10            11            12  
+
+  The column sums:
+
+     0:            15
+     1:            18
+     2:            21
+     3:            24
+
+r8col_sum_test
+  Normal end of execution.
+
+r8col_swap_test
+  Python version: 3.6.9
+  r8col_swap swaps two columns of an R8COL.
+
+  The array:
+
+  Col:       0             1             2             3       
+  Row
+      0 :          11            12            13            14  
+      1 :          21            22            23            24  
+      2 :          31            32            33            34  
+
+  Swap columns 0 and 2
+
+  The updated matrix:
+
+  Col:       0             1             2             3       
+  Row
+      0 :          13            12            11            14  
+      1 :          23            22            21            24  
+      2 :          33            32            31            34  
+
+r8col_swap_test
+  Normal end of execution.
+
+r8col_to_r8vec_test
+  r8col_to_r8vec converts an R8COL matrix to an R8VEC vector.
+
+  R8COL matrix:
+
+  Col:       0             1             2       
+  Row
+      0 :          11            12            13  
+      1 :          21            22            23  
+      2 :          31            32            33  
+      3 :          41            42            43  
+
+  Corresponding R8VEC vector:
+
+     0:            11
+     1:            21
+     2:            31
+     3:            41
+     4:            12
+     5:            22
+     6:            32
+     7:            42
+     8:            13
+     9:            23
+    10:            33
+    11:            43
+
+r8col_to_r8vec_test:
+  Normal end of execution.
+
+r8col_transpose_print_test
+  r8col_transpose_print prints an R8COL.
+
+  Here is an R8COL, transposed:
+
+  Row:       0             1             2             3       
+  Col
+      0 :          11            21            31            41  
+      1 :          12            22            32            42  
+      2 :          13            23            33            43  
+
+r8col_transpose_print_test:
+  Normal end of execution.
+
+r8col_transpose_print_some_test
+  r8col_transpose_print_some prints some of an R8COL, transposed.
+
+  R8COL, rows 0:2, cols 3:5:
+
+  Row:       0             1             2       
+  Col
+      3 :          14            24            34  
+      4 :          15            25            35  
+      5 :          16            26            36  
+
+r8col_transpose_print_some_test:
+  Normal end of execution.
+
+r8col_uniform_01_test
+  r8col_uniform_01 computes a random R8COL.
+
+  Random R8COL:
+
+  Col:       0             1             2             3       
+  Row
+      0 :    0.101534      0.928627      0.129083     0.0847005  
+      1 :    0.265687      0.971331      0.555142      0.700846  
+      2 :    0.891832      0.282532     0.0205414      0.859037  
+      3 :    0.353134      0.484049      0.436768      0.315022  
+      4 :    0.960978      0.621673       0.78569      0.296876  
+
+r8col_uniform_01_test:
+  Normal end of execution.
+
+r8col_uniform_ab_test
+  r8col_uniform_ab computes a random R8COL.
+
+  -1 <= X <= 5
+
+  Random R8COL:
+
+  Col:       0             1             2             3       
+  Row
+      0 :     1.77389      0.798089       2.82073       3.42403  
+      1 :     1.78655     -0.195837       1.39907     -0.647448  
+      2 :     4.09333      0.164146       3.93164     -0.645161  
+      3 :   -0.614826       1.83149       3.47527       4.83675  
+      4 :     4.59897       4.92163      0.934988      0.342235  
+
+r8col_uniform_ab_test:
+  Normal end of execution.
+
+r8col_uniform_abvec_test
+  Python version: 3.6.9
+  r8col_uniform_abvec computes a random scaled R8COL.
+
+   Col         Min         Max
+
+     0          -1           1
+     1           0           1
+     2          50          55
+     3         100       100.1
+     4          17          20
+
+  Random R8COL:
+
+  Col:       0             1             2             3       
+  Row
+      0 :    0.184664      0.883706      0.137183      -0.13092  
+      1 :    0.344253     0.0649984       0.98151      0.498991  
+      2 :     53.9344       54.4204       51.4063       54.1875  
+      3 :      100.02       100.059       100.034       100.041  
+      4 :     18.5628       17.6351       17.7182          19.8  
+
+r8col_uniform_abvec_test:
+  Normal end of execution.
+
+r8col_variance_test
+  For an R8COL, an array of column vectors
+  r8col_variance computes variances
+
+  The array:
+
+  Col:       0             1             2             3       
+  Row
+      0 :           1             2             3             4  
+      1 :           5             6             7             8  
+      2 :           9            10            11            12  
+
+  Column variances:
+
+     0:            16
+     1:            16
+     2:            16
+     3:            16
+
+r8col_variance_test
+  Normal end of execution.
+
+r8vec_print_test
+  r8vec_print prints an R8VEC.
+
+  Here is an R8VEC:
+
+     0:       123.456
+     1:         5e-06
+     2:        -1e+06
+     3:       3.14159
+
+r8vec_print_test:
+  Normal end of execution.
+
+r8col_test():
+  Normal end of execution.
+Tue Oct 19 17:06:11 2021

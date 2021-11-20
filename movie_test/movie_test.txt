@@ -1,0 +1,15 @@
+Tue Oct 19 11:59:43 2021
+
+movie_test
+  Use the Euler method to solve the
+  Allen-Cahn 1D reaction-diffusion equation.
+  Save the successive time solutions to a movie file.
+  Interface thickness xi = 0.015
+  Diffusion coefficient nu = 1
+  Use 101 nodes, with dx=0.02 in space interval [0,2]
+  Use 1501 nodes, with dt=0.0001 in time interval [0,0.15]
+  Graphics saved as "movie_test.mp4"
+
+movie_test
+  Normal end of execution.
+Tue Oct 19 12:00:51 2021

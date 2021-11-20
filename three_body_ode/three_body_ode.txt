@@ -1,0 +1,19 @@
+Tue Oct 19 17:25:07 2021
+
+three_body_ode_test()
+  Python version: 3.6.9
+  Test three_body_ode().
+
+three_body_solve_ivp():
+  Use solve_ivp() to solve the three body ODE.
+  Graphics saved as "three_body_1.png"
+  Graphics saved as "three_body_2.png"
+  Graphics saved as "three_body_3.png"
+  Graphics saved as "three_body_4.png"
+
+three_body_solve_ivp:
+  Normal end of execution.
+
+three_body_ode_test:
+  Normal end of execution.
+Tue Oct 19 17:25:09 2021

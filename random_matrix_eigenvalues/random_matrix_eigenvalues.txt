@@ -1,0 +1,41 @@
+Tue Oct 19 17:06:13 2021
+
+random_matrix_eigenvalues_test:
+  Python version: 3.6.9
+  Test random_matrix_eigenvalues()
+
+LAPLACE_MATRIX
+  Python version: 3.6.9
+  Examine eigenvalue distribution of 5000x5000 matrix
+  with entries from Laplace distribution.
+
+  Eigenvalue range: [-141.252, 141.366]
+  Graphics saved as " laplace_matrix.png ".
+
+NORMAL_MATRIX
+  Python version: 3.6.9
+  Examine eigenvalue distribution of 5000x5000 matrix
+  with entries from normal distribution.
+
+  Eigenvalue range: [-141.21, 141.042]
+  Graphics saved as " normal_matrix.png ".
+
+STUDENT_MATRIX
+  Python version: 3.6.9
+  Examine eigenvalue distribution of 5000x5000 matrix
+  with entries from the Student t distribution.
+
+  Eigenvalue range: [-9543.17, 9544.27]
+  Graphics saved as " student_matrix.png ".
+
+UNIFORM_MATRIX
+  Python version: 3.6.9
+  Examine eigenvalue distribution of 5000x5000 matrix
+  with entries from uniform distribution.
+
+  Eigenvalue range: [-40.8077, 2500.01]
+  Graphics saved as " uniform_matrix.png ".
+
+random_matrix_eigenvalues_test:
+  Normal end of execution.
+Tue Oct 19 17:07:58 2021

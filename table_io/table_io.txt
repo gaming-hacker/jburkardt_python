@@ -1,0 +1,368 @@
+Tue Oct 19 17:23:23 2021
+
+table_io_test():
+  Python version: 3.6.9
+  Test table_io().
+
+file_column_count_test:
+  Python version: 3.6.9
+  Count the number of columns in a typical text file line.
+
+  Number of columns in "r8mat_write_test.txt" is 3
+
+file_column_count_test:
+  Normal end of execution.
+
+file_row_count_test:
+  Python version: 3.6.9
+  Count the number of rows in a text file.
+
+  Number of rows in "i4mat_write_test.txt" is 5
+
+file_row_count_test:
+  Normal end of execution.
+
+i4_log_10_test
+  Python version: 3.6.9
+  i4_log_10: whole part of log base 10,
+
+  X, i4_log_10
+
+     0             0
+     1             0
+     2             0
+     3             0
+     9             0
+    10             1
+    11             1
+    99             1
+   101             2
+    -1             0
+    -2             0
+    -3             0
+    -9             0
+
+i4_log_10_test
+  Normal end of execution.
+
+i4mat_indicator_test
+  Python version: 3.6.9
+  i4mat_indicator creates an "indicator" I4MAT.
+
+  The indicator matrix:
+
+  Col:       0        1        2        3  
+  Row
+    0:      11       12       13       14  
+    1:      21       22       23       24  
+    2:      31       32       33       34  
+    3:      41       42       43       44  
+    4:      51       52       53       54  
+
+i4mat_indicator_test
+  Normal end of execution.
+
+i4mat_print_test:
+  Python version: 3.6.9
+  Test i4mat_print, which prints an I4MAT.
+
+  A 5 x 6 integer matrix:
+
+  Col:       0        1        2        3        4        5  
+  Row
+    0:      11       12       13       14       15       16  
+    1:      21       22       23       24       25       26  
+    2:      31       32       33       34       35       36  
+    3:      41       42       43       44       45       46  
+    4:      51       52       53       54       55       56  
+
+i4mat_print_test:
+  Normal end of execution.
+
+i4mat_print_some_test
+  Python version: 3.6.9
+  i4mat_print_some prints some of an I4MAT.
+
+  Here is I4MAT, rows 0:2, cols 3:5:
+
+  Col:       3        4        5  
+  Row
+    0:      14       15       16  
+    1:      24       25       26  
+    2:      34       35       36  
+
+i4mat_print_some_test:
+  Normal end of execution.
+
+i4vec_print_test
+  Python version: 3.6.9
+  i4vec_print prints an I4VEC.
+
+  Here is an I4VEC:
+
+     0      91
+     1      92
+     2      93
+     3      94
+
+i4vec_print_test:
+  Normal end of execution.
+
+r8mat_indicator_test
+  Python version: 3.6.9
+  r8mat_indicator creates an "indicator" R8MAT.
+
+  The indicator matrix:
+
+  Col:       0             1             2             3       
+  Row
+      0 :          11            12            13            14  
+      1 :          21            22            23            24  
+      2 :          31            32            33            34  
+      3 :          41            42            43            44  
+      4 :          51            52            53            54  
+
+r8mat_indicator_test
+  Normal end of execution.
+
+r8mat_print_test
+  Python version: 3.6.9
+  r8mat_print prints an R8MAT.
+
+  Here is an R8MAT:
+
+  Col:       0             1             2             3             4       
+  Row
+      0 :          11            12            13            14            15  
+      1 :          21            22            23            24            25  
+      2 :          31            32            33            34            35  
+      3 :          41            42            43            44            45  
+
+  Col:       5       
+  Row
+      0 :          16  
+      1 :          26  
+      2 :          36  
+      3 :          46  
+
+r8mat_print_test:
+  Normal end of execution.
+
+r8mat_print_some_test
+  Python version: 3.6.9
+  r8mat_print_some prints some of an R8MAT.
+
+  Here is an R8MAT:
+
+  Col:       3             4             5       
+  Row
+      0 :          14            15            16  
+      1 :          24            25            26  
+      2 :          34            35            36  
+
+r8mat_print_some_test:
+  Normal end of execution.
+
+r8vec_print_test
+  Python version: 3.6.9
+  Test r8vec_print(), which prints an R8VEC.
+
+  Use r8vec_print():
+
+     0:       123.456
+     1:         5e-06
+     2:        -1e+06
+     3:       3.14159
+
+  Use python print():
+
+[ 1.23456000e+02  5.00000000e-06 -1.00000000e+06  3.14159265e+00]
+
+r8vec_print_test:
+  Normal end of execution.
+
+i4mat_write_test:
+  Python version: 3.6.9
+  i4mat_write writes an I4MAT to a file.
+
+  Created file "i4mat_write_test.txt".
+
+i4mat_write_test:
+  Normal end of execution.
+
+i4mat_header_read_test:
+  Python version: 3.6.9
+  i4mat_header_read counts rows and columns in a file
+  containing an I4MAT.
+
+  File "i4mat_write_test.txt" contains 5 rows and 3 columns.
+
+i4mat_header_read_test:
+  Normal end of execution.
+
+i4mat_data_read_test:
+  Python version: 3.6.9
+  Test i4mat_data_read, which reads data from an I4MAT.
+
+  Data read from file:
+
+  Col:       0        1        2  
+  Row
+    0:      11       12       13  
+    1:      21       22       23  
+    2:      31       32       33  
+    3:      41       42       43  
+    4:      51       52       53  
+
+i4mat_data_read_test:
+  Normal end of execution.
+
+i4vec_write_test:
+  Python version: 3.6.9
+  i4vec_write writes an I4VEC to a file.
+
+  Created file "i4vec_write_test.txt".
+
+i4vec_write_test:
+  Normal end of execution.
+
+i4vec_header_read_test:
+  Python version: 3.6.9
+  i4vec_header_read counts rows in a file
+  containing an I4VEC.
+
+  File "i4vec_write_test.txt" contains 5 rows.
+
+i4vec_header_read_test:
+  Normal end of execution.
+
+i4vec_data_read_test:
+  Python version: 3.6.9
+  i4vec_data_read reads data from an I4VEC.
+
+  Data read from file:
+
+     0      11
+     1      22
+     2      33
+     3      44
+     4      55
+
+i4vec_data_read_test:
+  Normal end of execution.
+
+r8mat_transpose_write_test:
+  Python version: 3.6.9
+  Test r8mat_transpose_write, which writes the transpose of an R8MAT to a file.
+
+  Created file "r8mat_transpose_write_test.txt".
+
+r8mat_transpose_write_test:
+  Normal end of execution.
+
+r8mat_write_test:
+  Python version: 3.6.9
+  Test r8mat_write, which writes an R8MAT to a file.
+
+  Created file "r8mat_write_test.txt".
+
+r8mat_write_test:
+  Normal end of execution.
+
+r8mat_header_read_test:
+  Python version: 3.6.9
+  r8mat_header_read counts rows and columns in a file
+  containing an R8MAT.
+
+  File "r8mat_write_test.txt" contains 5 rows and 3 columns.
+
+r8mat_header_read_test:
+  Normal end of execution.
+
+r8mat_data_read_test:
+  Python version: 3.6.9
+  r8mat_data_read reads data from an R8MAT.
+
+  Data read from file:
+
+  Col:       0             1             2       
+  Row
+      0 :         1.1           1.2           1.3  
+      1 :         2.1           2.2           2.3  
+      2 :         3.1           3.2           3.3  
+      3 :         4.1           4.2           4.3  
+      4 :         5.1           5.2           5.3  
+
+r8mat_data_read_test:
+  Normal end of execution.
+
+r8vec_write_test:
+  Python version: 3.6.9
+  Test r8vec_write, which writes an R8VEC to a file.
+
+  Created file "r8vec_write_test.txt".
+
+r8vec_write_test:
+  Normal end of execution.
+
+r8vec_header_read_test:
+  Python version: 3.6.9
+  r8vec_header_read counts rows in a file
+  containing an R8VEC.
+
+  File "r8vec_write_test.txt" contains 5 rows.
+
+r8vec_header_read_test:
+  Normal end of execution.
+
+r8vec_data_read_test:
+  Python version: 3.6.9
+  r8vec_data_read reads data from an R8VEC.
+
+  Data read from file:
+
+     0:           1.1
+     1:           2.2
+     2:           3.3
+     3:           4.4
+     4:           5.5
+
+r8vec_data_read_test:
+  Normal end of execution.
+
+r8vec2_write_test:
+  Python version: 3.6.9
+  Test r8vec2_write, which writes an R8VEC2 to a file.
+
+  Created file "r8vec2_write_test.txt".
+
+r8vec2_write_test:
+  Normal end of execution.
+
+r8vec2_header_read_test:
+  Python version: 3.6.9
+  r8vec2_header_read counts rows in a file containing an R8VEC2.
+
+  File "r8vec2_write_test.txt" contains 5 rows.
+
+r8vec2_header_read_test:
+  Normal end of execution.
+
+r8vec2_data_read_test:
+  Python version: 3.6.9
+  r8vec2_data_read reads data from an R8VEC2.
+
+  Data read from file:
+
+       0:            1.1           1.2
+       1:            1.2           2.2
+       2:            1.3           3.2
+       3:            1.4           4.2
+       4:            1.5           5.2
+
+r8vec2_data_read_test:
+  Normal end of execution.
+
+table_io_test():
+  Normal end of execution.
+Tue Oct 19 17:23:23 2021

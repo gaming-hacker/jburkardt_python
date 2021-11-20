@@ -1,0 +1,13 @@
+Tue Oct 19 11:58:48 2021
+
+lorenz_ode_test()
+  Python version: 3.6.9
+  Compute solutions of the Lorenz system.
+
+  Graphics data saved as "lorenz_ode_components.png"
+
+  Graphics data saved as "lorenz_ode_3d.png"
+
+lorenz_ode_test:
+  Normal end of execution.
+Tue Oct 19 11:58:49 2021

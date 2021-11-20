@@ -1,0 +1,9 @@
+Tue Oct 19 17:09:03 2021
+
+rubber_band_ode_test:
+  Use solve_ivp to solve the rubber band ODE.
+  Graphics saved as "rubber_band_ode.png"
+
+rubber_band_ode_test:
+  Normal end of execution.
+Tue Oct 19 17:09:03 2021

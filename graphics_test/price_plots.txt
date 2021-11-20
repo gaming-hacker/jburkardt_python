@@ -1,0 +1,9 @@
+
+price_plots:
+  Python version: 3.6.9
+  Simulate the variation over time of the concentration
+  of a medicinal drug in the bloodstream.
+  Graphics saved as "price_plots.png"
+
+price_plots:
+  Normal end of execution.

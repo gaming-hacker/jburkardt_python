@@ -1,0 +1,25 @@
+Tue Oct 19 17:00:21 2021
+
+pendulum_ode_test():
+  Python version: 3.6.9
+  Solve the pendulum ODE.
+
+  Parameter values:
+    gravity (m/s^2) =  9.8
+    length (m)      =  1.0
+    mass (g)        =  1.0
+    t0 (s)          =  0.0
+    u0 (rad)        =  1.0471975511965976
+    v0 (rad/s)      =  0.0
+    tstop (s)       =  20.0
+    p (s)           =  2.007089923154493
+
+pendulum_solve_ivp:
+  Test pendulum_ode using solve_ivp.
+  Graphics saved as "pendulum_solve_ivp_theta.png"
+  Graphics saved as "pendulum_solve_ivp_thetadot.png"
+  Graphics saved as "pendulum_solve_ivp_energy.png"
+
+pendulum_ode_test():
+  Normal end of execution.
+Tue Oct 19 17:00:22 2021

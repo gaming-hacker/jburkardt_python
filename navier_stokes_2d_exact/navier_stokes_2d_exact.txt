@@ -1,0 +1,694 @@
+Tue Oct 19 12:01:04 2021
+
+navier_stokes_2d_exact_test
+  Python version: 3.6.9
+  Test navier_stokes_2d_exact().
+
+r8vec_print_test
+  Python version: 3.6.9
+  r8vec_print prints an R8VEC.
+
+  Here is an R8VEC:
+
+     0:       123.456
+     1:         5e-06
+     2:        -1e+06
+     3:       3.14159
+
+r8vec_print_test:
+  Normal end of execution.
+
+grid_2d_test:
+  Python version: 3.6.9
+  Generate a regular grid.
+
+   0   0   0       10.000000        5.000000
+   1   1   0       12.500000        5.000000
+   2   2   0       15.000000        5.000000
+   3   3   0       17.500000        5.000000
+   4   4   0       20.000000        5.000000
+   5   0   1       10.000000        5.500000
+   6   1   1       12.500000        5.500000
+   7   2   1       15.000000        5.500000
+   8   3   1       17.500000        5.500000
+   9   4   1       20.000000        5.500000
+  10   0   2       10.000000        6.000000
+  11   1   2       12.500000        6.000000
+  12   2   2       15.000000        6.000000
+  13   3   2       17.500000        6.000000
+  14   4   2       20.000000        6.000000
+
+grid_2d_test:
+  Normal end of execution.
+
+uvp_gms_test
+  Python version: 3.6.9
+  GMS Flow:
+  Estimate the range of velocity and pressure
+  over the [-1,+1]x[-1,+1] square,
+  at time T = 1.0
+  Kinematic viscosity NU = 1
+  Fluid density RHO = 1
+
+           Minimum       Maximum
+
+  U:        -2.64162         2.64145
+  V:        -2.64344         2.63308
+  P:       -0.836897        0.838868
+
+uvp_gms_test:
+  Normal end of execution.
+
+uvp_gms_test2
+  Python version: 3.6.9
+  GMS Flow:
+  Estimate the range of velocity and pressure
+  over the boundary of the [-1,+1]x[-1,+1] square,
+  at time T = 1.0
+  Kinematic viscosity NU = 1
+  Fluid density RHO = 1
+
+           Minimum       Maximum
+
+  U:    -6.47322e-16     6.47322e-16
+  V:    -6.47322e-16     6.47322e-16
+  P:       -0.841365      1.0305e-16
+
+uvp_gms_test2:
+  Normal end of execution.
+
+rhs_gms_test
+  Python version: 3.6.9
+  GMS Flow
+  Sample the Navier-Stokes right hand sides
+  over the [-1,+1]x[-1,+1] square
+  at time T = 1.0
+  Kinematic viscosity NU = 1
+  Fluid density RHO = 1
+
+           Minimum       Maximum
+
+  Ur:        -3.13932         3.12261
+  Vr:        -3.10419           3.138
+  Pr:               0               0
+
+rhs_gms_test:
+  Normal end of execution.
+
+resid_gms_test
+  Python version: 3.6.9
+  GMS Flow
+  Sample the Navier-Stokes residuals
+  over the [-1,+1]x[-1,+1] square
+  at time T = 1.0
+  Kinematic viscosity NU = 1
+  Fluid density RHO = 1
+
+           Minimum       Maximum
+
+  Ur:               0               0
+  Vr:               0               0
+  Pr:               0               0
+
+resid_gms_test:
+  Normal end of execution.
+
+ns2de_gnuplot_gms_test:
+  Python version: 3.6.9
+  Generate the GMS velocity field on a regular grid.
+  Store in GNUPLOT data and command files.
+
+  Data written to "gms_data.txt".
+  Commands written to "gms_commands.txt".
+
+ns2de_gnuplot_gms_test:
+  Normal end of execution.
+
+ns2de_matplotlib_gms_test:
+  Python version: 3.6.9
+  Generate a GMS flow on a regular grid.
+  Display it using matplotlib
+
+ns2de_matplotlib_gms_test:
+  Normal end of execution.
+
+uvp_lukas_test
+  Python version: 3.6.9
+  Lukas Bystricky Flow:
+  Estimate the range of velocity and pressure
+  at the initial time T = 0, over the unit square.
+  Kinematic viscosity NU = 1
+  Fluid density RHO = 1
+
+           Minimum       Maximum
+
+  U:        -0.31831         0.31831
+  V:       -0.984379    -2.89777e-05
+  P:               0               0
+
+uvp_lukas_test:
+  Normal end of execution.
+
+uvp_lukas_test2
+  Python version: 3.6.9
+  Lukas Bystricky Flow:
+  Estimate the range of velocity and pressure
+  on the boundary
+  at the initial time T = 0, over the unit square.
+  Kinematic viscosity NU = 1
+  Fluid density RHO = 1
+
+           Minimum       Maximum
+
+  U:        -0.31831         0.31831
+  V:       -0.999874              -0
+  P:               0               0
+
+uvp_lukas_test2:
+  Normal end of execution.
+
+rhs_lukas_test
+  Python version: 3.6.9
+  Lukas Bystricky Flow
+  Sample the Navier-Stokes right hand sides
+  at the initial time T = 0, over the unit square.
+  Kinematic viscosity NU = 1
+  Fluid density RHO = 1
+
+           Minimum       Maximum
+
+  Ur:         -3.1575         3.15749
+  Vr:        -8.81297         0.76363
+  Pr:               0               0
+
+rhs_lukas_test:
+  Normal end of execution.
+
+resid_lukas_test
+  Python version: 3.6.9
+  Lukas Bystricky Flow
+  Sample the Navier-Stokes residuals
+  at the initial time T = 0, over the unit square.
+  Kinematic viscosity NU = 1
+  Fluid density RHO = 1
+
+           Minimum       Maximum
+
+  Ur:               0               0
+  Vr:               0               0
+  Pr:               0               0
+
+resid_lukas_test:
+  Normal end of execution.
+
+ns2de_gnuplot_lukas_test:
+  Python version: 3.6.9
+  Generate the Lukas Bystricky velocity field on a regular grid.
+  Store in GNUPLOT data and command files.
+
+  Data written to "lukas_data.txt".
+  Commands written to "lukas_commands.txt".
+
+ns2de_gnuplot_lukas_test:
+  Normal end of execution.
+
+ns2de_matplotlib_lukas_test:
+  Python version: 3.6.9
+  Generate a Lukas Bystricky Flow field on a regular grid.
+  Display it using matplotlib
+
+ns2de_matplotlib_lukas_test:
+  Normal end of execution.
+
+uvp_poiseuille_test
+  Python version: 3.6.9
+  Poiseuille Flow:
+  Estimate the range of velocity and pressure
+  at the initial time T = 0, over a channel region.
+  Kinematic viscosity NU = 1
+  Fluid density RHO = 1
+
+           Minimum       Maximum
+
+  U:      0.00127476        0.999983
+  V:               0               0
+  P:        -11.9924     -0.00716078
+
+uvp_poiseuille_test:
+  Normal end of execution.
+
+uvp_poiseuille_test2
+  Python version: 3.6.9
+  Poiseuille Flow:
+  Estimate the range of velocity and pressure
+  on the boundary
+  at the initial time T = 0, over a channel region.
+  Kinematic viscosity NU = 1
+  Fluid density RHO = 1
+
+           Minimum       Maximum
+
+  U:               0        0.999898
+  V:               0               0
+  P:             -12              -0
+
+uvp_poiseuille_test2:
+  Normal end of execution.
+
+rhs_poiseuille_test
+  Python version: 3.6.9
+  Poiseuille Flow:
+  Sample the Navier-Stokes right hand sides
+  at the initial time T = 0, over a channel region.
+  Kinematic viscosity NU = 1
+  Fluid density RHO = 1
+
+           Minimum       Maximum
+
+  Ur:               0               0
+  Vr:               0               0
+  Pr:               0               0
+
+rhs_poiseuille_test:
+  Normal end of execution.
+
+resid_poiseuille_test
+  Python version: 3.6.9
+  Poiseuille Flow:
+  Sample the Navier-Stokes residuals
+  at the initial time T = 0, over a channel region.
+  Kinematic viscosity NU = 1
+  Fluid density RHO = 1
+
+           Minimum       Maximum
+
+  Ur:               0               0
+  Vr:               0               0
+  Pr:               0               0
+
+resid_poiseuille_test:
+  Normal end of execution.
+
+ns2de_gnuplot_poiseuille_test:
+  Python version: 3.6.9
+  Generate a Poiseuille velocity field on a regular grid.
+  Store in GNUPLOT data and command files.
+
+  Data written to "poiseuille_data.txt".
+  Commands written to "poiseuille_commands.txt".
+
+ns2de_gnuplot_poiseuille_test:
+  Normal end of execution.
+
+ns2de_matplotlib_poiseuille_test:
+  Python version: 3.6.9
+  Generate a Poiseuille velocity field on a regular grid.
+  Display it using matplotlib
+
+ns2de_matplotlib_poiseuille_test:
+  Normal end of execution.
+
+parameter_poiseuille_test
+  Python version: 3.6.9
+  Poiseuille Flow
+  Monitor solution norms for various
+  values of NU, RHO.
+
+  RHO affects the pressure scaling.
+
+     RHO         NU           T     ||U||       ||V||       ||P||
+
+           1           1         0     0.02297           0      0.2164
+           1           1       0.2     0.02297           0      0.2164
+           1           1       0.4     0.02297           0      0.2164
+           1           1       0.6     0.02297           0      0.2164
+           1           1       0.8     0.02297           0      0.2164
+           1           1         1     0.02297           0      0.2164
+
+        0.01           1         0     0.02297           0    0.002164
+        0.01           1       0.2     0.02297           0    0.002164
+        0.01           1       0.4     0.02297           0    0.002164
+        0.01           1       0.6     0.02297           0    0.002164
+        0.01           1       0.8     0.02297           0    0.002164
+        0.01           1         1     0.02297           0    0.002164
+
+      0.0001           1         0     0.02297           0   2.164e-05
+      0.0001           1       0.2     0.02297           0   2.164e-05
+      0.0001           1       0.4     0.02297           0   2.164e-05
+      0.0001           1       0.6     0.02297           0   2.164e-05
+      0.0001           1       0.8     0.02297           0   2.164e-05
+      0.0001           1         1     0.02297           0   2.164e-05
+
+
+  NU affects the time scaling.
+
+     RHO         NU           T     ||U||       ||V||       ||P||
+
+           1           1         0     0.02297           0      0.2164
+           1           1       0.2     0.02297           0      0.2164
+           1           1       0.4     0.02297           0      0.2164
+           1           1       0.6     0.02297           0      0.2164
+           1           1       0.8     0.02297           0      0.2164
+           1           1         1     0.02297           0      0.2164
+
+           1         0.1         0     0.02297           0     0.02164
+           1         0.1       0.2     0.02297           0     0.02164
+           1         0.1       0.4     0.02297           0     0.02164
+           1         0.1       0.6     0.02297           0     0.02164
+           1         0.1       0.8     0.02297           0     0.02164
+           1         0.1         1     0.02297           0     0.02164
+
+           1        0.01         0     0.02297           0    0.002164
+           1        0.01       0.2     0.02297           0    0.002164
+           1        0.01       0.4     0.02297           0    0.002164
+           1        0.01       0.6     0.02297           0    0.002164
+           1        0.01       0.8     0.02297           0    0.002164
+           1        0.01         1     0.02297           0    0.002164
+
+           1       0.001         0     0.02297           0   0.0002164
+           1       0.001       0.2     0.02297           0   0.0002164
+           1       0.001       0.4     0.02297           0   0.0002164
+           1       0.001       0.6     0.02297           0   0.0002164
+           1       0.001       0.8     0.02297           0   0.0002164
+           1       0.001         1     0.02297           0   0.0002164
+
+
+parameter_poiseuille_test:
+  Normal end of execution.
+
+uvp_spiral_test
+  Python version: 3.6.9
+  Spiral Flow:
+  Estimate the range of velocity and pressure
+  at the initial time T = 0, over the unit square.
+  Kinematic viscosity NU = 1
+  Fluid density RHO = 1
+
+           Minimum       Maximum
+
+  U:      -0.0119606       0.0119965
+  V:      -0.0120144       0.0120266
+  P:      0.00240159        0.999557
+
+uvp_spiral_test:
+  Normal end of execution.
+
+uvp_spiral_test2
+  Python version: 3.6.9
+  Spiral Flow:
+  Estimate the range of velocity and pressure
+  on the boundary
+  at the initial time T = 0, over the unit square.
+  Kinematic viscosity NU = 1
+  Fluid density RHO = 1
+
+           Minimum       Maximum
+
+  U:               0               0
+  V:              -0              -0
+  P:               0               1
+
+uvp_spiral_test2:
+  Normal end of execution.
+
+rhs_spiral_test
+  Python version: 3.6.9
+  Spiral Flow:
+  Sample the Navier-Stokes right hand sides
+  at the initial time T = 0, over the unit square.
+  Kinematic viscosity NU = 1
+  Fluid density RHO = 1
+
+           Minimum       Maximum
+
+  Ur:       -0.762023        0.764082
+  Vr:         0.23599          1.7579
+  Pr:               0               0
+
+rhs_spiral_test:
+  Normal end of execution.
+
+resid_spiral_test
+  Python version: 3.6.9
+  Spiral Flow:
+  Sample the Navier-Stokes residuals
+  at the initial time T = 0, over the unit square.
+  Kinematic viscosity NU = 1
+  Fluid density RHO = 1
+
+           Minimum       Maximum
+
+  Ur:               0               0
+  Vr:               0               0
+  Pr:               0               0
+
+resid_spiral_test:
+  Normal end of execution.
+
+ns2de_gnuplot_spiral_test:
+  Python version: 3.6.9
+  Generate a Spiral Flow velocity field on a regular grid.
+  Store in GNUPLOT data and command files.
+
+  Data written to "spiral_data.txt".
+  Commands written to "spiral_commands.txt".
+
+ns2de_gnuplot_spiral_test:
+  Normal end of execution.
+
+ns2de_matplotlib_spiral_test:
+  Python version: 3.6.9
+  Generate a Spiral Flow velocity field on a regular grid.
+  Display it using matplotlib
+
+ns2de_matplotlib_spiral_test:
+  Normal end of execution.
+
+parameter_spiral_test
+  Python version: 3.6.9
+  Spiral Flow
+  Monitor solution norms over time for various
+  values of NU, RHO.
+
+  RHO affects the pressure scaling.
+
+     RHO         NU           T     ||U||       ||V||       ||P||
+
+           1           1         0   0.0001744   0.0001775     0.01839
+           1           1       0.2   0.0002093    0.000213     0.01839
+           1           1       0.4   0.0002441   0.0002485     0.01839
+           1           1       0.6    0.000279    0.000284     0.01839
+           1           1       0.8   0.0003139   0.0003195     0.01839
+           1           1         1   0.0003488    0.000355     0.01839
+
+        0.01           1         0   0.0001744   0.0001775   0.0001839
+        0.01           1       0.2   0.0002093    0.000213   0.0001839
+        0.01           1       0.4   0.0002441   0.0002485   0.0001839
+        0.01           1       0.6    0.000279    0.000284   0.0001839
+        0.01           1       0.8   0.0003139   0.0003195   0.0001839
+        0.01           1         1   0.0003488    0.000355   0.0001839
+
+      0.0001           1         0   0.0001744   0.0001775   1.839e-06
+      0.0001           1       0.2   0.0002093    0.000213   1.839e-06
+      0.0001           1       0.4   0.0002441   0.0002485   1.839e-06
+      0.0001           1       0.6    0.000279    0.000284   1.839e-06
+      0.0001           1       0.8   0.0003139   0.0003195   1.839e-06
+      0.0001           1         1   0.0003488    0.000355   1.839e-06
+
+
+  NU affects the time scaling.
+
+     RHO         NU           T     ||U||       ||V||       ||P||
+
+           1           1         0   0.0001744   0.0001775     0.01839
+           1           1       0.2   0.0002093    0.000213     0.01839
+           1           1       0.4   0.0002441   0.0002485     0.01839
+           1           1       0.6    0.000279    0.000284     0.01839
+           1           1       0.8   0.0003139   0.0003195     0.01839
+           1           1         1   0.0003488    0.000355     0.01839
+
+           1         0.1         0   0.0001744   0.0001775     0.01839
+           1         0.1       0.2   0.0001779   0.0001811     0.01839
+           1         0.1       0.4   0.0001814   0.0001846     0.01839
+           1         0.1       0.6   0.0001848   0.0001882     0.01839
+           1         0.1       0.8   0.0001883   0.0001917     0.01839
+           1         0.1         1   0.0001918   0.0001953     0.01839
+
+           1        0.01         0   0.0001744   0.0001775     0.01839
+           1        0.01       0.2   0.0001747   0.0001779     0.01839
+           1        0.01       0.4   0.0001751   0.0001782     0.01839
+           1        0.01       0.6   0.0001754   0.0001786     0.01839
+           1        0.01       0.8   0.0001758   0.0001789     0.01839
+           1        0.01         1   0.0001761   0.0001793     0.01839
+
+           1       0.001         0   0.0001744   0.0001775     0.01839
+           1       0.001       0.2   0.0001744   0.0001775     0.01839
+           1       0.001       0.4   0.0001744   0.0001776     0.01839
+           1       0.001       0.6   0.0001745   0.0001776     0.01839
+           1       0.001       0.8   0.0001745   0.0001777     0.01839
+           1       0.001         1   0.0001746   0.0001777     0.01839
+
+
+parameter_spiral_test:
+  Normal end of execution.
+
+uvp_taylor_test
+  Python version: 3.6.9
+  Estimate the range of velocity and pressure
+  at the initial time T = 0, using a region that is
+  the square centered at (1.5,1.5) with "radius" 1.0,
+  Kinematic viscosity NU = 1
+  Fluid density RHO = 1
+
+           Minimum       Maximum
+
+  U:       -0.993197        0.999751
+  V:        -0.99925        0.999875
+  P:        -0.49456        0.496259
+
+uvp_taylor_test:
+  Normal end of execution.
+
+uvp_taylor_test2
+  Python version: 3.6.9
+  Estimate the range of velocity and pressure
+  on the boundary
+  at the initial time T = 0, using a region that is
+  the square centered at (1.5,1.5) with "radius" 1.0,
+  Kinematic viscosity NU = 1
+  Fluid density RHO = 1
+
+           Minimum       Maximum
+
+  U:       -0.999874        0.999874
+  V:       -0.999874        0.999874
+  P:     0.000125864             0.5
+
+uvp_taylor_test2:
+  Normal end of execution.
+
+rhs_taylor_test
+  Python version: 3.6.9
+  Taylor Flow:
+  Sample the Navier-Stokes right hand sides
+  at the initial time T = 0, using a region that is
+  the square centered at (1.5,1.5) with "radius" 1.0,
+  Kinematic viscosity NU = 1
+  Fluid density RHO = 1
+
+           Minimum       Maximum
+
+  Ur:               0               0
+  Vr:               0               0
+  Pr:               0               0
+
+rhs_taylor_test:
+  Normal end of execution.
+
+resid_taylor_test
+  Python version: 3.6.9
+  Sample the Taylor residuals
+  at the initial time T = 0, using a region that is
+  the square centered at (1.5,1.5) with "radius" 1.0,
+  Kinematic viscosity NU = 1
+  Fluid density RHO = 1
+
+           Minimum       Maximum
+
+  Ur:               0     3.55271e-15
+  Vr:               0     3.55271e-15
+  Pr:               0               0
+
+resid_taylor_test:
+  Normal end of execution.
+
+ns2de_gnuplot_taylor_test:
+  Python version: 3.6.9
+  Generate a Taylor velocity field on a regular grid.
+  Store in GNUPLOT data and command files.
+
+  Data written to "taylor_data.txt".
+  Commands written to "taylor_commands.txt".
+
+ns2de_gnuplot_taylor_test:
+  Normal end of execution.
+
+ns2de_matplotlib_taylor_test:
+  Python version: 3.6.9
+  Generate a Taylor velocity field on a regular grid.
+  Display it using matplotlib
+
+ns2de_matplotlib_taylor_test:
+  Normal end of execution.
+
+parameter_taylor_test
+  Python version: 3.6.9
+  Taylor Flow
+  Monitor solution norms over time for various
+  values of NU, RHO.
+
+  RHO affects the pressure scaling.
+
+     RHO         NU           T     ||U||       ||V||       ||P||
+
+           1           1         0      0.0157     0.01581    0.007935
+           1           1       0.2   0.0003029   0.0003051   2.954e-06
+           1           1       0.4   5.844e-06   5.887e-06     1.1e-09
+           1           1       0.6   1.128e-07   1.136e-07   4.096e-13
+           1           1       0.8   2.176e-09   2.192e-09   1.525e-16
+           1           1         1   4.199e-11    4.23e-11   5.679e-20
+
+        0.01           1         0      0.0157     0.01581   7.935e-05
+        0.01           1       0.2   0.0003029   0.0003051   2.954e-08
+        0.01           1       0.4   5.844e-06   5.887e-06     1.1e-11
+        0.01           1       0.6   1.128e-07   1.136e-07   4.096e-15
+        0.01           1       0.8   2.176e-09   2.192e-09   1.525e-18
+        0.01           1         1   4.199e-11    4.23e-11   5.679e-22
+
+      0.0001           1         0      0.0157     0.01581   7.935e-07
+      0.0001           1       0.2   0.0003029   0.0003051   2.954e-10
+      0.0001           1       0.4   5.844e-06   5.887e-06     1.1e-13
+      0.0001           1       0.6   1.128e-07   1.136e-07   4.096e-17
+      0.0001           1       0.8   2.176e-09   2.192e-09   1.525e-20
+      0.0001           1         1   4.199e-11    4.23e-11   5.679e-24
+
+
+  NU affects the time scaling.
+
+     RHO         NU           T     ||U||       ||V||       ||P||
+
+           1           1         0      0.0157     0.01581    0.007935
+           1           1       0.2   0.0003029   0.0003051   2.954e-06
+           1           1       0.4   5.844e-06   5.887e-06     1.1e-09
+           1           1       0.6   1.128e-07   1.136e-07   4.096e-13
+           1           1       0.8   2.176e-09   2.192e-09   1.525e-16
+           1           1         1   4.199e-11    4.23e-11   5.679e-20
+
+           1         0.1         0      0.0157     0.01581    0.007935
+           1         0.1       0.2     0.01058     0.01065    0.003603
+           1         0.1       0.4    0.007127    0.007179    0.001636
+           1         0.1       0.6    0.004802    0.004837   0.0007427
+           1         0.1       0.8    0.003236     0.00326   0.0003372
+           1         0.1         1     0.00218    0.002196   0.0001531
+
+           1        0.01         0      0.0157     0.01581    0.007935
+           1        0.01       0.2     0.01509      0.0152    0.007332
+           1        0.01       0.4      0.0145     0.01461    0.006775
+           1        0.01       0.6     0.01394     0.01405    0.006261
+           1        0.01       0.8      0.0134      0.0135    0.005786
+           1        0.01         1     0.01288     0.01298    0.005346
+
+           1       0.001         0      0.0157     0.01581    0.007935
+           1       0.001       0.2     0.01563     0.01575    0.007872
+           1       0.001       0.4     0.01557     0.01569     0.00781
+           1       0.001       0.6     0.01551     0.01563    0.007749
+           1       0.001       0.8     0.01545     0.01556    0.007688
+           1       0.001         1     0.01539      0.0155    0.007627
+
+
+parameter_taylor_test:
+  Normal end of execution.
+
+navier_stokes_2d_exact_test:
+  Normal end of execution.
+Tue Oct 19 12:01:05 2021

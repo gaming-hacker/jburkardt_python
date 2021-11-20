@@ -1,0 +1,4 @@
+
+markov_text_test():
+  markov_text() uses Markov methods to imitate a given text.
+Alice was beginning to 

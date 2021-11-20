@@ -1,0 +1,193 @@
+Tue Oct 19 11:26:24 2021
+
+CUBE_MONTE_CARLO_TEST
+  Python version: 3.6.9
+  Test CUBE_MONTE_CARLO().
+
+I4VEC_PRINT_TEST
+  Python version: 3.6.9
+  I4VEC_PRINT prints an I4VEC.
+
+  Here is an I4VEC:
+
+     0      91
+     1      92
+     2      93
+     3      94
+
+I4VEC_PRINT_TEST:
+  Normal end of execution.
+
+I4VEC_TRANSPOSE_PRINT_TEST
+  Python version: 3.6.9
+  I4VEC_TRANSPOSE_PRINT prints an I4VEC
+  with 5 entries to a row, and an optional title.
+
+  My array:  
+       1       2       3       4       5       6       7       8       9      10
+      11      12
+
+I4VEC_TRANSPOSE_PRINT_TEST:
+  Normal end of execution.
+
+R8MAT_PRINT_TEST
+  Python version: 3.6.9
+  R8MAT_PRINT prints an R8MAT.
+
+  Here is an R8MAT:
+
+  Col:       0             1             2             3             4       
+  Row
+      0 :          11            12            13            14            15  
+      1 :          21            22            23            24            25  
+      2 :          31            32            33            34            35  
+      3 :          41            42            43            44            45  
+
+  Col:       5       
+  Row
+      0 :          16  
+      1 :          26  
+      2 :          36  
+      3 :          46  
+
+R8MAT_PRINT_TEST:
+  Normal end of execution.
+
+R8MAT_PRINT_SOME_TEST
+  Python version: 3.6.9
+  R8MAT_PRINT_SOME prints some of an R8MAT.
+
+  Here is an R8MAT:
+
+  Col:       3             4             5       
+  Row
+      0 :          14            15            16  
+      1 :          24            25            26  
+      2 :          34            35            36  
+
+R8MAT_PRINT_SOME_TEST:
+  Normal end of execution.
+
+R8MAT_TRANSPOSE_PRINT_TEST
+  Python version: 3.6.9
+  R8MAT_TRANSPOSE_PRINT prints an R8MAT.
+
+  Here is an R8MAT, transposed:
+
+  Row:       0             1             2             3       
+  Col
+      0 :          11            21            31            41  
+      1 :          12            22            32            42  
+      2 :          13            23            33            43  
+
+R8MAT_TRANSPOSE_PRINT_TEST:
+  Normal end of execution.
+
+R8MAT_TRANSPOSE_PRINT_SOME_TEST
+  Python version: 3.6.9
+  R8MAT_TRANSPOSE_PRINT_SOME prints some of an R8MAT, transposed.
+
+  R8MAT, rows 0:2, cols 3:5:
+
+  Row:       0             1             2       
+  Col
+      3 :          14            24            34  
+      4 :          15            25            35  
+      5 :          16            26            36  
+
+R8MAT_TRANSPOSE_PRINT_SOME_TEST:
+  Normal end of execution.
+
+CUBE01_MONOMIAL_INTEGRAL_TEST
+  Python version: 3.6.9
+  CUBE01_MONOMIAL_INTEGRAL computes the integral of a monomial
+  within the interior of the unit cube in 3D.
+  Compare with a Monte Carlo estimate.
+
+  Number of sample points used is 4192
+
+  Ex  Ey  Ez     MC-Estimate           Exact      Error
+
+   4   4   6      0.00549041      0.00571429     0.00022
+   7   0   3        0.030393         0.03125     0.00086
+   6   2   4       0.0093874      0.00952381     0.00014
+   7   4   1       0.0124744          0.0125     2.6e-05
+   6   5   0       0.0235845       0.0238095     0.00023
+   6   3   5      0.00581679      0.00595238     0.00014
+   0   3   7        0.031032         0.03125     0.00022
+   4   7   7      0.00289018        0.003125     0.00023
+   3   3   3       0.0152203        0.015625      0.0004
+   2   0   1        0.162318        0.166667      0.0043
+   4   3   4      0.00972164            0.01     0.00028
+   4   0   2        0.064587       0.0666667      0.0021
+   7   5   3      0.00499595      0.00520833     0.00021
+   7   2   6      0.00589797      0.00595238     5.4e-05
+   3   6   2       0.0116117       0.0119048     0.00029
+   0   5   5       0.0279063       0.0277778     0.00013
+   5   5   0        0.027539       0.0277778     0.00024
+   7   4   7      0.00302466        0.003125      0.0001
+   7   5   7      0.00247141      0.00260417     0.00013
+   1   3   1        0.062407          0.0625     9.3e-05
+
+CUBE01_MONOMIAL_INTEGRAL_TEST:
+  Normal end of execution.
+
+CUBE01_MONTE_CARLO_TEST
+  Use CUBE01_SAMPLE to estimate integrals
+  along the interior of the unit cube in 3D.
+
+         N        1               X               Y               Z               X^2              XY             XZ              Y^2             YZ               Z^2
+         1               1        0.446564        0.371847        0.514643         0.19942        0.166054        0.229821         0.13827        0.191368        0.264857
+         2               1        0.774314        0.602218        0.430402         0.61665        0.443449        0.383851        0.393239        0.191534        0.334989
+         4               1        0.280645        0.563922        0.778081        0.223342        0.257445        0.224145        0.437796        0.398628        0.643253
+         8               1        0.325049        0.658958        0.361897         0.19292        0.195618        0.121692        0.465624        0.252432         0.16905
+        16               1        0.482921         0.55891        0.536149        0.347711        0.204904        0.290525        0.393552        0.264709        0.349408
+        32               1         0.39478        0.538871        0.529615        0.239229        0.255427        0.209065        0.355643        0.295522        0.350611
+        64               1        0.459575         0.50425        0.484078        0.284205        0.226422        0.220884        0.354468        0.237385        0.311905
+       128               1        0.493706        0.534846        0.522386        0.342816        0.268773        0.244836        0.372178        0.264482        0.352771
+       256               1        0.481752        0.506181        0.471337        0.309863        0.253515        0.225211        0.338508        0.236343        0.313608
+       512               1        0.531956        0.504175        0.492707        0.360674        0.270414        0.262855        0.335775        0.243394        0.322274
+      1024               1        0.511623        0.497263        0.497489        0.348702        0.258505        0.253808        0.331502        0.244968        0.334038
+      2048               1        0.492591        0.498956        0.497492         0.32298        0.247677        0.244962        0.330808        0.251258        0.333672
+      4096               1        0.501492         0.50925        0.500852        0.334518        0.255592        0.249785        0.343262        0.255799        0.333505
+      8192               1         0.49711        0.500803        0.496322        0.329954        0.246827        0.245724        0.334006        0.248876        0.329524
+     16384               1        0.502292        0.498901        0.501023        0.335754         0.24979        0.251537        0.333196        0.249325        0.335327
+     32768               1        0.497331        0.500561        0.497789        0.331693        0.248697         0.24766         0.33375        0.249673        0.331345
+     65536               1        0.499144        0.497194        0.501095        0.332457        0.247529         0.25017        0.330329        0.249413        0.334603
+
+     Exact               1             0.5             0.5             0.5        0.333333            0.25            0.25        0.333333            0.25        0.333333
+
+CUBE01_SAMPLE_TEST
+  Python version: 3.6.9
+  CUBE01_SAMPLE samples the unit cube.
+
+  Sample points in the unit cube.
+
+  Row:       0             1             2       
+  Col
+      0 :    0.147771      0.177444      0.326701  
+      1 :    0.754663      0.111055      0.818925  
+      2 :    0.273329      0.903667       0.44325  
+      3 :    0.230721       0.92304      0.495041  
+      4 :      0.2807      0.854913      0.509342  
+      5 :   0.0570367      0.517794      0.184577  
+      6 :   0.0709948      0.768341      0.651757  
+      7 :    0.712458      0.736978      0.592429  
+      8 :    0.198642      0.153764      0.976236  
+      9 :    0.768739      0.947843      0.571851  
+
+CUBE01_SAMPLE_TEST
+  Normal end of execution.
+
+CUBE01_VOLUME_TEST
+  Python version: 3.6.9
+  CUBE01_VOLUME returns the volume of the unit cube.
+
+  CUBE01_VOLUME() = 1
+
+CUBE01_VOLUME_TEST
+  Normal end of execution.
+
+cube_monte_carlo_test():
+  Normal end of execution.
+Tue Oct 19 11:26:26 2021

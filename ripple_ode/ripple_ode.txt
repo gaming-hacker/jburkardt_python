@@ -1,0 +1,13 @@
+Tue Oct 19 17:08:59 2021
+
+ripple_ode_test():
+  Python version: 3.6.9
+  ripple_ode models an equation with ripples and hyperbolas.
+
+ripple_euler()
+  Use euler() to solve the ripple ODE.
+  Graphics saved as "ripple_euler.png"
+
+ripple_ode_test:
+  Normal end of execution.
+Tue Oct 19 17:08:59 2021

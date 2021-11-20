@@ -1,0 +1,9 @@
+
+STEP09:
+  Python version: 3.6.9
+  The 2D Laplace equation.
+  Saved initial solution in file "step09_initial.png".
+  Saved final solution in file "step09_final.png".
+
+STEP09:
+  Normal end of execution.

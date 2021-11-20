@@ -1,0 +1,18 @@
+Tue Oct 19 11:57:13 2021
+
+leapfrog_test:
+  Python version: 3.6.9
+  Test leapfrog().
+
+shm_leapfrog():
+  Use leapfrog() to solve the shm ODE.
+
+  Number of equal steps is 80
+  Graphics saved as "shm_leapfrog_y1.png"
+  Graphics saved as "shm_leapfrog_y2.png"
+  Graphics saved as "shm_leapfrog_phase.png"
+  Graphics saved as "shm_leapfrog_conservation.png"
+
+leapfrog_test:
+  Normal end of execution.
+Tue Oct 19 11:57:14 2021

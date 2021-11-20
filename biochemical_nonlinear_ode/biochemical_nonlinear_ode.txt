@@ -1,0 +1,10 @@
+Tue Oct 19 11:24:29 2021
+
+biochemical_nonlinear_ode_test:
+  Python version: 3.6.9
+  Test biochemical_nonlinear_ode using ode45.
+  Graphics saved as "biochemical_nonlinear_ode.png"
+
+biochemical_nonlinear_ode_test:
+  Normal end of execution.
+Tue Oct 19 11:24:30 2021

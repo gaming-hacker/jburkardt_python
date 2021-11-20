@@ -1,0 +1,83 @@
+Tue Oct 19 17:10:32 2021
+
+snakes_and_ladders_test:
+  Python version: 3.6.9
+  Test snakes_and_ladders()
+
+average_length
+  Python version: 3.6.9
+  Estimate the average length of a game of snakes and ladders.
+Average number of moves is 38
+
+average_length
+  Normal end of execution.
+
+game_length_test
+  Python version: 3.6.9
+  game_length reports the length of a single random game of Snakes and Ladders.
+
+  This random game took 64 moves.
+
+game_length_test
+  Normal end of execution.
+You rolled 2 and moved to 2 .
+You rolled 6 and moved to 8 .
+You rolled 2 and moved to 10 .
+You rolled 6 and moved to 16 and took a snake down to 6.
+You rolled 4 and moved to 10 .
+You rolled 4 and moved to 14 .
+You rolled 6 and moved to 20 .
+You rolled 6 and moved to 26 .
+You rolled 2 and moved to 28 and took a ladder up to 84 .
+You rolled 4 and moved to 88 .
+You rolled 6 and moved to 94 .
+You rolled 4 and moved to 98 and took a snake down to 78.
+You rolled 4 and moved to 82 .
+You rolled 5 and moved to 87 and took a snake down to 24.
+You rolled 6 and moved to 30 .
+You rolled 6 and moved to 36 and took a ladder up to 44 .
+You rolled 2 and moved to 46 .
+You rolled 6 and moved to 52 .
+You rolled 3 and moved to 55 .
+You rolled 4 and moved to 59 .
+You rolled 2 and moved to 61 .
+You rolled 4 and moved to 65 .
+You rolled 3 and moved to 68 .
+You rolled 1 and moved to 69 .
+You rolled 3 and moved to 72 .
+You rolled 6 and moved to 78 .
+You rolled 1 and moved to 79 .
+You rolled 5 and moved to 84 .
+You rolled 2 and moved to 86 .
+You rolled 1 and moved to 87 and took a snake down to 24.
+You rolled 1 and moved to 25 .
+You rolled 4 and moved to 29 .
+You rolled 1 and moved to 30 .
+You rolled 3 and moved to 33 .
+You rolled 6 and moved to 39 .
+You rolled 1 and moved to 40 .
+You rolled 4 and moved to 44 .
+You rolled 4 and moved to 48 and took a snake down to 26.
+You rolled 5 and moved to 31 .
+You rolled 6 and moved to 37 .
+You rolled 5 and moved to 42 .
+You rolled 5 and moved to 47 .
+You rolled 6 and moved to 53 .
+You rolled 1 and moved to 54 .
+You rolled 2 and moved to 56 and took a snake down to 53.
+You rolled 6 and moved to 59 .
+You rolled 5 and moved to 64 and took a snake down to 60.
+You rolled 2 and moved to 62 and took a snake down to 10.
+You rolled 3 and moved to 13 .
+You rolled 6 and moved to 19 .
+You rolled 5 and moved to 24 .
+You rolled 4 and moved to 28 and took a ladder up to 84 .
+You rolled 5 and moved to 89 .
+You rolled 3 and moved to 92 .
+You rolled 4 and moved to 96 .
+You rolled 3 and moved to 99 .
+You rolled 4 and moved to 103 and moved back to 100 and you won after 57 moves!
+
+snakes_and_ladders_test:
+  Normal end of execution.
+Tue Oct 19 17:10:32 2021

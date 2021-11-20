@@ -1,0 +1,12 @@
+Tue Oct 19 11:32:45 2021
+
+DELAUNAY_TEST:
+  Python version: 3.6.9
+  scipy.spatial.Delaunay computes the Delaunay triangulation of a set of points.
+  matplotlib.pyplot.triplot will plot it.
+
+  Graphics saved as "delaunay_test.png"
+
+DELAUNAY_TEST:
+  Normal end of execution.
+Tue Oct 19 11:32:46 2021

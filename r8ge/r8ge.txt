@@ -1,0 +1,3689 @@
+Tue Oct 19 17:06:11 2021
+
+r8ge_test
+  Python version: 3.6.9
+  Test r8ge().
+
+i4_log_10_test
+  Python version: 3.6.9
+  i4_log_10: whole part of log base 10,
+
+  X, i4_log_10
+
+     0             0
+     1             0
+     2             0
+     3             0
+     9             0
+    10             1
+    11             1
+    99             1
+   101             2
+    -1             0
+    -2             0
+    -3             0
+    -9             0
+
+i4_log_10_test
+  Normal end of execution.
+
+r8_sign_test
+  Python version: 3.6.9
+  r8_sign returns the sign of an R8.
+
+     R8     r8_sign(R8)
+
+   -1.2500        -1
+   -0.2500        -1
+    0.0000         1
+    0.5000         1
+    9.0000         1
+
+r8_sign_test
+  Normal end of execution.
+
+r8ge_cg_test
+  Python version: 3.6.9
+  r8ge_cg applies CG to an R8GE matrix.
+
+  Number of variables N = 10
+  Norm of residual ||Ax-b|| = 3.52866e-16
+  Norm of error ||x1-x2|| = 5.95291e-16
+
+r8ge_cg_test
+  Normal end of execution.
+
+r8ge_co_test
+  Python version: 3.6.9
+  r8ge_co estimates the condition number of an R8GE matrix.
+
+  Matrix order N = 4
+
+  The L1 condition number is 10
+
+  The r8ge_co estimate is 7
+
+r8ge_co_test:
+  Normal end of execution.
+
+r8ge_det_test
+  Python version: 3.6.9
+  r8ge_det computes the determinant of an R8GE matrix.
+
+  r8ge_det computes the determinant = 112
+  Exact determinant =                 112
+
+r8ge_det_test:
+  Normal end of execution.
+
+r8ge_dif2_test
+  Python version: 3.6.9
+  r8ge_dif2 returns the second difference matrix.
+
+  DIF2 matrix:
+
+  Col: 
+      0       
+      1       
+      2       
+      3       
+
+  Row
+      0 :
+           2  
+          -1  
+           0  
+           0  
+
+      1 :
+          -1  
+           2  
+          -1  
+           0  
+
+      2 :
+           0  
+          -1  
+           2  
+          -1  
+
+      3 :
+           0  
+           0  
+          -1  
+           2  
+
+      4 :
+           0  
+           0  
+           0  
+          -1  
+
+
+r8ge_dif2_test:
+  Normal end of execution.
+
+r8ge_dilu_test
+  Python version: 3.6.9
+  r8ge_dilu returns the DILU factors of an R8GE matrix.
+
+  Matrix rows M =    9
+  Matrix columns N = 9
+
+  Matrix A:
+
+  Col: 
+      0       
+      1       
+      2       
+      3       
+      4       
+
+  Row
+      0 :
+           4  
+          -1  
+           0  
+          -1  
+           0  
+
+      1 :
+          -1  
+           4  
+          -1  
+           0  
+          -1  
+
+      2 :
+           0  
+          -1  
+           4  
+          -1  
+           0  
+
+      3 :
+          -1  
+           0  
+          -1  
+           4  
+          -1  
+
+      4 :
+           0  
+          -1  
+           0  
+          -1  
+           4  
+
+      5 :
+           0  
+           0  
+          -1  
+           0  
+          -1  
+
+      6 :
+           0  
+           0  
+           0  
+          -1  
+           0  
+
+      7 :
+           0  
+           0  
+           0  
+           0  
+          -1  
+
+      8 :
+           0  
+           0  
+           0  
+           0  
+           0  
+
+
+  Col: 
+      5       
+      6       
+      7       
+      8       
+
+  Row
+      0 :
+           0  
+           0  
+           0  
+           0  
+
+      1 :
+           0  
+           0  
+           0  
+           0  
+
+      2 :
+          -1  
+           0  
+           0  
+           0  
+
+      3 :
+           0  
+          -1  
+           0  
+           0  
+
+      4 :
+          -1  
+           0  
+          -1  
+           0  
+
+      5 :
+           4  
+          -1  
+           0  
+          -1  
+
+      6 :
+          -1  
+           4  
+          -1  
+           0  
+
+      7 :
+           0  
+          -1  
+           4  
+          -1  
+
+      8 :
+          -1  
+           0  
+          -1  
+           4  
+
+
+  DILU factor:
+
+     0:          0.25
+     1:      0.266667
+     2:      0.267857
+     3:      0.287179
+     4:      0.290179
+     5:      0.290532
+     6:      0.292202
+     7:      0.292601
+     8:      0.292666
+
+r8ge_dilu_test:
+  Normal end of execution.
+
+r8ge_fa_test01
+  Python version: 3.6.9
+  r8ge_fa computes the LU factors of an R8GE matrix,
+  r8ge_sl solves a factored R8GE system.
+
+  Matrix order N = 10
+
+  Solution:
+
+     0:             1
+     1:             2
+     2:             3
+     3:             4
+     4:             5
+     5:             6
+     6:             7
+     7:             8
+     8:             9
+     9:            10
+
+  Solution:
+
+     0:             1
+     1:             1
+     2:             1
+     3:             1
+     4:             1
+     5:             1
+     6:             1
+     7:             1
+     8:             1
+     9:             1
+
+  Solution of transposed system:
+
+     0:             1
+     1:             2
+     2:             3
+     3:             4
+     4:             5
+     5:             6
+     6:             7
+     7:             8
+     8:             9
+     9:            10
+
+r8ge_fa_test01
+  Normal end of execution.
+
+r8ge_fa_test02
+  Python version: 3.6.9
+  r8ge_fa computes the LU factors of an R8GE system,
+  r8ge_sl solves a factored R8GE system.
+
+  Matrix order N = 5
+
+  The matrix:
+
+  Col: 
+      0       
+      1       
+      2       
+      3       
+      4       
+
+  Row
+      0 :
+    0.767206  
+    0.357889  
+      0.3736  
+    0.702813  
+    0.306918  
+
+      1 :
+    0.317864  
+    0.358844  
+   0.0842788  
+    0.861704  
+    0.103707  
+
+      2 :
+    0.475535  
+   0.0922162  
+    0.726579  
+   0.0663226  
+  0.00433802  
+
+      3 :
+     0.38025  
+    0.130957  
+    0.665251  
+    0.417578  
+    0.189232  
+
+      4 :
+    0.268702  
+    0.189777  
+    0.710273  
+    0.647909  
+    0.100385  
+
+
+  The compressed LU factors:
+
+  Col: 
+      0       
+      1       
+      2       
+      3       
+      4       
+
+  Row
+      0 :
+    0.767206  
+    0.357889  
+      0.3736  
+    0.702813  
+    0.306918  
+
+      1 :
+   -0.414314  
+    0.210565  
+  -0.0705089  
+    0.570519  
+  -0.0234536  
+
+      2 :
+   -0.619827  
+     0.61555  
+    0.601001  
+    0.227185  
+ 6.79689e-05  
+
+      3 :
+   -0.495631  
+    0.220473  
+   -0.772942  
+   -0.188831  
+   -0.200386  
+
+      4 :
+   -0.350235  
+   -0.305992  
+   -0.751429  
+    0.102877  
+   0.0112758  
+
+
+  The pivot vector P:
+
+     0       0
+     1       1
+     2       4
+     3       4
+     4       4
+
+  Solution:
+
+     0:             1
+     1:             2
+     2:             3
+     3:             4
+     4:             5
+
+r8ge_fa_test02
+  Normal end of execution.
+
+r8ge_fs_test
+  Python version: 3.6.9
+  r8ge_fs factors and solves a linear system involving
+  an R8GE matrix.
+
+  Matrix order N = 10
+
+  Solution:
+
+     0:             1
+     1:             2
+     2:             3
+     3:             4
+     4:             5
+     5:             6
+     6:             7
+     7:             8
+     8:             9
+     9:            10
+
+r8ge_fs_test
+  Normal end of execution.
+
+r8ge_fss_test
+  Python version: 3.6.9
+  r8ge_fss factors and solves multiple linear systems
+  associated with an R8GE matrix.
+
+  Matrix order N = 10
+
+  Solution:
+
+  Col: 
+      0       
+      1       
+      2       
+
+  Row
+      0 :
+           1  
+           1  
+           1  
+
+      1 :
+           1  
+           2  
+           2  
+
+      2 :
+           1  
+           3  
+           3  
+
+      3 :
+           1  
+           4  
+           1  
+
+      4 :
+           1  
+           5  
+           2  
+
+      5 :
+           1  
+           6  
+           3  
+
+      6 :
+           1  
+           7  
+           1  
+
+      7 :
+           1  
+           8  
+           2  
+
+      8 :
+           1  
+           9  
+           3  
+
+      9 :
+           1  
+          10  
+           1  
+
+
+r8ge_fss_test:
+  Normal end of execution.
+
+r8ge_hilbert_test
+  Python version: 3.6.9
+  r8ge_hilbert returns the Hilbert matrix.
+
+  Hilbert matrix:
+
+  Col: 
+      0       
+      1       
+      2       
+      3       
+
+  Row
+      0 :
+           1  
+         0.5  
+    0.333333  
+        0.25  
+
+      1 :
+         0.5  
+    0.333333  
+        0.25  
+         0.2  
+
+      2 :
+    0.333333  
+        0.25  
+         0.2  
+    0.166667  
+
+      3 :
+        0.25  
+         0.2  
+    0.166667  
+    0.142857  
+
+      4 :
+         0.2  
+    0.166667  
+    0.142857  
+       0.125  
+
+
+r8ge_hilbert_test:
+  Normal end of execution.
+
+r8ge_hilbert_inverse_test
+  Python version: 3.6.9
+  r8ge_hilbert_inverse computes the inverse of the
+  Hilbert matrix, stored as an R8GE matrix.
+
+  Matrix order N = 4
+
+  Matrix A:
+
+  Col: 
+      0       
+      1       
+      2       
+      3       
+
+  Row
+      0 :
+           1  
+         0.5  
+    0.333333  
+        0.25  
+
+      1 :
+         0.5  
+    0.333333  
+        0.25  
+         0.2  
+
+      2 :
+    0.333333  
+        0.25  
+         0.2  
+    0.166667  
+
+      3 :
+        0.25  
+         0.2  
+    0.166667  
+    0.142857  
+
+
+  Inverse matrix B:
+
+  Col: 
+      0       
+      1       
+      2       
+      3       
+
+  Row
+      0 :
+          16  
+        -120  
+         240  
+        -140  
+
+      1 :
+        -120  
+        1200  
+       -2700  
+        1680  
+
+      2 :
+         240  
+       -2700  
+        6480  
+       -4200  
+
+      3 :
+        -140  
+        1680  
+       -4200  
+        2800  
+
+
+  Product A * B:
+
+  Col: 
+      0       
+      1       
+      2       
+      3       
+
+  Row
+      0 :
+           1  
+           0  
+           0  
+           0  
+
+      1 :
+           0  
+           1  
+           0  
+           0  
+
+      2 :
+           0  
+           0  
+           1  
+-5.68434e-14  
+
+      3 :
+           0  
+           0  
+           0  
+           1  
+
+
+r8ge_hilbert_inverse_test:
+  Normal end of execution.
+
+r8ge_house_axh_test
+  Python version: 3.6.9
+  r8ge_house_axh multiplies a matrix A times a
+  compact Householder matrix.
+
+  Matrix A:
+
+  Col: 
+      0       
+      1       
+      2       
+      3       
+      4       
+
+  Row
+      0 :
+       3.309  
+     1.34983  
+     3.46523  
+    -2.28237  
+    -2.86042  
+
+      1 :
+    0.660972  
+    0.161017  
+     3.12788  
+    -4.61859  
+     4.82953  
+
+      2 :
+    -2.13117  
+     1.09713  
+       1.412  
+     4.31401  
+   -0.977895  
+
+      3 :
+     1.03922  
+     2.20203  
+     3.90203  
+    -2.53646  
+     -4.1535  
+
+      4 :
+     3.99622  
+  0.00404707  
+    -2.80931  
+    0.172227  
+    -3.95893  
+
+
+  Compact vector V so column 3 of H*A is packed:
+
+     0:             0
+     1:             0
+     2:      0.800553
+     3:       0.48633
+     4:     -0.350139
+
+  Householder matrix H:
+
+  Col: 
+      0       
+      1       
+      2       
+      3       
+      4       
+
+  Row
+      0 :
+           1  
+           0  
+           0  
+           0  
+           0  
+
+      1 :
+           0  
+           1  
+           0  
+           0  
+           0  
+
+      2 :
+           0  
+           0  
+   -0.281771  
+   -0.778666  
+     0.56061  
+
+      3 :
+           0  
+           0  
+   -0.778666  
+    0.526966  
+    0.340566  
+
+      4 :
+           0  
+           0  
+     0.56061  
+    0.340566  
+    0.754805  
+
+
+  Indirect product A*H:
+
+  Col: 
+      0       
+      1       
+      2       
+      3       
+      4       
+
+  Row
+      0 :
+       3.309  
+     1.34983  
+    -0.80278  
+    -4.87515  
+   -0.993711  
+
+      1 :
+    0.660972  
+    0.161017  
+     5.42248  
+    -3.22464  
+     3.82594  
+
+      2 :
+    -2.13117  
+     1.09713  
+    -4.30525  
+    0.840819  
+     1.52267  
+
+      3 :
+     1.03922  
+     2.20203  
+    -1.45292  
+    -5.78954  
+     -1.8114  
+
+      4 :
+     3.99622  
+  0.00404707  
+    -1.56194  
+    0.929995  
+    -4.50449  
+
+
+  Direct product A*H:
+
+  Col: 
+      0       
+      1       
+      2       
+      3       
+      4       
+
+  Row
+      0 :
+       3.309  
+     1.34983  
+    -0.80278  
+    -4.87515  
+   -0.993711  
+
+      1 :
+    0.660972  
+    0.161017  
+     5.42248  
+    -3.22464  
+     3.82594  
+
+      2 :
+    -2.13117  
+     1.09713  
+    -4.30525  
+    0.840819  
+     1.52267  
+
+      3 :
+     1.03922  
+     2.20203  
+    -1.45292  
+    -5.78954  
+     -1.8114  
+
+      4 :
+     3.99622  
+  0.00404707  
+    -1.56194  
+    0.929995  
+    -4.50449  
+
+
+  H*A should pack column 3:
+
+  Col: 
+      0       
+      1       
+      2       
+      3       
+      4       
+
+  Row
+      0 :
+       3.309  
+     1.34983  
+     3.46523  
+    -2.28237  
+    -2.86042  
+
+      1 :
+    0.660972  
+    0.161017  
+     3.12788  
+    -4.61859  
+     4.82953  
+
+      2 :
+     2.03161  
+    -2.02152  
+    -5.01117  
+    0.856041  
+     1.29031  
+
+      3 :
+     3.56808  
+    0.307475  
+-8.88178e-16  
+    -4.63714  
+    -2.77558  
+
+      4 :
+     2.17553  
+     1.36806  
+ 4.44089e-16  
+     1.68464  
+    -4.95098  
+
+
+r8ge_house_axh_test
+  Normal end of execution.
+
+r8ge_house_form_test
+  Python version: 3.6.9
+  r8ge_house_form forms a Householder
+  matrix from its compact form.
+
+  Compact vector form V:
+
+     0:             0
+     1:             0
+     2:             1
+     3:             2
+     4:             3
+
+  Householder matrix H:
+
+  Col: 
+      0       
+      1       
+      2       
+      3       
+      4       
+
+  Row
+      0 :
+           1  
+           0  
+           0  
+           0  
+           0  
+
+      1 :
+           0  
+           1  
+           0  
+           0  
+           0  
+
+      2 :
+           0  
+           0  
+    0.857143  
+   -0.285714  
+   -0.428571  
+
+      3 :
+           0  
+           0  
+   -0.285714  
+    0.428571  
+   -0.857143  
+
+      4 :
+           0  
+           0  
+   -0.428571  
+   -0.857143  
+   -0.285714  
+
+
+r8ge_house_form_test
+  Normal end of execution.
+
+r8ge_identity_test
+  Python version: 3.6.9
+  r8ge_identity returns the identity matrix.
+
+  Identity matrix:
+
+  Col: 
+      0       
+      1       
+      2       
+      3       
+
+  Row
+      0 :
+           1  
+           0  
+           0  
+           0  
+
+      1 :
+           0  
+           1  
+           0  
+           0  
+
+      2 :
+           0  
+           0  
+           1  
+           0  
+
+      3 :
+           0  
+           0  
+           0  
+           1  
+
+      4 :
+           0  
+           0  
+           0  
+           0  
+
+
+r8ge_identity_test:
+  Normal end of execution.
+
+r8ge_ilu_test
+  Python version: 3.6.9
+  r8ge_ilu returns the ILU factors of an R8GE matrix.
+
+  Matrix rows M =    9
+  Matrix columns N = 9
+
+  Matrix A:
+
+  Col: 
+      0       
+      1       
+      2       
+      3       
+      4       
+
+  Row
+      0 :
+           4  
+          -1  
+           0  
+          -1  
+           0  
+
+      1 :
+          -1  
+           4  
+          -1  
+           0  
+          -1  
+
+      2 :
+           0  
+          -1  
+           4  
+          -1  
+           0  
+
+      3 :
+          -1  
+           0  
+          -1  
+           4  
+          -1  
+
+      4 :
+           0  
+          -1  
+           0  
+          -1  
+           4  
+
+      5 :
+           0  
+           0  
+          -1  
+           0  
+          -1  
+
+      6 :
+           0  
+           0  
+           0  
+          -1  
+           0  
+
+      7 :
+           0  
+           0  
+           0  
+           0  
+          -1  
+
+      8 :
+           0  
+           0  
+           0  
+           0  
+           0  
+
+
+  Col: 
+      5       
+      6       
+      7       
+      8       
+
+  Row
+      0 :
+           0  
+           0  
+           0  
+           0  
+
+      1 :
+           0  
+           0  
+           0  
+           0  
+
+      2 :
+          -1  
+           0  
+           0  
+           0  
+
+      3 :
+           0  
+          -1  
+           0  
+           0  
+
+      4 :
+          -1  
+           0  
+          -1  
+           0  
+
+      5 :
+           4  
+          -1  
+           0  
+          -1  
+
+      6 :
+          -1  
+           4  
+          -1  
+           0  
+
+      7 :
+           0  
+          -1  
+           4  
+          -1  
+
+      8 :
+          -1  
+           0  
+          -1  
+           4  
+
+
+  Factor L:
+
+  Col: 
+      0       
+      1       
+      2       
+      3       
+      4       
+
+  Row
+      0 :
+           1  
+           0  
+           0  
+           0  
+           0  
+
+      1 :
+       -0.25  
+           1  
+           0  
+           0  
+           0  
+
+      2 :
+           0  
+   -0.266667  
+           1  
+           0  
+           0  
+
+      3 :
+       -0.25  
+           0  
+   -0.267857  
+           1  
+           0  
+
+      4 :
+           0  
+   -0.266667  
+           0  
+   -0.287179  
+           1  
+
+      5 :
+           0  
+           0  
+   -0.267857  
+           0  
+   -0.290179  
+
+      6 :
+           0  
+           0  
+           0  
+   -0.287179  
+           0  
+
+      7 :
+           0  
+           0  
+           0  
+           0  
+   -0.290179  
+
+      8 :
+           0  
+           0  
+           0  
+           0  
+           0  
+
+
+  Col: 
+      5       
+      6       
+      7       
+      8       
+
+  Row
+      0 :
+           0  
+           0  
+           0  
+           0  
+
+      1 :
+           0  
+           0  
+           0  
+           0  
+
+      2 :
+           0  
+           0  
+           0  
+           0  
+
+      3 :
+           0  
+           0  
+           0  
+           0  
+
+      4 :
+           0  
+           0  
+           0  
+           0  
+
+      5 :
+           1  
+           0  
+           0  
+           0  
+
+      6 :
+   -0.290532  
+           1  
+           0  
+           0  
+
+      7 :
+           0  
+   -0.292202  
+           1  
+           0  
+
+      8 :
+   -0.290532  
+           0  
+   -0.292601  
+           1  
+
+
+  Factor U:
+
+  Col: 
+      0       
+      1       
+      2       
+      3       
+      4       
+
+  Row
+      0 :
+           4  
+          -1  
+           0  
+          -1  
+           0  
+
+      1 :
+           0  
+        3.75  
+          -1  
+           0  
+          -1  
+
+      2 :
+           0  
+           0  
+     3.73333  
+          -1  
+           0  
+
+      3 :
+           0  
+           0  
+           0  
+     3.48214  
+          -1  
+
+      4 :
+           0  
+           0  
+           0  
+           0  
+     3.44615  
+
+      5 :
+           0  
+           0  
+           0  
+           0  
+           0  
+
+      6 :
+           0  
+           0  
+           0  
+           0  
+           0  
+
+      7 :
+           0  
+           0  
+           0  
+           0  
+           0  
+
+      8 :
+           0  
+           0  
+           0  
+           0  
+           0  
+
+
+  Col: 
+      5       
+      6       
+      7       
+      8       
+
+  Row
+      0 :
+           0  
+           0  
+           0  
+           0  
+
+      1 :
+           0  
+           0  
+           0  
+           0  
+
+      2 :
+          -1  
+           0  
+           0  
+           0  
+
+      3 :
+           0  
+          -1  
+           0  
+           0  
+
+      4 :
+          -1  
+           0  
+          -1  
+           0  
+
+      5 :
+     3.44196  
+          -1  
+           0  
+          -1  
+
+      6 :
+           0  
+     3.42229  
+          -1  
+           0  
+
+      7 :
+           0  
+           0  
+     3.41762  
+          -1  
+
+      8 :
+           0  
+           0  
+           0  
+     3.41687  
+
+
+  Product L*U:
+
+  Col: 
+      0       
+      1       
+      2       
+      3       
+      4       
+
+  Row
+      0 :
+           4  
+          -1  
+           0  
+          -1  
+           0  
+
+      1 :
+          -1  
+           4  
+          -1  
+        0.25  
+          -1  
+
+      2 :
+           0  
+          -1  
+           4  
+          -1  
+    0.266667  
+
+      3 :
+          -1  
+        0.25  
+          -1  
+           4  
+          -1  
+
+      4 :
+           0  
+          -1  
+    0.266667  
+          -1  
+           4  
+
+      5 :
+           0  
+           0  
+          -1  
+    0.267857  
+          -1  
+
+      6 :
+           0  
+           0  
+           0  
+          -1  
+    0.287179  
+
+      7 :
+           0  
+           0  
+           0  
+           0  
+          -1  
+
+      8 :
+           0  
+           0  
+           0  
+           0  
+           0  
+
+
+  Col: 
+      5       
+      6       
+      7       
+      8       
+
+  Row
+      0 :
+           0  
+           0  
+           0  
+           0  
+
+      1 :
+           0  
+           0  
+           0  
+           0  
+
+      2 :
+          -1  
+           0  
+           0  
+           0  
+
+      3 :
+    0.267857  
+          -1  
+           0  
+           0  
+
+      4 :
+          -1  
+    0.287179  
+          -1  
+           0  
+
+      5 :
+           4  
+          -1  
+    0.290179  
+          -1  
+
+      6 :
+          -1  
+           4  
+          -1  
+    0.290532  
+
+      7 :
+    0.290179  
+          -1  
+           4  
+          -1  
+
+      8 :
+          -1  
+    0.290532  
+          -1  
+           4  
+
+
+r8ge_ilu_test:
+  Normal end of execution.
+
+r8ge_indicator_test
+  Python version: 3.6.9
+  r8ge_indicator returns the indicator matrix.
+
+  Indicator matrix:
+
+  Col: 
+      0       
+      1       
+      2       
+      3       
+
+  Row
+      0 :
+          11  
+          12  
+          13  
+          14  
+
+      1 :
+          21  
+          22  
+          23  
+          24  
+
+      2 :
+          31  
+          32  
+          33  
+          34  
+
+      3 :
+          41  
+          42  
+          43  
+          44  
+
+      4 :
+          51  
+          52  
+          53  
+          54  
+
+
+r8ge_indicator_test:
+  Normal end of execution.
+
+r8ge_inverse_test
+  Python version: 3.6.9
+  r8ge_inverse computes the inverse of an R8GE matrix.
+
+  Matrix order N = 4
+
+  Matrix A:
+
+  Col: 
+      0       
+      1       
+      2       
+      3       
+
+  Row
+      0 :
+           5  
+           3  
+           3  
+           3  
+
+      1 :
+           3  
+           5  
+           3  
+           3  
+
+      2 :
+           3  
+           3  
+           5  
+           3  
+
+      3 :
+           3  
+           3  
+           3  
+           5  
+
+
+  Inverse matrix B:
+
+  Col: 
+      0       
+      1       
+      2       
+      3       
+
+  Row
+      0 :
+    0.392857  
+   -0.107143  
+   -0.107143  
+   -0.107143  
+
+      1 :
+   -0.107143  
+    0.392857  
+   -0.107143  
+   -0.107143  
+
+      2 :
+   -0.107143  
+   -0.107143  
+    0.392857  
+   -0.107143  
+
+      3 :
+   -0.107143  
+   -0.107143  
+   -0.107143  
+    0.392857  
+
+
+  Product matrix:
+
+  Col: 
+      0       
+      1       
+      2       
+      3       
+
+  Row
+      0 :
+           1  
+-1.11022e-16  
+           0  
+           0  
+
+      1 :
+ 3.33067e-16  
+           1  
+           0  
+           0  
+
+      2 :
+ 4.44089e-16  
+-1.11022e-16  
+           1  
+ 2.22045e-16  
+
+      3 :
+ 4.44089e-16  
+-1.11022e-16  
+           0  
+           1  
+
+
+r8ge_ml_test
+  Python version: 3.6.9
+  r8ge_ml computes A*x or A'*X
+  where A has been factored by r8ge_fa.
+
+  Matrix order N = 10
+
+  A*x and PLU*x
+
+     0:         26.764          26.764
+     1:        30.0641         30.0641
+     2:        22.9421         22.9421
+     3:        34.5322         34.5322
+     4:        17.4435         17.4435
+     5:        25.8538         25.8538
+     6:         37.021          37.021
+     7:        29.3448         29.3448
+     8:         29.293          29.293
+     9:         30.934          30.934
+
+  A'*x and (PLU)'*x
+
+     0:        22.5861         22.5861
+     1:        22.1494         22.1494
+     2:        31.9351         31.9351
+     3:        31.8972         31.8972
+     4:         25.859          25.859
+     5:        19.1246         19.1246
+     6:        23.5639         23.5639
+     7:        23.8888         23.8888
+     8:        43.8814         43.8814
+     9:        26.7637         26.7637
+
+r8ge_ml_test
+  Normal end of execution.
+
+r8ge_mm_test
+  Python version: 3.6.9
+  r8ge_mm computes a matrix-matrix product C = A * B;
+
+  A:
+
+  Col: 
+      0       
+      1       
+      2       
+
+  Row
+      0 :
+           1  
+           0  
+           0  
+
+      1 :
+           1  
+           1  
+           0  
+
+      2 :
+           1  
+           2  
+           1  
+
+      3 :
+           1  
+           3  
+           3  
+
+
+  B:
+
+  Col: 
+      0       
+      1       
+      2       
+      3       
+
+  Row
+      0 :
+           1  
+           1  
+           1  
+           1  
+
+      1 :
+           0  
+           1  
+           2  
+           3  
+
+      2 :
+           0  
+           0  
+           1  
+           3  
+
+
+  C = A*B:
+
+  Col: 
+      0       
+      1       
+      2       
+      3       
+
+  Row
+      0 :
+           1  
+           1  
+           1  
+           1  
+
+      1 :
+           1  
+           2  
+           3  
+           4  
+
+      2 :
+           1  
+           3  
+           6  
+          10  
+
+      3 :
+           1  
+           4  
+          10  
+          19  
+
+
+r8ge_mm_test
+  Normal end of execution.
+
+r8ge_mtm_test
+  Python version: 3.6.9
+  r8ge_mtm computes a matrix-matrix product C = A' * B;
+
+  A:
+
+  Col: 
+      0       
+      1       
+      2       
+      3       
+
+  Row
+      0 :
+           1  
+           0  
+           0  
+           0  
+
+      1 :
+           1  
+           1  
+           0  
+           0  
+
+      2 :
+           1  
+           2  
+           1  
+           0  
+
+
+  B:
+
+  Col: 
+      0       
+      1       
+      2       
+      3       
+
+  Row
+      0 :
+           1  
+           0  
+           0  
+           0  
+
+      1 :
+           1  
+           1  
+           0  
+           0  
+
+      2 :
+           1  
+           2  
+           1  
+           0  
+
+
+  C = A'*B:
+
+  Col: 
+      0       
+      1       
+      2       
+      3       
+
+  Row
+      0 :
+           3  
+           3  
+           1  
+           0  
+
+      1 :
+           3  
+           5  
+           2  
+           0  
+
+      2 :
+           1  
+           2  
+           1  
+           0  
+
+      3 :
+           0  
+           0  
+           0  
+           0  
+
+
+r8ge_mtm_test
+  Normal end of execution.
+
+r8ge_mtv_test
+  Python version: 3.6.9
+  r8ge_mtv computes a matrix product b=A'*x for an R8GE matrix.
+
+  The matrix A:
+
+  Col: 
+      0       
+      1       
+      2       
+      3       
+      4       
+
+  Row
+      0 :
+          11  
+          12  
+          13  
+          14  
+          15  
+
+      1 :
+          21  
+          22  
+          23  
+          24  
+          25  
+
+      2 :
+          31  
+          32  
+          33  
+          34  
+          35  
+
+
+  The vector x:
+
+     0:             1
+     1:             2
+     2:             3
+
+  The vector b=A'*x:
+
+     0:           146
+     1:           152
+     2:           158
+     3:           164
+     4:           170
+
+  The matrix A:
+
+  Col: 
+      0       
+      1       
+      2       
+      3       
+      4       
+
+  Row
+      0 :
+          11  
+          12  
+          13  
+          14  
+          15  
+
+      1 :
+          21  
+          22  
+          23  
+          24  
+          25  
+
+      2 :
+          31  
+          32  
+          33  
+          34  
+          35  
+
+      3 :
+          41  
+          42  
+          43  
+          44  
+          45  
+
+      4 :
+          51  
+          52  
+          53  
+          54  
+          55  
+
+
+  The vector x:
+
+     0:             1
+     1:             2
+     2:             3
+     3:             4
+     4:             5
+
+  The vector b=A'*x:
+
+     0:           565
+     1:           580
+     2:           595
+     3:           610
+     4:           625
+
+  The matrix A:
+
+  Col: 
+      0       
+      1       
+      2       
+
+  Row
+      0 :
+          11  
+          12  
+          13  
+
+      1 :
+          21  
+          22  
+          23  
+
+      2 :
+          31  
+          32  
+          33  
+
+      3 :
+          41  
+          42  
+          43  
+
+      4 :
+          51  
+          52  
+          53  
+
+
+  The vector x:
+
+     0:             1
+     1:             2
+     2:             3
+     3:             4
+     4:             5
+
+  The vector b=A'*x:
+
+     0:           565
+     1:           580
+     2:           595
+
+r8ge_mtv_test
+  Normal end of execution.
+
+r8ge_mu_test
+  Python version: 3.6.9
+  r8ge_mu computes A*x or A'*X
+  where A has been factored by r8ge_trf.
+
+  Matrix rows M =    5
+  Matrix columns N = 3
+
+  A*x and PLU*x
+
+     0:        2.94549         2.94549
+     1:        2.45838         2.45838
+     2:        3.02618         3.02618
+     3:       0.711795        0.711795
+     4:        2.65375         2.65375
+
+  A'*x and (PLU)'*x
+
+     0:        10.0839         10.0839
+     1:        9.25046         9.25046
+     2:         9.7744          9.7744
+
+  Matrix is 3 by 5
+
+  A*x and PLU*x
+
+     0:        8.43923         8.43923
+     1:        7.34628         7.34628
+     2:        7.26609         7.26609
+
+  A'*x and (PLU)'*x
+
+     0:        3.13007         3.13007
+     1:        3.51041         3.51041
+     2:         2.8155          2.8155
+     3:        2.70248         2.70248
+     4:        1.05288         1.05288
+
+r8ge_mu_test:
+  Normal end of execution.
+
+r8ge_mv_test
+  Python version: 3.6.9
+  r8ge_mv computes a matrix product b=A*x for an R8GE matrix.
+
+  The matrix A:
+
+  Col: 
+      0       
+      1       
+      2       
+      3       
+
+  Row
+      0 :
+          11  
+          12  
+          13  
+          14  
+
+      1 :
+          21  
+          22  
+          23  
+          24  
+
+      2 :
+          31  
+          32  
+          33  
+          34  
+
+      3 :
+          41  
+          42  
+          43  
+          44  
+
+      4 :
+          51  
+          52  
+          53  
+          54  
+
+
+  The vector X:
+
+     0:             1
+     1:             2
+     2:             3
+     3:             4
+     4:             5
+
+  The vector b=A*x:
+
+     0:           130
+     1:           230
+     2:           330
+     3:           430
+
+r8ge_mv_test
+  Normal end of execution.
+
+r8ge_orth_random_test
+  Python version: 3.6.9
+  r8ge_orth_random computes a random orthogonal matrix.
+
+  orth_random matrix:
+
+  Col: 
+      0       
+      1       
+      2       
+      3       
+      4       
+
+  Row
+      0 :
+   -0.600864  
+   -0.160632  
+    0.404383  
+    0.113381  
+   -0.660893  
+
+      1 :
+   -0.577919  
+   -0.434854  
+   -0.319202  
+   -0.502834  
+    0.349543  
+
+      2 :
+   -0.500075  
+     0.47782  
+   -0.432241  
+    0.553378  
+    0.168977  
+
+      3 :
+  -0.0223691  
+    0.625509  
+   -0.242653  
+   -0.631234  
+   -0.388461  
+
+      4 :
+   -0.233232  
+    0.406849  
+    0.699193  
+   -0.172103  
+    0.511455  
+
+
+r8ge_orth_random_test:
+  Normal end of execution.
+
+r8ge_spd_random_test
+  Python version: 3.6.9
+  r8ge_spd_random computes the spd_random matrix.
+
+  spd_random matrix:
+
+  Col: 
+      0       
+      1       
+      2       
+      3       
+      4       
+
+  Row
+      0 :
+    0.410905  
+   0.0565127  
+   0.0461125  
+  -0.0815966  
+   0.0830425  
+
+      1 :
+   0.0565127  
+    0.542703  
+  -0.0700646  
+    0.092661  
+  -0.0287069  
+
+      2 :
+   0.0461125  
+  -0.0700646  
+     0.57625  
+  -0.0470775  
+   -0.033762  
+
+      3 :
+  -0.0815966  
+    0.092661  
+  -0.0470775  
+    0.562362  
+   0.0787183  
+
+      4 :
+   0.0830425  
+  -0.0287069  
+   -0.033762  
+   0.0787183  
+    0.454867  
+
+
+r8ge_spd_random_test
+  Normal end of execution.
+
+r8ge_plu_test
+  Python version: 3.6.9
+  r8ge_plu returns the PLU factors of an R8GE matrix.
+
+  Matrix rows M =    5
+  Matrix columns N = 4
+
+  Matrix A:
+
+  Col: 
+      0       
+      1       
+      2       
+      3       
+
+  Row
+      0 :
+    0.315368  
+    0.406655  
+    0.980259  
+    0.542065  
+
+      1 :
+    0.242295  
+    0.252242  
+    0.565156  
+    0.133337  
+
+      2 :
+    0.876259  
+    0.480332  
+    0.283326  
+    0.892211  
+
+      3 :
+    0.827632  
+     0.97997  
+    0.867233  
+    0.193506  
+
+      4 :
+    0.454491  
+    0.805183  
+    0.747231  
+     0.91996  
+
+
+  Factor P:
+
+  Col: 
+      0       
+      1       
+      2       
+      3       
+      4       
+
+  Row
+      0 :
+           0  
+           0  
+           1  
+           0  
+           0  
+
+      1 :
+           0  
+           0  
+           0  
+           0  
+           1  
+
+      2 :
+           1  
+           0  
+           0  
+           0  
+           0  
+
+      3 :
+           0  
+           0  
+           0  
+           1  
+           0  
+
+      4 :
+           0  
+           1  
+           0  
+           0  
+           0  
+
+
+  Factor L:
+
+  Col: 
+      0       
+      1       
+      2       
+      3       
+      4       
+
+  Row
+      0 :
+           1  
+           0  
+           0  
+           0  
+           0  
+
+      1 :
+    0.518672  
+           1  
+           0  
+           0  
+           0  
+
+      2 :
+    0.359903  
+    0.420436  
+           1  
+           0  
+           0  
+
+      3 :
+    0.944507  
+     0.94649  
+    0.050283  
+           1  
+           0  
+
+      4 :
+     0.27651  
+    0.214774  
+    0.571789  
+    0.210448  
+           1  
+
+
+  Factor U:
+
+  Col: 
+      0       
+      1       
+      2       
+      3       
+
+  Row
+      0 :
+    0.876259  
+    0.480332  
+    0.283326  
+    0.892211  
+
+      1 :
+           0  
+    0.556048  
+    0.600278  
+    0.457195  
+
+      2 :
+           0  
+           0  
+     0.62591  
+   0.0287348  
+
+      3 :
+           0  
+           0  
+           0  
+    -1.08337  
+
+      4 :
+           0  
+           0  
+           0  
+           0  
+
+
+  Product P*L*U:
+
+  Col: 
+      0       
+      1       
+      2       
+      3       
+
+  Row
+      0 :
+    0.315368  
+    0.406655  
+    0.980259  
+    0.542065  
+
+      1 :
+    0.242295  
+    0.252242  
+    0.565156  
+    0.133337  
+
+      2 :
+    0.876259  
+    0.480332  
+    0.283326  
+    0.892211  
+
+      3 :
+    0.827632  
+     0.97997  
+    0.867233  
+    0.193506  
+
+      4 :
+    0.454491  
+    0.805183  
+    0.747231  
+     0.91996  
+
+
+r8ge_plu_test:
+  Normal end of execution.
+
+r8ge_poly_test
+  Python version: 3.6.9
+  r8ge_poly computes the characteristic polynomial of an R8GE matrix.
+
+  Matrix order N = 12
+
+I, P(I), True P(I)
+
+     0:              1               1
+     1:            -23             -23
+     2:            231             231
+     3:          -1330           -1330
+     4:           4845            4845
+     5:         -11628          -11628
+     6:          18564           18564
+     7:         -19448          -19448
+......  ..............  ..............
+    12:              1               1
+
+r8ge_poly_test:
+  Normal end of execution.
+
+r8ge_print_test
+  Python version: 3.6.9
+  r8ge_print prints an R8GE matrix.
+
+  Here is an R8GE:
+
+  Col: 
+      0       
+      1       
+      2       
+      3       
+      4       
+
+  Row
+      0 :
+          11  
+          12  
+          13  
+          14  
+          15  
+
+      1 :
+          21  
+          22  
+          23  
+          24  
+          25  
+
+      2 :
+          31  
+          32  
+          33  
+          34  
+          35  
+
+      3 :
+          41  
+          42  
+          43  
+          44  
+          45  
+
+
+  Col: 
+      5       
+
+  Row
+      0 :
+          16  
+
+      1 :
+          26  
+
+      2 :
+          36  
+
+      3 :
+          46  
+
+
+r8ge_print_test:
+  Normal end of execution.
+
+r8ge_print_some_test
+  Python version: 3.6.9
+  r8ge_print_some prints some of an R8GE matrix.
+
+  Rows 0:2, Cols 3:5:
+
+  Col: 
+      3       
+      4       
+      5       
+
+  Row
+      0 :
+          14  
+          15  
+          16  
+
+      1 :
+          24  
+          25  
+          26  
+
+      2 :
+          34  
+          35  
+          36  
+
+
+r8ge_print_some_test:
+  Normal end of execution.
+
+r8ge_random_test
+  Python version: 3.6.9
+  r8ge_random computes a random R8GE.
+
+  0 <= X <= 1
+
+  Random R8GE:
+
+  Col: 
+      0       
+      1       
+      2       
+      3       
+
+  Row
+      0 :
+     0.22047  
+    0.997953  
+    0.602797  
+   0.0355185  
+
+      1 :
+    0.555521  
+    0.319643  
+    0.502105  
+    0.533122  
+
+      2 :
+    0.662513  
+    0.458276  
+    0.109876  
+    0.729938  
+
+      3 :
+    0.784204  
+     0.14129  
+    0.838687  
+    0.402726  
+
+      4 :
+    0.406424  
+    0.370666  
+    0.917016  
+    0.490679  
+
+
+r8ge_random_test:
+  Normal end of execution.
+
+r8ge_random_ab_test
+  Python version: 3.6.9
+  r8ge_random_ab computes a random R8GE.
+
+  -1 <= X <= 5
+
+  Random R8GE:
+
+  Col: 
+      0       
+      1       
+      2       
+      3       
+
+  Row
+      0 :
+     4.79593  
+   -0.581674  
+     1.17229  
+    -0.72904  
+
+      1 :
+     1.01442  
+     1.44306  
+    0.398643  
+    0.222458  
+
+      2 :
+     4.60881  
+     2.46228  
+     2.74533  
+     4.05782  
+
+      3 :
+   0.0589054  
+     4.10465  
+    0.794812  
+     4.00652  
+
+      4 :
+     4.74655  
+   -0.311622  
+   -0.300467  
+   -0.725495  
+
+
+r8ge_random_ab_test:
+  Normal end of execution.
+
+r8ge_res_test
+  Python version: 3.6.9
+  r8ge_res computes b-A*x, where A is an R8GE matrix.
+  We check three cases, M<N, M=N, M>N.
+
+  Residual A*x-b:
+
+     0:   8.88178e-16
+     1:  -8.88178e-16
+     2:             0
+
+  Residual A*x-b:
+
+     0:   8.88178e-16
+     1:             0
+     2:             0
+     3:  -4.44089e-16
+     4:  -4.44089e-16
+
+  Residual A*x-b:
+
+     0:   2.22045e-16
+     1:  -2.22045e-16
+     2:   3.33067e-16
+     3:  -2.22045e-16
+     4:             0
+
+r8ge_res_test:
+  Normal end of execution.
+
+r8ge_sl_test
+  Python version: 3.6.9
+  r8ge_sl solves a linear system A*x=b that was factored
+  by r8ge_fa.
+
+  Matrix order N = 10
+
+  Solution:
+
+     0:             1
+     1:             2
+     2:             3
+     3:             4
+     4:             5
+     5:             6
+     6:             7
+     7:             8
+     8:             9
+     9:            10
+
+  Solution:
+
+     0:             1
+     1:             1
+     2:             1
+     3:             1
+     4:             1
+     5:             1
+     6:             1
+     7:             1
+     8:             1
+     9:             1
+
+  Solution of transposed system:
+
+     0:             1
+     1:             2
+     2:             3
+     3:             4
+     4:             5
+     5:             6
+     6:             7
+     7:             8
+     8:             9
+     9:            10
+
+r8ge_sl_test:
+  Normal end of execution.
+
+r8ge_sl_it_test
+  Python version: 3.6.9
+  r8ge_sl_it applies one step of iterative
+  refinement to a r8ge_sl solution.
+
+  Matrix order N = 6
+
+  i, x, b-A*x
+
+     0:       0.166667     1.13687e-13
+     1:       0.142857    -9.09495e-13
+     2:          0.125     1.45519e-11
+     3:       0.111111    -5.82077e-11
+     4:            0.1               0
+     5:      0.0909091    -1.45519e-11
+
+Iterative refinement step 1
+
+  I, DX:
+
+       0    -1.24677e-11
+       1    -1.03287e-11
+       2    -8.79936e-12
+       3    -7.66042e-12
+       4    -6.78115e-12
+       5    -6.08241e-12
+
+  i, x, b-A*x
+
+     0:       0.166667    -5.68434e-14
+     1:       0.142857     1.81899e-12
+     2:          0.125    -2.91038e-11
+     3:       0.111111     2.91038e-11
+     4:            0.1               0
+     5:      0.0909091     7.27596e-12
+
+Iterative refinement step 2
+
+  I, DX:
+
+       0    -3.60008e-13
+       1     1.62139e-13
+       2     3.75167e-13
+       3     4.65078e-13
+       4     4.99681e-13
+       5     5.07613e-13
+
+  i, x, b-A*x
+
+     0:       0.166667     -1.7053e-13
+     1:       0.142857     9.09495e-13
+     2:          0.125    -1.45519e-11
+     3:       0.111111     8.73115e-11
+     4:            0.1    -2.91038e-11
+     5:      0.0909091     3.63798e-11
+
+Iterative refinement step 3
+
+  I, DX:
+
+       0      1.7504e-11
+       1     1.43887e-11
+       2     1.22018e-11
+       3     1.05912e-11
+       4     9.35679e-12
+       5     8.38066e-12
+
+  i, x, b-A*x
+
+     0:       0.166667               0
+     1:       0.142857               0
+     2:          0.125    -2.18279e-11
+     3:       0.111111               0
+     4:            0.1               0
+     5:      0.0909091    -1.45519e-11
+
+Iterative refinement step 4
+
+  I, DX:
+
+       0    -9.70128e-12
+       1    -7.53581e-12
+       2    -6.18456e-12
+       3    -5.25486e-12
+       4    -4.57346e-12
+       5    -4.05139e-12
+
+  i, x, b-A*x
+
+     0:       0.166667               0
+     1:       0.142857     1.81899e-12
+     2:          0.125     2.91038e-11
+     3:       0.111111               0
+     4:            0.1    -8.73115e-11
+     5:      0.0909091               0
+
+Iterative refinement step 5
+
+  I, DX:
+
+       0    -6.85153e-12
+       1    -6.66963e-12
+       2    -6.19756e-12
+       3     -5.6995e-12
+       4    -5.24042e-12
+       5    -4.83331e-12
+
+  i, x, b-A*x
+
+     0:       0.166667               0
+     1:       0.142857               0
+     2:          0.125               0
+     3:       0.111111               0
+     4:            0.1     5.82077e-11
+     5:      0.0909091     7.27596e-12
+
+r8ge_sl_it_test:
+  Normal end of execution.
+
+r8ge_to_r8vec_test
+  Python version: 3.6.9
+  r8ge_to_r8vec converts an R8GE matrix to an R8VEC vector.
+
+  R8GE matrix:
+
+  Col: 
+      0       
+      1       
+      2       
+
+  Row
+      0 :
+          11  
+          12  
+          13  
+
+      1 :
+          21  
+          22  
+          23  
+
+      2 :
+          31  
+          32  
+          33  
+
+      3 :
+          41  
+          42  
+          43  
+
+
+  Corresponding R8VEC vector:
+
+     0:            11
+     1:            21
+     2:            31
+     3:            41
+     4:            12
+     5:            22
+     6:            32
+     7:            42
+     8:            13
+     9:            23
+    10:            33
+    11:            43
+
+r8ge_to_r8vec_test:
+  Normal end of execution.
+
+r8ge_transpose_test
+  Python version: 3.6.9
+  r8ge_transpose makes a transposed copy of an R8GE matrix.
+
+  Indicator matrix A:
+
+  Col: 
+      0       
+      1       
+      2       
+      3       
+
+  Row
+      0 :
+          11  
+          12  
+          13  
+          14  
+
+      1 :
+          21  
+          22  
+          23  
+          24  
+
+      2 :
+          31  
+          32  
+          33  
+          34  
+
+      3 :
+          41  
+          42  
+          43  
+          44  
+
+      4 :
+          51  
+          52  
+          53  
+          54  
+
+
+  B = A':
+
+  Col: 
+      0       
+      1       
+      2       
+      3       
+      4       
+
+  Row
+      0 :
+          11  
+          21  
+          31  
+          41  
+          51  
+
+      1 :
+          12  
+          22  
+          32  
+          42  
+          52  
+
+      2 :
+          13  
+          23  
+          33  
+          43  
+          53  
+
+      3 :
+          14  
+          24  
+          34  
+          44  
+          54  
+
+
+r8ge_transpose_test:
+  Normal end of execution.
+
+r8ge_transpose_print_test
+  Python version: 3.6.9
+  r8ge_transpose_print prints the transpose of an R8GE matrix.
+
+  Here is an R8GE matrix, transposed:
+
+  Row: 
+      0       
+      1       
+      2       
+      3       
+
+  Col
+      0 :
+          11  
+          21  
+          31  
+          41  
+
+      1 :
+          12  
+          22  
+          32  
+          42  
+
+      2 :
+          13  
+          23  
+          33  
+          43  
+
+
+r8ge_transpose_print_test:
+  Normal end of execution.
+
+r8ge_transpose_print_some_test
+  Python version: 3.6.9
+  r8ge_transpose_print_some prints some of an R8GE matrix, transposed.
+
+  R8GE matrix, rows 0:2, cols 3:5:
+
+  Row: 
+      0       
+      1       
+      2       
+
+  Col
+      3 :
+          14  
+          24  
+          34  
+
+      4 :
+          15  
+          25  
+          35  
+
+      5 :
+          16  
+          26  
+          36  
+
+
+r8ge_transpose_print_some_test:
+  Normal end of execution.
+
+r8ge_trf_test
+  Python version: 3.6.9
+  r8ge_trf computes the LU factors of an R8GE matrix,
+  so that r8ge_trs can solve the factored system.
+
+  Number of matrix rows M = 5
+  Number of matrix columns N = 5
+
+  Solution:
+
+     0:             0
+     1:             0
+     2:             0
+     3:             0
+     4:             5
+
+  Solution to transposed system:
+
+     0:             1
+     1:             2
+     2:             3
+     3:             4
+     4:             5
+
+r8ge_trf_test:
+  Normal end of execution.
+
+r8ge_trs_test
+  Python version: 3.6.9
+  r8ge_trs solves a linear system
+  that has been factored by r8ge_trf.
+
+  Number of matrix rows M = 5
+  Number of matrix columns N = 5
+
+  Solution:
+
+     0:             0
+     1:             0
+     2:             0
+     3:             0
+     4:             5
+
+  Solution to transposed system:
+
+     0:             1
+     1:             2
+     2:             3
+     3:             4
+     4:             5
+
+r8ge_trs_test:
+  Normal end of execution.
+
+r8ge_zeros_test
+  Python version: 3.6.9
+  r8ge_zeros zeros out space for a general matrix.
+
+  Matrix order M, N = 5, 4
+
+  Matrix A:
+
+  Col: 
+      0       
+      1       
+      2       
+      3       
+
+  Row
+      0 :
+           0  
+           0  
+           0  
+           0  
+
+      1 :
+           0  
+           0  
+           0  
+           0  
+
+      2 :
+           0  
+           0  
+           0  
+           0  
+
+      3 :
+           0  
+           0  
+           0  
+           0  
+
+      4 :
+           0  
+           0  
+           0  
+           0  
+
+
+r8ge_zeros_test:
+  Normal end of execution.
+
+r8vec_house_column_test
+  Python version: 3.6.9
+  r8vec_house_column returns the compact form of
+  a Householder matrix that "packs" a column
+  of a matrix.
+
+  Matrix A:
+
+  Col: 
+      0       
+      1       
+      2       
+      3       
+
+  Row
+      0 :
+    0.876443  
+     1.13664  
+     3.35614  
+     3.02603  
+
+      1 :
+     3.47018  
+     1.56676  
+     2.95293  
+       3.102  
+
+      2 :
+     1.58397  
+     4.09643  
+     2.25048  
+     1.85712  
+
+      3 :
+     1.01913  
+    0.914994  
+     4.66316  
+     1.75946  
+
+
+  Working on column K = 0
+
+  Householder matrix H:
+
+  Col: 
+      0       
+      1       
+      2       
+      3       
+
+  Row
+      0 :
+     -0.2167  
+   -0.858002  
+   -0.391638  
+   -0.251979  
+
+      1 :
+   -0.858002  
+    0.394948  
+   -0.276178  
+   -0.177693  
+
+      2 :
+   -0.391638  
+   -0.276178  
+    0.873938  
+  -0.0811083  
+
+      3 :
+   -0.251979  
+   -0.177693  
+  -0.0811083  
+    0.947815  
+
+
+  Product H*A:
+
+  Col: 
+      0       
+      1       
+      2       
+      3       
+
+  Row
+      0 :
+    -4.04449  
+    -3.42547  
+    -5.31729  
+    -4.48793  
+
+      1 :
+ 3.33067e-16  
+    -1.65038  
+    -3.16346  
+    -2.19675  
+
+      2 :
+ 2.35922e-16  
+     2.62796  
+   -0.541365  
+   -0.561509  
+
+      3 :
+ 1.11022e-16  
+  -0.0298194  
+     2.86689  
+    0.203316  
+
+
+  Working on column K = 1
+
+  Householder matrix H:
+
+  Col: 
+      0       
+      1       
+      2       
+      3       
+
+  Row
+      0 :
+           1  
+           0  
+           0  
+           0  
+
+      1 :
+           0  
+   -0.531805  
+    0.846812  
+ -0.00960877  
+
+      2 :
+           0  
+    0.846812  
+    0.531866  
+  0.00531192  
+
+      3 :
+           0  
+ -0.00960877  
+  0.00531192  
+     0.99994  
+
+
+  Product H*A:
+
+  Col: 
+      0       
+      1       
+      2       
+      3       
+
+  Row
+      0 :
+    -4.04449  
+    -3.42547  
+    -5.31729  
+    -4.48793  
+
+      1 :
+ 2.15883e-17  
+     3.10335  
+     1.19636  
+    0.690798  
+
+      2 :
+ 4.08114e-16  
+ 4.11482e-16  
+    -2.95156  
+     -2.1578  
+
+      3 :
+ 1.09068e-16  
+ 3.46945e-18  
+     2.89424  
+     0.22143  
+
+
+  Working on column K = 2
+
+  Householder matrix H:
+
+  Col: 
+      0       
+      1       
+      2       
+      3       
+
+  Row
+      0 :
+           1  
+           0  
+           0  
+           0  
+
+      1 :
+           0  
+           1  
+           0  
+           0  
+
+      2 :
+           0  
+           0  
+   -0.714006  
+    0.700139  
+
+      3 :
+           0  
+           0  
+    0.700139  
+    0.714006  
+
+
+  Product H*A:
+
+  Col: 
+      0       
+      1       
+      2       
+      3       
+
+  Row
+      0 :
+    -4.04449  
+    -3.42547  
+    -5.31729  
+    -4.48793  
+
+      1 :
+ 2.15883e-17  
+     3.10335  
+     1.19636  
+    0.690798  
+
+      2 :
+-2.15033e-16  
+-2.91372e-16  
+      4.1338  
+     1.69572  
+
+      3 :
+ 3.63612e-16  
+ 2.90572e-16  
+ 4.44089e-16  
+    -1.35266  
+
+
+r8vec_house_column_test
+  Normal end of execution.
+
+r8vec_indicator1_test
+  Python version: 3.6.9
+  r8vec_indicator1 returns the 1-based indicator matrix.
+
+  The 1-based indicator vector:
+
+     0:             1
+     1:             2
+     2:             3
+     3:             4
+     4:             5
+     5:             6
+     6:             7
+     7:             8
+     8:             9
+     9:            10
+
+r8vec_indicator1_test
+  Normal end of execution.
+
+r8vec_print_test
+  Python version: 3.6.9
+  r8vec_print prints an R8VEC.
+
+  Here is an R8VEC:
+
+     0:       123.456
+     1:         5e-06
+     2:        -1e+06
+     3:       3.14159
+
+r8vec_print_test:
+  Normal end of execution.
+
+r8vec_print_some_test
+  Python version: 3.6.9
+  r8vec_print_some prints some of an R8VEC.
+
+  No more than 10 lines of this vector:
+
+       0               1
+       1               2
+       2               3
+       3               4
+       4               5
+       5               6
+       6               7
+       7               8
+  ......  ..............
+      99             100
+
+r8vec_print_some_test:
+  Normal end of execution.
+
+r8vec_to_r8ge_test
+  Python version: 3.6.9
+  r8vec_to_r8ge converts an R8VEC vector to an R8GE matrix.
+
+  The R8VEC vector:
+
+     0:             1
+     1:             2
+     2:             3
+     3:             4
+     4:             5
+     5:             6
+     6:             7
+     7:             8
+     8:             9
+     9:            10
+    10:            11
+    11:            12
+
+  Corresponding R8GE matrix:
+
+  Col: 
+      0       
+      1       
+      2       
+
+  Row
+      0 :
+           1  
+           5  
+           9  
+
+      1 :
+           2  
+           6  
+          10  
+
+      2 :
+           3  
+           7  
+          11  
+
+      3 :
+           4  
+           8  
+          12  
+
+
+r8vec_to_r8ge_test:
+  Normal end of execution.
+
+r8vec2_print_some_test
+  Python version: 3.6.9
+  r8vec2_print_some prints some of a pair of R8VEC's.
+
+  Square and square root:
+
+     0:              1               1
+     1:              4         1.41421
+     2:              9         1.73205
+     3:             16               2
+     4:             25         2.23607
+     5:             36         2.44949
+     6:             49         2.64575
+     7:             64         2.82843
+......  ..............  ..............
+    99:          10000              10
+
+r8vec2_print_some_test:
+  Normal end of execution.
+
+r8ge_test:
+  Normal end of execution.
+Tue Oct 19 17:06:11 2021

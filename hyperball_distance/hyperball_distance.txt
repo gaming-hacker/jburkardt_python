@@ -1,0 +1,17 @@
+Tue Oct 19 11:53:18 2021
+
+hyperball_distance_test:
+  Python version: 3.6.9
+  Test hyperball_distance.
+
+  Using M = 20 spatial dimension.
+  Using N = 10000 sample points,
+  Estimated mean distance = 1.3365
+  Estimated variance      = 0.0257092
+  Graphics saved as "hyperball_distance_histogram.png"
+  Graphics saved as "hyperball_distance_pdf.png"
+  Graphics saved as "hyperball_distance_compare.png"
+
+hyperball_distance_test:
+  Normal end of execution.
+Tue Oct 19 11:53:19 2021

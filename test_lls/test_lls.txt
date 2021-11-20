@@ -1,0 +1,38 @@
+Tue Oct 19 17:25:02 2021
+
+test_lls_test()
+  Python version.
+  Test test_lls().
+
+ls_data_test
+  Get each least squares test and compute the maximum residual.
+  The L2 norm of the residual MUST be no greater than
+  the L2 norm of the right hand side, else 0 is a better solution.
+
+  Number of problems = 6
+
+  Index     M     N         ||B||         ||X||         ||R||
+
+      1     5     3         6.205         5.461         1.075
+      2     6     3         537.6         194.8         5.222
+      3     5     3         40.37         10.84     5.477e-07
+      4     3     5         232.1         7.416             0
+      5    10    10             1     1.534e+07       1.2e-10
+      6    10    10             1             1     4.773e-16
+
+lstsq_test
+  lstsq() is the NUMPY LINALG least squares solver.
+
+  Number of problems = 6
+
+  Index     M     N         ||B||     ||X1-X2||         ||X1||        ||X2||        ||R1||        ||R2||
+
+      1     5     3         6.205     2.861e-08         5.461         5.461         1.075         1.075
+      2     6     3         537.6     5.416e-05         194.8         194.8         5.222         5.222
+      3     5     3         40.37     5.092e-08         10.84         10.84     5.477e-07      2.93e-14
+      4     3     5         232.1     2.485e-14         7.416         7.416             0      8.71e-14
+      5    10    10             1          1332     1.534e+07     1.534e+07       1.2e-10     9.331e-10
+
+test_lls_test()
+  Normal end of execution.
+Tue Oct 19 17:25:02 2021

@@ -1,0 +1,13 @@
+Tue Oct 19 17:09:01 2021
+
+roessler_ode_test()
+  Python version: 3.6.9
+  Compute solutions of the Roessler system.
+  Plot solution components (T,X(T)), (T,Y(T)), and (T,Z(T)).
+  Plot (X(T),Y(T),Z(T)).
+  Graphics saved as "roessler_ode_components.png"
+  Graphics saved as "roessler_ode_3d.png"
+
+roessler_ode_test:
+  Normal end of execution.
+Tue Oct 19 17:09:02 2021

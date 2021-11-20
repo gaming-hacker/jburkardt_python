@@ -1,0 +1,89 @@
+Tue Oct 19 11:53:28 2021
+
+hypersphere_integrals_test
+  Python version: 3.6.9
+  Test hypersphere_integrals().
+
+hypersphere01_area_test
+  Python version: 3.6.9
+  hypersphere01_area returns the volume of the unit hypersphere.
+
+   M  Area
+
+   1  2
+   2  6.28319
+   3  12.5664
+   4  19.7392
+   5  26.3189
+   6  31.0063
+   7  33.0734
+   8  32.4697
+   9  29.6866
+  10  25.5016
+
+hypersphere01_area_test
+  Normal end of execution.
+
+hypersphere01_monomial_integral
+  Python version: 3.6.9
+  hypersphere01_monomial_integral returns the integral of
+  a monomial over the surface of the unit hypersphere in 3D.
+  Compare with a Monte Carlo estimate.
+
+  Number of sample points used is 4192
+
+  If any exponent is odd, the integral is zero.
+  We will restrict this test to randomly chosen even exponents.
+
+  Ex  Ey  Ez     MC-Estimate           Exact      Error
+
+   6   0   4       0.0559704       0.0543999      0.0016
+   2   8   4      0.00192842      0.00195282     2.4e-05
+   8   2   6     0.000573331     0.000574358       1e-06
+   4   8   2      0.00199101      0.00195282     3.8e-05
+   6   2   4      0.00415946      0.00418461     2.5e-05
+   2   6   0        0.201252        0.199466      0.0018
+   4   4   2       0.0108708         0.01088     9.1e-06
+   6   2   6      0.00139897      0.00139487     4.1e-06
+   8   4   6     8.91547e-05      9.0688e-05     1.5e-06
+   6   6   2      0.00140709      0.00139487     1.2e-05
+   8   2   4       0.0019343      0.00195282     1.9e-05
+   0   4   2         0.35886        0.359039     0.00018
+   4   2   2       0.0397036       0.0398932     0.00019
+   4   0   2        0.366654        0.359039      0.0076
+   0   6   0         1.78102          1.7952       0.014
+   8   0   8      0.00415362       0.0040205     0.00013
+   6   0   0         1.79176          1.7952      0.0034
+   4   2   2       0.0397036       0.0398932     0.00019
+   2   2   2        0.119353         0.11968     0.00033
+   0   6   0         1.78102          1.7952       0.014
+
+hypersphere_monomial_integral_test
+  Normal end of execution.
+
+hypersphere01_sample_test
+  Python version: 3.6.9
+  hypersphere01_sample samples the unit hypersphere
+  in M dimensions.
+
+  Sample points on the unit hypersphere.
+
+  Row:       0             1             2       
+  Col
+      0 :    -0.74123      0.652921      0.155799  
+      1 :   -0.116682     -0.906777      0.405143  
+      2 :   -0.410718     -0.837805     -0.359713  
+      3 :    0.220145     -0.920391      0.323135  
+      4 :   -0.119581     -0.374581      0.919451  
+      5 :  -0.0219073      0.224492       0.97423  
+      6 :    0.537532     -0.666078     -0.517108  
+      7 :   -0.119723     -0.913578      0.388641  
+      8 :    0.518488     -0.827302     -0.216199  
+      9 :     -0.8889     -0.431324     -0.154327  
+
+hypersphere01_sample_test
+  Normal end of execution.
+
+hypersphere_integrals_test:
+  Normal end of execution.
+Tue Oct 19 11:53:28 2021

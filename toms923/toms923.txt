@@ -1,0 +1,35 @@
+Tue Oct 19 17:25:17 2021
+
+toms923_test():
+  Python version: 3.6.9
+  Test toms923().
+
+test_pfaffian:
+  Compare the output of Pfaffian routines and determinant.
+
+  Real matrix:
+    pfaffian(A) =            1.2844716110572511e+19
+    pfaffian(A,method=H) =   1.2844716110572448e+19
+    pfaffian_schur(A) =      1.2844716110573246e+19
+
+    pfaffian(A)^2 =          1.6498673196120103e+38
+    pfaffian(A,method=H)^2 = 1.6498673196119938e+38
+    pfaffian_schur(A)^2 =    1.6498673196121991e+38
+    numpy.linalg.det(A) =    1.649867319612039e+38
+DEBUG: rel err =  4.942732829084708e-15
+
+  Complex matrix:
+    pfaffian(A) =             (-2.77973778110036e+27+1.1595564965659038e+26j)
+    pfaffian(A,method=H) =    (-2.779737781100338e+27+1.1595564965656323e+26j)
+
+    pfaffian(A)^2 =           (7.713496418989469e+54-6.446526005649224e+53j)
+    pfaffian(A,method=H)^2 =  (7.713496418989354e+54-6.446526005647664e+53j)
+    numpy.linalg.det(A) =     (7.713496418989118e+54-6.446526005648597e+53j)
+DEBUG: rel err2 =  (4.588569164822989e-14-4.293344270428054e-15j)
+
+test_decompositions():
+  Test the LTL^T and Householder decompositions.
+
+toms923_test():
+  Normal end of execution.
+Tue Oct 19 17:25:17 2021

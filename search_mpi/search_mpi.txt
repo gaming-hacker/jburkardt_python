@@ -1,0 +1,134 @@
+Tue Oct 19 17:10:04 2021
+Tue Oct 19 17:10:04 2021
+Tue Oct 19 17:10:04 2021
+Tue Oct 19 17:10:04 2021
+
+search_mpi_test:
+  Python version: 2.7.17
+  Test search_mpi()
+
+search_mpi_test:
+  Python version: 2.7.17
+  Test search_mpi()
+
+search_mpi_test:
+  Python version: 2.7.17
+  Test search_mpi()
+
+search_mpi_test:
+  Python version: 2.7.17
+  Test search_mpi()
+
+search_mpi():
+  Python/MPI version
+  Search the integers from A to B
+  for a value J such that F(J) = C.
+
+('  Use MPI to divide the computation among', 4, 'processes.')
+
+('  A        = ', 1)
+('  B        = ', 10000)
+('  C        = ', 45)
+
+search_mpi():
+  Normal end of execution.
+
+search_mpi():
+  Normal end of execution.
+
+search_mpi():
+  Normal end of execution.
+('  Time     = ', 0.004100058000403806)
+
+search_mpi():
+  Normal end of execution.
+
+search_mpi():
+  Python/MPI version
+  Search the integers from A to B
+  for a value J such that F(J) = C.
+
+('  Use MPI to divide the computation among', 4, 'processes.')
+
+('  A        = ', 1)
+('  B        = ', 100000)
+('  C        = ', 45)
+
+search_mpi():
+  Normal end of execution.
+('  Time     = ', 0.049490823001178796)
+
+search_mpi():
+  Normal end of execution.
+
+search_mpi():
+  Python/MPI version
+  Search the integers from A to B
+  for a value J such that F(J) = C.
+
+('  Use MPI to divide the computation among', 4, 'processes.')
+
+('  A        = ', 1)
+('  B        = ', 1000000)
+('  C        = ', 45)
+
+search_mpi():
+  Normal end of execution.
+
+search_mpi():
+  Normal end of execution.
+
+search_mpi():
+  Normal end of execution.
+('  Process ', 1, ' found J = ', 1674924981)
+('  Verify F(J) = ', 45)
+
+search_mpi():
+  Normal end of execution.
+
+search_mpi_test:
+  Normal end of execution.
+Tue Oct 19 17:10:04 2021
+('  Time     = ', 0.2503527099997882)
+
+search_mpi():
+  Normal end of execution.
+
+search_mpi():
+  Python/MPI version
+  Search the integers from A to B
+  for a value J such that F(J) = C.
+
+('  Use MPI to divide the computation among', 4, 'processes.')
+
+('  A        = ', 1674924000)
+('  B        = ', 1674924999)
+('  C        = ', 45)
+('  Time     = ', 0.00022962599905440584)
+
+search_mpi():
+  Normal end of execution.
+
+search_mpi_test:
+  Normal end of execution.
+Tue Oct 19 17:10:04 2021
+
+search_mpi():
+  Normal end of execution.
+
+search_mpi():
+  Normal end of execution.
+
+search_mpi_test:
+  Normal end of execution.
+Tue Oct 19 17:10:04 2021
+
+search_mpi():
+  Normal end of execution.
+
+search_mpi():
+  Normal end of execution.
+
+search_mpi_test:
+  Normal end of execution.
+Tue Oct 19 17:10:04 2021

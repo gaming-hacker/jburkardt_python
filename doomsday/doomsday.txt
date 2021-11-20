@@ -1,0 +1,206 @@
+Tue Oct 19 11:33:12 2021
+
+doomsday_test
+  Python version: 3.6.9
+  Test doomsday().
+ 
+doomsday_gregorian_test01
+  Python version: 3.6.9
+  Try a couple selected dates.
+ 
+  YYYY  MM  DD  Weekday    Weekday
+                Tabulated  Computed
+ 
+  1989   7  13    Thursday    Thursday
+  2012   5  26    Saturday    Saturday
+
+doomsday_gregorian_test01
+  Normal end of execution.
+ 
+doomsday_gregorian_test02
+  Python version: 3.6.9
+  weekday_values supplies a list of dates and weekdays.
+ 
+  YYYY  MM  DD  Weekday    Weekday
+                Tabulated  Computed
+ 
+  1648   6  10   Wednesday   Wednesday
+  1680   6  30      Sunday      Sunday
+  1716   7  24      Friday      Friday
+  1768   6  19      Sunday      Sunday
+  1819   8   2      Monday      Monday
+  1839   3  27   Wednesday   Wednesday
+  1903   4  19      Sunday      Sunday
+  1929   8  25      Sunday      Sunday
+  1941   9  29      Monday      Monday
+  1943   4  19      Monday      Monday
+  1943  10   7    Thursday    Thursday
+  1992   3  17     Tuesday     Tuesday
+  1996   2  25      Sunday      Sunday
+  2038  11  10   Wednesday   Wednesday
+  2094   7  18      Sunday      Sunday
+
+doomsday_gregorian_test02
+  Normal end of execution.
+
+i4_modp_test
+  Python version: 3.6.9
+  i4_modp factors a number
+  into a multiple M and a positive remainder R.
+
+    Number   Divisor  Multiple Remainder
+
+       107        50         2         7
+       107       -50        -2         7
+      -107        50        -3        43
+      -107       -50         3        43
+
+  Repeat using Python % Operator:
+
+       107        50         2         7
+       107       -50        -3       -43
+      -107        50        -3        43
+      -107       -50         2        -7
+
+i4_modp_test
+  Normal end of execution.
+
+i4_wrap_test
+  Python version: 3.6.9
+  i4_wrap forces an integer to lie within given limits.
+
+  ILO = 4
+  IHI = 8
+
+     I  i4_wrap(I)
+
+     -10       5
+      -9       6
+      -8       7
+      -7       8
+      -6       4
+      -5       5
+      -4       6
+      -3       7
+      -2       8
+      -1       4
+       0       5
+       1       6
+       2       7
+       3       8
+       4       4
+       5       5
+       6       6
+       7       7
+       8       8
+       9       4
+      10       5
+      11       6
+      12       7
+      13       8
+      14       4
+      15       5
+      16       6
+      17       7
+      18       8
+      19       4
+      20       5
+
+i4_wrap_test
+  Normal end of execution.
+
+weekday_to_name_common_test
+  Python version: 3.6.9
+  weekday_to_name_common returns the name of a day of the week
+  in the common calendar.
+
+  Index  Name
+
+      1  Sunday
+      2  Monday
+      3  Tuesday
+      4  Wednesday
+      5  Thursday
+      6  Friday
+      7  Saturday
+
+weekday_to_name_common_test
+  Normal end of execution.
+
+weekday_values_test:
+  Python version: 3.6.9
+  weekday_values stores values of
+  the weekday for a given Y/M/D date
+
+         Y       M       D           W
+
+    -587       7      30       1
+    -169      12       8       4
+      70       9      26       4
+     135      10       3       1
+     470       1       7       4
+     576       5      18       2
+     694      11       7       7
+    1013       4      19       1
+    1066      10      14       7
+    1096       5      18       1
+    1190       3      16       6
+    1240       3       3       7
+    1288       3      26       6
+    1298       4      20       1
+    1391       6       4       1
+    1436       1      25       4
+    1492       3      31       7
+    1553       9       9       7
+    1560       2      24       7
+    1648       6      10       4
+    1680       6      30       1
+    1716       7      24       6
+    1768       6      19       1
+    1819       8       2       2
+    1839       3      27       4
+    1903       4      19       1
+    1929       8      25       1
+    1941       9      29       2
+    1943       4      19       2
+    1943      10       7       5
+    1992       3      17       3
+    1996       2      25       1
+    2038      11      10       4
+    2094       7      18       1
+
+weekday_values_test:
+  Normal end of execution.
+
+year_is_leap_gregorian_test
+  year_is_leap_gregorian reports leap years in the Gregorian calendar.
+
+  Year  Leap?
+
+   899  False
+  2042  False
+   746  False
+  1636  True
+   942  False
+  1892  True
+  1338  False
+  1240  True
+  1962  False
+   552  True
+   104  True
+  1125  False
+  1767  False
+   808  True
+  2044  True
+   230  False
+   330  False
+   676  True
+    97  False
+  1595  False
+
+year_is_leap_gregorian_test
+  Normal end of execution.
+
+doomsday_test
+  Normal end of execution.
+Tue Oct 19 11:33:12 2021

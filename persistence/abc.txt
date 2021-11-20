@@ -1,0 +1,16 @@
+Tue Oct 19 17:00:23 2021
+
+abc_test():
+  Python version: 3.6.9
+  Test abc(), with the interface:
+    [a,b,c] = abc(a,b,c)
+
+     1.0 , 2.0 , 3.0  = abc ( )
+    abc (  1.0 , 19 , 3.0 )
+     1.0 , 19 , 3.0  = abc ( )
+     50 , 60 , 70  = abc (  50 , 60 , 70 )
+     50 , 60 , 70  = abc ( )
+
+abc_test():
+  Normal end of execution.
+Tue Oct 19 17:00:23 2021

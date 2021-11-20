@@ -1,0 +1,17 @@
+Tue Oct 19 11:59:40 2021
+
+midpoint_test:
+  Python version: 3.6.9
+  Test midpoint() for solving an ordinary differential equation.
+
+midpoint_humps_test:
+  Solve the humps ODE system using midpoint().
+  Graphics saved as "midpoint_humps.png"
+
+midpoint_predator_prey_test:
+  Solve the predator prey ODE using midpoint().
+  Graphics saved as "midpoint_predator_prey.png"
+
+midpoint_test:
+  Normal end of execution.
+Tue Oct 19 11:59:41 2021

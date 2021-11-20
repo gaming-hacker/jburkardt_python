@@ -1,0 +1,16 @@
+Tue Oct 19 17:05:48 2021
+
+quadex_ode_test():
+  Python version: 3.6.9
+  quadex_ode is a stiff ODE with a quadratic solution.
+
+  Parameter values:
+    t0    =  0.0
+    y0    =  0.08
+    tstop =  2.0
+  Graphics saved as "quadex_euler_2500.png"
+  Graphics saved as "quadex_backward_euler_2500.png"
+
+quadex_ode_test:
+  Normal end of execution.
+Tue Oct 19 17:05:49 2021

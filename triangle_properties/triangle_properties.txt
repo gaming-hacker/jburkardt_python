@@ -1,0 +1,917 @@
+Tue Oct 19 17:25:41 2021
+
+triangle_properties_test():
+  Python version: 3.6.9
+  Test triangle_properties().
+
+i4_modp_test
+  Python version: 3.6.9
+  i4_modp factors a number
+  into a multiple M and a positive remainder R.
+
+    Number   Divisor  Multiple Remainder
+
+       107        50         2         7
+       107       -50        -2         7
+      -107        50        -3        43
+      -107       -50         3        43
+
+  Repeat using Python % Operator:
+
+       107        50         2         7
+       107       -50        -3       -43
+      -107        50        -3        43
+      -107       -50         2        -7
+
+i4_modp_test
+  Normal end of execution.
+
+i4_wrap_test
+  Python version: 3.6.9
+  i4_wrap forces an integer to lie within given limits.
+
+  ILO = 4
+  IHI = 8
+
+     I  i4_wrap(I)
+
+     -10       5
+      -9       6
+      -8       7
+      -7       8
+      -6       4
+      -5       5
+      -4       6
+      -3       7
+      -2       8
+      -1       4
+       0       5
+       1       6
+       2       7
+       3       8
+       4       4
+       5       5
+       6       6
+       7       7
+       8       8
+       9       4
+      10       5
+      11       6
+      12       7
+      13       8
+      14       4
+      15       5
+      16       6
+      17       7
+      18       8
+      19       4
+      20       5
+
+i4_wrap_test
+  Normal end of execution.
+
+r8mat_print_test
+  Python version: 3.6.9
+  r8mat_print prints an R8MAT.
+
+  Here is an R8MAT:
+
+  Col:       0             1             2             3             4       
+  Row
+      0 :          11            12            13            14            15  
+      1 :          21            22            23            24            25  
+      2 :          31            32            33            34            35  
+      3 :          41            42            43            44            45  
+
+  Col:       5       
+  Row
+      0 :          16  
+      1 :          26  
+      2 :          36  
+      3 :          46  
+
+r8mat_print_test:
+  Normal end of execution.
+
+r8mat_print_some_test
+  Python version: 3.6.9
+  r8mat_print_some prints some of an R8MAT.
+
+  Here is an R8MAT:
+
+  Col:       3             4             5       
+  Row
+      0 :          14            15            16  
+      1 :          24            25            26  
+      2 :          34            35            36  
+
+r8mat_print_some_test:
+  Normal end of execution.
+
+r8mat_transpose_print_test
+  Python version: 3.6.9
+  r8mat_transpose_print prints an R8MAT.
+
+  Here is an R8MAT, transposed:
+
+  Row:       0             1             2             3       
+  Col
+      0 :          11            21            31            41  
+      1 :          12            22            32            42  
+      2 :          13            23            33            43  
+
+r8mat_transpose_print_test:
+  Normal end of execution.
+
+r8mat_transpose_print_some_test
+  Python version: 3.6.9
+  r8mat_transpose_print_some prints some of an R8MAT, transposed.
+
+  R8MAT, rows 0:2, cols 3:5:
+
+  Row:       0             1             2       
+  Col
+      3 :          14            24            34  
+      4 :          15            25            35  
+      5 :          16            26            36  
+
+r8mat_transpose_print_some_test:
+  Normal end of execution.
+
+r8vec_print_test
+  Python version: 3.6.9
+  r8vec_print prints an R8VEC.
+
+  Here is an R8VEC:
+
+     0:       123.456
+     1:         5e-06
+     2:        -1e+06
+     3:       3.14159
+
+r8vec_print_test:
+  Normal end of execution.
+
+segment_point_dist_2d_test
+  Python version: 3.6.9
+  segment_point_dist_2d computes the distance from a point to a line segment.
+
+  Segment endpoint 1:
+
+     0:             1
+     1:             2
+
+  Segment endpoint 2:
+
+     0:             3
+     1:             4
+
+  Test point P
+
+     0:             2
+     1:             3
+
+  Distance to segment = 0
+
+  Test point P
+
+     0:             4
+     1:             5
+
+  Distance to segment = 1.41421
+
+  Test point P
+
+     0:             1
+     1:             4
+
+  Distance to segment = 1.41421
+
+  Test point P
+
+     0:             0
+     1:             0
+
+  Distance to segment = 2.23607
+
+segment_point_dist_2d_test
+  Normal end of execution.
+
+triangle_angles_test
+  Python version: 3.6.9
+  triangle_angles computes the angles of a triangle.
+
+  Triangle vertices:
+
+  Row:       0             1       
+  Col
+      0 :           0             1  
+      1 :           0             0  
+      2 :           1             0  
+
+      Radians      Degrees
+
+      0.785398            45
+        1.5708            90
+      0.785398            45
+
+triangle_angles_test
+  Normal end of execution.
+
+triangle_area_test
+  Python version: 3.6.9
+  triangle_area computes the area of a triangle.
+
+  Triangle vertices (columns)
+
+  Col:       0             1             2       
+  Row
+      0 :           0             0             1  
+      1 :           1             0             0  
+
+  Triangle area is 0.5
+
+triangle_area_test
+  Normal end of execution.
+
+triangle_centroid_test
+  Python version: 3.6.9
+  triangle_centroid computes the centroid of a triangle
+
+  Triangle vertices:
+
+  Row:       0             1       
+  Col
+      0 :           0             0  
+      1 :           1             0  
+      2 :           0             1  
+
+  Centroid:
+
+     0:      0.333333
+     1:      0.333333
+
+  Triangle vertices:
+
+  Row:       0             1       
+  Col
+      0 :           0             0  
+      1 :           1             0  
+      2 :         0.5      0.866025  
+
+  Centroid:
+
+     0:           0.5
+     1:      0.288675
+
+  Triangle vertices:
+
+  Row:       0             1       
+  Col
+      0 :           0             0  
+      1 :           1             0  
+      2 :         0.5            10  
+
+  Centroid:
+
+     0:           0.5
+     1:       3.33333
+
+  Triangle vertices:
+
+  Row:       0             1       
+  Col
+      0 :           0             0  
+      1 :           1             0  
+      2 :          10             2  
+
+  Centroid:
+
+     0:       3.66667
+     1:      0.666667
+
+triangle_centroid_test
+  Normal end of execution.
+
+triangle_circumcircle_test
+  Python version: 3.6.9
+  triangle_circumcircle computes the circumcenter of a triangle.
+
+  Triangle vertices:
+
+  Row:       0             1       
+  Col
+      0 :           0             0  
+      1 :           1             0  
+      2 :           0             1  
+
+  Triangle vertices:
+
+  Row:       0             1       
+  Col
+      0 :           0             0  
+      1 :           1             0  
+      2 :           0             1  
+
+  Circumcenter
+
+     0:           0.5
+     1:           0.5
+
+  Circumradius: 0.707107
+
+  Triangle vertices:
+
+  Row:       0             1       
+  Col
+      0 :           0             0  
+      1 :           1             0  
+      2 :         0.5      0.866025  
+
+  Triangle vertices:
+
+  Row:       0             1       
+  Col
+      0 :           0             0  
+      1 :           1             0  
+      2 :         0.5      0.866025  
+
+  Circumcenter
+
+     0:           0.5
+     1:      0.288675
+
+  Circumradius: 0.57735
+
+  Triangle vertices:
+
+  Row:       0             1       
+  Col
+      0 :           0             0  
+      1 :           1             0  
+      2 :         0.5            10  
+
+  Triangle vertices:
+
+  Row:       0             1       
+  Col
+      0 :           0             0  
+      1 :           1             0  
+      2 :         0.5            10  
+
+  Circumcenter
+
+     0:           0.5
+     1:        4.9875
+
+  Circumradius: 5.0125
+
+  Triangle vertices:
+
+  Row:       0             1       
+  Col
+      0 :           0             0  
+      1 :           1             0  
+      2 :          10             2  
+
+  Triangle vertices:
+
+  Row:       0             1       
+  Col
+      0 :           0             0  
+      1 :           1             0  
+      2 :          10             2  
+
+  Circumcenter
+
+     0:           0.5
+     1:          23.5
+
+  Circumradius: 23.5053
+
+triangle_circumcircle_test
+  Normal end of execution.
+
+triangle_contains_point_test
+  Python version: 3.6.9
+  triangle_contains_point reports if a point
+  is inside a triangle
+
+  Triangle vertices:
+
+  Row:       0             1       
+  Col
+      0 :           0             1  
+      1 :           0             0  
+      2 :           1             0  
+
+     X       Y     Inside
+
+        0.25        0.25  True
+        0.75        0.25  True
+           1           1  False
+          11         0.5  False
+           0           1  True
+         0.5         -10  False
+         0.6         0.6  False
+
+  Repeat the test, but reverse the triangle vertex ordering.
+
+  Triangle vertices (reversed):
+
+  Row:       0             1       
+  Col
+      0 :           1             0  
+      1 :           0             0  
+      2 :           0             1  
+
+     X       Y     Inside
+
+        0.25        0.25  False
+        0.75        0.25  False
+           1           1  False
+          11         0.5  False
+           0           1  False
+         0.5         -10  False
+         0.6         0.6  False
+
+triangle_contains_point_test
+  Normal end of execution.
+
+triangle_diameter_test
+  Python version: 3.6.9
+  triangle_diameter computes the diameter of
+  the SMALLEST circle around a triangle.
+
+  Triangle vertices:
+
+  Row:       0             1       
+  Col
+      0 :           4             2  
+      1 :           1             5  
+      2 :          -2             2  
+
+  Diameter = 6
+
+  Triangle vertices:
+
+  Row:       0             1       
+  Col
+      0 :           4             2  
+      1 :           5             4  
+      2 :           6             6  
+
+  Diameter = 4.47214
+
+  Triangle vertices:
+
+  Row:       0             1       
+  Col
+      0 :           4             2  
+      1 :           1             5  
+      2 :           4             2  
+
+  Diameter = 4.24264
+
+triangle_diameter_test
+  Normal end of execution.
+
+triangle_edge_length_test
+  Python version: 3.6.9
+  triangle_edge_length computes the edge lengths
+  of a triangle.
+
+  Triangle vertices:
+
+  Row:       0             1       
+  Col
+      0 :           4             2  
+      1 :           1             5  
+      2 :          -2             2  
+
+  EDGE_lengthS:
+
+     0:       4.24264
+     1:       4.24264
+     2:             6
+
+  Triangle vertices:
+
+  Row:       0             1       
+  Col
+      0 :           4             2  
+      1 :           5             4  
+      2 :           6             6  
+
+  EDGE_lengthS:
+
+     0:       2.23607
+     1:       2.23607
+     2:       4.47214
+
+  Triangle vertices:
+
+  Row:       0             1       
+  Col
+      0 :           4             2  
+      1 :           1             5  
+      2 :           4             2  
+
+  EDGE_lengthS:
+
+     0:       4.24264
+     1:       4.24264
+     2:             0
+
+triangle_edge_length_test
+  Normal end of execution.
+
+triangle_incircle_test
+  Python version: 3.6.9
+  triangle_incircle computes the incircle of a triangle.
+
+  Triangle vertices:
+
+  Row:       0             1       
+  Col
+      0 :           0             1  
+      1 :           0             0  
+      2 :           1             0  
+
+  Incenter
+
+     0:      0.292893
+     1:      0.292893
+
+  Incircle radius is 0.292893
+
+triangle_incircle_test
+  Normal end of execution.
+
+triangle_orientation_test
+  Python version: 3.6.9
+  triangle_orientation_determines orientation
+  of a triangle.
+
+  Triangle vertices:
+
+  Row:       0             1       
+  Col
+      0 :           4             2  
+      1 :           1             5  
+      2 :          -2             2  
+
+  The points are counterclockwise.
+
+  Triangle vertices:
+
+  Row:       0             1       
+  Col
+      0 :           1             5  
+      1 :           4             2  
+      2 :           1            -1  
+
+  The points are clockwise.
+
+  Triangle vertices:
+
+  Row:       0             1       
+  Col
+      0 :           1             5  
+      1 :           2             7  
+      2 :           3             9  
+
+  The points are colinear.
+
+  Triangle vertices:
+
+  Row:       0             1       
+  Col
+      0 :           1             5  
+      1 :           4             2  
+      2 :           1             5  
+
+  The points are not distinct.
+
+triangle_orientation_test
+  Normal end of execution.
+
+triangle_orthocenter_test
+  Python version: 3.6.9
+  triangle_orthocenter computes the orthocenter of a triangle.
+
+  Triangle vertices:
+
+  Row:       0             1       
+  Col
+      0 :           0             0  
+      1 :           1             0  
+      2 :           0             1  
+
+  Orthocenter
+
+     0:             0
+     1:             0
+
+  Triangle vertices:
+
+  Row:       0             1       
+  Col
+      0 :           0             0  
+      1 :           1             0  
+      2 :         0.5      0.866025  
+
+  Orthocenter
+
+     0:           0.5
+     1:      0.288675
+
+  Triangle vertices:
+
+  Row:       0             1       
+  Col
+      0 :           0             0  
+      1 :           1             0  
+      2 :         0.5            10  
+
+  Orthocenter
+
+     0:           0.5
+     1:         0.025
+
+  Triangle vertices:
+
+  Row:       0             1       
+  Col
+      0 :           0             0  
+      1 :           1             0  
+      2 :          10             2  
+
+  Orthocenter
+
+     0:            10
+     1:           -45
+
+triangle_orthocenter_test
+  Normal end of execution.
+
+triangle_point_dist_test
+  Python version: 3.6.9
+  triangle_point_dist computes the distance
+  between a point and a triangle.
+
+  Triangle vertices:
+
+  Row:       0             1       
+  Col
+      0 :           0             1  
+      1 :           0             0  
+      2 :           1             0  
+
+       P       DIST
+
+        0.25        0.25        0.25
+        0.75        0.25           0
+           1           1    0.707107
+          11         0.5     10.0125
+           0           1           0
+         0.5         -10          10
+         0.6         0.6    0.141421
+
+triangle_point_dist_test
+  Normal end of execution.
+
+triangle_point_near_test
+  Python version: 3.6.9
+  triangle_point_near computes the nearest
+  triangle point to a point.
+
+  Triangle vertices:
+
+  Row:       0             1       
+  Col
+      0 :           0             1  
+      1 :           0             0  
+      2 :           1             0  
+
+           P                PN
+
+        0.25        0.25             0        0.25
+        0.75        0.25          0.75        0.25
+           1           1           0.5         0.5
+          11         0.5             1           0
+           0           1             0           1
+         0.5         -10           0.5           0
+         0.6         0.6           0.5         0.5
+
+triangle_point_near_test
+  Normal end of execution.
+
+triangle_quality_test
+  Python version: 3.6.9
+  triangle_quality computes the quality of a triangle.
+
+  Triangle vertices:
+
+  Row:       0             1       
+  Col
+      0 :           0             0  
+      1 :           1             0  
+      2 :           0             1  
+
+  Quality = 0.828427
+
+  Triangle vertices:
+
+  Row:       0             1       
+  Col
+      0 :           0             0  
+      1 :           1             0  
+      2 :         0.5      0.866025  
+
+  Quality = 1
+
+  Triangle vertices:
+
+  Row:       0             1       
+  Col
+      0 :           0             0  
+      1 :           1             0  
+      2 :         0.5            10  
+
+  Quality = 0.189775
+
+  Triangle vertices:
+
+  Row:       0             1       
+  Col
+      0 :           0             0  
+      1 :           1             0  
+      2 :          10             2  
+
+  Quality = 0.00833469
+
+triangle_quality_test
+  Normal end of execution.
+
+triangle_reference_sample_test
+  Python version: 3.6.9
+  triangle_reference_sample samples the reference triangle.
+
+  Triangle vertices:
+
+  Row:       0             1       
+  Col
+      0 :           0             0  
+      1 :           1             0  
+      2 :           0             1  
+
+  Sample points (X,Y) and (XSI1,XSI2,XSI3) coordinates:
+
+   0.0285806   0.0950853      0.876334   0.0285806   0.0950853
+    0.211179    0.567737      0.221085    0.211179    0.567737
+     0.12907    0.805361     0.0655684     0.12907    0.805361
+    0.448161    0.264054      0.287785    0.448161    0.264054
+    0.585198    0.133512       0.28129    0.585198    0.133512
+    0.013832    0.157254      0.828914    0.013832    0.157254
+    0.450104    0.119715       0.43018    0.450104    0.119715
+    0.102204    0.476965      0.420831    0.102204    0.476965
+   0.0671886     0.50428      0.428532   0.0671886     0.50428
+    0.373148    0.008973      0.617879    0.373148    0.008973
+
+triangle_reference_sample_test
+  Normal end of execution.
+
+triangle_sample_test
+  Python version: 3.6.9
+  triangle_sample samples a triangle.
+
+  Triangle vertices:
+
+  Row:       0             1       
+  Col
+      0 :           4             2  
+      1 :           1             5  
+      2 :          -2             2  
+
+  Sample points (X,Y) and (XSI1,XSI2,XSI3) coordinates:
+
+   0.0501468     2.86406       0.19768    0.288022    0.514298
+    0.485284     4.32359      0.026949     0.77453    0.198521
+    0.562092     2.70387      0.309703    0.234625    0.455672
+     2.43384     2.67592       0.62632    0.225306    0.148374
+     1.83967     2.51008      0.554932    0.170027    0.275041
+   -0.257805     2.09745      0.274124   0.0324843    0.693392
+     2.88808     2.65428      0.705633    0.218093   0.0762741
+     1.77731     3.94856      0.304793    0.649519   0.0456885
+     1.05539     3.10927      0.324354    0.369755     0.30589
+     2.18693     3.25095       0.48933    0.416982   0.0936879
+
+triangle_sample_test
+  Normal end of execution.
+
+triangle_xsi_to_xy_test
+  Python version: 3.6.9
+  triangle_xsi_to_xy converts XSI to XY coordinates.
+
+  We verify that (X,Y) -> (XSI1,XSI2,XSI3) -> (X,Y)
+  works properly.
+
+  Triangle vertices:
+
+  Row:       0             1       
+  Col
+      0 :           4             2  
+      1 :           1             5  
+      2 :          -2             2  
+
+  Sample points:
+
+
+         1         3    0.333333  0.333333  0.333333
+         1         3
+
+         3         0     1.16667  -0.666667       0.5
+         3  2.22045e-16
+
+  -0.293116   2.17905     0.25464  0.0596819  0.685678
+  -0.293116   2.17905
+
+   2.02356   3.90353    0.353338  0.634511  0.0121515
+   2.02356   3.90353
+
+  -1.16319    2.3626    0.079035  0.120866  0.800099
+  -1.16319    2.3626
+
+  -0.809427   2.84906    0.0569196  0.283018  0.660062
+  -0.809427   2.84906
+
+   3.61099   2.27865    0.888723  0.092883  0.0183937
+   3.61099   2.27865
+
+   1.76508   3.71097    0.342351  0.570325  0.0873243
+   1.76508   3.71097
+
+  -1.62289   2.30306    0.0123419  0.101019  0.886639
+  -1.62289   2.30306
+
+  0.175027   3.52779    0.107873  0.509264  0.382864
+  0.175027   3.52779
+
+triangle_xsi_to_xy_test
+  Normal end of execution.
+
+triangle_xy_to_xsi_test
+  Python version: 3.6.9
+  triangle_xy_to_xsi converts XY to XSI coordinates.
+
+  We verify that (X,Y) -> (XSI1,XSI2,XSI3) -> (X,Y)
+  works properly.
+
+  Triangle vertices:
+
+  Row:       0             1       
+  Col
+      0 :           4             2  
+      1 :           1             5  
+      2 :          -2             2  
+
+  Sample points:
+
+
+         1         3    0.333333  0.333333  0.333333
+         1         3
+
+         3         0     1.16667  -0.666667       0.5
+         3  2.22045e-16
+
+   2.91202    2.4589    0.742188  0.152965  0.104847
+   2.91202    2.4589
+
+   3.10421   2.02866    0.845925  0.00955341  0.144522
+   3.10421   2.02866
+
+   1.01444   3.46073    0.258952   0.48691  0.254138
+   1.01444   3.46073
+
+  0.861611    3.0766    0.297502  0.358866  0.343632
+  0.861611    3.0766
+
+  0.872447   4.10423    0.128036  0.701411  0.170553
+  0.872447   4.10423
+
+  0.436346   4.24028    0.0326776   0.74676  0.220562
+  0.436346   4.24028
+
+  -0.350949   2.07758    0.261912  0.0258587  0.712229
+  -0.350949   2.07758
+
+  0.801367    3.2112    0.265027  0.403734  0.331238
+  0.801367    3.2112
+
+triangle_xy_to_xsi_test
+  Normal end of execution.
+
+triangle_properties_test:
+  Normal end of execution.
+Tue Oct 19 17:25:41 2021

@@ -1,0 +1,164 @@
+<html>
+
+  <head>
+    <title>
+      fd1d_advection_lax_wendroff
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      fd1d_advection_lax_wendroff
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>fd1d_advection_lax_wendroff</b>,
+      a Python code which
+      applies the finite difference method (FDM) to solve the time-dependent
+      advection equation ut = - c * ux in one spatial dimension, with
+      a constant velocity, using the Lax-Wendroff method for the time derivative,
+      creating a graphics file using matplotlib.
+    </p>
+
+    <p>
+      The Lax-Wendroff method is a modification to the Lax method with improved
+      accuracy.
+    </p>
+
+    <p>
+      We solve the constant-velocity advection equation in 1D,
+      <pre>
+        du/dt = - c du/dx
+      </pre>
+      over the interval:
+      <pre>
+        0.0 <= x <= 1.0
+      </pre>
+      with periodic boundary conditions, and
+      with a given initial condition
+      <pre>
+        u(0,x) = (10x-4)^2 (6-10x)^2 for 0.4 <= x <= 0.6
+               = 0 elsewhere.
+      </pre>
+    </p>
+
+    <p>
+      For our simple case, the advection velocity is constant
+      in time and space.  Therefore, (given our periodic boundary conditions),
+      the solution should simply move smoothly from left to right, returning
+      on the left again.  While the Lax method produces an artificial smearing
+      of the solution because of an artificial viscosity effect, this behavior
+      is much reduced for the Lax-Wendroff method.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page 
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>fd1d_advection_lax_wendroff</b> is available in
+      <a href = "../../c_src/fd1d_advection_lax_wendroff/fd1d_advection_lax_wendroff.html">a C version</a> and
+      <a href = "../../cpp_src/fd1d_advection_lax_wendroff/fd1d_advection_lax_wendroff.html">a C++ version</a> and
+      <a href = "../../f_src/fd1d_advection_lax_wendroff/fd1d_advection_lax_wendroff.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/fd1d_advection_lax_wendroff/fd1d_advection_lax_wendroff.html">a MATLAB version</a> and
+      <a href = "../../py_src/fd1d_advection_lax_wendroff/fd1d_advection_lax_wendroff.html">a Python version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and codes:
+    </h3>
+
+    <p>
+      <a href = "../../py_src/fd1d_heat_explicit/fd1d_heat_explicit.html">
+      fd1d_heat_explicit</a>,
+      a Python code which
+      uses the finite difference method (FDM) and explicit time stepping 
+      to solve the time dependent heat equation in 1D.
+    </p>
+
+    <p>
+      <a href = "../../py_src/fd1d_heat_implicit/fd1d_heat_implicit.html">
+      fd1d_heat_implicit</a>,
+      a Python code which
+      uses the finite difference method (FDM) and implicit time stepping 
+      to solve the time dependent heat equation in 1D.
+    </p>
+
+    <p>
+      <a href = "../../py_src/fd2d_heat_steady/fd2d_heat_steady.html">
+      fd2d_heat_steady</a>,
+      a Python code which
+      uses the finite difference method (FDM) to solve the 
+      steady (time independent) heat equation in 2D.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          George Lindfield, John Penny,<br>
+          Numerical Methods Using MATLAB,<br>
+          Second Edition,<br>
+          Prentice Hall, 1999,<br>
+          ISBN: 0-13-012641-1,<br>
+          LC: QA297.P45.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "fd1d_advection_lax_wendroff.py">fd1d_advection_lax_wendroff.py</a>, the source code.
+        </li>
+        <li>
+          <a href = "fd1d_advection_lax_wendroff.sh">fd1d_advection_lax_wendroff.sh</a>,
+          BASH commands to compile the source code.
+        </li>
+        <li>
+          <a href = "fd1d_advection_lax_wendroff.txt">fd1d_advection_lax_wendroff.txt</a>,
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "fd1d_advection_lax_wendroff.png">fd1d_advection_lax_wendroff.png</a>,
+          a PNG image of the graphics file.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 07 January 2015.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

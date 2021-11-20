@@ -1,0 +1,10 @@
+Tue Oct 19 11:33:12 2021
+
+dosage_ode():
+  Python version: 3.6.9
+  Simulate the variation over time of the concentration
+  of a medicinal drug in the bloodstream.
+
+dosage_ode:
+  Normal end of execution.
+Tue Oct 19 11:33:13 2021

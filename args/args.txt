@@ -1,0 +1,42 @@
+Tue Oct 19 11:23:53 2021
+
+args_test():
+  Python version 3.6.9
+  Count and print the arguments.
+
+  The number of arguments was 4.
+
+  Arg[0] = the program name = args.py
+  Arg[1] = alpha
+  Arg[2] = fred
+  Arg[3] = 1.2
+
+function_args_test():
+  function_args() demonstrates how to count and print function arguments
+  when the number of arguments may vary.
+
+function_args():
+  Number of arguments on this call was 0
+
+
+function_args():
+  Number of arguments on this call was 3
+
+  0. 1.1
+  1. -2.2
+  2. 3.3
+
+function_args():
+  Number of arguments on this call was 4
+
+  0. 1
+  1. two
+  2. 3.3
+  3. (4, 5)
+
+function_args_test():
+  Normal end of execution.
+
+args_test():
+  Normal end of execution.
+Tue Oct 19 11:23:53 2021

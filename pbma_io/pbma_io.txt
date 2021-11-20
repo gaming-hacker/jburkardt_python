@@ -1,0 +1,17 @@
+Tue Oct 19 17:00:18 2021
+
+pbma_io_test:
+  Python version: 3.6.9
+  Test pbma_io()
+
+pbma_write_test():
+  pbma_write() writes an ASCII PBM graphics file.
+
+  Graphics data stored in file "pbma_io.pbm".
+
+pbma_write_test():
+  Normal end of execution.
+
+pbma_io_test:
+  Normal end of execution.
+Tue Oct 19 17:00:18 2021

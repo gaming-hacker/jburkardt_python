@@ -1,0 +1,110 @@
+Tue Oct 19 17:25:04 2021
+
+test_optimization_test():
+  Python version: 3.6.9
+  Test test_optimization().
+
+test_optimization_test01
+  For each problem, print the title.
+
+  Problem  Title
+
+        1  The sphere model.
+        2  The axis-parallel hyper-ellipsoid function.
+        3  The rotated hyper-ellipsoid function.
+        4  Rosenbrock's valley.
+        5  Rastrigin's function.
+        6  Schwefel's function.
+        7  Griewank's function.
+        8  The power sum function.
+        9  Ackley's function.
+       10  Michalewicz's function.
+       11  Drop wave function.
+       12  The deceptive function.
+
+test_optimization_test02
+  For each problem, using dimension M = 2
+  sample the function at N = 1000 points,
+  and print the minimum and maximum.
+
+  Problem     Minimum  Sample Minimum  Sample Maximum
+
+        1               0       0.0138192         68.4375
+        2               0       0.0581363         77.0645
+        3               0         10.0136         19337.9
+        4               0     7.46767e-06          24.438
+        5               0         2.14542          78.959
+        6        -837.966        -786.697         817.509
+        7               0        0.314472         173.522
+        8               0      0.00102216          1.9051
+        9     4.44089e-16         4.70852         22.1999
+       10                         -1.7731    -3.13393e-52
+       11              -1       -0.922698      -1.021e-06
+       12              -1       -0.771587    -0.000685253
+
+test_optimization_test03
+  For each problem, using dimension M = 2
+  try compass search.
+
+  Problem  1  DELTA_INIT =       0.876703
+  Initial:        -3.85121         4.39643         35.0699
+  Final:                 1               1     1.07181e-13  Steps = 48
+  Exact:                 1               1               0
+
+  Problem  2  DELTA_INIT =       0.433355
+  Initial:         2.73295        0.936762         9.22404
+  Final:       7.31465e-07     6.84149e-07     1.47116e-12  Steps = 47
+  Exact:                 0               0               0
+
+  Problem  3  DELTA_INIT =        10.7729
+  Initial:          59.453         40.2911         13483.5
+  Final:       1.24325e-07     4.07285e-08     4.26995e-14  Steps = 59
+  Exact:                 0               0               0
+
+  Problem  4  DELTA_INIT =        0.27189
+  Initial:       -0.185078        -1.80313           11.88
+  Final:                 1               1      4.0839e-13  Steps = 52
+  Exact:                 1               1               0
+
+  Problem  5  DELTA_INIT =       0.926527
+  Initial:          4.8177         3.86565         47.3833
+  Final:          0.994958        0.994959         1.98992  Steps = 43
+  Exact:                 0               0               0
+
+  Problem  6  DELTA_INIT =        61.7256
+  Initial:        -63.8024         406.528        -329.858
+  Final:           65.5479         420.969        -482.618  Steps = 48
+  Exact:           420.969         420.969        -837.966
+
+  Problem  7  DELTA_INIT =        92.5028
+  Initial:         565.873         245.129         96.8674
+  Final:          -40.8203         13.3153        0.461151  Steps = 58
+  Exact:                 0               0               0
+
+  Problem  8  DELTA_INIT =      0.0713537
+  Initial:       -0.452551         0.14656        0.207951
+  Final:      -2.18185e-07     1.12765e-09     4.76046e-14  Steps = 45
+  Exact:                 0               0               0
+
+  Problem  9  DELTA_INIT =        4.52716
+  Initial:         11.0695        -28.0778         20.6719
+  Final:           9.98079        -29.9423         19.7706  Steps = 46
+  Exact:                 0               0     4.44089e-16
+
+  Problem 10  DELTA_INIT =       0.465349
+  Initial:         1.88702         2.46244       -0.131774
+  Final:            2.2029         2.71157        -1.21406  Steps = 38
+
+  Problem 11  DELTA_INIT =       0.741972
+  Initial:          1.7306         4.63386     -0.00384739
+  Final:           2.42784         4.63386       -0.127424  Steps = 28
+  Exact:                 0               0              -1
+
+  Problem 12  DELTA_INIT =       0.167392
+  Initial:        0.628458         0.92216       -0.163689
+  Final:          0.999999               1       -0.639998  Steps = 37
+  Exact:          0.333333        0.666667              -1
+
+test_optimization_test():
+  Normal end of execution.
+Tue Oct 19 17:25:05 2021

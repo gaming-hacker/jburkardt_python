@@ -1,0 +1,25 @@
+Tue Oct 19 17:10:42 2021
+
+spring_ode_test():
+  Python version: 3.6.9
+  Solve the spring ODE.
+
+  Parameter values:
+    mass      =  5.0
+    damping   =  2.0
+    stiffness =  3.0
+    t0        =  0.0
+    u0        =  0.0
+    v0        =  1.0
+    tstop     =  25.0
+
+spring_solve_ivp():
+  Use solve_ivp() to solve the spring ODE.
+  Graphics saved as "spring_solve_ivp_y1.png"
+  Graphics saved as "spring_solve_ivp_y2.png"
+  Graphics saved as "spring_solve_ivp_phase.png"
+  Graphics saved as "spring_solve_ivp_conservation.png"
+
+spring_ode_test():
+  Normal end of execution.
+Tue Oct 19 17:10:43 2021

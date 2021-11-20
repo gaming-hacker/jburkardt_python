@@ -1,0 +1,11 @@
+Tue Oct 19 11:24:28 2021
+
+biochemical_linear_ode_test:
+  Python version: 3.6.9
+  Test biochemical_linear_ode.
+  Graphics saved as "biochemical_linear_ode_y1.png"
+  Graphics saved as "biochemical_linear_ode_y2.png"
+
+biochemical_linear_ode_test:
+  Normal end of execution.
+Tue Oct 19 11:24:29 2021

@@ -1,0 +1,35 @@
+Tue Oct 19 17:08:57 2021
+
+rigid_body_ode_test():
+  Python version: 3.6.9
+  Solve the rigid body ODE.
+
+  Parameter values:
+    i1    =  1.6
+    i2    =  1.0
+    i3    =  0.6666666666666666
+    t0    =  0.0
+    xyz0  =  [0.62160997 0.         0.78332691]
+    tstop =  50.0
+
+rigid_body_euler():
+  Solve the rigid body ODE using euler().
+  Graphics saved as "rigid_body_euler_plot.png"
+  Graphics saved as "rigid_body_euler_conservation_h1.png"
+  Graphics saved as "rigid_body_euler_conservation_h2.png"
+
+rigid_body_euler_test:
+  Solve the rigid body ODE using midpoint().
+  Graphics saved as "rigid_body_midpoint_plot.png"
+  Graphics saved as "rigid_body_midpoint_conservation_h1.png"
+  Graphics saved as "rigid_body_midpoint_conservation_h2.png"
+
+rigid_body_rk4():
+  Solve the rigid body ODE using rk4().
+  Graphics saved as "rigid_body_rk4_plot.png"
+  Graphics saved as "rigid_body_rk4_conservation_h1.png"
+  Graphics saved as "rigid_body_rk4_conservation_h2.png"
+
+rigid_body_ode_test():
+  Normal end of execution.
+Tue Oct 19 17:08:59 2021

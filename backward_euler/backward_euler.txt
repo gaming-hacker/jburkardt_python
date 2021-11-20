@@ -1,0 +1,17 @@
+Tue Oct 19 11:24:09 2021
+
+backward_euler_test():
+  Python version: 3.6.9
+  Test backward_euler.
+
+humps_backward_euler():
+  Solve the humps ODE system using backward_euler().
+  Graphics saved as "humps_backward_euler.png"
+
+predator_prey_backward_euler():
+  Solve the predator prey ODE system using backward_euler().
+  Graphics saved as "predator_prey_backward_euler.png"
+
+backward_euler_test:
+  Normal end of execution.
+Tue Oct 19 11:24:10 2021

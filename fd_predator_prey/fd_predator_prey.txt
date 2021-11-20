@@ -1,0 +1,26 @@
+Tue Oct 19 11:34:23 2021
+
+fd_predator_prey_test:
+  Python version: 3.6.9
+
+  Initial number of prey is 5000
+  Initial number of predators is 100
+  Time span is [0,5]
+  Number of time steps will be 1000
+
+fd_predator_prey():
+  A finite difference approximate solution of a pair
+  of ordinary differential equations for a population
+  of predators and prey.
+
+  The exact solution shows wave behavior, with a fixed
+  period and amplitude.  The finite difference approximation
+  can provide a good estimate for this behavior if the stepsize
+  DT is small enough.
+  Graphics saved as "trf_1000_time.png"
+  Graphics saved as "trf_1000_phase.png"
+  T, R, F values written to "trf_1000.txt".
+
+fd_predator_prey_test
+  Normal end of execution.
+Tue Oct 19 11:34:23 2021

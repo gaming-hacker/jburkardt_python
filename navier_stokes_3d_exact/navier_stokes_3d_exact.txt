@@ -1,0 +1,82 @@
+Tue Oct 19 12:01:05 2021
+
+navier_stokes_3d_exact_test():
+  Python version: 3.6.9
+  Test navier_stokes_3d_exact()
+
+uvwp_burgers_test
+  Python version: 3.6.9
+  UVWP samples the Burgers solution.
+  Estimate the range of velocity and pressure
+  at the initial time T = 0, using a region that is
+  the cube centered at (0,0,0) with "radius" 1.0,
+  Viscosity NU = 0.25
+
+           Minimum       Maximum
+
+  U:        -1.99845          1.9992
+  V:        -1.99727         1.99955
+  W:       -0.995313        0.995265
+  P:        -3.95736      -0.0081647
+
+uvwp_burgers_test:
+  Normal end of execution.
+
+resid_burgers_test
+  Python version: 3.6.9
+  resid_burgers evaluates the Burgers residual.
+  Sample at the initial time T = 0, using a region that is
+  the cube centered at (0,0,0) with "radius" 1.0,
+  Viscosity NU = 0.25
+
+           Minimum       Maximum
+
+  Ur:               0               0
+  Vr:               0               0
+  Wr:               0     2.22045e-16
+  Pr:               0               0
+
+resid_burgers_test:
+  Normal end of execution.
+
+uvwp_ethier_test
+  Python version: 3.6.9
+  uvwp_ethier evaluates the Ethier solution.
+  Estimate the range of velocity and pressure
+  at the initial time T = 0, using a region that is
+  the cube centered at (0,0,0) with "radius" 1.0,
+  Parameter A = 0.785398
+  Parameter D = 1.5708
+
+           Minimum       Maximum
+
+  U:        -3.18886         1.44897
+  V:        -3.02452         1.42565
+  W:        -3.19842         1.41297
+  P:       0.0143736         5.50524
+
+uvwp_ethier_test:
+  Normal end of execution.
+
+resid_ethier_test
+  Python version: 3.6.9
+  resid_ethier evaluates the Ethier residual.
+  Sample the residuals
+  at the initial time T = 0, using a region that is
+  the cube centered at (0,0,0) with "radius" 1.0,
+  Parameter A = 0.785398
+  Parameter D = 1.5708
+
+           Minimum       Maximum
+
+  Ur:               0     3.55271e-15
+  Vr:               0     2.88658e-15
+  Wr:               0     2.66454e-15
+  Pr:               0     4.44089e-16
+
+resid_ethier_test:
+  Normal end of execution.
+
+navier_stokes_3d_exact_test():
+  Normal end of execution.
+Tue Oct 19 12:01:05 2021

@@ -1,0 +1,24 @@
+Tue Oct 19 11:25:22 2021
+
+chinese_remainder_theorem_test():
+  Python version: 3.6.9
+  Test chinese_remainder_theorem().
+
+crt_test():
+  crt() reconstructs a value f which satisfies
+    mod(f,m(i)) = r(i), 0 <= i < n
+  Modulus product is  2149852322
+  Random test value x will satisfy 0 <= x <  2149852322
+  Random test value is  272267211
+  Recovered value is y =  272267211
+
+  #i   m[i]  r[i]  mod(f,m[i])
+
+   0   199   187      187
+   1   233   187      187
+   2   194    45       45
+   3   239    84       84
+
+chinese_remainder_theorem_test():
+  Normal end of execution.
+Tue Oct 19 11:25:22 2021

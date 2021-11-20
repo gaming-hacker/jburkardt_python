@@ -1,0 +1,19 @@
+Tue Oct 19 17:32:13 2021
+
+vanderpol_ode_test:
+  Python version: 3.6.9
+  Solve the van der Pol oscillator ODE using solve_ivp().
+
+  Parameters:
+    mu    =  2.0
+    t0    =  0.0
+    y0    =  [1. 0.]
+    tstop =  40.0
+  Graphics saved as "vanderpol_solve_ivp_plot.png"
+  Graphics saved as "vanderpol_solve_ivp_phase.png"
+  Estimated period is  7.613450260643276
+  Graphics saved as "vanderpol_solve_ivp_spacing.png"
+
+vanderpol_ode_test():
+  Normal end of execution.
+Tue Oct 19 17:32:14 2021

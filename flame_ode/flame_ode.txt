@@ -1,0 +1,10 @@
+Tue Oct 19 11:34:33 2021
+
+flame_ode_test():
+  Python version: 3.6.9
+  flame_ode uses an ODE to model combustion.
+  Graphics saved as "flame.png"
+
+flame_ode_test:
+  Normal end of execution.
+Tue Oct 19 11:34:34 2021

@@ -1,0 +1,23 @@
+Tue Oct 19 11:34:32 2021
+
+fitzhugh_nagumo_ode_test():
+  Python version: 3.6.9
+  Solve the Fitzhugh-Nagumo ODE.
+
+  Parameter values:
+    a     =  0.7
+    b     =  0.8
+    c     =  12.5
+    d     =  0.5
+    t0    =  0.0
+    y0    =  [0. 0.]
+    tstop =  100.0
+
+fitzhugh_nagumo_solve_ivp():
+  Solve the Fitzhugh-Nagumo ODE using solve_ivp().
+  Graphics saved as "fitzhugh_nagumo_solve_ivp_plot.png"
+  Graphics saved as "fitzhugh_nagumo_solve_ivp_phase.png"
+
+fitzhugh_nagumo_ode_test():
+  Normal end of execution.
+Tue Oct 19 11:34:33 2021

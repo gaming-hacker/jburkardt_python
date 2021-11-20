@@ -1,0 +1,145 @@
+Tue Oct 19 11:32:47 2021
+
+DISK_MONTE_CARLO_TEST
+  Python version: 3.6.9
+  Test DISK_MONTE_CARLO().
+
+I4VEC_PRINT_TEST
+  Python version: 3.6.9
+  I4VEC_PRINT prints an I4VEC.
+
+  Here is an I4VEC:
+
+     0      91
+     1      92
+     2      93
+     3      94
+
+I4VEC_PRINT_TEST:
+  Normal end of execution.
+
+I4VEC_TRANSPOSE_PRINT_TEST
+  Python version: 3.6.9
+  I4VEC_TRANSPOSE_PRINT prints an I4VEC
+  with 5 entries to a row, and an optional title.
+
+  My array:   1 2 3 4 5 6 7 8 9 10 11 12
+
+I4VEC_TRANSPOSE_PRINT_TEST:
+  Normal end of execution.
+
+R8MAT_TRANSPOSE_PRINT_TEST
+  Python version: 3.6.9
+  R8MAT_TRANSPOSE_PRINT prints an R8MAT.
+
+  Here is an R8MAT, transposed:
+
+  Row:       0             1             2             3       
+  Col
+      0 :          11            21            31            41  
+      1 :          12            22            32            42  
+      2 :          13            23            33            43  
+
+R8MAT_TRANSPOSE_PRINT_TEST:
+  Normal end of execution.
+
+R8MAT_TRANSPOSE_PRINT_SOME_TEST
+  Python version: 3.6.9
+  R8MAT_TRANSPOSE_PRINT_SOME prints some of an R8MAT, transposed.
+
+  R8MAT, rows 0:2, cols 3:5:
+
+  Row:       0             1             2       
+  Col
+      3 :          14            24            34  
+      4 :          15            25            35  
+      5 :          16            26            36  
+
+R8MAT_TRANSPOSE_PRINT_SOME_TEST:
+  Normal end of execution.
+
+R8VEC_PRINT_TEST
+  Python version: 3.6.9
+  R8VEC_PRINT prints an R8VEC.
+
+  Here is an R8VEC:
+
+     0:       123.456
+     1:         5e-06
+     2:        -1e+06
+     3:       3.14159
+
+R8VEC_PRINT_TEST:
+  Normal end of execution.
+
+DISK01_AREA_TEST
+  Python version: 3.6.9
+  DISK01_AREA returns the area of the unit disk.
+
+  DISK01_AREA() = 3.14159
+
+DISK01_AREA_TEST
+  Normal end of execution.
+
+DISK01_MONOMIAL_INTEGRAL_TEST
+  Python version: 3.6.9
+  DISK01_MONOMIAL_INTEGRAL computes monomial integrals
+  over the interior of the unit disk in 2D.
+  Compare with a Monte Carlo value.
+
+  Number of sample points used is 4192
+
+  If any exponent is odd, the integral is zero.
+  We will restrict this test to randomly chosen even exponents.
+
+  Ex  Ey     MC-Estimate           Exact      Error
+
+   8   6      0.00102127     0.000958738     6.3e-05
+   0   4        0.410352        0.392699       0.018
+   4   6      0.00642653      0.00613592     0.00029
+   4   8      0.00324652      0.00306796     0.00018
+   6   0        0.238229        0.245437      0.0072
+   2   2         0.13234          0.1309      0.0014
+   0   6        0.261312        0.245437       0.016
+   2   8       0.0152066       0.0143172     0.00089
+   2   0        0.775175        0.785398        0.01
+   8   4      0.00320991      0.00306796     0.00014
+   8   0        0.164914        0.171806      0.0069
+   0   2        0.800989        0.785398       0.016
+   2   2         0.13234          0.1309      0.0014
+   0   4        0.410352        0.392699       0.018
+   2   2         0.13234          0.1309      0.0014
+   8   6      0.00102127     0.000958738     6.3e-05
+   8   8     0.000400569     0.000372843     2.8e-05
+   2   6       0.0256515       0.0245437      0.0011
+   4   0        0.385155        0.392699      0.0075
+   4   4       0.0152482       0.0147262     0.00052
+
+DISK01_MONOMIAL_INTEGRAL_TEST:
+  Normal end of execution.
+
+DISK01_SAMPLE_TEST
+  Python version: 3.6.9
+  DISK01_SAMPLE samples the unit disk.
+
+  Sample points in the unit disk.
+
+  Row:       0             1       
+  Col
+      0 :    0.167249     -0.804224  
+      1 :   -0.781908      0.260331  
+      2 :   0.0499587     -0.296023  
+      3 :    0.275421      0.561051  
+      4 :    0.334352    -0.0703588  
+      5 :    -0.51778     -0.462126  
+      6 :     0.22616     -0.779508  
+      7 :    0.431298     -0.710035  
+      8 :   0.0236414      0.735668  
+      9 :    0.516439     -0.313041  
+
+DISK01_SAMPLE_TEST
+  Normal end of execution.
+
+DISK_MONTE_CARLO_TEST:
+  Normal end of execution.
+Tue Oct 19 11:32:48 2021

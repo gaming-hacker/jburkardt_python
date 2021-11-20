@@ -1,0 +1,182 @@
+Tue Oct 19 11:53:24 2021
+
+hypercube_integrals_test
+  Python version: 3.6.9
+  Test hypercube_integrals().
+
+hypercube01_MONOMIAL_INTEGRAL_test
+  Python version: 3.6.9
+  hypercube01_MONOMIAL_INTEGRAL returns the integral of a monomial
+  over the interior of the unit hypercube in 3D.
+  Compare with a Monte Carlo estimate.
+
+  Using M = 3
+
+  Number of sample points used is 4192
+
+  Ex  Ey  Ez     MC-Estimate           Exact      Error
+
+   1
+   4
+   1
+       0.0501677            0.05     0.00017
+   4
+   2
+   0
+       0.0657028       0.0666667     0.00096
+   3
+   0
+   0
+         0.24351            0.25      0.0065
+   2
+   4
+   3
+       0.0160802       0.0166667     0.00059
+   4
+   4
+   3
+      0.00924159            0.01     0.00076
+   1
+   3
+   1
+       0.0626438          0.0625     0.00014
+   3
+   2
+   1
+       0.0408604       0.0416667     0.00081
+   0
+   4
+   3
+       0.0502711            0.05     0.00027
+   2
+   3
+   3
+       0.0202652       0.0208333     0.00057
+   4
+   3
+   3
+       0.0117454          0.0125     0.00075
+   0
+   3
+   2
+         0.08379       0.0833333     0.00046
+   1
+   1
+   0
+        0.251595            0.25      0.0016
+   0
+   3
+   0
+        0.259169            0.25      0.0092
+   3
+   0
+   1
+        0.120338           0.125      0.0047
+   0
+   1
+   4
+       0.0984818             0.1      0.0015
+   3
+   0
+   0
+         0.24351            0.25      0.0065
+   3
+   2
+   1
+       0.0408604       0.0416667     0.00081
+   0
+   0
+   0
+               1               1           0
+   1
+   0
+   1
+        0.241533            0.25      0.0085
+   2
+   4
+   1
+       0.0328975       0.0333333     0.00044
+
+hypercube01_MONOMIAL_INTEGRAL_test:
+  Normal end of execution.
+
+hypercube01_sample_test
+  Python version: 3.6.9
+  HYPERUBE01_sample samples the unit hypercube
+  in M dimensions.
+
+  Sample points in the unit hypercube.
+
+  Row: 
+      0       
+      1       
+      2       
+
+  Col
+      0 :
+    0.117663  
+    0.514611  
+    0.400964  
+
+      1 :
+    0.519776  
+    0.107428  
+    0.835506  
+
+      2 :
+    0.154002  
+    0.974672  
+   0.0263055  
+
+      3 :
+    0.812483  
+    0.293437  
+    0.639929  
+
+      4 :
+    0.528816  
+     0.55189  
+    0.565538  
+
+      5 :
+    0.309691  
+    0.190629  
+    0.877272  
+
+      6 :
+    0.304283  
+    0.591182  
+     0.01685  
+
+      7 :
+     0.88727  
+    0.921755  
+    0.168249  
+
+      8 :
+   0.0723862  
+    0.797848  
+    0.481824  
+
+      9 :
+    0.842754  
+    0.237267  
+    0.362024  
+
+
+hypercube01_sample_test
+  Normal end of execution.
+
+hypercube01_volume_test
+  Python version: 3.6.9
+  hypercube01_volume returns the volume of the unit hypercube
+  in M dimensions.
+
+  hypercube01_volume(3) = 1
+
+hypercube01_volume_test
+  Normal end of execution.
+
+hypercube_integrals_test:
+  Normal end of execution.
+Tue Oct 19 11:53:24 2021

@@ -1,0 +1,15 @@
+Tue Oct 19 11:53:17 2021
+
+humps_ode_test:
+  Python version: 3.6.9
+  Test humps_ode using euler and rk4.
+
+humps_euler:
+  Graphics saved as "humps_euler.png"
+
+humps_rk4:
+  Graphics saved as "humps_rk4.png"
+
+humps_ode_test:
+  Normal end of execution.
+Tue Oct 19 11:53:18 2021

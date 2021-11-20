@@ -1,0 +1,29 @@
+Tue Oct 19 17:10:00 2021
+
+sawtooth_ode_test():
+  Python version: 3.6.9
+  Solve the sawtooth ODE.
+
+  Parameter values:
+    omega =  1.0
+    t0    =  0.0
+    y0    =  [1. 1.]
+    tstop =  20.0
+
+sawtooth_solve_ivp():
+  Solve sawtooth_ode using solve_ivp.
+  Graphics saved as "sawtooth_solve_ivp.png"
+
+sawtooth_driver_test()
+  sawtooth_driver() evaluates the right hand side of the
+  sawtooth ODE.  Make a plot of it.
+  Graphics saved as "sawtooth_driver_0.5.png"
+
+sawtooth_driver_test()
+  sawtooth_driver() evaluates the right hand side of the
+  sawtooth ODE.  Make a plot of it.
+  Graphics saved as "sawtooth_driver_1.0.png"
+
+sawtooth_ode_test():
+  Normal end of execution.
+Tue Oct 19 17:10:00 2021

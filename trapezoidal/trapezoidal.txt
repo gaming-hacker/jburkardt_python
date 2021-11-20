@@ -1,0 +1,17 @@
+Tue Oct 19 17:25:18 2021
+
+trapezoidal_test:
+  Python version: 3.6.9
+  Test trapezoidal()
+
+humps_trapezoidal:
+  Solve the humps ODE system using trapezoidal_fsolve().
+  Graphics saved as "humps_trapezoidal.png"
+
+predator_prey_trapezoidal:
+  Solve the predator prey ODE system using trapezoidal().
+  Graphics saved as "predator_prey_trapezoidal.png"
+
+trapezoidal_test:
+  Normal end of execution.
+Tue Oct 19 17:25:18 2021

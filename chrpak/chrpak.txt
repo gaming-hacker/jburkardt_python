@@ -1,0 +1,408 @@
+Tue Oct 19 11:25:22 2021
+
+chrpak_test():
+  Python version: 3.6.9
+  Test chrpak().
+
+ch_cap_test():
+  Python version: 3.6.9
+  ch_cap() uppercases a character.
+
+  C  ch_cap(C)
+
+  F      F
+  f      F
+  1      1
+  b      B
+  &      &
+
+ch_cap_test:
+  Normal end of execution.
+
+ch_is_digit_test():
+  Python version: 3.6.9
+  ch_is_digit() is TRUE if a character is a decimal digit.
+
+         0  "0"  True
+         1  "1"  True
+         2  "2"  True
+         3  "3"  True
+         4  "4"  True
+         5  "5"  True
+         6  "6"  True
+         7  "7"  True
+         8  "8"  True
+         9  "9"  True
+        10  "X"  False
+        11  "?"  False
+        12  " "  False
+
+ch_is_digit_test:
+  Normal end of execution.
+
+ch_is_isbn_digit_test()
+  Python version: 3.6.9
+  ch_is_isbn_digit() is TRUE if a character is an ISBN digit.
+
+  "0"  True
+  "1"  True
+  "2"  True
+  "3"  True
+  "4"  True
+  "5"  True
+  "6"  True
+  "7"  True
+  "8"  True
+  "9"  True
+  "X"  True
+  "x"  True
+  "Y"  False
+  "*"  False
+  "?"  False
+  " "  False
+
+ch_is_isbn_digit_test():
+  Normal end of execution.
+
+ch_to_digit_test():
+  Python version: 3.6.9
+  ch_to_digit(): character -> decimal digit
+
+         0  "0"         0
+         1  "1"         1
+         2  "2"         2
+         3  "3"         3
+         4  "4"         4
+         5  "5"         5
+         6  "6"         6
+         7  "7"         7
+         8  "8"         8
+         9  "9"         9
+        10  "X"        -1
+        11  "?"        -1
+        12  " "        -1
+
+ch_to_digit_test():
+  Normal end of execution.
+
+ch_to_rot13_test():
+  Python version: 3.6.9
+  ch_to_rot13() "encodes" characters using ROT13
+  (and digits using ROT5).
+  A second application of the function returns the
+  original character.
+
+            CH  : ABCDEFGHIJKLMNOPQRSTUVWXYZ
+      ROT13(CH) : NOPQRSTUVWXYZABCDEFGHIJKLM
+ROT13(ROT13(CH)): ABCDEFGHIJKLMNOPQRSTUVWXYZ
+
+            CH  : CH_TO_ROT13 "encodes" characters using ROT13
+      ROT13(CH) : PU_GB_EBG68 "rapbqrf" punenpgref hfvat EBG68
+ROT13(ROT13(CH)): CH_TO_ROT13 "encodes" characters using ROT13
+
+ch_to_rot13_test():
+  Normal end of execution.
+
+chvec_lt_test():
+  chvec_lt(c1,c2) is TRUE if c1 < c2
+  for character strings c1 and c2.
+
+  C1                    C2                    C1<C2?
+
+  minnesota             minnesota             False
+  minnesota             Minnesota             False
+  minnesota             minnesota2            True
+  minnesota             minnesot              False
+  minnesota             minne                 False
+  minnesota             minnesotan            True
+  minnesota              minnesota            False
+  minnesota             alaska                False
+  minnesota             wyoming               True
+
+chvec_reduce_test():
+  chvec_reduce() replaces a string of the same character
+  by a single occurrence.
+
+  cv1                    cv2
+
+  minnesota             minesota            
+  all love ends         al love ends        
+  allloveends           alovends            
+  allLoveEnds           alLoveEnds          
+  July year 1776        July year 176       
+
+digit_to_ch_test():
+  Python version: 3.6.9
+  digit_to_ch(): decimal digit -> character.
+
+        -2  "*"        -1
+        -1  "*"        -1
+         0  "0"         0
+         1  "1"         1
+         2  "2"         2
+         3  "3"         3
+         4  "4"         4
+         5  "5"         5
+         6  "6"         6
+         7  "7"         7
+         8  "8"         8
+         9  "9"         9
+        10  "*"        -1
+        11  "*"        -1
+
+digit_to_ch_test():
+  Normal end of execution.
+
+i4_length_test()
+  Python version: 3.6.9
+  i4_length() computes an integer's "length".
+
+        I4    Length
+
+         0         1
+         1         1
+        -1         2
+       140         3
+     -1952         5
+    123456         6
+
+i4_length_test():
+  Normal end of execution.
+
+i4_to_isbn_digit_test()
+  Python version: 3.6.9
+  i4_to_isbn_digit() converts digits 0 to 10 to an ISBN digit.
+
+         0     "0"
+         1     "1"
+         2     "2"
+         3     "3"
+         4     "4"
+         5     "5"
+         6     "6"
+         7     "7"
+         8     "8"
+         9     "9"
+        10     "X"
+
+i4_to_isbn_digit_test():
+  Normal end of execution.
+
+i4vec_print_test():
+  Python version: 3.6.9
+  i4vec_print() prints an I4VEC.
+
+  Here is an I4VEC:
+
+     0      91
+     1      92
+     2      93
+     3      94
+
+i4vec_print_test():
+  Normal end of execution.
+
+isbn_digit_to_i4_test():
+  Python version: 3.6.9
+  isbn_digit_to_i4() converts an ISBN digit to an I4
+
+  "0"       0
+  "1"       1
+  "2"       2
+  "3"       3
+  "4"       4
+  "5"       5
+  "6"       6
+  "7"       7
+  "8"       8
+  "9"       9
+  "X"      10
+  "x"      10
+  "Y"      -1
+  "*"      -1
+  "?"      -1
+  " "      -1
+
+isbn_digit_to_i4_test():
+  Normal end of execution.
+
+rat_to_s_test():
+  Python version: 3.6.9
+  rat_to_s() converts a rational to a string.
+
+           A           B    A/B
+
+           3           4    3/4
+           1        1000    1/1000
+          20           1    20/1
+           8           4    8/4
+         -10           7    -10/7
+           9         -15    9/-15
+         -11         -11    -11/-11
+
+rat_to_s_test():
+  Normal end of execution.
+
+s_digits_count_test():
+  Python version: 3.6.9
+  s_digits_count() counts the digits in a string.
+
+  We count 7 digits in "34E94-70.6"
+  We count 0 digits in "Not a one!"
+  We count 3 digits in "#8*k >>>> & SEVEN-0.3"
+
+s_digits_count_test():
+  Normal end of execution.
+
+s_len_trim_test():
+  Python version: 3.6.9
+  s_len_trim() returns the length of string to the last nonblank.
+
+  LEN  S_LEN_TRIM  ---------S---------
+
+    8           8  "Hi, Bob!"
+   23          18  "  How   are   you?     "
+    4           0  "    "
+
+s_len_trim_test():
+  Normal end of execution.
+
+s_quote_test():
+  Python version: 3.6.9
+  s_quote() quotes a string S1 with a mark MARK.
+
+  ----S1----  ---MARK---  ----S2----
+
+  Hi, Bob!    "           "Hi, Bob!"
+  De          Loop        LoopDeLoop
+
+s_quote_test():
+  Normal end of execution.
+
+s_to_caesar_test():
+  Python version: 3.6.9
+  s_to_caesar() applies a Caesar shift cipher to a string.
+
+  S2 = S_TO_CAESAR ( S1, K ), varying K.
+
+   K  ---------------S1----------------  ---------------S2----------------
+
+  -5  "A man, a plan, a canal: Panama!"  "V hvi, v kgvi, v xvivg: Kvivhv!"
+  -4  "A man, a plan, a canal: Panama!"  "W iwj, w lhwj, w ywjwh: Lwjwiw!"
+  -3  "A man, a plan, a canal: Panama!"  "X jxk, x mixk, x zxkxi: Mxkxjx!"
+  -2  "A man, a plan, a canal: Panama!"  "Y kyl, y njyl, y aylyj: Nylyky!"
+  -1  "A man, a plan, a canal: Panama!"  "Z lzm, z okzm, z bzmzk: Ozmzlz!"
+   0  "A man, a plan, a canal: Panama!"  "A man, a plan, a canal: Panama!"
+   1  "A man, a plan, a canal: Panama!"  "B nbo, b qmbo, b dbobm: Qbobnb!"
+   2  "A man, a plan, a canal: Panama!"  "C ocp, c rncp, c ecpcn: Rcpcoc!"
+   3  "A man, a plan, a canal: Panama!"  "D pdq, d sodq, d fdqdo: Sdqdpd!"
+   4  "A man, a plan, a canal: Panama!"  "E qer, e tper, e gerep: Tereqe!"
+   5  "A man, a plan, a canal: Panama!"  "F rfs, f uqfs, f hfsfq: Ufsfrf!"
+
+  S2 = S_TO_CAESAR ( S1,  K ).
+  S3 = S_TO_CAESAR ( S2, -K )
+
+   K  ------------S1------------  ------------S2------------  ------------S3------------
+
+  -5  "The key is under the mat"  "Ocz fzt dn piyzm ocz hvo"  "The key is under the mat"
+  -4  "The key is under the mat"  "Pda gau eo qjzan pda iwp"  "The key is under the mat"
+  -3  "The key is under the mat"  "Qeb hbv fp rkabo qeb jxq"  "The key is under the mat"
+  -2  "The key is under the mat"  "Rfc icw gq slbcp rfc kyr"  "The key is under the mat"
+  -1  "The key is under the mat"  "Sgd jdx hr tmcdq sgd lzs"  "The key is under the mat"
+   0  "The key is under the mat"  "The key is under the mat"  "The key is under the mat"
+   1  "The key is under the mat"  "Uif lfz jt voefs uif nbu"  "The key is under the mat"
+   2  "The key is under the mat"  "Vjg mga ku wpfgt vjg ocv"  "The key is under the mat"
+   3  "The key is under the mat"  "Wkh nhb lv xqghu wkh pdw"  "The key is under the mat"
+   4  "The key is under the mat"  "Xli oic mw yrhiv xli qex"  "The key is under the mat"
+   5  "The key is under the mat"  "Ymj pjd nx zsijw ymj rfy"  "The key is under the mat"
+
+s_to_caesar_test():
+  Normal end of execution.
+
+s_to_digits_test():
+  Python version: 3.6.9
+  s_to_digits: string -> digit vector
+
+  Test string: "34E94-70.6"
+
+  Extracted 5 digits:
+
+     0       3
+     1       4
+     2       9
+     3       4
+     4       7
+
+  Test string: "34E94-70.6"
+
+  Extracted 7 digits:
+
+     0       3
+     1       4
+     2       9
+     3       4
+     4       7
+     5       0
+     6       6
+
+s_to_digits_test():
+  Normal end of execution.
+
+s_to_isbn_digits_test():
+  Python version: 3.6.9
+  s_to_isbn_digits(): string -> ISBN digit vector
+
+  Test string: "34E9X-70.6"
+
+  Extracted 5 digits:
+
+     0       3
+     1       4
+     2       9
+     3      10
+     4       7
+
+  Test string: "34E9X-70.6"
+
+  Extracted 7 digits:
+
+     0       3
+     1       4
+     2       9
+     3      10
+     4       7
+     5       0
+     6       6
+
+s_to_isbn_digits_test():
+  Normal end of execution.
+
+s_to_rot13_test():
+  Python version: 3.6.9
+  s_to_rot13(): applies the ROT13 cipher to a string.
+
+  S2 = S_TO_ROT13 ( S1 ).
+
+  -------------------S1-------------------  -------------------S2-------------------
+
+  "abcdefghijklmnopqrstuvwxyz"              "nopqrstuvwxyzabcdefghijklm"            
+  "Cher"                                    "Pure"                                  
+  "James Thurston Howell III"               "Wnzrf Guhefgba Ubjryy VVV"             
+  "The bill is $1,205,837.49 so pay now!"   "Gur ovyy vf $6,750,382.94 fb cnl abj!" 
+
+  S2 = S_TO_ROT13 ( S1 ).
+  S3 = S_TO_ROT13 ( S2 ).
+
+  -------------------S1-------------------  -------------------S3-------------------
+
+  "abcdefghijklmnopqrstuvwxyz"              "abcdefghijklmnopqrstuvwxyz"            
+  "Cher"                                    "Cher"                                  
+  "James Thurston Howell III"               "James Thurston Howell III"             
+  "The bill is $1,205,837.49 so pay now!"   "The bill is $1,205,837.49 so pay now!" 
+
+s_to_rot13_test:
+  Normal end of execution.
+
+chrpak_test():
+  Normal end of execution.
+Tue Oct 19 11:25:22 2021

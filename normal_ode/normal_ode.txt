@@ -1,0 +1,24 @@
+Tue Oct 19 12:01:11 2021
+
+normal_ode_test():
+  Python version: 3.6.9
+  normal_ode() defines an ODE for the normal PDF.
+  Solve this ODE using the Euler method.
+  Estimate ODE approximation error by taking twice as many steps.
+  Graphics saved as "normal_ode.png"
+  Graphics saved as "normal_ode_error.png"
+
+  Solution used  100  and  200  steps.
+  Estimated RMS error =  0.03570454646918994
+  Exact     RMS error =  0.12896427837922048
+
+  At the point t         =  5.0
+  Y estimate             =  [2.7928498e-08]
+  Y double step estimate =  [2.29528315e-07]
+  Y exact value          =  1.4867195147343165e-06
+  Y error estimate       =  [2.01599817e-07]
+  Y exact error          =  [1.45879102e-06]
+
+normal_ode_test:
+  Normal end of execution.
+Tue Oct 19 12:01:11 2021

@@ -1,0 +1,11 @@
+Tue Oct 19 17:09:00 2021
+
+robertson_ode_test():
+  Python version: 3.6.9
+  Test robertson_ode using scipy.integrate.solve_ivp().
+  Graphics saved as "robertson_ode.png"
+  Graphics saved as "robertson_ode_conservation.png"
+
+robertson_ode_test:
+  Normal end of execution.
+Tue Oct 19 17:09:01 2021

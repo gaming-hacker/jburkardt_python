@@ -1,0 +1,162 @@
+Tue Oct 19 11:26:24 2021
+
+CUBE_INTEGRALS_TEST
+  Python version: 3.6.9
+  Test the CUBE_INTEGRALS library.
+
+I4VEC_PRINT_TEST
+  Python version: 3.6.9
+  I4VEC_PRINT prints an I4VEC.
+
+  Here is an I4VEC:
+
+     0      91
+     1      92
+     2      93
+     3      94
+
+I4VEC_PRINT_TEST:
+  Normal end of execution.
+
+I4VEC_TRANSPOSE_PRINT_TEST
+  Python version: 3.6.9
+  I4VEC_TRANSPOSE_PRINT prints an I4VEC
+  with 5 entries to a row, and an optional title.
+
+  My array:   1 2 3 4 5 6 7 8 9 10 11 12
+
+I4VEC_TRANSPOSE_PRINT_TEST:
+  Normal end of execution.
+
+R8MAT_PRINT_TEST
+  Python version: 3.6.9
+  R8MAT_PRINT prints an R8MAT.
+
+  Here is an R8MAT:
+
+  Col:       0             1             2             3             4       
+  Row
+      0 :          11            12            13            14            15  
+      1 :          21            22            23            24            25  
+      2 :          31            32            33            34            35  
+      3 :          41            42            43            44            45  
+
+  Col:       5       
+  Row
+      0 :          16  
+      1 :          26  
+      2 :          36  
+      3 :          46  
+
+R8MAT_PRINT_TEST:
+  Normal end of execution.
+
+R8MAT_PRINT_SOME_TEST
+  Python version: 3.6.9
+  R8MAT_PRINT_SOME prints some of an R8MAT.
+
+  Here is an R8MAT:
+
+  Col:       3             4             5       
+  Row
+      0 :          14            15            16  
+      1 :          24            25            26  
+      2 :          34            35            36  
+
+R8MAT_PRINT_SOME_TEST:
+  Normal end of execution.
+
+R8MAT_TRANSPOSE_PRINT_TEST
+  Python version: 3.6.9
+  R8MAT_TRANSPOSE_PRINT prints an R8MAT.
+
+  Here is an R8MAT, transposed:
+
+  Row:       0             1             2             3       
+  Col
+      0 :          11            21            31            41  
+      1 :          12            22            32            42  
+      2 :          13            23            33            43  
+
+R8MAT_TRANSPOSE_PRINT_TEST:
+  Normal end of execution.
+
+R8MAT_TRANSPOSE_PRINT_SOME_TEST
+  Python version: 3.6.9
+  R8MAT_TRANSPOSE_PRINT_SOME prints some of an R8MAT, transposed.
+
+  R8MAT, rows 0:2, cols 3:5:
+
+  Row:       0             1             2       
+  Col
+      3 :          14            24            34  
+      4 :          15            25            35  
+      5 :          16            26            36  
+
+R8MAT_TRANSPOSE_PRINT_SOME_TEST:
+  Normal end of execution.
+
+CUBE01_MONOMIAL_INTEGRAL_TEST
+  Python version: 3.6.9
+  CUBE01_MONOMIAL_INTEGRAL computes the integral of a monomial
+  within the interior of the unit cube in 3D.
+  Compare with a Monte Carlo estimate.
+
+  Number of sample points used is 4192
+
+  Ex  Ey  Ez     MC-Estimate           Exact      Error
+
+   0   3   3       0.0610527          0.0625      0.0014
+   6   4   0       0.0271281       0.0285714      0.0014
+   5   5   5      0.00409784      0.00462963     0.00053
+   2   4   4       0.0124131       0.0133333     0.00092
+   0   6   0        0.143872        0.142857       0.001
+   3   5   0       0.0404168       0.0416667      0.0012
+   6   6   6      0.00249236      0.00291545     0.00042
+   2   0   0        0.333091        0.333333     0.00024
+   4   0   7       0.0246142           0.025     0.00039
+   5   3   5      0.00641772      0.00694444     0.00053
+   0   2   4       0.0645068       0.0666667      0.0022
+   4   1   4       0.0196883            0.02     0.00031
+   3   3   4       0.0117032          0.0125      0.0008
+   7   1   7      0.00774518       0.0078125     6.7e-05
+   6   4   0       0.0271281       0.0285714      0.0014
+   7   7   0       0.0142955        0.015625      0.0013
+   1   3   7       0.0144039        0.015625      0.0012
+   6   5   6       0.0029583      0.00340136     0.00044
+   1   1   0        0.249852            0.25     0.00015
+   6   2   0        0.046453        0.047619      0.0012
+
+CUBE01_MONOMIAL_INTEGRAL_TEST:
+  Normal end of execution.
+
+CUBE01_SAMPLE_TEST
+  Python version: 3.6.9
+  CUBE01_SAMPLE samples the unit cube.
+
+  Sample points in the unit cube.
+
+  Row:       0             1             2       
+  Col
+      0 :    0.495981      0.514493      0.415008  
+      1 :    0.692901    0.00532242      0.373046  
+      2 :   0.0760506      0.362327     0.0402361  
+      3 :    0.059117      0.537258      0.442379  
+      4 :    0.556944      0.102873      0.309026  
+      5 :    0.876304      0.964884      0.725593  
+      6 :    0.634428     0.0620241      0.301348  
+      7 :    0.494844       0.90363      0.999811  
+      8 :    0.743627      0.867849      0.585841  
+      9 :    0.202809      0.285462      0.544082  
+
+CUBE01_SAMPLE_TEST
+  Normal end of execution.
+
+CUBE01_VOLUME_TEST
+  Python version: 3.6.9
+  CUBE01_VOLUME returns the volume of the unit cube.
+
+  CUBE01_VOLUME() = 1
+
+CUBE01_VOLUME_TEST
+  Normal end of execution.

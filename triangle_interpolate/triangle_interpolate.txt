@@ -1,0 +1,151 @@
+Tue Oct 19 17:25:30 2021
+
+triangle_interpolate_test():
+  Python version: 3.6.9
+  Test triangle_interpolate()
+
+r8mat_print_test
+  Python version: 3.6.9
+  r8mat_print prints an R8MAT.
+
+  Here is an R8MAT:
+
+  Col:       0             1             2             3             4       
+  Row
+      0 :          11            12            13            14            15  
+      1 :          21            22            23            24            25  
+      2 :          31            32            33            34            35  
+      3 :          41            42            43            44            45  
+
+  Col:       5       
+  Row
+      0 :          16  
+      1 :          26  
+      2 :          36  
+      3 :          46  
+
+r8mat_print_test:
+  Normal end of execution.
+
+r8mat_print_some_test
+  Python version: 3.6.9
+  r8mat_print_some prints some of an R8MAT.
+
+  Here is an R8MAT:
+
+  Col:       3             4             5       
+  Row
+      0 :          14            15            16  
+      1 :          24            25            26  
+      2 :          34            35            36  
+
+r8mat_print_some_test:
+  Normal end of execution.
+
+r8mat_transpose_write_test:
+  Python version: 3.6.9
+  Test r8mat_transpose_write, which writes the transpose of an R8MAT to a file.
+
+  Created file "r8mat_transpose_write_test.txt".
+
+r8mat_transpose_write_test:
+  Normal end of execution.
+
+r8vec_print_test
+  Python version: 3.6.9
+  r8vec_print prints an R8VEC.
+
+  Here is an R8VEC:
+
+     0:       123.456
+     1:         5e-06
+     2:        -1e+06
+     3:       3.14159
+
+r8vec_print_test:
+  Normal end of execution.
+
+triangle_interpolate_linear_test
+  Python version: 3.6.9
+  triangle_interpolate_linear uses linear interpolation
+  on vertex data to estimate values in the interior.
+
+       X               Y               V(1)            V(2)            V(3)
+
+               0               1               1               0               0
+               5               0               0               1               0
+               4               4               0               0               1
+
+         2.94966         2.20688
+          0.3155
+        0.211654
+        0.472846
+
+         4.18347         1.40113
+       0.0981573
+          0.5761
+        0.325743
+
+         3.89158         2.08972
+        0.123367
+        0.385044
+        0.491589
+
+         1.70684        0.923397
+        0.644696
+        0.285629
+       0.0696752
+
+         4.36284         1.25045
+       0.0683256
+        0.636144
+        0.295531
+
+         1.45453         1.25232
+        0.680503
+        0.176543
+        0.142954
+
+         2.13287          2.3294
+        0.481006
+       0.0568944
+        0.462099
+
+         1.77943         1.90599
+          0.5777
+       0.0902284
+        0.332072
+
+         2.82356         2.45129
+        0.329183
+        0.140289
+        0.530527
+
+         3.70839         2.13222
+        0.159696
+        0.347173
+        0.493131
+
+
+triangle_interpolate_linear_test:
+  Normal end of execution.
+
+uniform_in_triangle_map1_test
+  Python version: 3.6.9
+  uniform_in_triangle_map1 maps uniform
+  points into a triangle.
+
+  Number of points N =          1000
+
+  V1 =     0.750000      0.900000
+  V2 =     0.000000      0.200000
+  V3 =     0.950000      0.650000
+
+  Data written to "uniform_in_triangle_map1.txt".
+
+uniform_in_triangle_map1_test:
+  Normal end of execution.
+
+triangle_interpolate_test():
+  Normal end of execution.
+Tue Oct 19 17:25:30 2021

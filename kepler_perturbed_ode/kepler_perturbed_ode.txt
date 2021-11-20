@@ -1,0 +1,11 @@
+Tue Oct 19 11:55:30 2021
+
+kepler_perturbed_ode_test():
+  Python version: 3.6.9
+  Test kepler_perturbed_ode.
+  Graphics saved as "kepler_perturbed_plot.png"
+  Graphics saved as "kepler_perturbed_phase.png"
+
+kepler_perturbed_ode_test():
+  Normal end of execution.
+Tue Oct 19 11:55:31 2021

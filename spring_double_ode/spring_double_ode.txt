@@ -1,0 +1,22 @@
+Tue Oct 19 17:10:41 2021
+
+spring_double_ode_test:
+  Python version: 3.6.9
+  Solve the double spring ODE.
+
+  Parameter values:
+    mass #1      =  3.0
+    mass #2      =  5.0
+    stiffness #1 =  1.0
+    stiffness #2 =  10.0
+    t0           =  0.0
+    y0           =  0.0 1.0 0.0 0.0
+    tstop        =  50.0
+
+spring_double_solve_ivp():
+  Use solve_ivp() to solve the double spring ODE.
+  Graphics saved as "spring_double_solve_ivp.png"
+
+spring_double_ode_test():
+  Normal end of execution.
+Tue Oct 19 17:10:42 2021

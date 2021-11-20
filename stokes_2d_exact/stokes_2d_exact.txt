@@ -1,0 +1,245 @@
+Tue Oct 19 17:11:19 2021
+
+stokes_2d_exact_test():
+  Python version: 3.6.9
+  Test stokes_2d_exact().
+
+r8vec_print_test
+  Python version: 3.6.9
+  Test r8vec_print(), which prints an R8VEC.
+
+  Use r8vec_print():
+
+     0:       123.456
+     1:         5e-06
+     2:        -1e+06
+     3:       3.14159
+
+  Use python print():
+
+[ 1.23456000e+02  5.00000000e-06 -1.00000000e+06  3.14159265e+00]
+
+r8vec_print_test:
+  Normal end of execution.
+
+grid_2d_test:
+  Python version: 3.6.9
+  grid_2d() generates a regular grid.
+
+   0   0   0       10.000000        5.000000
+   1   1   0       12.500000        5.000000
+   2   2   0       15.000000        5.000000
+   3   3   0       17.500000        5.000000
+   4   4   0       20.000000        5.000000
+   5   0   1       10.000000        5.500000
+   6   1   1       12.500000        5.500000
+   7   2   1       15.000000        5.500000
+   8   3   1       17.500000        5.500000
+   9   4   1       20.000000        5.500000
+  10   0   2       10.000000        6.000000
+  11   1   2       12.500000        6.000000
+  12   2   2       15.000000        6.000000
+  13   3   2       17.500000        6.000000
+  14   4   2       20.000000        6.000000
+
+grid_2d_test:
+  Normal end of execution.
+
+uvp_stokes1_test
+  Python version: 3.6.9
+  Exact Stokes solution #1.
+  Estimate the range of velocity and pressure
+  using a region that is the unit square.
+
+           Minimum       Maximum
+
+  U:      -0.0119931       0.0119274
+  V:      -0.0120147           0.012
+  P:               0               0
+
+uvp_stokes1_test:
+  Normal end of execution.
+
+rhs_stokes1_test
+  Python version: 3.6.9
+  Exact Stokes solution #1.
+  Estimate the range of the right hand side functions
+  using a region that is the unit square.
+
+           Minimum       Maximum
+
+  U:       -0.757167        0.759915
+  V:       -0.758877        0.759252
+  P:               0               0
+
+rhs_stokes1_test:
+  Normal end of execution.
+
+resid_stokes1_test
+  Python version: 3.6.9
+  Exact Stokes solution #1.
+  Sample the Stokes residuals.
+
+           Minimum       Maximum
+
+  Ur:               0               0
+  Vr:               0     2.38698e-15
+  Pr:               0     1.52656e-16
+
+resid_stokes1_test:
+  Normal end of execution.
+
+stokes1_gnuplot_test:
+  Python version: 3.6.9
+  Exact solution #1.
+  Generate a Stokes velocity field on a regular grid.
+  Store in GNUPLOT data and command files.
+
+  Data written to "stokes1_data.txt".
+  Commands written to "stokes1_commands.txt".
+
+stokes1_gnuplot_test:
+  Normal end of execution.
+
+stokes1_matplotlib_test:
+  Python version: 3.6.9
+  Exact flow #1.
+  Generate a Stokes velocity field on a regular grid.
+  Display it using MATPLOTLIB
+
+stokes1_matplotlib_test:
+  Normal end of execution.
+
+uvp_stokes2_test
+  Python version: 3.6.9
+  Exact Stokes solution #2.
+  Estimate the range of velocity and pressure
+  using a region that is the unit square.
+
+           Minimum       Maximum
+
+  U:        -1.99433           1.966
+  V:        -1.99319         1.99509
+  P:      0.00306106         1.91132
+
+uvp_stokes2_test:
+  Normal end of execution.
+
+rhs_stokes2_test
+  Python version: 3.6.9
+  Exact Stokes solution #2.
+  Estimate the range of the right hand side functions
+  using a region that is the unit square.
+
+           Minimum       Maximum
+
+  U:        -157.317         157.231
+  V:        -155.579         158.851
+  P:               0               0
+
+rhs_stokes2_test:
+  Normal end of execution.
+
+resid_stokes2_test
+  Python version: 3.6.9
+  Exact Stokes solution #2.
+  Sample the Stokes residuals.
+
+           Minimum       Maximum
+
+  Ur:               0               0
+  Vr:               0               0
+  Pr:               0               0
+
+resid_stokes2_test:
+  Normal end of execution.
+
+stokes2_gnuplot_test:
+  Python version: 3.6.9
+  Exact solution #2.
+  Generate a Stokes velocity field on a regular grid.
+  Store in GNUPLOT data and command files.
+
+  Data written to "stokes2_data.txt".
+  Commands written to "stokes2_commands.txt".
+
+stokes2_gnuplot_test:
+  Normal end of execution.
+
+stokes2_matplotlib_test:
+  Python version: 3.6.9
+  Exact flow #2.
+  Generate a Stokes velocity field on a regular grid.
+  Display it using MATPLOTLIB
+
+stokes2_matplotlib_test:
+  Normal end of execution.
+
+uvp_stokes3_test
+  Python version: 3.6.9
+  Exact Stokes solution #3.
+  Estimate the range of velocity and pressure
+  using a region that is [-1,+1]x[-1,+1].
+
+           Minimum       Maximum
+
+  U:         -17.354         17.6542
+  V:        -4.86342          4.8775
+  P:         -41.205         61.6244
+
+uvp_stokes1_test:
+  Normal end of execution.
+
+rhs_stokes3_test
+  Python version: 3.6.9
+  Exact Stokes solution #3.
+  Estimate the range of the right hand side functions
+  using a region that is [-1,+1]x[-1,+1].
+
+           Minimum       Maximum
+
+  U:               0               0
+  V:               0               0
+  P:               0               0
+
+rhs_stokes3_test:
+  Normal end of execution.
+
+resid_stokes3_test
+  Python version: 3.6.9
+  Exact Stokes solution #3.
+  Sample the Stokes residuals.
+
+           Minimum       Maximum
+
+  Ur:               0               0
+  Vr:               0               0
+  Pr:               0               0
+
+resid_stokes3_test:
+  Normal end of execution.
+
+stokes3_gnuplot_test:
+  Python version: 3.6.9
+  Exact solution #3.
+  Generate a Stokes velocity field on a regular grid.
+  Store in GNUPLOT data and command files.
+
+  Data written to "stokes3_data.txt".
+  Commands written to "stokes3_commands.txt".
+
+stokes3_gnuplot_test:
+  Normal end of execution.
+
+stokes3_matplotlib_test:
+  Python version: 3.6.9
+  Exact flow #3.
+  Generate a Stokes velocity field on a regular grid.
+  Display it using MATPLOTLIB
+
+stokes3_matplotlib_test:
+  Normal end of execution.
+
+stokes_2d_exact_test():
+  Normal end of execution.
+Tue Oct 19 17:11:19 2021

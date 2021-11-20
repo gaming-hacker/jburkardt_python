@@ -1,0 +1,10 @@
+Tue Oct 19 11:23:53 2021
+
+arenstorf_ode_test():
+  Python version: 3.6.9
+  Test arenstorf_ode().
+  Graphics saved as "arenstorf_ode_phase.png"
+
+arenstorf_ode_test():
+  Normal end of execution.
+Tue Oct 19 11:23:53 2021

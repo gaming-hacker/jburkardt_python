@@ -1,0 +1,70 @@
+Tue Oct 19 17:10:04 2021
+
+search_serial_test:
+  Python version: 3.6.9
+  Test search_serial()
+
+search_serial():
+  Python version: 3.6.9
+  Search the integers from A to B
+  for a value J such that F(J) = C.
+
+  A        = 1
+  B        = 10000
+  C        = 45
+
+  No solution was found.
+  Time     = 0.010626
+
+search_serial():
+  Normal end of execution.
+
+search_serial():
+  Python version: 3.6.9
+  Search the integers from A to B
+  for a value J such that F(J) = C.
+
+  A        = 1
+  B        = 100000
+  C        = 45
+
+  No solution was found.
+  Time     = 0.104723
+
+search_serial():
+  Normal end of execution.
+
+search_serial():
+  Python version: 3.6.9
+  Search the integers from A to B
+  for a value J such that F(J) = C.
+
+  A        = 1
+  B        = 1000000
+  C        = 45
+
+  No solution was found.
+  Time     = 1.051708
+
+search_serial():
+  Normal end of execution.
+
+search_serial():
+  Python version: 3.6.9
+  Search the integers from A to B
+  for a value J such that F(J) = C.
+
+  A        = 1674924000
+  B        = 1674924999
+  C        = 45
+
+  Found J = 1674924981
+  Verify F(J) = 45
+  Time     = 0.001088
+
+search_serial():
+  Normal end of execution.
+
+search_serial_test:
+  Normal end of execution.
+Tue Oct 19 17:10:05 2021

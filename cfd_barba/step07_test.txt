@@ -1,0 +1,11 @@
+
+STEP07:
+  Python version: 3.6.9
+  The 2D diffusion equation.
+  Saved initial solution in file "step07_initial.png".
+  Saved initial solution in file "step07_10.png".
+  Saved initial solution in file "step07_14.png".
+  Saved initial solution in file "step07_50.png".
+
+STEP07:
+  Normal end of execution.

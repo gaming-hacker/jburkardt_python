@@ -1,0 +1,14 @@
+Tue Oct 19 17:00:20 2021
+
+pendulum_nonlinear_ode_test():
+  Python version: 3.6.9
+  Test pendulum_nonlinear_ode using solve_ivp.
+
+  Initial angular deflection = 70 degrees
+  Initial angular velocity = 0 degrees/second
+  Graphics saved as "pendulum_nonlinear_theta.png"
+  Graphics saved as "pendulum_nonlinear_energy.png"
+
+pendulum_nonlinear_ode_test:
+  Normal end of execution.
+Tue Oct 19 17:00:21 2021

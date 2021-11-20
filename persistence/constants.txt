@@ -1,0 +1,12 @@
+Tue Oct 19 17:00:23 2021
+
+constants_test():
+  Python version: 3.6.9
+  Test constants(), with the interface:
+    g,c,h = constants()
+
+     6.67384e-11 , 299792458.0 , 6.62607004e-34  = constants ( );
+
+constants_test():
+  Normal end of execution.
+Tue Oct 19 17:00:23 2021

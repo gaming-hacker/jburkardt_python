@@ -1,0 +1,567 @@
+Tue Oct 19 17:06:00 2021
+
+quaternions_test
+  Python version: 3.6.9
+  Test the quaternions library.
+
+degrees_to_radians_test
+  degrees_to_radians converts an angle from degrees
+  to radians;
+
+  degrees     radians     degrees
+
+  -60.000000   -1.047198  -60.000000
+  -30.000000   -0.523599  -30.000000
+    0.000000    0.000000    0.000000
+   30.000000    0.523599   30.000000
+   60.000000    1.047198   60.000000
+   90.000000    1.570796   90.000000
+  120.000000    2.094395  120.000000
+  150.000000    2.617994  150.000000
+  180.000000    3.141593  180.000000
+  210.000000    3.665191  210.000000
+  240.000000    4.188790  240.000000
+  270.000000    4.712389  270.000000
+  300.000000    5.235988  300.000000
+  330.000000    5.759587  330.000000
+  360.000000    6.283185  360.000000
+  390.000000    6.806784  390.000000
+  420.000000    7.330383  420.000000
+
+q8_conjugate_test
+  Python version: 3.6.9
+  q8_conjugate conjugates a quaternion
+
+  q1 = q8_normal_01 ():    0.916022       1.24774     -0.222822     -0.338165
+  q2 = q8_conjugate ( q1 ):      0.916022      -1.24774      0.222822      0.338165
+
+  q1 = q8_normal_01 ():     1.90182      -1.66372       1.25776      0.844137
+  q2 = q8_conjugate ( q1 ):       1.90182       1.66372      -1.25776     -0.844137
+
+  q1 = q8_normal_01 ():     1.43622      -2.26995      0.290797     -0.561256
+  q2 = q8_conjugate ( q1 ):       1.43622       2.26995     -0.290797      0.561256
+
+  q1 = q8_normal_01 ():    -1.10795      -2.86056     -0.915347     -0.497295
+  q2 = q8_conjugate ( q1 ):      -1.10795       2.86056      0.915347      0.497295
+
+  q1 = q8_normal_01 ():    0.816477     -0.267133     -0.992677     -0.447312
+  q2 = q8_conjugate ( q1 ):      0.816477      0.267133      0.992677      0.447312
+
+q8_conjugate_test
+  Normal end of execution.
+
+q8_exponentiate_test
+  Python version: 3.6.9
+  q8_exponentiate exponentiates a quaternion
+
+  q1 = q8_normal_01 ( ):    0.512448      0.513824     -0.707554      -1.28927
+  q2 = q8_exponentiate ( q1 ):   0.0216269      0.550564     -0.758147      -1.38146
+
+  q1 = q8_normal_01 ( ):    -0.26679        1.4147     -0.180042     -0.633551
+  q2 = q8_exponentiate ( q1 ):  0.00788214      0.694242    -0.0883527     -0.310906
+
+  q1 = q8_normal_01 ( ):     -1.3473     -0.167075       0.66086      0.156324
+  q2 = q8_exponentiate ( q1 ):    0.198922     -0.039975       0.15812     0.0374026
+
+  q1 = q8_normal_01 ( ):   -0.662013     -0.318049      -2.25349       1.15977
+  q2 = q8_exponentiate ( q1 ):   -0.429384    -0.0355887     -0.252158      0.129775
+
+  q1 = q8_normal_01 ( ):   0.0534491     -0.835496     0.0795718        1.4122
+  q2 = q8_exponentiate ( q1 ):  -0.0758579     -0.535125     0.0509647      0.904495
+
+q8_exponentiate_test
+  Normal end of execution.
+
+q8_inverse_test
+  Python version: 3.6.9
+  q8_inverse inverts a quaternion
+
+  q1 = q8_normal_01 ( ):     1.51411     -0.292286       0.40948     0.0160718
+  q2 = q8_inverse ( q1 ):        0.594725      0.114806     -0.160839    -0.0063128
+  q3 = q8_multiply ( q1, q2 ):               1             0   8.89046e-18   1.73472e-18
+
+  q1 = q8_normal_01 ( ):    0.788369      0.464487     0.0953112      0.689248
+  q2 = q8_inverse ( q1 ):        0.596607     -0.351505    -0.0721278     -0.521596
+  q3 = q8_multiply ( q1, q2 ):               1  -6.93889e-18             0  -5.55112e-17
+
+  q1 = q8_normal_01 ( ):   -0.111971     -0.972616     -0.215602     -0.682699
+  q2 = q8_inverse ( q1 ):      -0.0761146      0.661157       0.14656      0.464079
+  q3 = q8_multiply ( q1, q2 ):               1             0             0  -6.93889e-18
+
+  q1 = q8_normal_01 ( ):     1.68811      -1.06467      -1.06375     -0.416088
+  q2 = q8_inverse ( q1 ):        0.319238       0.20134      0.201165     0.0786861
+  q3 = q8_multiply ( q1, q2 ):               1   1.38778e-17  -4.16334e-17  -2.77556e-17
+
+  q1 = q8_normal_01 ( ):     1.30441      -1.34139       0.42576     -0.860989
+  q2 = q8_inverse ( q1 ):        0.294889       0.30325    -0.0962522      0.194645
+  q3 = q8_multiply ( q1, q2 ):               1   1.38778e-17             0             0
+
+q8_inverse_test
+  Normal end of execution.
+
+q8_multiply_test
+  Python version: 3.6.9
+  q8_multiply multiplies two quaternions
+
+  q1 = q8_normal_01 ( ) :   -0.566949      0.501638      -2.20175      0.716053
+  q2 = q8_normal_01 ( ) :   -0.309389    -0.0431589     -0.452012      0.110669
+  q3 = q8_multiply ( q1, q2 ):   -0.877406    -0.0507334      0.851046     -0.606054
+
+  q1 = q8_normal_01 ( ) :    0.172794       1.23143      0.904743      0.830396
+  q2 = q8_normal_01 ( ) :    0.890947     -0.612088      0.282774      0.834622
+  q3 = q8_multiply ( q1, q2 ):  -0.0412125       1.51168     -0.681112       1.78605
+
+  q1 = q8_normal_01 ( ) :    0.886391      0.657723       1.50526     0.0704978
+  q2 = q8_normal_01 ( ) :   -0.796477      0.284856    -0.0374404      0.492509
+  q3 = q8_multiply ( q1, q2 ):    -0.87171      0.472624      -1.53594    -0.0730003
+
+  q1 = q8_normal_01 ( ) :    -1.07424     -0.227004      0.150648     -0.484407
+  q2 = q8_normal_01 ( ) :    -1.31704     -0.287121     -0.374708      0.375933
+  q3 = q8_multiply ( q1, q2 ):     1.58819      0.482531      0.428538      0.362454
+
+  q1 = q8_normal_01 ( ) :     1.41405     -0.837295      0.102782      0.248839
+  q2 = q8_normal_01 ( ) :     1.06196     -0.707701     -0.896853        1.5688
+  q3 = q8_multiply ( q1, q2 ):    0.610914      -1.50548    -0.0215944       3.30629
+
+q8_multiply_test
+  Normal end of execution.
+
+q8_multiply2_test
+  Python version: 3.6.9
+  q8_multiply2 multiplies two quaternions using a matrix
+
+  q1 = q8_normal_01 ( )  :   -0.200458      0.922497       2.04629     -0.237592
+  q2 = q8_normal_01 ( )  :    0.210865      0.321408     -0.264856      0.279774
+  q3 = q8_multiply2 ( q1, q2 ):    0.269676      0.639665      0.150128       -1.0082
+
+  q1 = q8_normal_01 ( )  :    -1.19455      -0.25633      0.483028     -0.738784
+  q2 = q8_normal_01 ( )  :   -0.446425     -0.658922       1.29183      0.155192
+  q3 = q8_multiply2 ( q1, q2 ):   -0.144957       1.93089      -1.23221       0.13157
+
+  q1 = q8_normal_01 ( )  :     1.15281       -1.5132      -0.65241      -1.62472
+  q2 = q8_normal_01 ( )  :   -0.171659     -0.985496      0.776834      0.163608
+  q3 = q8_multiply2 ( q1, q2 ):    -0.91651      0.279062       2.85626      -1.35094
+
+  q1 = q8_normal_01 ( )  :     0.56408     -0.724042     -0.163936      0.507659
+  q2 = q8_normal_01 ( )  :    0.622202      -1.19598      0.188369      0.798231
+  q3 = q8_multiply2 ( q1, q2 ):   -0.889315      -1.35161    -0.0249414      0.433682
+
+  q1 = q8_normal_01 ( )  :    -2.02535     -0.365805      0.588133    0.00214404
+  q2 = q8_normal_01 ( )  :   -0.587097       -1.2023     -0.774925     0.0335806
+  q3 = q8_multiply2 ( q1, q2 ):     1.20495       2.67125       1.23391      0.921313
+
+q8_multiply2_test
+  Normal end of execution.
+
+q8_norm_test
+  Python version: 3.6.9
+  q8_norm computes the norm of a quaternion.
+
+  q = q8_normal_01():   -0.203997      -0.49583      0.788191       0.20242
+  q8_norm(q) = 0.974516
+
+  q = q8_normal_01():   -0.140784     -0.789149       1.27462      0.538639
+  q8_norm(q) = 1.59918
+
+  q = q8_normal_01():     0.39005      -2.31699      -1.56119     -0.815005
+  q8_norm(q) = 2.93635
+
+  q = q8_normal_01():    0.418952      0.117505      0.325782      0.577734
+  q8_norm(q) = 0.793246
+
+  q = q8_normal_01():     -1.0131     -0.380842       1.83501       0.31319
+  q8_norm(q) = 2.15331
+
+q8_norm_test
+  Normal end of execution.
+
+q8_normal_01_test
+  Python version: 3.6.9
+  q8_normal_01 computes a normally distributed quaternion.
+
+  Sample # 0  -0.0582476      0.517179     0.0249576     -0.525185
+  Sample # 1   -0.493693     -0.251854      0.122939     -0.418528
+  Sample # 2    -1.55337       1.78531       1.39634    -0.0816833
+  Sample # 3     1.79057       0.17257      -1.24334      -1.24166
+  Sample # 4    0.266889      -1.37546    -0.0489885     -0.165287
+
+q8_normal_01_test
+  Normal end of execution.
+
+q8_transpose_print_test
+  Python version: 3.6.9
+  q8_transpose_print prints a quaternion "transposed",
+  that is, writing it as a row vector.
+
+  The quaternion:    -1.00919      -1.18838      0.919907     0.0513755
+
+  Now print without a label:
+
+    -1.00919      -1.18838      0.919907     0.0513755
+
+q8_transpose_print_test
+  Normal end of execution.
+
+radians_to_degrees_test
+  radians_to_degrees converts an angle from radians
+  to degrees;
+
+  degrees     radians     degrees
+
+  -60.000000   -1.047198  -60.000000
+  -30.000000   -0.523599  -30.000000
+    0.000000    0.000000    0.000000
+   30.000000    0.523599   30.000000
+   60.000000    1.047198   60.000000
+   90.000000    1.570796   90.000000
+  120.000000    2.094395  120.000000
+  150.000000    2.617994  150.000000
+  180.000000    3.141593  180.000000
+  210.000000    3.665191  210.000000
+  240.000000    4.188790  240.000000
+  270.000000    4.712389  270.000000
+  300.000000    5.235988  300.000000
+  330.000000    5.759587  330.000000
+  360.000000    6.283185  360.000000
+  390.000000    6.806784  390.000000
+  420.000000    7.330383  420.000000
+
+rotation_axis_vector_test
+  Python version: 3.6.9
+  rotation_axis_vector applies an axis
+  rotation to a vector
+
+  The vector:
+
+     0:             1
+     1:             4
+     2:            10
+
+  The rotation axis:
+
+     0:      0.236174
+     1:     -0.881412
+     2:     -0.409065
+
+  The rotation angle is 1.159804
+
+  The rotated vector:
+
+     0:      -7.22724
+     1:        2.9641
+     2:       7.48205
+
+  The vector:
+
+     0:             1
+     1:             1
+     2:             1
+
+  The rotation axis:
+
+     0:             0
+     1:             0
+     2:             2
+
+  The rotation angle is 1.570796
+
+  The rotated vector:
+
+     0:            -1
+     1:             1
+     2:             1
+
+rotation_axis_vector_test
+  Normal end of execution.
+
+rotation_axis2mat_test
+  Python version: 3.6.9
+  rotation_axis2mat converts a rotation axis to a matrix.
+
+  The vector V:
+
+     0:             1
+     1:             4
+     2:            10
+
+  The rotation axis:
+
+     0:      0.236174
+     1:     -0.881412
+     2:     -0.409065
+
+  The rotation angle is 1.159804
+
+  The rotation matrix A:
+
+  Col:       0             1             2       
+  Row
+      0 :    0.433013          0.25     -0.866025  
+      1 :        -0.5      0.866025  -1.04741e-08  
+      2 :        0.75      0.433013           0.5  
+
+  The rotated vector W = A * V:
+
+     0:      -7.22724
+     1:        2.9641
+     2:       7.48205
+
+  The vector V:
+
+     0:             1
+     1:             1
+     2:             1
+
+  The rotation axis:
+
+     0:             0
+     1:             0
+     2:             2
+
+  The rotation angle is 1.570796
+
+  The rotation matrix A:
+
+  Col:       0             1             2       
+  Row
+      0 : 6.12323e-17            -1             0  
+      1 :           1   6.12323e-17             0  
+      2 :           0             0             1  
+
+  The rotated vector W = A * V:
+
+     0:            -1
+     1:             1
+     2:             1
+
+rotation_axis2mat_test
+  Normal end of execution.
+
+rotation_axis2quat_test
+  Python version: 3.6.9
+  rotation_axis2quat converts a rotation axis to a quaternion.
+
+  The vector V:
+
+     0:             1
+     1:             4
+     2:            10
+
+  The rotation axis:
+
+     0:      0.236174
+     1:     -0.881412
+     2:     -0.409065
+
+  The rotation angle is 1.159804
+
+  The rotation quaternion Q:
+
+     0:      0.836516
+     1:      0.129409
+     2:     -0.482963
+     3:     -0.224144
+
+  The rotated vector W:
+
+     0:      -7.22724
+     1:        2.9641
+     2:       7.48205
+
+  The vector V:
+
+     0:             1
+     1:             1
+     2:             1
+
+  The rotation axis:
+
+     0:             0
+     1:             0
+     2:             2
+
+  The rotation angle is 1.570796
+
+  The rotation quaternion Q:
+
+     0:      0.707107
+     1:             0
+     2:             0
+     3:      0.707107
+
+  The rotated vector W:
+
+     0:            -1
+     1:             1
+     2:             1
+
+rotation_axis2quat_test
+  Normal end of execution.
+
+rotation_mat_vector_test
+  Python version: 3.6.9
+  rotation_mat_vector applies a matrix
+  rotation to a vector.
+
+  The rotation matrix:
+
+  Col:       0             1             2       
+  Row
+      0 :    0.433013          0.25     -0.866025  
+      1 :        -0.5      0.866025             0  
+      2 :        0.75      0.433013           0.5  
+
+  The vector V:
+
+     0:             1
+     1:             4
+     2:            10
+
+  The rotated vector W = A * V:
+
+     0:      -7.22724
+     1:        2.9641
+     2:       7.48205
+
+rotation_mat_vector_test
+  Normal end of execution.
+
+rotation_mat2axis_test
+  Python version: 3.6.9
+  rotation_mat2axis computes a rotation axis
+  and angle from a rotation matrix.
+  rotation_axis2mat computes a rotation matrix
+  from a rotation axis and angle.
+
+  The rotation matrix:
+
+  Col:       0             1             2       
+  Row
+      0 :    0.433013          0.25     -0.866025  
+      1 :        -0.5      0.866025             0  
+      2 :        0.75      0.433013           0.5  
+
+  The rotation axis:
+
+     0:      0.236174
+     1:     -0.881412
+     2:     -0.409065
+
+  The rotation angle is 1.159804
+
+  The recovered rotation matrix:
+
+  Col:       0             1             2       
+  Row
+      0 :    0.433013          0.25     -0.866025  
+      1 :        -0.5      0.866025   9.17325e-09  
+      2 :        0.75      0.433013           0.5  
+
+rotation_mat2axis_test
+  Normal end of execution.
+
+rotation_mat2quat_test
+  Python version: 3.6.9
+  rotation_mat2quat computes a quaternion
+  from a rotation matrix.
+  rotation_quat2mat computes a rotation matrix
+  from a quaternion.
+
+  The rotation matrix:
+
+  Col:       0             1             2       
+  Row
+      0 :    0.433013          0.25     -0.866025  
+      1 :        -0.5      0.866025             0  
+      2 :        0.75      0.433013           0.5  
+
+  The rotation quaternion Q:
+
+     0:      0.836516
+     1:       0.12941
+     2:     -0.482963
+     3:     -0.224144
+
+  The recovered rotation matrix:
+
+  Col:       0             1             2       
+  Row
+      0 :    0.433013          0.25     -0.866025  
+      1 :        -0.5      0.866025   9.17325e-09  
+      2 :        0.75      0.433013           0.5  
+
+rotation_mat2quat_test
+  Normal end of execution.
+
+rotation_quat_vector_test
+  Python version: 3.6.9
+  rotation_quat_vector applies a quaternion
+  rotation to a vector.
+
+  The rotation quaternion:
+
+     0:      0.836516
+     1:       0.12941
+     2:     -0.482963
+     3:     -0.224144
+
+  The vector V:
+
+     0:             1
+     1:             4
+     2:            10
+
+  The rotated vector:
+
+     0:      -7.22724
+     1:       2.96409
+     2:       7.48204
+
+rotation_quat_vector_test
+  Normal end of execution.
+
+rotation_quat2axis_test
+  Python version: 3.6.9
+  rotation_quat2axis computes a rotation axis
+  and angle from a rotation quaternion.
+  rotation_axis2quat computes a rotation
+  quaternion from a rotation axis and angle.
+  The rotation quaternion:    0.836516       0.12941     -0.482963     -0.224144
+
+  The rotation axis:
+
+     0:      0.236175
+     1:     -0.881412
+     2:     -0.409065
+
+  The rotation angle is 1.159805
+  The recoverd rotation quaternion:    0.836516       0.12941     -0.482963     -0.224144
+
+rotation_quat2axis_test
+  Normal end of execution.
+
+rotation_quat2mat_test
+  Python version: 3.6.9
+  rotation_quat2mat computes a rotation axis
+  from a rotation quaternion.
+  rotation_mat2quat computes a rotation
+  quaternion from a rotation matrix.
+
+  The rotation quaternion:    0.836516       0.12941     -0.482963     -0.224144
+
+  The rotation matrix:
+
+  Col:       0             1             2       
+  Row
+      0 :    0.433012          0.25     -0.866026  
+      1 :   -0.500001      0.866025  -5.53776e-07  
+      2 :        0.75      0.433014      0.499999  
+
+  The recovered rotation quaternion:    0.836516       0.12941     -0.482963     -0.224144
+
+rotation_quat2mat_test
+  Normal end of execution.
+
+quaternions_test
+  Normal end of execution.
+Tue Oct 19 17:06:00 2021

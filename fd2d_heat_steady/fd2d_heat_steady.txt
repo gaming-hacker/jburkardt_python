@@ -1,0 +1,11 @@
+Tue Oct 19 11:34:22 2021
+
+fd2d_heat_steady_test:
+  Python version
+  Test fd2d_heat_steady().
+
+  Plotfile saved as "fd2d_heat_steady_test01.png".
+
+fd2d_heat_steady_test:
+  Normal end of execution.
+Tue Oct 19 11:34:23 2021

@@ -1,0 +1,21 @@
+Tue Oct 19 17:00:23 2021
+
+stats_test():
+  Python version: 3.6.9
+  Test stats(), with the interface:
+    [n,sum,min,mean,max,var,std] = stats(x)
+    Call 10 times with random values
+    Compare results with a vector calculation.
+
+      n1    =  10  n2    =  10
+      sum1  =  4.756208188076664  sum2  =  4.756208188076664
+      min1  =  0.20728438030399998  min2  =  0.20728438030399998
+      mean1 =  0.4756208188076664  mean2 =  0.4756208188076664
+      max1  =  0.9803139211561211  max2  =  0.9803139211561211
+      var1  =  0.08065629975659597  var2  =  0.08065629975659594
+      std1  =  0.2840005277399955  std2  =  0.28400052773999546
+
+stats_test():
+  Normal end of execution.
+
+Tue Oct 19 17:00:23 2021

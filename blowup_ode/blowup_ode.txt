@@ -1,0 +1,16 @@
+Tue Oct 19 11:24:34 2021
+
+blowup_ode_test
+  Python version: 3.6.9
+  Test blowup_ode().
+
+blowup_euler():
+  Use euler() to solve the blowup ODE
+
+  Number of equal steps is %d
+ 40
+  Graphics saved as "blowup_euler.png"
+
+blowup_ode_test
+  Normal end of execution.
+Tue Oct 19 11:24:35 2021

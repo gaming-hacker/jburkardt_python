@@ -1,0 +1,27 @@
+Tue Oct 19 17:08:55 2021
+
+reaction_ode_test():
+  Python version: 3.6.9
+  Solve the reaction ODE.
+
+  Reaction differential equation:
+    da/dt = - k a b
+    db/dt = - k a b
+    dc/dt = + k a b
+
+  Parameter values:
+    k     =  0.02 , (reaction rate)
+    t0    =  0.0 , (initial time, in seconds s)
+    a0    =  10.0 , (initial amount of species a in Mol/L)
+    b0    =  12.0 , (initial amount of species b in Mol/L)
+    c0    =  3.0 , (initial amount of species c in Mol/L)
+    tstop =  20.0 , (final time, in seconds s)
+
+reaction_solve_ivp():
+  Use solve_ivp() to solve the reaction ODE.
+  Graphics saved as "reaction_solve_ivp_solution.png"
+  Graphics saved as "reaction_solve_ivp_conservation.png"
+
+reaction_ode_test:
+  Normal end of execution.
+Tue Oct 19 17:08:56 2021

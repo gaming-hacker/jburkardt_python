@@ -1,0 +1,352 @@
+Tue Oct 19 11:25:18 2021
+
+cg_test():
+  Python version: 3.6.9
+  Test cg().
+
+orth_random_test()
+  Python version: 3.6.9
+  orth_random() computes a random orthogal matrix.
+
+  ORTH_RANDOM matrix:
+
+  Col:       0             1             2             3             4       
+  Row
+      0 :   -0.600864     -0.160632      0.404383      0.113381     -0.660893  
+      1 :   -0.577919     -0.434854     -0.319202     -0.502834      0.349543  
+      2 :   -0.500075       0.47782     -0.432241      0.553378      0.168977  
+      3 :  -0.0223691      0.625509     -0.242653     -0.631234     -0.388461  
+      4 :   -0.233232      0.406849      0.699193     -0.172103      0.511455  
+
+orth_random_test():
+  Normal end of execution.
+
+spd_random_test():
+  Python version: 3.6.9
+  spd_random() computes the spd_random matrix.
+
+  spd_random matrix:
+
+  Col:       0             1             2             3             4       
+  Row
+      0 :    0.410905     0.0565127     0.0461125    -0.0815966     0.0830425  
+      1 :   0.0565127      0.542703    -0.0700646      0.092661    -0.0287069  
+      2 :   0.0461125    -0.0700646       0.57625    -0.0470775     -0.033762  
+      3 :  -0.0815966      0.092661    -0.0470775      0.562362     0.0787183  
+      4 :   0.0830425    -0.0287069     -0.033762     0.0787183      0.454867  
+
+spd_random_test():
+  Normal end of execution.
+
+r8mat_house_axh_test()
+  Python version: 3.6.9
+  r8mat_house_axh() multiplies a matrix A times a
+  compact Householder matrix.
+
+  Matrix A:
+
+  Col:       0             1             2             3             4       
+  Row
+      0 :    -1.84632     -0.933446       4.80259      0.420652      -2.57705  
+      1 :    -2.47758      0.651558      -3.66663       3.76259     -0.196681  
+      2 :    -2.16674       3.92211       3.27632        4.7997       3.67233  
+      3 :    -3.06494     -0.455093       3.05183       2.47231        4.1996  
+      4 :     -2.7953       4.97953       1.02797      -4.64482      0.555211  
+
+  Compact vector V so column 3 of H*A is packed:
+
+     0:             0
+     1:             0
+     2:      0.925521
+     3:      0.358885
+     4:      0.120885
+
+  Householder matrix H:
+
+  Col:       0             1             2             3             4       
+  Row
+      0 :           1             0             0             0             0  
+      1 :           0             1             0             0             0  
+      2 :           0             0     -0.713177      -0.66431     -0.223764  
+      3 :           0             0      -0.66431      0.742404    -0.0867677  
+      4 :           0             0     -0.223764    -0.0867677      0.970774  
+
+  Indirect product A*H:
+
+  Col:       0             1             2             3             4       
+  Row
+      0 :    -1.84632     -0.933446      -3.12789      -2.65451      -3.61288  
+      1 :    -2.47758      0.651558      0.159442        5.2462      0.303054  
+      2 :    -2.16674       3.92211      -6.34682       1.06818       2.41542  
+      3 :    -3.06494     -0.455093      -4.75859     -0.556296       3.17945  
+      4 :     -2.7953       4.97953       2.22824      -4.17939      0.711983  
+
+  Direct product A*H:
+
+  Col:       0             1             2             3             4       
+  Row
+      0 :    -1.84632     -0.933446      -3.12789      -2.65451      -3.61288  
+      1 :    -2.47758      0.651558      0.159442        5.2462      0.303054  
+      2 :    -2.16674       3.92211      -6.34682       1.06818       2.41542  
+      3 :    -3.06494     -0.455093      -4.75859     -0.556296       3.17945  
+      4 :     -2.7953       4.97953       2.22824      -4.17939      0.711983  
+
+  H*A should pack column 3:
+
+  Col:       0             1             2             3             4       
+  Row
+      0 :    -1.84632     -0.933446       4.80259      0.420652      -2.57705  
+      1 :    -2.47758      0.651558      -3.66663       3.76259     -0.196681  
+      2 :     4.20683      -3.60907      -4.59398      -4.02608      -5.53309  
+      3 :   -0.593494      -3.37542  -1.66533e-16     -0.950019      0.630054  
+      4 :    -1.96283       3.99586             0      -5.79758     -0.647139  
+
+r8mat_house_axh_test():
+  Normal end of execution.
+
+r8mat_house_form_test():
+  Python version: 3.6.9
+  r8mat_house_form() forms a Householder
+  matrix from its compact form.
+
+  Compact vector form V:
+
+     0:             0
+     1:             0
+     2:             1
+     3:             2
+     4:             3
+
+  Householder matrix H:
+
+  Col:       0             1             2             3             4       
+  Row
+      0 :           1             0             0             0             0  
+      1 :           0             1             0             0             0  
+      2 :           0             0      0.857143     -0.285714     -0.428571  
+      3 :           0             0     -0.285714      0.428571     -0.857143  
+      4 :           0             0     -0.428571     -0.857143     -0.285714  
+
+r8mat_house_form_test
+  Normal end of execution.
+
+r8mat_mm_test():
+  Python version: 3.6.9
+  r8mat_mm() computes a matrix-matrix product C = A * B;
+
+  A:
+
+  Col:       0             1             2       
+  Row
+      0 :           1             0             0  
+      1 :           1             1             0  
+      2 :           1             2             1  
+      3 :           1             3             3  
+
+  B:
+
+  Col:       0             1             2             3       
+  Row
+      0 :           1             1             1             1  
+      1 :           0             1             2             3  
+      2 :           0             0             1             3  
+
+  C = A*B:
+
+  Col:       0             1             2             3       
+  Row
+      0 :           1             1             1             1  
+      1 :           1             2             3             4  
+      2 :           1             3             6            10  
+      3 :           1             4            10            19  
+
+r8mat_mm_test():
+  Normal end of execution.
+
+r8mat_print_test():
+  Python version: 3.6.9
+  r8mat_print() prints an R8MAT.
+
+  Here is an R8MAT:
+
+  Col:       0             1             2             3             4       
+  Row
+      0 :          11            12            13            14            15  
+      1 :          21            22            23            24            25  
+      2 :          31            32            33            34            35  
+      3 :          41            42            43            44            45  
+
+  Col:       5       
+  Row
+      0 :          16  
+      1 :          26  
+      2 :          36  
+      3 :          46  
+
+r8mat_print_test():
+  Normal end of execution.
+
+r8mat_print_some_test():
+  Python version: 3.6.9
+  r8mat_print_some() prints some of an R8MAT.
+
+  Here is an R8MAT:
+
+  Col:       3             4             5       
+  Row
+      0 :          14            15            16  
+      1 :          24            25            26  
+      2 :          34            35            36  
+
+r8mat_print_some_test():
+  Normal end of execution.
+
+r8vec_house_column_test():
+  Python version: 3.6.9
+  r8vec_house_column() returns the compact form of
+  a Householder matrix that "packs" a column
+  of a matrix.
+
+  Matrix A:
+
+  Col:       0             1             2             3       
+  Row
+      0 :     1.59821       2.51052       2.66561       3.31257  
+      1 :     2.29138      0.549382       3.64969       3.92102  
+      2 :    0.706449       4.19343       2.01363       2.03212  
+      3 :     1.85333       4.58508        2.4534       4.82994  
+
+  Working on column K = 0
+
+  Householder matrix H:
+
+  Col:       0             1             2             3       
+  Row
+      0 :   -0.466473     -0.668788     -0.206192     -0.540935  
+      1 :   -0.668788      0.694998    -0.0940344     -0.246694  
+      2 :   -0.206192    -0.0940344      0.971009    -0.0760577  
+      3 :   -0.540935     -0.246694    -0.0760577      0.800467  
+
+  Product H*A:
+
+  Col:       0             1             2             3       
+  Row
+      0 :    -3.42616      -4.88339      -5.42662      -7.19924  
+      1 :-3.88578e-16      -2.82263    -0.0407925     -0.872916  
+      2 :-5.55112e-17       3.15382       0.87583      0.554114  
+      3 :           0        1.8577     -0.531568      0.952473  
+
+  Working on column K = 1
+
+  Householder matrix H:
+
+  Col:       0             1             2             3       
+  Row
+      0 :           1             0             0             0  
+      1 :           0     -0.610666      0.682318      0.401907  
+      2 :           0      0.682318      0.710953     -0.170258  
+      3 :           0      0.401907     -0.170258      0.899713  
+
+  Product H*A:
+
+  Col:       0             1             2             3       
+  Row
+      0 :    -3.42616      -4.88339      -5.42662      -7.19924  
+      1 : 1.99415e-16       4.62221      0.408864       1.29395  
+      2 :  -3.046e-16  -3.88578e-16      0.685344     -0.363823  
+      3 :-1.46721e-16             0      -0.64377      0.411779  
+
+  Working on column K = 2
+
+  Householder matrix H:
+
+  Col:       0             1             2             3       
+  Row
+      0 :           1             0             0             0  
+      1 :           0             1             0             0  
+      2 :           0             0     -0.728868      0.684654  
+      3 :           0             0      0.684654      0.728868  
+
+  Product H*A:
+
+  Col:       0             1             2             3       
+  Row
+      0 :    -3.42616      -4.88339      -5.42662      -7.19924  
+      1 : 1.99415e-16       4.62221      0.408864       1.29395  
+      2 :  1.2156e-16   2.83222e-16     -0.940285      0.547105  
+      3 :-3.15486e-16  -2.66042e-16  -5.55112e-17     0.0510396  
+
+r8vec_house_column_test():
+  Normal end of execution.
+
+r8vec_print_test():
+  Python version: 3.6.9
+  r8vec_print() prints an R8VEC.
+
+  Here is an R8VEC:
+
+     0:       123.456
+     1:         5e-06
+     2:        -1e+06
+     3:       3.14159
+
+r8vec_print_test():
+  Normal end of execution.
+
+r83_cg_test():
+  Python version: 3.6.9
+  r83_cg() applies CG to an R83 matrix.
+
+  Number of variables N = 10
+  Norm of residual ||Ax-b|| = 2.69243e-15
+  Norm of error ||x1-x2|| = 8.98312e-16
+
+r83_cg_test():
+  Normal end of execution.
+
+r83s_cg_test():
+  Python version: 3.6.9
+  r83s_cg() applies CG to an R83S matrix.
+
+  Number of variables N = 10
+  Norm of residual ||Ax-b|| = 1.42833e-15
+  Norm of error ||x1-x2|| = 7.67932e-16
+
+r83t_cg_test():
+  Python version: 3.6.9
+  r83t_cg() applies CG to an R83T matrix.
+
+  Number of variables N = 10
+  Norm of residual ||Ax-b|| = 1.41472e-15
+  Norm of error ||x1-x2|| = 2.15356e-15
+
+r8ge_cg_test():
+  Python version: 3.6.9
+  r8ge_cg() applies CG to an R8GE matrix.
+
+  Number of variables N = 10
+  Norm of residual ||Ax-b|| = 3.52866e-16
+  Norm of error ||x1-x2|| = 5.95291e-16
+
+r8ge_cg_test
+  Normal end of execution.
+
+r8pbu_cg_test():
+  Python version: 3.6.9
+  r8pbu_cg() applies CG to an R8PBU matrix.
+
+  Number of variables N = 10
+  Norm of residual ||Ax-b|| = 7.87006e-16
+  Norm of error ||x1-x2|| = 1.40613e-15
+
+r8sd_cg_test():
+  Python version: 3.6.9
+  r8sd_cg() applies CG to an R8SD matrix.
+
+  Number of variables N = 10
+  Norm of residual ||Ax-b|| = 4.07922e-16
+  Norm of error ||x1-x2|| = 1.05069e-15
+
+cg_test():
+  Normal end of execution.
+Tue Oct 19 11:25:19 2021

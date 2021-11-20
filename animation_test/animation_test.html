@@ -1,0 +1,123 @@
+<html>
+
+  <head>
+    <title>
+      animation_test
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      animation_test
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>animation_test</b>,
+      a Python code which
+      computes a sequence of solutions to a partial differential equation, 
+      using matplotlib, displaying each solution to the screen WITHOUT 
+      requiring the user to hit RETURN to see the next image.
+    </p>
+
+    <p>
+      matplotlib provides a procedure <b>FuncAnimation()</b> for creating
+      animations.  However, this procedure has limited documentation, and
+      a peculiarly constrained user interface.  The user provides a ``frame(i)''
+      function whose only input is the frame counter i, which must return,
+      in a somewhat obscure fashion, the raw plot elements involved in the frame.
+    </p>
+
+    <p>
+      While it's not too hard to use this facility to create an animation of
+      a sine curve, it's more difficult to see how to, for instance, compute
+      a sequence of solutions to a partial differential equation, and display
+      the sequence of time solutions in a movie file.  One difficulty is that
+      this calculation requires the frame function to have access to the
+      data at the previous time step, which can't be done through the parameter
+      list, and which isn't easily done simply by declaring the data in the
+      user's main program.  This code demonstrates one way of computing 
+      scientifically interesting results and watching as they are computed.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>animation_test</b> is available in
+      <a href = "../../py_src/animation_test/animation_test.html">a Python version.</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../py_src/allen_cahn_pde/allen_cahn_pde.html">
+      allen_cahn_pde</a>,
+      a Python code which 
+      sets up and solves the 1D Allen-Cahn reaction-diffusion 
+      partial differential equation (ODE).
+    </p>
+
+    <p>
+      <a href = "../../py_src/graphics_test/graphics_test.html">
+      graphics_test</a>,
+      Python codes which
+      illustrate how various kinds of data can be displayed and 
+      analyzed graphically.
+    </p>
+
+    <p>
+      <a href = "../../py_src/movie_test/movie_test.html">
+      movie_test</a>,
+      a Python code which
+      creates a movie file from a sequence of solutions to a
+      partial differential equation, using matplotlib.
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "animation_test.py">animation_test.py</a>,
+          the source code.
+        </li>
+        <li>
+          <a href = "animation_test.sh">animation_test.sh</a>,
+          runs all the tests.
+        </li>
+        <li>
+          <a href = "animation_test.txt">animation_test.txt</a>,
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 10 July 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

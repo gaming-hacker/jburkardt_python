@@ -1,0 +1,10 @@
+Tue Oct 19 11:59:38 2021
+
+MARIO:
+  Python version
+  Draw a picture of Mario, using colored squares.
+  Graphics saved as  mario.png
+
+MARIO:
+  Normal end of execution.
+Tue Oct 19 11:59:39 2021

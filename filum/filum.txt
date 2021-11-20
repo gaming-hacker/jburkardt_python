@@ -1,0 +1,50 @@
+Tue Oct 19 11:34:32 2021
+
+filum_test():
+  Python version: 3.6.9
+  Test filum().
+
+file_column_count_test:
+  Python version: 3.6.9
+  file_column_count() counts "columns" in a text file line.
+
+  Number of columns in "r8mat_write_test.txt" is 3
+
+file_column_count_test:
+  Normal end of execution.
+
+file_row_count_test:
+  Python version: 3.6.9
+  file_row_count() counts the rows in a text file.
+
+  Number of rows in "i4mat_write_test.txt" is 5
+
+file_row_count_test:
+  Normal end of execution.
+
+filename_inc_test
+  Python version: 3.6.9
+  filename_inc() "increments" a string
+
+     Input             Output
+
+   file???.dat   None
+
+   file072.dat   file073.dat
+   file073.dat   file074.dat
+   file074.dat   file075.dat
+   file075.dat   file076.dat
+
+   2cat9.dat     3cat0.dat  
+   3cat0.dat     3cat1.dat  
+   3cat1.dat     3cat2.dat  
+   3cat2.dat     3cat3.dat  
+
+   fred99.txt    fred90.txt 
+   fred90.txt    fred91.txt 
+   fred91.txt    fred92.txt 
+   fred92.txt    fred93.txt 
+
+filum_test:
+  Normal end of execution.
+Tue Oct 19 11:34:32 2021

@@ -1,0 +1,22 @@
+Tue Oct 19 11:53:16 2021
+
+henon_heiles_ode_test:
+  Python version: 3.6.9
+  Test henon_heiles_ode using various ODE solvers.
+
+  Parameter values:
+    e     =  0.05
+    lam   =  1.0
+    t0    =  0.0
+    w0    = (0,0.316228,0,0)
+    tstop =  30.0
+
+henon_heiles_euler():
+  Use euler to solve the Henon Heiles problem.
+  Graphics saved as "henon_heiles_euler_plot.png"
+  Graphics saved as "henon_heiles_euler_orbit.png"
+  Graphics saved as "henon_heiles_euler_conserved.png"
+
+henon_heiles_ode_test:
+  Normal end of execution.
+Tue Oct 19 11:53:17 2021

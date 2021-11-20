@@ -1,0 +1,17 @@
+Tue Oct 19 12:01:21 2021
+
+ode_euler_test:
+  Python version: 3.6.9
+  Test ode_euler()
+
+ode_euler_humps
+  Python version: 3.6.9
+  Test the euler ode integrator on the humps problem.
+  Graphics saved as "ode_euler_humps.png"
+
+humps_euler_test:
+  Normal end of execution.
+
+ode_euler_test:
+  Normal end of execution.
+Tue Oct 19 12:01:21 2021

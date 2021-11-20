@@ -1,0 +1,205 @@
+Tue Oct 19 17:32:27 2021
+
+wathen_test():
+  Python version: 3.6.9
+  Test wathen().
+
+wathen_test01
+  Python version: 3.6.9
+  Assemble, factor and solve a Wathen system
+  defined by wathen_ge().
+
+  Elements in X direction NX = 4
+  Elements in Y direction NY = 4
+  Number of elements = 16
+  Number of nodes N = 65
+  Norm of solution error is 4.60511e-15
+
+wathen_test01:
+  Normal end of execution.
+
+wathen_test02
+  Python version: 3.6.9
+  Assemble, factor and solve a Wathen system
+  defined by WATHEN_CSC.
+
+  Elements in X direction NX = 4
+  Elements in Y direction NY = 4
+  Number of elements = 16
+  Number of nodes N = 65
+  Norm of solution error is 8.52825e-15
+
+wathen_test02:
+  Normal end of execution.
+
+wathen_test03
+  Python version: 3.6.9
+  For various problem sizes,
+  time the assembly and factorization of a Wathen system
+  using wathen_ge().
+
+    NX  Elements   Nodes   Storage    Assembly      Factor      Error
+
+     1         1       8        64    1.39e-03    7.89e-04    7.58e-16
+     2         4      21       441    4.66e-03    8.59e-04    1.69e-15
+     4        16      65      4225    1.81e-02    2.81e-03    2.88e-15
+     8        64     225     50625    7.18e-02    1.21e+00    8.51e-15
+    16       256     833    693889    3.22e-01    1.08e+00    2.42e-14
+    32      1024    3201  10246401    1.17e+00    2.95e+00    3.72e-14
+
+wathen_test03:
+  Normal end of execution.
+
+wathen_test04
+  Python version: 3.6.9
+  For various problem sizes,
+  time the assembly and factorization of a Wathen system
+  using the WATHEN_CSC function.
+
+    NX  Elements   Nodes    Assembly      Factor      Error
+
+     1         1       8    3.57e-03    7.85e-04    2.10e-15
+     2         4      21    5.06e-03    8.23e-04    3.02e-15
+     4        16      65    1.40e-02    1.77e-03    6.76e-15
+     8        64     225    5.08e-02    6.69e-03    1.46e-14
+    16       256     833    1.95e-01    3.05e-02    8.13e-13
+    32      1024    3201    4.83e-01    1.90e-02    4.73e-14
+    64      4096   12545    2.15e-01    4.25e-01    7.03e-14
+
+wathen_test04:
+  Normal end of execution.
+
+wathen_test05
+  Python version: 3.6.9
+  For various problem sizes, 
+  time the assembly and factorization of a Wathen system
+  wathen_ge() and WATHEN_CSC.
+
+                   NX  Elements   Nodes    Assembly      Factor      Error
+
+  wathen_ge()       1         1       8    1.53e-03    1.07e-03    3.57e-16
+  WATHEN_CSC        1         1       8    3.47e-03    7.11e-04    6.51e-01
+
+  wathen_ge()       2         4      21    4.62e-03    5.16e-02    3.34e-15
+  WATHEN_CSC        2         4      21    5.06e-03    8.22e-04    8.81e+00
+
+  wathen_ge()       4        16      65    1.77e-02    4.33e-03    5.02e-15
+  WATHEN_CSC        4        16      65    1.37e-02    1.86e-03    2.03e+01
+
+  wathen_ge()       8        64     225    7.75e-02    2.13e-02    9.15e-15
+  WATHEN_CSC        8        64     225    5.08e-02    6.83e-03    2.68e+01
+
+  wathen_ge()      16       256     833    2.85e-01    1.59e-01    1.61e-14
+  WATHEN_CSC       16       256     833    1.95e-01    2.97e-02    9.71e+01
+
+  wathen_ge()      32      1024    3201    9.64e-01    2.92e+00    3.84e-14
+  WATHEN_CSC       32      1024    3201    7.87e-01    2.12e-02    1.30e+02
+
+wathen_test05:
+  Normal end of execution.
+
+wathen_test06
+  Python version: 3.6.9
+  Assemble, factor and solve a Wathen system
+  defined by wathen_ge() and CG_GE.
+
+  Elements in X direction NX = 2
+  Elements in Y direction NY = 2
+  Number of elements = 4
+  Number of nodes N = 21
+  Maximum solution error is 0.0021322
+
+wathen_test06:
+  Normal end of execution.
+
+wathen_test07
+  Python version: 3.6.9
+  Assemble, factor and solve a Wathen system
+  defined by WATHEN_CSC and CG_CSC.
+
+  Elements in X direction NX = 2
+  Elements in Y direction NY = 2
+  Number of elements = 4
+  Number of nodes N = 21
+  Maximum solution error is 1.49125e-05
+
+wathen_test07:
+  Normal end of execution.
+
+wathen_test08
+  Python version: 3.6.9
+  Assemble, factor and solve a Wathen system
+  defined by WATHEN_ST and CG_ST.
+
+  Elements in X direction NX = 1
+  Elements in Y direction NY = 1
+  Number of elements = 1
+  Number of nodes N = 8
+  Number of nonzeros = 64
+
+  Maximum solution error is 1.46475e-15
+
+wathen_test08:
+  Normal end of execution.
+
+wathen_test09
+  Python version: 3.6.9
+  Display the sparsity of the Wathen matrix.
+
+  Graphics file saved as "wathen_spy.png"
+
+wathen_test09:
+  Normal end of execution.
+
+WATHEN_ORDER_TEST:
+  Python version: 3.6.9
+  WATHEN_ORDER returns N, the order of a Wathen finite element
+  matrix given NX and NY, the number of rows and columns of
+  nodes in the underlying grid.
+
+       NX / NY: 1       2       3       4       5       6
+
+        1      8     13     18     23     28     33
+        2     13     21     29     37     45     53
+        3     18     29     40     51     62     73
+        4     23     37     51     65     79     93
+        5     28     45     62     79     96    113
+        6     33     53     73     93    113    133
+        7     38     61     84    107    130    153
+        8     43     69     95    121    147    173
+        9     48     77    106    135    164    193
+       10     53     85    117    149    181    213
+
+WATHEN_ORDER_TEST:
+  Normal end of execution.
+
+WATHEN_ST_SIZE_TEST_TEST:
+  Python version: 3.6.9
+  WATHEN_ST_SIZE returns NZ_NUM, the number of nonzeros
+  in a sparse triplet format for a Wathen finite element
+  matrix, given NX and NY, the number of rows and columns of
+  nodes in the underlying grid.
+
+       NX / NY: 1       2       3       4       5       6
+
+        1     64    128    192    256    320    384
+        2    128    256    384    512    640    768
+        3    192    384    576    768    960   1152
+        4    256    512    768   1024   1280   1536
+        5    320    640    960   1280   1600   1920
+        6    384    768   1152   1536   1920   2304
+        7    448    896   1344   1792   2240   2688
+        8    512   1024   1536   2048   2560   3072
+        9    576   1152   1728   2304   2880   3456
+       10    640   1280   1920   2560   3200   3840
+
+WATHEN_ST_SIZE_TEST:
+  Normal end of execution.
+
+wathen_xy_test():
+  wathen_xy() returns the (X,Y) coordinates of nodes.
+  Graphics saved as " wathen_xy.png "
+
+wathen_test():
+  Normal end of execution.
+Tue Oct 19 17:32:30 2021

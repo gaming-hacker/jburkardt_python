@@ -1,0 +1,214 @@
+<html>
+
+  <head>
+    <title>
+      fem1d_heat_explicit
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      fem1d_heat_explicit
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>fem1d_heat_explicit</b>,
+      a Python code which
+      solves the time-dependent 1D heat equation, using the finite element
+      method in space, and an explicit version of the method of lines to handle
+      integration in time.
+    </p>
+
+    <p>
+      This code solves
+      <pre>
+        dUdT - k * d2UdX2 = F(X,T)
+      </pre>
+      over the interval [A,B] with boundary conditions
+      <pre>
+        U(A,T) = UA(T),
+        U(B,T) = UB(T),
+      </pre>
+      over the time interval [T0,T1] with initial conditions
+      <pre>
+        U(X,T0) = U0(X)
+      </pre>
+    </p>
+
+    <p>
+      The spatial derivatives are approximated using the finite element method,
+      with piecewise linear elements.
+    </p>
+
+    <p>
+      The solver applies an
+      explicit forward Euler approximation to the first derivative in time.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page 
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>fem1d_heat_explicit</b> is available in
+      <a href = "../../m_src/fem1d_heat_explicit/fem1d_heat_explicit.html">a MATLAB version</a> and
+      <a href = "../../py_src/fem1d_heat_explicit/fem1d_heat_explicit.html">a Python version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and codes:
+    </h3>
+
+    <p>
+      <a href = "../../py_src/fd1d_heat_explicit/fd1d_heat_explicit.html">
+      fd1d_heat_explicit</a>,
+      a Python code which
+      uses the finite difference method and explicit time stepping
+      to solve the time dependent heat equation in 1D.
+    </p>
+
+    <p>
+      <a href = "../../py_src/fem1d_bvp_linear/fem1d_bvp_linear.html">
+      fem1d_bvp_linear</a>,
+      a Python code which
+      applies the finite element method (FEM), with piecewise linear elements,
+      to a two point boundary value problem (BVP) in one spatial dimension,
+      and compares the computed and exact solutions 
+      with the L2 and seminorm errors.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          George Lindfield, John Penny,<br>
+          Numerical Methods Using MATLAB,<br>
+          Second Edition,<br>
+          Prentice Hall, 1999,<br>
+          ISBN: 0-13-012641-1,<br>
+          LC: QA297.P45.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "fem1d_heat_explicit.py">fem1d_heat_explicit.py</a>, 
+          the source code.
+        </li>
+        <li>
+          <a href = "fem1d_heat_explicit.sh">fem1d_heat_explicit.sh</a>, 
+          runs all the tests.
+        </li>
+        <li>
+          <a href = "fem1d_heat_explicit.txt">fem1d_heat_explicit.txt</a>, 
+          the output file.
+        </li>
+      </li>
+    </p>
+
+    <p>
+      <b>TEST01</b> runs with initial condition 50 everywhere, boundary conditions
+      of 90 on the left and 70 on the right, and no right hand side source term.
+      <ul>
+        <li>
+          <a href = "h_test01.txt">h_test01.txt</a>, 
+          the computed H data.
+        </li>
+        <li>
+          <a href = "plot_test01.png">plot_test01.png</a>, 
+          a PNG image of the solution.
+        </li>
+        <li>
+          <a href = "t_test01.txt">t_test01.txt</a>, 
+          the T data.
+        </li>
+        <li>
+          <a href = "x_test01.txt">x_test01.txt</a>, 
+          the X data.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>TEST02</b> uses an exact solution of g(x,t) = exp ( - t ) .* sin ( sqrt ( k ) * x ).
+      <ul>
+        <li>
+          <a href = "g_test02.txt">g_test02.txt</a>, 
+          the exact data.
+        </li>
+        <li>
+          <a href = "h_test02.txt">h_test02.txt</a>, 
+          the computed H data.
+        </li>
+        <li>
+          <a href = "plot_test02.png">plot_test02.png</a>, 
+          a PNG image of the solution.
+        </li>
+        <li>
+          <a href = "t_test02.txt">t_test02.txt</a>, 
+          the T data.
+        </li>
+        <li>
+          <a href = "x_test02.txt">x_test02.txt</a>, 
+          the X data.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>TEST03</b> runs on the interval -5 <= X <= 5, with initial condition 15 on the
+      entire left and 25 on the entire right.  The solution should settle down to a
+      straight line from the left boundary to the right.
+      <ul>
+        <li>
+          <a href = "h_test03.txt">h_test03.txt</a>, 
+          the computed H data.
+        </li>
+        <li>
+          <a href = "plot_test03.png">plot_test03.png</a>, 
+          a PNG image of the solution.
+        </li>
+        <li>
+          <a href = "t_test03.txt">t_test03.txt</a>, 
+          the T data.
+        </li>
+        <li>
+          <a href = "x_test03.txt">x_test03.txt</a>, 
+          the X data.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 07 November 2014.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

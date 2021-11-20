@@ -1,0 +1,29 @@
+Tue Oct 19 17:01:29 2021
+
+prime_test
+  Python version: 3.6.9
+  Count the primes between N_LO and N_HI.
+
+prime_number_sweep
+  Call prime_number to count the primes from 1 to N.
+
+         N         Pi       Time
+
+         1          0    0.00000
+         2          1    0.00000
+         4          2    0.00000
+         8          4    0.00000
+        16          6    0.00001
+        32         11    0.00003
+        64         18    0.00003
+       128         31    0.00010
+       256         54    0.00029
+       512         97    0.00103
+      1024        172    0.00389
+      2048        309    0.01279
+      4096        564    0.05022
+      8192       1028    0.19221
+
+prime_test
+  Normal end of execution.
+Tue Oct 19 17:01:29 2021

@@ -1,0 +1,22 @@
+Tue Oct 19 17:10:30 2021
+
+sir_ode_test():
+  Python version: 3.6.9
+  Solve the SIR ODE.
+
+  Parameter values:
+    alpha =  0.0075
+    beta  =  0.005
+    gamma =  0.001
+    t0    =  0.0
+    y0    =  [99.  1.  0.]
+    tstop =  5000.0
+
+sir_solve_ivp):
+  Solve the SIR ODE using solve_ivp().
+  Graphics saved as "sir_solve_ivp.png"
+  Graphics saved as "sir_solve_ivp_conservation.png"
+
+sir_ode_test():
+  Normal end of execution.
+Tue Oct 19 17:10:31 2021

@@ -1,0 +1,11 @@
+Tue Oct 19 17:05:59 2021
+
+quasiperiodic_ode_test():
+  Python version: 3.6.9
+  Test quasiperiodic_ode using solve_ivp().
+  Graphics saved as "quasiperiodic_ode.png"
+
+quasiperiodic_ode_test:
+  Normal end of execution.
+
+Tue Oct 19 17:06:00 2021

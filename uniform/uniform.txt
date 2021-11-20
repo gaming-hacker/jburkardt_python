@@ -1,0 +1,1067 @@
+Tue Oct 19 17:31:58 2021
+
+uniform_test():
+  Python version: 3.6.9
+  Test uniform().
+
+congruence_test
+  Python version: 3.6.9
+  congruence solves a congruence equation:
+    A * X = C mod ( B )
+
+   I        A         B         C         X     Mod ( A*X-C,B)
+
+   0      1027       712         7       269         0
+   1      1027       712        -7       443         0
+   2      1027      -712         7     -1155         0
+   3      1027      -712        -7      -981         0
+   4     -1027       712         7       443         0
+   5     -1027       712        -7       269         0
+   6     -1027      -712         7      -981         0
+   7     -1027      -712        -7     -1155         0
+   8         6         8        50         7         0
+   9         0         0         0         0         0
+  10         0         1         0         0         0
+  11         0         1         1         0         0
+  12         1         0         0         0         0
+  13         1         0         1         1         0
+  14         1         1         0         0         0
+  15      1024    -15625     11529    -15629         0
+  16         0         0         1         0         0
+  17         0         3        11         0         1
+  18         5         0        19         3         0
+  19         2         4         7         0         1
+
+congruence_test
+  Normal end of execution.
+
+get_seed_test
+  Python version: 3.6.9
+  get_seed picks an initial seed value for r8_uniform_01.
+  The value chosen should vary over time, because
+  the seed is based on reading the clock.
+
+  This is just the "calendar" clock, which does
+  not change very fast, so calling get_seed several
+  times in a row may result in the same value.
+
+  Initial seed is 12345678
+
+  Next 3 values of r8_uniform_01:
+
+  0.621835
+  0.177248
+  0.002906
+
+  New seed from get_seed is = 1634679119
+
+  Next 3 values of r8_uniform_01:
+
+  0.602406
+  0.637080
+  0.397488
+
+  New seed from get_seed is = 1634679120
+
+  Next 3 values of r8_uniform_01:
+
+  0.602414
+  0.768617
+  0.153093
+
+  New seed from get_seed is = 1634679121
+
+  Next 3 values of r8_uniform_01:
+
+  0.602422
+  0.900155
+  0.908699
+
+  New seed from get_seed is = 1634679122
+
+  Next 3 values of r8_uniform_01:
+
+  0.602429
+  0.031693
+  0.664304
+
+get_seed_test:
+  Normal end of execution.
+
+i4_gcd_test
+  Python version: 3.6.9
+  i4_gcd computes the greatest common factor
+
+     I     J   i4_gcd
+
+      36      30       6
+      49      -7       7
+       0      71      71
+      12      12      12
+      36      49       1
+       1      42       1
+      91      28       7
+
+i4_gcd_test
+  Normal end of execution
+
+i4_HUGE_test
+  Python version: 3.6.9
+  i4_HUGE returns a huge integer.
+
+  i4_HUGE() = 2147483647
+
+i4_HUGE_test
+  Normal end of execution.
+
+i4_modp_test
+  Python version: 3.6.9
+  i4_modp factors a number
+  into a multiple M and a positive remainder R.
+
+    Number   Divisor  Multiple Remainder
+
+       107        50         2         7
+       107       -50        -2         7
+      -107        50        -3        43
+      -107       -50         3        43
+
+  Repeat using Python % Operator:
+
+       107        50         2         7
+       107       -50        -3       -43
+      -107        50        -3        43
+      -107       -50         2        -7
+
+i4_modp_test
+  Normal end of execution.
+
+i4_seed_advance_test
+  Python version: 3.6.9
+  i4_seed_advance advances the seed.
+
+  Step        SEED input       SEED output
+
+     1             12345         207482415
+     2         207482415        1790989824
+     3        1790989824        2035175616
+     4        2035175616          77048696
+     5          77048696          24794531
+     6          24794531         109854999
+     7         109854999        1644515420
+     8        1644515420        1256127050
+     9        1256127050        1963079340
+    10        1963079340        1683198519
+
+i4_seed_advance_test:
+  Normal end of execution.
+
+i4_sign_test
+  Python version: 3.6.9
+  i4_sign returns the sign of an I4.
+
+    I4  i4_sign(I4)
+
+   -10           -1
+    -7           -1
+     0            1
+     5            1
+     9            1
+
+i4_sign_test
+  Normal end of execution.
+
+l4mat_uniform_test
+  Python version: 3.6.9
+  l4mat_uniform computes a random L4MAT.
+
+  Initial seed is 123456789
+
+  Random L4MAT:
+
+  Col:  0 1 2 3
+  Row
+    0:  F F F F
+    1:  T F F T
+    2:  T F F F
+    3:  T F T F
+    4:  F T T F
+
+l4mat_uniform_test:
+  Normal end of execution.
+
+lcrg_anbn_test
+  Python version: 3.6.9
+  lcrg_anbn determines a linear congruential random
+  number generator equivalent to N steps of a given one.
+
+  LCRG Input:
+
+  A  = 16807
+  B  = 0
+  C  = 2147483647
+
+             N             A             B
+
+             0             1             0
+             1         16807             0
+             2     282475249             0
+             3    1622650073             0
+             4     984943658             0
+             5    1144108930             0
+             6     470211272             0
+             7     101027544             0
+             8    1457850878             0
+             9    1458777923             0
+            10    2007237709             0
+
+                           N            In           Out
+
+                           0                       12345
+                           1         12345     207482415
+                           2     207482415    1790989824
+                           3    1790989824    2035175616
+                           4    2035175616      77048696
+                           5      77048696      24794531
+                           6      24794531     109854999
+                           7     109854999    1644515420
+                           8    1644515420    1256127050
+                           9    1256127050    1963079340
+                          10    1963079340    1683198519
+                          11    1683198519     715426902
+
+  LCRG Input:
+
+  AN = 984943658
+  BN = 0
+  C  = 2147483647
+
+             J             N            In           Out
+
+             0             0                       12345
+             1             1                   207482415
+             2             2                  1790989824
+             3             3                  2035175616
+             0             4         12345      77048696
+             1             5     207482415      24794541
+             2             6    1790989824     109854999
+             3             7    2035175616    1644515548
+             0             8      77048696    1256127050
+             1             9      24794541    1075097683
+             2            10     109854999    1683198513
+             3            11    1644515548      86679929
+
+lcrg_anbn_test
+  Normal end of execution.
+
+lcrg_seed_test
+  Python version: 3.6.9
+  lcrg_seed directly computes the updated value of a
+  seed used by an linear congruential random number
+  generator.
+
+       I          SEED          SEED          SEED    U
+                 Input        Output          LCRG
+
+       1         12345     207482415     207482415        0.096617
+       2     207482415    1790989824    1790989824        0.833995
+       3    1790989824    2035175616    2035175616        0.947702
+       4    2035175616      77048696      77048696        0.035879
+       5      77048696      24794531      24794531        0.011546
+       6      24794531     109854999     109854999        0.051155
+       7     109854999    1644515420    1644515420        0.765787
+       8    1644515420    1256127050    1256127050        0.584930
+       9    1256127050    1963079340    1963079340        0.914130
+      10    1963079340    1683198519    1683198519        0.783800
+     100    1549894482      99920864      99920864        0.046529
+    1000     890151694    1408436056    1408436056        0.655854
+
+lcrg_seed_test
+  Normal end of execution.
+
+power_mod_test
+  Python version: 3.6.9
+  power_mod computes the remainder of a power
+  of an integer modulo another integer.
+
+  A = 7
+  N = 50
+  M = 11
+  mod ( A^N, M ) = 1
+
+  A = 3
+  N = 118
+  M = 119
+  mod ( A^N, M ) = 32
+
+power_mod_test:
+  Normal end of execution.
+
+bvec_uniform_test():
+  Python version: 3.6.9
+  bvec_uniform() computes a random BVEC.
+
+  Initial seed is 123456789
+
+  0111110001
+  1110100111
+  1011011100
+  1101001000
+  0011011010
+  1000100101
+  1101110100
+  1000111111
+  1110000100
+  1010001100
+
+bvec_uniform_test()::
+  Normal end of execution.
+
+c4_uniform_01_test():
+  Python version: 3.6.9
+  c4_uniform_01() computes pseudorandom complex values
+  in the unit circle.
+
+  The initial seed is  123456789
+
+       1  ( 0.449860, -0.126667 )
+       2  ( -0.843197, -0.344280 )
+       3  ( 0.589627, 0.260090 )
+       4  ( 0.391140, 0.323400 )
+       5  ( -0.139466, -0.156136 )
+       6  ( -0.236066, 0.077459 )
+       7  ( 0.018599, -0.633214 )
+       8  ( 0.892850, 0.010314 )
+       9  ( -0.560465, 0.763795 )
+      10  ( 0.306357, 0.026275 )
+
+c4_uniform_01_test():
+  Normal end of execution.
+
+c4mat_uniform_01_test():
+  Python version: 3.6.9
+  c4mat_uniform_01() computes a random C4MAT.
+
+  0 <= X <= 1
+  Initial seed is 123456789
+
+  Random C4MAT:
+
+  Col:              0                           1                           2              
+  Row
+      0 :     0.44986     -0.126667i    -0.236066     0.0774593i     0.500804     -0.779931i 
+      1 :   -0.843197      -0.34428i    0.0185993     -0.633214i     0.350471     0.0165551i 
+      2 :    0.589627       0.26009i      0.89285     0.0103136i     0.434989     -0.266623i 
+      3 :     0.39114        0.3234i    -0.560465      0.763795i    -0.200947      0.270711i 
+      4 :   -0.139466     -0.156136i     0.306357     0.0262752i   -0.0974599      0.901881i 
+
+c4mat_uniform_01_test():
+  Normal end of execution.
+
+c4vec_uniform_01_test():
+  Python version: 3.6.9
+  c4vec_uniform_01() computes pseudorandom complex values
+  in the unit circle.
+
+  The initial seed is  123456789
+
+       0  ( 0.449860, -0.126667 )
+       1  ( -0.843197, -0.344280 )
+       2  ( 0.589627, 0.260090 )
+       3  ( 0.391140, 0.323400 )
+       4  ( -0.139466, -0.156136 )
+       5  ( -0.236066, 0.077459 )
+       6  ( 0.018599, -0.633214 )
+       7  ( 0.892850, 0.010314 )
+       8  ( -0.560465, 0.763795 )
+       9  ( 0.306357, 0.026275 )
+
+c4vec_uniform_01_test():
+  Normal end of execution.
+
+C8_uniform_01_test
+  Python version: 3.6.9
+  C8_uniform_01 computes pseudorandom complex values
+  in the unit circle.
+
+  The initial seed is 123456789
+
+       0  ( 0.44986, -0.126667 )
+       1  ( -0.843197, -0.34428 )
+       2  ( 0.589627, 0.26009 )
+       3  ( 0.39114, 0.3234 )
+       4  ( -0.139466, -0.156136 )
+       5  ( -0.236066, 0.0774593 )
+       6  ( 0.0185993, -0.633214 )
+       7  ( 0.89285, 0.0103136 )
+       8  ( -0.560465, 0.763795 )
+       9  ( 0.306357, 0.0262752 )
+
+C8_uniform_01_test:
+  Normal end of execution.
+
+C8MAT_uniform_01_test
+  Python version: 3.6.9
+  c8mat_uniform_01() computes a random C8MAT.
+
+  0 <= X <= 1
+  Initial seed is 123456789
+
+  Random C8MAT:
+
+  Col:              0                           1                           2              
+  Row
+      0 :     0.44986     -0.126667i    -0.236066     0.0774593i     0.500804     -0.779931i 
+      1 :   -0.843197      -0.34428i    0.0185993     -0.633214i     0.350471     0.0165551i 
+      2 :    0.589627       0.26009i      0.89285     0.0103136i     0.434989     -0.266623i 
+      3 :     0.39114        0.3234i    -0.560465      0.763795i    -0.200947      0.270711i 
+      4 :   -0.139466     -0.156136i     0.306357     0.0262752i   -0.0974599      0.901881i 
+
+C8MAT_uniform_01_test:
+  Normal end of execution.
+
+C8VEC_uniform_01_test
+  Python version: 3.6.9
+  C8VEC_uniform_01 computes pseudorandom complex values
+  in the unit circle.
+
+  The initial seed is 123456789
+
+       0  ( 0.449860, -0.126667 )
+       1  ( -0.843197, -0.344280 )
+       2  ( 0.589627, 0.260090 )
+       3  ( 0.391140, 0.323400 )
+       4  ( -0.139466, -0.156136 )
+       5  ( -0.236066, 0.077459 )
+       6  ( 0.018599, -0.633214 )
+       7  ( 0.892850, 0.010314 )
+       8  ( -0.560465, 0.763795 )
+       9  ( 0.306357, 0.026275 )
+
+C8VEC_uniform_01_test:
+  Normal end of execution.
+
+ch_uniform_ab_test
+  Python version: 3.6.9
+  ch_uniform_ab computes pseudorandom character values
+  in the interval [CLO,CHI].
+
+  The lower endpoint CLO = A
+  The upper endpoint CHI = J
+  The initial seed is 123456789
+
+       1  C
+       2  J
+       3  I
+       4  F
+       5  E
+       6  A
+       7  C
+       8  B
+       9  A
+      10  G
+
+ch_uniform_ab_test:
+  Normal end of execution.
+
+i4_uniform_Oi_test
+  Python version: 3.6.9
+  i4_uniform_0i computes pseudorandom integers
+  in the interval [1,(2^31)-1].
+
+  The initial seed is 123456789
+
+       1  469049721
+       2  2053676357
+       3  1781357515
+       4  1206231778
+       5  891865166
+       6  141988902
+       7  553144097
+       8  236130416
+       9  94122056
+      10  1361431000
+
+i4_uniform_0i_test
+  Normal end of execution.
+
+i4_uniform_ab_test
+  Python version: 3.6.9
+  i4_uniform_ab computes pseudorandom values
+  in an interval [A,B].
+
+  The lower endpoint A = -100
+  The upper endpoint B = 200
+  The initial seed is 123456789
+
+         1       -35
+         2       187
+         3       149
+         4        69
+         5        25
+         6       -81
+         7       -23
+         8       -67
+         9       -87
+        10        90
+        11       -82
+        12        35
+        13        20
+        14       127
+        15       139
+        16      -100
+        17       170
+        18         5
+        19       -72
+        20       -96
+
+i4_uniform_ab_test:
+  Normal end of execution.
+
+i4mat_uniform_ab_test
+  Python version: 3.6.9
+  i4mat_uniform_ab computes a random R8MAT.
+
+  -1 <= X <= 5
+  Initial seed is 123456789
+
+  Random I4MAT:
+
+  Col:       0        1        2        3  
+  Row
+    0:       0       -1       -1       -1  
+    1:       5        0        2        5  
+    2:       4       -1        1        1  
+    3:       2       -1        4       -1  
+    4:       1        3        4       -1  
+
+i4mat_uniform_ab_test:
+  Normal end of execution.
+
+i4vec_uniform_ab_test
+  Python version: 3.6.9
+  i4vec_uniform_ab computes pseudorandom values
+  in an interval [A,B].
+
+  The lower endpoint A = -100
+  The upper endpoint B = 200
+  The initial seed is 123456789
+
+
+  The random vector:
+
+     0     -35
+     1     187
+     2     149
+     3      69
+     4      25
+     5     -81
+     6     -23
+     7     -67
+     8     -87
+     9      90
+    10     -82
+    11      35
+    12      20
+    13     127
+    14     139
+    15    -100
+    16     170
+    17       5
+    18     -72
+    19     -96
+
+i4vec_uniform_ab_test:
+  Normal end of execution.
+
+l4_uniform_test
+  Python version: 3.6.9
+  l4_uniform returns random logical values
+
+  0
+  1
+  1
+  1
+  0
+  0
+  0
+  0
+  0
+  1
+
+l4_uniform_test
+  Normal end of execution
+
+l4mat_uniform_test
+  Python version: 3.6.9
+  l4mat_uniform computes a random L4MAT.
+
+  Initial seed is 123456789
+
+  Random L4MAT:
+
+  Col:  0 1 2 3
+  Row
+    0:  F F F F
+    1:  T F F T
+    2:  T F F F
+    3:  T F T F
+    4:  F T T F
+
+l4mat_uniform_test:
+  Normal end of execution.
+
+l4vec_uniform_test
+  Python version: 3.6.9
+  l4vec_uniform computes a random L4VEC.
+
+  Initial seed is 123456789
+
+  Random L4VEC:
+
+     0  F
+     1  T
+     2  T
+     3  T
+     4  F
+     5  F
+     6  F
+     7  F
+     8  F
+     9  T
+
+l4vec_uniform_test:
+  Normal end of execution.
+
+r4_uniform_01_test
+  Python version: 3.6.9
+  r4_uniform_01 produces a sequence of random values.
+
+  Using random seed 123456789
+
+  SEED  r4_uniform_01(SEED)
+
+     469049721        0.218418
+    2053676357        0.956318
+    1781357515        0.829509
+    1206231778        0.561695
+     891865166        0.415307
+     141988902        0.066119
+     553144097        0.257578
+     236130416        0.109957
+      94122056        0.043829
+    1361431000        0.633966
+
+  Verify that the sequence can be restarted.
+  Set the seed back to its original value, and see that
+  we generate the same sequence.
+
+  SEED  r4_uniform_01(SEED)
+
+     469049721        0.218418
+    2053676357        0.956318
+    1781357515        0.829509
+    1206231778        0.561695
+     891865166        0.415307
+     141988902        0.066119
+     553144097        0.257578
+     236130416        0.109957
+      94122056        0.043829
+    1361431000        0.633966
+
+r4_uniform_01_test
+  Normal end of execution.
+
+r4_uniform_ab_test
+  Python version: 3.6.9
+  r4_uniform_ab returns random values in a given range:
+  [ A, B ]
+
+  For this problem:
+  A = 10.000000
+  B = 20.000000
+
+  12.184183
+  19.563176
+  18.295092
+  15.616954
+  14.153071
+  10.661187
+  12.575778
+  11.099568
+  10.438290
+  16.339657
+
+r4_uniform_ab_test
+  Normal end of execution
+
+r4mat_uniform_01_test
+  Python version: 3.6.9
+  r4mat_uniform_01 computes a random R4MAT.
+
+  0 <= X <= 1
+  Initial seed is 123456789
+
+  Random R4MAT:
+
+  Col:       0             1             2             3       
+  Row
+      0 :    0.218418     0.0661187     0.0617272    0.00183837  
+      1 :    0.956318      0.257578      0.449539      0.897504  
+      2 :    0.829509      0.109957      0.401306      0.350752  
+      3 :    0.561695      0.043829      0.754673     0.0945448  
+      4 :    0.415307      0.633966      0.797287     0.0136169  
+
+r4mat_uniform_01_test:
+  Normal end of execution.
+
+r4mat_uniform_ab_test
+  Python version: 3.6.9
+  r4mat_uniform_ab computes a random R4MAT.
+
+  -1 <= X <= 5
+  Initial seed is 123456789
+
+  Uniform R4MAT:
+
+  Col:       0             1             2             3       
+  Row
+      0 :     0.31051     -0.603288     -0.629637      -0.98897  
+      1 :     4.73791      0.545467       1.69723       4.38502  
+      2 :     3.97706     -0.340259       1.40784       1.10451  
+      3 :     2.37017     -0.737026       3.52804     -0.432731  
+      4 :     1.49184       2.80379       3.78372     -0.918299  
+
+r4mat_uniform_ab_test:
+  Normal end of execution.
+
+r4vec_uniform_01_test
+  Python version: 3.6.9
+  r4vec_uniform_01 computes a random R4VEC.
+
+  Initial seed is 123456789
+
+  Uniform R4VEC:
+
+     0      0.218418
+     1      0.956318
+     2      0.829509
+     3      0.561695
+     4      0.415307
+     5     0.0661187
+     6      0.257578
+     7      0.109957
+     8      0.043829
+     9      0.633966
+
+r4vec_uniform_01_test:
+  Normal end of execution.
+
+r4vec_uniform_ab_test
+  Python version: 3.6.9
+  r4vec_uniform_ab computes a random R4VEC.
+
+  -1 <= X <= 5
+  Initial seed is 123456789
+
+  Uniform R4VEC:
+
+     0       0.31051
+     1       4.73791
+     2       3.97706
+     3       2.37017
+     4       1.49184
+     5     -0.603288
+     6      0.545467
+     7     -0.340259
+     8     -0.737026
+     9       2.80379
+
+r4vec_uniform_ab_test:
+  Normal end of execution.
+
+r4vec_uniform_01_test
+  Python version: 3.6.9
+  r4vec_uniform_01 computes a random R4VEC.
+
+  Initial seed is 123456789
+
+  Uniform R4VEC:
+
+     0      0.218418
+     1      0.956318
+     2      0.829509
+     3      0.561695
+     4      0.415307
+     5     0.0661187
+     6      0.257578
+     7      0.109957
+     8      0.043829
+     9      0.633966
+
+r4vec_uniform_01_test:
+  Normal end of execution.
+
+r4vec_uniform_ab_test
+  Python version: 3.6.9
+  r4vec_uniform_ab computes a random R4VEC.
+
+  -1 <= X <= 5
+  Initial seed is 123456789
+
+  Uniform R4VEC:
+
+     0       0.31051
+     1       4.73791
+     2       3.97706
+     3       2.37017
+     4       1.49184
+     5     -0.603288
+     6      0.545467
+     7     -0.340259
+     8     -0.737026
+     9       2.80379
+
+r4vec_uniform_ab_test:
+  Normal end of execution.
+
+r8_uniform_01_test
+  Python version: 3.6.9
+  r8_uniform_01 produces a sequence of random values.
+
+  Using random seed 123456789
+
+  SEED  r8_uniform_01(SEED)
+
+     469049721        0.218418
+    2053676357        0.956318
+    1781357515        0.829509
+    1206231778        0.561695
+     891865166        0.415307
+     141988902        0.066119
+     553144097        0.257578
+     236130416        0.109957
+      94122056        0.043829
+    1361431000        0.633966
+
+  Verify that the sequence can be restarted.
+  Set the seed back to its original value, and see that
+  we generate the same sequence.
+
+  SEED  r8_uniform_01(SEED)
+
+     469049721        0.218418
+    2053676357        0.956318
+    1781357515        0.829509
+    1206231778        0.561695
+     891865166        0.415307
+     141988902        0.066119
+     553144097        0.257578
+     236130416        0.109957
+      94122056        0.043829
+    1361431000        0.633966
+
+r8_uniform_01_test
+  Normal end of execution.
+
+r8_uniform_ab_test
+  Python version: 3.6.9
+  r8_uniform_ab returns random values in a given range:
+  [ A, B ]
+
+  For this problem:
+  A = 10.000000
+  B = 20.000000
+
+  12.184183
+  19.563176
+  18.295092
+  15.616954
+  14.153071
+  10.661187
+  12.575778
+  11.099568
+  10.438290
+  16.339657
+
+r8_uniform_ab_test
+  Normal end of execution
+
+r8mat_uniform_01_test
+  Python version: 3.6.9
+  r8mat_uniform_01 computes a random R8MAT.
+
+  0 <= X <= 1
+  Initial seed is 123456789
+
+  Random R8MAT:
+
+  Col:       0             1             2             3       
+  Row
+      0 :    0.218418     0.0661187     0.0617272    0.00183837  
+      1 :    0.956318      0.257578      0.449539      0.897504  
+      2 :    0.829509      0.109957      0.401306      0.350752  
+      3 :    0.561695      0.043829      0.754673     0.0945448  
+      4 :    0.415307      0.633966      0.797287     0.0136169  
+
+r8mat_uniform_01_test:
+  Normal end of execution.
+
+r8mat_uniform_ab_test
+  Python version: 3.6.9
+  r8mat_uniform_ab computes a random R8MAT.
+
+  -1 <= X <= 5
+  Initial seed is 123456789
+
+  Random R8MAT:
+
+  Col:       0             1             2             3       
+  Row
+      0 :     0.31051     -0.603288     -0.629637      -0.98897  
+      1 :     4.73791      0.545467       1.69723       4.38502  
+      2 :     3.97706     -0.340259       1.40784       1.10451  
+      3 :     2.37017     -0.737026       3.52804     -0.432731  
+      4 :     1.49184       2.80379       3.78372     -0.918299  
+
+r8mat_uniform_ab_test:
+  Normal end of execution.
+
+r8vec_uniform_01_test
+  Python version: 3.6.9
+  r8vec_uniform_01 computes a random R8VEC.
+
+  Initial seed is 123456789
+
+  Random R8VEC:
+
+     0:      0.218418
+     1:      0.956318
+     2:      0.829509
+     3:      0.561695
+     4:      0.415307
+     5:     0.0661187
+     6:      0.257578
+     7:      0.109957
+     8:      0.043829
+     9:      0.633966
+
+r8vec_uniform_01_test:
+  Normal end of execution.
+
+r8vec_uniform_ab_test
+  Python version: 3.6.9
+  r8vec_uniform_ab computes a random R8VEC.
+
+  -1 <= X <= 5
+  Initial seed is 123456789
+
+  Random R8VEC:
+
+     0:       0.31051
+     1:       4.73791
+     2:       3.97706
+     3:       2.37017
+     4:       1.49184
+     5:     -0.603288
+     6:      0.545467
+     7:     -0.340259
+     8:     -0.737026
+     9:       2.80379
+
+r8vec_uniform_ab_test:
+  Normal end of execution.
+
+r8col_uniform_abvec_test():
+  Python version: 3.6.9
+  r8col_uniform_abvec() computes a random scaled R8COL.
+
+   Col         Min         Max
+
+     0          -1           1
+     1           0           1
+     2          50          55
+     3         100       100.1
+     4          17          20
+
+  Random R8COL:
+
+  Col:       0             1             2             3       
+  Row
+      0 :    0.688064      0.289867     -0.675964     -0.213866  
+      1 :    0.112936      0.964859     0.0901655      0.442364  
+      2 :     51.2751       52.5128       51.5886       50.8525  
+      3 :     100.064       100.071       100.011       100.092  
+      4 :     17.2473       19.3726       19.8453        18.777  
+
+r8col_uniform_abvec_test():
+  Normal end of execution.
+
+r8mat_uniform_abvec_test
+  Python version: 3.6.9
+  r8mat_uniform_abvec computes a random R8MAT.
+
+  Lower and upper row limits:
+
+       0:              2            10
+       1:              0             1
+       2:             -1             0
+       3:            100           110
+       4:            0.1           0.2
+
+  Random R8MAT:
+
+  Col:       0             1             2             3       
+  Row
+      0 :     2.19896       8.38982       2.81889       8.29159  
+      1 :    0.102458      0.731141       0.74393      0.791098  
+      2 :   -0.510822      -0.56524     -0.366294     -0.827067  
+      3 :     105.922       101.236       104.175       102.119  
+      4 :    0.182632      0.115871      0.187202      0.116093  
+
+r8mat_uniform_abvec_test:
+  Normal end of execution.
+
+r8row_uniform_abvec_test
+  Python version: 3.6.9
+  r8row_uniform_abvec computes a random scaled R8ROW.
+
+   Col         Min         Max
+
+     0          -1           1
+     1           0           1
+     2          50          55
+     3         100       100.1
+
+  Random R8ROW:
+
+  Col:       0             1             2             3       
+  Row
+      0 :   -0.880997      0.782305       52.4625       100.021  
+      1 :    0.676266     0.0761917       52.4057       100.061  
+      2 :     0.66367       0.44948       50.5297       100.076  
+      3 :     0.80206     0.0475339       51.3083       100.021  
+      4 :    0.871421      0.421368       54.7438       100.011  
+
+r8row_uniform_abvec_test:
+  Normal end of execution.
+
+r8vec_uniform_abvec_test
+  Python version: 3.6.9
+  r8vec_uniform_abvec computes a random R8VEC.
+
+   I         A         X         B
+
+     0           0    0.597312           1
+     1         0.2    0.225493        0.25
+     2          10     14.6367          20
+     3          52      52.769          54
+     4          -1    0.377913           1
+
+
+r8vec_uniform_abvec_test:
+  Normal end of execution.
+
+uniform_test():
+  Normal end of execution.
+Tue Oct 19 17:32:01 2021

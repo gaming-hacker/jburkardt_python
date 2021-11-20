@@ -1,0 +1,23 @@
+Tue Oct 19 17:00:25 2021
+
+polar_ode_test()
+  Python version: 3.6.9
+  Solve the polar ODE, an ordinary differential equation (ODE)
+  involving a complex variable, whose solution is best 
+  viewed in a polar coordinate plot.
+
+  Parameter values:
+    t0    =  0.0
+    z0    =  [1.+0.j]
+    tstop =  18.84955592153876
+
+polar_solve_ivp:
+  Solve the polar ODE using solve_ivp().
+  Graphics saved as "polar_solve_ivp_phase.png"
+  Graphics saved as "polar_solve_ivp_time.png"
+  RMS error norm =  0.0041929541557481
+  L2 error norm =  0.04213866775033035
+
+polar_ode_test
+  Normal end of execution.
+Tue Oct 19 17:00:25 2021

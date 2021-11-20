@@ -1,0 +1,811 @@
+Tue Oct 19 17:10:05 2021
+
+sftpack_test():
+  Python version: 3.6.9
+  Test sftpack().
+
+c8mat_print_test
+  Python version: 3.6.9
+  c8mat_print prints an C8MAT.
+
+  Here is a C8MAT:
+
+  Col:              0                           1                           2              
+  Row
+      0 :          10             1i           10             2i           10             3i 
+      1 :          20             1i           20             2i           20             3i 
+      2 :          30             1i           30             2i           30             3i 
+      3 :          40             1i           40             2i           40             3i 
+
+c8mat_print_test:
+  Normal end of execution.
+
+c8mat_print_some_test
+  Python version: 3.6.9
+  c8mat_print_some prints some of an C8MAT.
+
+  Here is a C8MAT:
+
+  Col:              3                           4                           5              
+  Row
+      0 :          10             4i           10             5i           10             6i 
+      1 :          20             4i           20             5i           20             6i 
+      2 :          30             4i           30             5i           30             6i 
+
+c8mat_print_some_test:
+  Normal end of execution. 
+
+c8mat_uniform_01_test
+  Python version: 3.6.9
+  c8mat_uniform_01 computes a random C8MAT.
+
+  0 <= X <= 1
+
+  Random C8MAT:
+
+  Col:              0                           1                           2              
+  Row
+      0 :  -0.0448027      0.934135i     0.764198     -0.286628i    -0.365888       0.62585i 
+      1 :   -0.310803     0.0363849i    -0.902886      0.414849i     0.921269     -0.361307i 
+      2 :   -0.405732     -0.820548i     0.295019     -0.768308i    -0.175736     -0.105247i 
+      3 :    0.182926     -0.766085i    -0.564054     -0.201552i     0.261941      0.341455i 
+      4 :    0.243493      0.249433i     0.647691      0.669997i    -0.771376      0.022346i 
+
+c8mat_uniform_01_test:
+  Normal end of execution.
+
+c8vec_indicator_test
+  Python version: 3.6.9
+  c8vec_indicator returns the indicator vector.
+
+  The indicator vector:
+
+     0             1            -1
+     1             2            -2
+     2             3            -3
+     3             4            -4
+     4             5            -5
+     5             6            -6
+     6             7            -7
+     7             8            -8
+     8             9            -9
+     9            10           -10
+
+c8vec_indicator_test:
+  Normal end of execution.
+
+c8vec_print_test
+  Python version: 3.6.9
+  c8vec_print prints an C8VEC.
+
+  Here is a C8VEC:
+
+     0             1             2
+     1             3             4
+     2             5             6
+     3             7             8
+
+c8vec_print_test:
+  Normal end of execution.
+
+c8vec_print_part_test
+  Python version: 3.6.9
+  c8vec_print_part prints part of a C8VEC.
+
+  Part of the C8VEC:
+
+       0               1              -1
+       1               2              -2
+       2               3              -3
+       3               4              -4
+       4               5              -5
+       5               6              -6
+       6               7              -7
+       7               8              -8
+  ......  ..............  ..............
+      99             100            -100
+
+c8vec_print_part_test:
+  Normal end of execution.
+
+c8vec_uniform_01_test
+  Python version: 3.6.9
+  c8vec_uniform_01 computes pseudorandom complex values
+  in the unit circle.
+
+       0  ( 0.028596, -0.879439 )
+       1  ( -0.470182, -0.173502 )
+       2  ( -0.206567, 0.292749 )
+       3  ( 0.379410, 0.344088 )
+       4  ( -0.532517, 0.444616 )
+       5  ( 0.930728, 0.080061 )
+       6  ( 0.565080, 0.772039 )
+       7  ( 0.429410, -0.434618 )
+       8  ( -0.656562, -0.134461 )
+       9  ( 0.720712, 0.487829 )
+
+c8vec_uniform_01_test:
+  Normal end of execution.
+
+i4_modp_test
+  Python version: 3.6.9
+  i4_modp factors a number
+  into a multiple M and a positive remainder R.
+
+    Number   Divisor  Multiple Remainder
+
+       107        50         2         7
+       107       -50        -2         7
+      -107        50        -3        43
+      -107       -50         3        43
+
+  Repeat using Python % Operator:
+
+       107        50         2         7
+       107       -50        -3       -43
+      -107        50        -3        43
+      -107       -50         2        -7
+
+i4_modp_test
+  Normal end of execution.
+
+i4_wrap_test
+  Python version: 3.6.9
+  i4_wrap forces an integer to lie within given limits.
+
+  ILO = 4
+  IHI = 8
+
+     I  i4_wrap(I)
+
+     -10       5
+      -9       6
+      -8       7
+      -7       8
+      -6       4
+      -5       5
+      -4       6
+      -3       7
+      -2       8
+      -1       4
+       0       5
+       1       6
+       2       7
+       3       8
+       4       4
+       5       5
+       6       6
+       7       7
+       8       8
+       9       4
+      10       5
+      11       6
+      12       7
+      13       8
+      14       4
+      15       5
+      16       6
+      17       7
+      18       8
+      19       4
+      20       5
+
+i4_wrap_test
+  Normal end of execution.
+
+r8vec_indicator1_test
+  Python version: 3.6.9
+  r8vec_indicator1 returns the 1-based indicator matrix.
+
+  The 1-based indicator vector:
+
+     0:             1
+     1:             2
+     2:             3
+     3:             4
+     4:             5
+     5:             6
+     6:             7
+     7:             8
+     8:             9
+     9:            10
+
+r8vec_indicator1_test
+  Normal end of execution.
+
+r8vec_print_test
+  Python version: 3.6.9
+  Test r8vec_print(), which prints an R8VEC.
+
+  Use r8vec_print():
+
+     0:       123.456
+     1:         5e-06
+     2:        -1e+06
+     3:       3.14159
+
+  Use python print():
+
+[ 1.23456000e+02  5.00000000e-06 -1.00000000e+06  3.14159265e+00]
+
+r8vec_print_test:
+  Normal end of execution.
+
+r8vec_print_part_test
+  Python version: 3.6.9
+  r8vec_print_part prints part of an R8VEC.
+
+  Lines 10:20 of the vector:
+
+        10:           11
+        11:           12
+        12:           13
+        13:           14
+        14:           15
+        15:           16
+        16:           17
+        17:           18
+        18:           19
+        19:           20
+        20:           21
+
+r8vec_print_part_test:
+  Normal end of execution.
+
+c8mat_sft_test
+  Python version: 3.6.9
+  c8mat_sftf computes the forward slow Fourier transform.
+  c8mat_sftb computes the backward slow Fourier transform.
+
+  The data has dimension N1 = 10 by N2 = 4
+
+  The data X:
+
+  Col:              1                           2                           3              
+  Row
+      1 :    0.475046     0.0819487i    0.0590563      -0.57418i     0.823222    -0.0179756i 
+      2 :   -0.716814      0.680349i     0.103035     -0.585117i    -0.497661      0.508197i 
+      3 :   0.0591116      0.635668i    -0.702692     -0.681632i     0.164015     0.0461822i 
+      4 :   0.0832611      0.504584i     0.526053     -0.361663i    -0.528651      0.609168i 
+      5 :   -0.542775      0.787822i     -0.44041       0.23903i    -0.505045      0.286979i 
+      6 :    0.472302      0.617967i    -0.683914      0.529158i    -0.753692      0.617861i 
+      7 :    0.230741     0.0111921i    -0.566043     -0.273103i     0.109771      0.956525i 
+      8 :    0.556593      0.822678i     -0.41833     -0.359027i     0.270649      0.748354i 
+      9 :    -0.28317      0.583215i    -0.490867     -0.616381i     0.289715     -0.421447i 
+
+  The Fourier coefficients Y:
+
+  Col:              1                           2                           3              
+  Row
+      1 :    -1.42888      -3.12216i   -0.0693039       3.76359i     0.392204       2.48964i 
+      2 :    -3.68352        4.1198i    -0.293635       5.99043i      1.72279     -0.112693i 
+      3 :     1.18925      0.528517i     0.807944      -0.25078i     0.926745      -5.67365i 
+      4 :    -1.38259      -1.97922i     0.496636      -4.66092i      1.79279      0.657007i 
+      5 :    -1.47357       1.96885i       4.2402      -1.00303i     -1.34641       -4.3903i 
+      6 :   -0.821984       0.38575i     0.827381       5.33794i     -0.68094     -0.563632i 
+      7 :      3.3848      0.980931i     0.781082       2.93371i      2.88495       2.45743i 
+      8 :    -3.50504       -2.7061i      2.66338       3.84622i    -0.633183     -0.516465i 
+      9 :    -1.91701       2.17562i     -1.58901      -1.23989i      3.60032       3.94978i 
+
+  The recovered data:
+
+  Col:              1                           2                           3              
+  Row
+      1 :    0.475046     0.0819487i    0.0590563      -0.57418i     0.823222    -0.0179756i 
+      2 :   -0.716814      0.680349i     0.103035     -0.585117i    -0.497661      0.508197i 
+      3 :   0.0591116      0.635668i    -0.702692     -0.681632i     0.164015     0.0461822i 
+      4 :   0.0832611      0.504584i     0.526053     -0.361663i    -0.528651      0.609168i 
+      5 :   -0.542775      0.787822i     -0.44041       0.23903i    -0.505045      0.286979i 
+      6 :    0.472302      0.617967i    -0.683914      0.529158i    -0.753692      0.617861i 
+      7 :    0.230741     0.0111921i    -0.566043     -0.273103i     0.109771      0.956525i 
+      8 :    0.556593      0.822678i     -0.41833     -0.359027i     0.270649      0.748354i 
+      9 :    -0.28317      0.583215i    -0.490867     -0.616381i     0.289715     -0.421447i 
+
+c8mat_sft_test
+  Normal end of execution.
+
+c8vec_sft_test
+  Python version: 3.6.9
+  c8vec_sftf computes the forward slow Fourier transform.
+  c8vec_sftb computes the backward slow Fourier transform.
+
+  The number of data values, N = 36
+
+  The original data:
+
+       0        -0.74569        0.479871
+       1       -0.785245        0.492291
+       2         -0.6816        0.415357
+       3        0.934439       -0.301581
+       4        0.821904       -0.243087
+       5        0.916525       -0.236332
+       6        0.788467      -0.0491694
+       7        0.600943       -0.735759
+  ......  ..............  ..............
+      35        0.832275        0.272405
+
+  The Fourier coefficients:
+
+       0        -3.84025        -3.44547
+       1         5.77675         4.68632
+       2        0.950005         6.45541
+       3        -2.72839        0.678835
+       4        -7.60111        -2.88159
+       5        -4.19052        -3.05136
+       6        -1.88609        -1.85757
+       7        0.625406        0.149436
+  ......  ..............  ..............
+      35        -1.57811       -0.340662
+
+  The retrieved data:
+
+       0        -0.74569        0.479871
+       1       -0.785245        0.492291
+       2         -0.6816        0.415357
+       3        0.934439       -0.301581
+       4        0.821904       -0.243087
+       5        0.916525       -0.236332
+       6        0.788467      -0.0491694
+       7        0.600943       -0.735759
+  ......  ..............  ..............
+      35        0.832275        0.272405
+
+c8vec_sft_test
+  Normal end of execution.
+
+r8vec_sct_test
+  Python version: 3.6.9
+  r8vec_sct does a forward or backward slow cosine transform.
+
+  The number of data items is N = 256
+
+  The original data:
+
+         1:      4.33168
+         2:      4.37634
+         3:      1.89808
+         4:      2.70276
+         5:     0.169866
+         6:      2.46107
+         7:      1.87668
+         8:      0.53196
+         9:      2.09159
+        10:      2.21882
+
+  The cosine coefficients:
+
+         1:     -3.63644
+         2:      39.1999
+         3:     -28.9628
+         4:     -15.5763
+         5:      11.8632
+         6:     -14.6111
+         7:     -32.1508
+         8:      41.0063
+         9:      24.7296
+        10:     -53.6597
+
+  The retrieved data:
+
+         1:      4.33168
+         2:      4.37634
+         3:      1.89808
+         4:      2.70276
+         5:     0.169866
+         6:      2.46107
+         7:      1.87668
+         8:      0.53196
+         9:      2.09159
+        10:      2.21882
+
+r8vec_sct_test
+  Normal end of execution.
+
+r8vec_sft_test
+  Python version: 3.6.9
+
+r8vec_sft_n_test
+  r8vec_sftf computes the forward slow Fourier transform.
+  r8vec_sftb computes the backward slow Fourier transform.
+
+  The number of data values, N = 35
+
+  The original data:
+
+       0        0.299408
+       1         2.61084
+       2         2.97115
+       3          3.6207
+       4         4.97286
+       5         2.39477
+       6         3.26833
+       7         4.71751
+  ......  ..............
+      34        0.377403
+
+  A (cosine) coefficients:
+
+     0  2.57333
+     0  0.163115
+     1  -0.474443
+     2  -0.468718
+     3  -0.411838
+     4  -0.521754
+     5  0.253515
+     6  -0.309532
+     7  -0.265533
+     8  0.167214
+     9  -0.328209
+    10  0.681985
+    11  -0.151877
+    12  -0.601478
+    13  -0.514896
+    14  0.618481
+    15  -0.38086
+    16  0.270904
+
+  B (sine) coefficients:
+
+     0  0.574217
+     1  -0.287807
+     2  0.564111
+     3  0.0693496
+     4  0.265261
+     5  0.0296405
+     6  0.187132
+     7  -0.0531844
+     8  -0.206749
+     9  0.0624073
+    10  0.767895
+    11  -0.169668
+    12  -0.285694
+    13  0.209655
+    14  0.297468
+    15  -0.135322
+    16  -0.0781234
+
+  The retrieved data:
+
+       0        0.299408
+       1         2.61084
+       2         2.97115
+       3          3.6207
+       4         4.97286
+       5         2.39477
+       6         3.26833
+       7         4.71751
+  ......  ..............
+      34        0.377403
+
+r8vec_sft_n_test
+  r8vec_sftf computes the forward slow Fourier transform.
+  r8vec_sftb computes the backward slow Fourier transform.
+
+  The number of data values, N = 36
+
+  The original data:
+
+       0        0.665406
+       1         3.75628
+       2         4.18257
+       3         4.64522
+       4         3.08822
+       5        0.185135
+       6          2.0806
+       7         4.18714
+  ......  ..............
+      35         4.64173
+
+  A (cosine) coefficients:
+
+     0  2.79933
+     0  0.440399
+     1  -0.162738
+     2  0.199132
+     3  0.0681594
+     4  0.0270324
+     5  -0.406489
+     6  -0.119388
+     7  -0.435069
+     8  -0.106985
+     9  -0.067967
+    10  -0.422522
+    11  0.0318717
+    12  0.169467
+    13  -0.509176
+    14  -0.365526
+    15  -0.323841
+    16  0.252115
+    17  -0.402399
+
+  B (sine) coefficients:
+
+     0  -0.220444
+     1  -0.160169
+     2  0.328771
+     3  0.0895261
+     4  0.146623
+     5  0.243197
+     6  0.309618
+     7  -0.75661
+     8  -0.3024
+     9  -0.498717
+    10  0.342005
+    11  0.213347
+    12  0.0997212
+    13  -0.215939
+    14  -0.167699
+    15  -0.299175
+    16  0.550658
+    17  -3.27549e-16
+
+  The retrieved data:
+
+       0        0.665406
+       1         3.75628
+       2         4.18257
+       3         4.64522
+       4         3.08822
+       5        0.185135
+       6          2.0806
+       7         4.18714
+  ......  ..............
+      35         4.64173
+
+r8vec_sft_test
+  Normal end of execution.
+
+r8vec_sht_test
+  Python version: 3.6.9
+  r8vec_sht does a forward or backward slow Hartley transform.
+
+  The number of data items is N = 17
+
+  The original data:
+
+         1:       1.8591
+         2:      2.20728
+         3:      1.41445
+         4:      3.33173
+         5:      2.18933
+         6:      4.01702
+         7:       3.4203
+         8:      2.89552
+         9:        4.055
+        10:       2.6682
+
+  The Hartley coefficients:
+
+         1:    -0.643743
+         2:    -0.622548
+         3:     -0.41301
+         4:     0.819552
+         5:      1.15451
+         6:      2.14162
+         7:    -0.784739
+         8:    -0.322556
+         9:      1.34059
+        10:      2.11136
+
+  The retrieved data:
+
+         1:       1.8591
+         2:      2.20728
+         3:      1.41445
+         4:      3.33173
+         5:      2.18933
+         6:      4.01702
+         7:       3.4203
+         8:      2.89552
+         9:        4.055
+        10:       2.6682
+
+r8vec_sht_test
+  Normal end of execution.
+
+r8vec_sqct_test
+  Python version: 3.6.9
+  r8vec_sqctf does a forward slow quarter wave cosine transform
+  r8vec_sqctb does a backward slow quarter wave cosine transform.
+
+  The number of data items is N = 256
+
+  The original data:
+
+         1:     0.813304
+         2:      1.40767
+         3:      4.91527
+         4:      4.01486
+         5:       4.1046
+         6:     0.808193
+         7:      4.90574
+         8:      2.36626
+         9:      2.83973
+        10:       2.7383
+
+  The cosine coefficients:
+
+         1:     0.068761
+         2:    0.0457492
+         3:   0.00799647
+         4:    -0.120869
+         5:   -0.0489219
+         6:  -0.00363274
+         7:    0.0392953
+         8:    0.0521292
+         9:    0.0318214
+        10:    0.0561342
+
+  The retrieved data:
+
+         1:     0.813304
+         2:      1.40767
+         3:      4.91527
+         4:      4.01486
+         5:       4.1046
+         6:     0.808193
+         7:      4.90574
+         8:      2.36626
+         9:      2.83973
+        10:       2.7383
+
+r8vec_sqct_test:
+  Normal end of execution.
+
+r8vec_sqst_test
+  Python version: 3.6.9
+  r8vec_sqstf does a forward slow quarter wave sine transform
+  r8vec_sqstb does a backward slow quarter wave sine transform.
+
+  The number of data items is N = 256
+
+  The original data:
+
+         1:     0.903644
+         2:      1.20642
+         3:      2.72719
+         4:      2.80543
+         5:      3.99919
+         6:       0.9896
+         7:      2.69631
+         8:     0.858823
+         9:      2.03549
+        10:       2.3151
+
+  The sine coefficients:
+
+         1:   -0.0188337
+         2:    -0.463525
+         3:  -0.00362974
+         4:    -0.440563
+         5:    0.0241517
+         6:    -0.204748
+         7:  0.000827068
+         8:   -0.0278249
+         9:    0.0149157
+        10:    -0.175335
+
+  The retrieved data:
+
+         1:     0.903644
+         2:      1.20642
+         3:      2.72719
+         4:      2.80543
+         5:      3.99919
+         6:       0.9896
+         7:      2.69631
+         8:     0.858823
+         9:      2.03549
+        10:       2.3151
+
+r8vec_sqst_test:
+  Normal end of execution.
+
+r8vec_sst_test
+  Python version: 3.6.9
+  r8vec_sst does a forward or backward slow sine transform.
+
+  The number of data items is N = 256
+
+  The original data:
+
+         1:     0.606782
+         2:      1.59483
+         3:      2.55914
+         4:      4.29088
+         5:      4.44057
+         6:      4.14068
+         7:      4.00377
+         8:      3.54641
+         9:      2.80814
+        10:      2.26232
+
+  The sine coefficients:
+
+         1:      28.0691
+         2:      243.673
+         3:      27.7315
+         4:       176.11
+         5:      24.1398
+         6:      149.793
+         7:      30.1798
+         8:      74.3934
+         9:     -2.55514
+        10:      63.5281
+
+  The retrieved data:
+
+         1:     0.606782
+         2:      1.59483
+         3:      2.55914
+         4:      4.29088
+         5:      4.44057
+         6:      4.14068
+         7:      4.00377
+         8:      3.54641
+         9:      2.80814
+        10:      2.26232
+
+r8vec_sst_test
+  Normal end of execution.
+
+r8vec_swt_test
+  Python version: 3.6.9
+  r8vec_swtf computes the forward slow wavelet transform.
+  r8vec_swtb computes the backward slow wavelet transform.
+
+  The number of data values, N = 36
+
+  The original data:
+
+         1:      3.02676
+         2:      1.57498
+         3:      2.14503
+         4:      3.34524
+         5:      4.52683
+         6:      1.58912
+         7:      3.35736
+         8:      3.81171
+         9:      2.55331
+        10:      3.61141
+
+     I          S(I)            D(I)
+
+     0        4.145804       -0.467830
+     1        2.719008        0.809124
+     2        5.324113        0.072553
+     3        4.099923        1.739730
+     4        4.728818       -0.997227
+     5        2.222941       -1.740982
+     6        4.620729        0.166283
+     7        2.176520       -2.205538
+     8        1.407545        1.443354
+     9        4.767838        1.645185
+    10        5.406652       -0.849701
+    11        3.157160        2.534159
+    12        2.879704        0.150899
+    13        4.886979        1.177272
+    14        2.467854        0.460458
+    15        5.540455        2.220013
+    16        2.630584       -1.784623
+    17        3.065355        1.181368
+
+  The retrieved data:
+
+         1:      3.02676
+         2:      1.57498
+         3:      2.14503
+         4:      3.34524
+         5:      4.52683
+         6:      1.58912
+         7:      3.35736
+         8:      3.81171
+         9:      2.55331
+        10:      3.61141
+
+r8vec_swt_test
+  Normal end of execution.
+
+sftpack_test():
+  Normal end of execution.
+Tue Oct 19 17:10:06 2021

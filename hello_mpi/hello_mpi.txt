@@ -1,0 +1,7 @@
+
+hello_mpi():
+  P 0 :  There are  4  MPI processes running.
+  P 0 :  Hello, world!
+  P 1 :  Hello, world!
+  P 2 :  Hello, world!
+  P 3 :  Hello, world!

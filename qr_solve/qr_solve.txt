@@ -1,0 +1,152 @@
+Tue Oct 19 17:05:48 2021
+
+qr_solve_testS
+  Python version: 3.6.9
+  Test the qr_solve library.
+
+lstsq_solve_test
+  Python version: 3.6.9
+  The function x=np.linalg.lstsq(A,b)
+
+  solves a linear system A*x = b in the least squares sense.
+  Compare a tabulated solution X1 to the LSTSQ result X2.
+
+  Number of problems = 6
+
+  Index     M     N          ||B||   ||X1 - X2||
+        ||X1||        ||X2||         ||R1||        ||R2||
+
+      1     5     3         6.205     2.861e-08         5.461         5.461         1.075         1.075
+      2     6     3         537.6     5.416e-05         194.8         194.8         5.222         5.222
+      3     5     3         40.37     5.092e-08         10.84         10.84     5.477e-07      2.93e-14
+      4     3     5         232.1     2.485e-14         7.416         7.416             0      8.71e-14
+      5    10    10             1          1332     1.534e+07     1.534e+07       1.2e-10     9.331e-10
+      6    10    10             1     5.042e-16             1             1     4.773e-16      6.92e-16
+
+lstsq_solve_test
+  Normal end of execution.
+
+normal_solve_test
+  Python version: 3.6.9
+  normal_solve is a function with a simple interface which
+  solves a linear system A*x = b in the least squares sense.
+  Compare a tabulated solution X1 to the normal_solve result X2.
+
+  normal_solve cannot be applied when N < M,
+  or if the matrix does not have full column rank.
+
+  Number of problems = 6
+
+  Index     M     N          ||B||   ||X1 - X2||
+        ||X1||        ||X2||         ||R1||        ||R2||
+
+      1     5     3
+         6.205     2.861e-08
+         5.461         5.461
+         1.075         1.075
+      2     6     3
+         537.6     5.416e-05
+         194.8         194.8
+         5.222         5.222
+      3     5     3
+         40.37  ------------
+         10.84  ------------
+     5.477e-07  ------------
+      4     3     5
+         232.1  ------------
+         7.416  ------------
+             0  ------------
+      5    10    10
+             1  ------------
+     1.534e+07  ------------
+       1.2e-10  ------------
+      6    10    10
+             1     5.231e-16
+             1             1
+     4.773e-16     2.017e-16
+
+normal_solve_test
+  Normal end of execution.
+
+qr_solve_test
+  Python version: 3.6.9
+  qr_solve is a function with a simple interface which
+  solves a linear system A*x = b in the least squares sense.
+  Compare a tabulated solution X1 to the qr_solve result X2.
+
+  Number of problems = 6
+
+  Index     M     N          ||B||   ||X1 - X2||
+        ||X1||        ||X2||         ||R1||        ||R2||
+
+      1     5     3
+         6.205     2.861e-08
+         5.461         5.461
+         1.075         1.075
+      2     6     3
+         537.6     5.416e-05
+         194.8         194.8
+         5.222         5.222
+      3     5     3
+         40.37         20.96
+         10.84          23.6
+     5.477e-07     1.231e-14
+      4     3     5
+         232.1         10.37
+         7.416         12.75
+             0     3.553e-14
+      5    10    10
+             1          2290
+     1.534e+07     1.534e+07
+       1.2e-10     9.917e-10
+      6    10    10
+             1      5.93e-16
+             1             1
+     4.773e-16     3.295e-16
+
+qr_solve_test
+  Normal end of execution.
+
+svd_solve_test
+  Python version: 3.6.9
+  svd_solve is a function with a simple interface which
+  solves a linear system A*x = b in the least squares sense
+  using the singular value decomposition (SVD).
+  Compare a tabulated solution X1 to the qr_solve result X2.
+
+  Number of problems = 6
+
+  Index     M     N          ||B||   ||X1 - X2||
+        ||X1||        ||X2||         ||R1||        ||R2||
+
+      1     5     3
+         6.205     2.861e-08
+         5.461         5.461
+         1.075         1.075
+      2     6     3
+         537.6     5.416e-05
+         194.8         194.8
+         5.222         5.222
+      3     5     3
+         40.37     5.092e-08
+         10.84         10.84
+     5.477e-07     7.105e-15
+      4     3     5
+         232.1     1.026e-13
+         7.416         7.416
+             0     2.693e-13
+      5    10    10
+             1          1997
+     1.534e+07     1.534e+07
+       1.2e-10     1.163e-09
+      6    10    10
+             1     8.163e-16
+             1             1
+     4.773e-16     6.186e-16
+
+svd_solve_test
+  Normal end of execution.
+
+qr_solve_tests
+  Normal end of execution.
+Tue Oct 19 17:05:48 2021

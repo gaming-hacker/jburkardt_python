@@ -1,0 +1,32 @@
+Tue Oct 19 17:02:20 2021
+
+SUPPRESS_SPACES
+  Python version: 3.6.9
+  Demonstrate Python's output spacing convention,
+  and how to suppress it.
+
+  Suppose we want to print a string of binary digits,
+  each stored in a separate entry of a vector.
+  A print statement inside a loop might do it.
+
+1
+1
+0
+1
+0
+0
+1
+1
+1
+
+
+  But suppose we want the digits right next to each other?
+  We are annoyed now, that Python's print command, 
+  trying to be helpful, automatically inserts spaces.
+  Try sys.stdout.write(str(VARIABLE)) instead.
+
+110100111
+
+SUPPRESS_SPACES
+  Normal end of execution.
+Tue Oct 19 17:02:20 2021

@@ -1,0 +1,63 @@
+Tue Oct 19 17:18:39 2021
+
+sort_rc_test():
+  Python version: 3.6.9
+  Test sort_rc().
+
+sort_safe_rc_i4vec_test():
+  Python version: 3.6.9
+  sort_save_rc() sorts objects externally.
+  This function does not use persistent memory.
+
+  Unsorted array:
+
+     0      16
+     1       1
+     2       2
+     3      20
+     4      12
+     5       5
+     6      14
+     7       8
+     8      12
+     9      11
+    10      19
+    11      20
+    12       7
+    13       8
+    14       3
+    15       8
+    16       5
+    17      15
+    18      15
+    19      17
+
+  Sorted array:
+
+     0       1
+     1       2
+     2       3
+     3       5
+     4       5
+     5       7
+     6       8
+     7       8
+     8       8
+     9      11
+    10      12
+    11      12
+    12      14
+    13      15
+    14      15
+    15      16
+    16      17
+    17      19
+    18      20
+    19      20
+
+sort_save_rc_i4vec_test:
+  Normal end of execution.
+
+sort_rc_test():
+  Normal end of execution.
+Tue Oct 19 17:18:39 2021

@@ -1,0 +1,17 @@
+Tue Oct 19 11:59:42 2021
+
+midpoint_fixed_test:
+  Python version: 3.6.9
+  Test midpoint_fixed method for solving an ordinary differential equation.
+
+midpoint_fixed_humps_test:
+  Solve the humps ODE system using midpoint_fixed().
+  Graphics saved as "midpoint_fixed_humps.png"
+
+midpoint_fixed_predator_prey_test:
+  Solve the predator prey ODE system using midpoint_fixed().
+  Graphics saved as "midpoint_fixed_predator_prey.png"
+
+midpoint_test:
+  Normal end of execution.
+Tue Oct 19 11:59:42 2021

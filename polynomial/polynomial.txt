@@ -1,0 +1,1519 @@
+Tue Oct 19 17:00:30 2021
+
+polynomial_test():
+  Python version: 3.6.9
+  Test polynomial().
+
+i4_fall_test
+  Python version: 3.6.9
+  i4_fall evaluates the falling factorial Fall(I,N).
+
+         M         N      Exact         i4_fall(M,N)
+
+         5         0             1             1
+         5         1             5             5
+         5         2            20            20
+         5         3            60            60
+         5         4           120           120
+         5         5           120           120
+         5         6             0             0
+        50         0             1             1
+        10         1            10            10
+      4000         1          4000          4000
+        10         2            90            90
+        18         3          4896          4896
+         4         4            24            24
+        98         3        912576        912576
+         1         7             0             0
+
+i4_fall_test:
+  Normal end of execution.
+
+i4vec_concatenate_test
+  Python version: 3.6.9
+  i4vec_concatenate concatenates two I4VECs
+
+  Array 1:
+
+     0      91
+     1      31
+     2      71
+     3      51
+     4      31
+
+  Array 2:
+
+     0      42
+     1      22
+     2      12
+
+  Array 3 = Array 1 + Array 2:
+
+     0      91
+     1      31
+     2      71
+     3      51
+     4      31
+     5      42
+     6      22
+     7      12
+
+i4vec_concatenate_test
+  Normal end of execution.
+
+i4vec_permute_test
+  Python version: 3.6.9
+  i4vec_permute reorders an I4VEC
+  according to a given permutation.
+
+  A[*], before rearrangement:
+
+     0      10
+     1       1
+     2      10
+     3       6
+     4       8
+     5       7
+     6       6
+     7       9
+     8       7
+     9       1
+    10      11
+    11       0
+
+  Permutation vector P[*]:
+
+     0       0
+     1       2
+     2       9
+     3       8
+     4       6
+     5       3
+     6       4
+     7      11
+     8      10
+     9       1
+    10       7
+    11       5
+
+  A[P[*]]:
+
+     0      10
+     1      10
+     2       1
+     3       7
+     4       6
+     5       6
+     6       8
+     7       0
+     8      11
+     9       1
+    10       9
+    11       7
+
+i4vec_permute_test:
+  Normal end of execution.
+
+i4vec_sort_heap_index_a_test
+  Python version: 3.6.9
+  i4vec_sort_heap_index_a creates an ascending
+  sort index for an I4VEC.
+
+  Unsorted array A:
+
+     0       4
+     1      13
+     2      50
+     3      20
+     4      48
+     5      40
+     6      49
+     7      60
+     8      10
+     9      56
+    10      23
+    11      48
+    12      31
+    13      41
+    14      44
+    15      39
+    16      28
+    17      20
+    18       6
+    19      25
+
+  Sort vector INDX:
+
+     0       0
+     1      18
+     2       8
+     3       1
+     4       3
+     5      17
+     6      10
+     7      19
+     8      16
+     9      12
+    10      15
+    11       5
+    12      13
+    13      14
+    14      11
+    15       4
+    16       6
+    17       2
+    18       9
+    19       7
+
+       I   INDX(I)  A(INDX(I))
+
+         0         0         4
+         1        18         6
+         2         8        10
+         3         1        13
+         4         3        20
+         5        17        20
+         6        10        23
+         7        19        25
+         8        16        28
+         9        12        31
+        10        15        39
+        11         5        40
+        12        13        41
+        13        14        44
+        14        11        48
+        15         4        48
+        16         6        49
+        17         2        50
+        18         9        56
+        19         7        60
+
+i4vec_sort_heap_index_a_test:
+  Normal end of execution.
+
+r8vec_concatenate_test
+  Python version: 3.6.9
+  r8vec_concatenate concatenates two R8VECs
+
+  Array 1:
+
+     0:          91.1
+     1:          31.2
+     2:          71.3
+     3:          51.4
+     4:          31.5
+
+  Array 2:
+
+     0:          42.6
+     1:          22.7
+     2:          12.8
+
+  Array 3 = Array 1 + Array 2:
+
+     0:          91.1
+     1:          31.2
+     2:          71.3
+     3:          51.4
+     4:          31.5
+     5:          42.6
+     6:          22.7
+     7:          12.8
+
+r8vec_concatenate_test
+  Normal end of execution.
+
+r8vec_permute_test
+  Python version: 3.6.9
+  r8vec_permute permutes an R8VEC.
+
+  Original array X[]:
+
+     0:           1.1
+     1:           2.2
+     2:           3.3
+     3:           4.4
+     4:           5.5
+
+  Permutation vector P[]:
+
+     0       1
+     1       3
+     2       4
+     3       0
+     4       2
+
+  Permuted array X[P[*]]:
+
+     0:           2.2
+     1:           4.4
+     2:           5.5
+     3:           1.1
+     4:           3.3
+
+r8vec_permute_test:
+  Normal end of execution.
+
+perm0_uniform_test
+  Python version: 3.6.9
+  perm0_uniform randomly selects a permutation of 0, ..., N-1.
+
+     4   1   5   0   8   3   9   6   2   7 
+     6   9   5   7   1   8   4   3   2   0 
+     6   5   8   0   4   2   3   1   9   7 
+     6   7   5   3   9   2   1   0   4   8 
+     6   8   0   7   4   5   2   9   1   3 
+
+perm0_uniform_test
+  Normal end of execution.
+
+mono_upto_enum_test
+  Python version: 3.6.9
+  mono_upto_enum can enumerate the number of monomials
+  in M variables, of total degree between 0 and N.
+
+    N:
+     0
+     1
+     2
+     3
+     4
+     5
+     6
+     7
+     8
+
+   M +---------------------------------------------------------------
+   1 |
+     1
+     2
+     3
+     4
+     5
+     6
+     7
+     8
+     9
+
+   2 |
+     1
+     3
+     6
+    10
+    15
+    21
+    28
+    36
+    45
+
+   3 |
+     1
+     4
+    10
+    20
+    35
+    56
+    84
+   120
+   165
+
+   4 |
+     1
+     5
+    15
+    35
+    70
+   126
+   210
+   330
+   495
+
+   5 |
+     1
+     6
+    21
+    56
+   126
+   252
+   462
+   792
+  1287
+
+   6 |
+     1
+     7
+    28
+    84
+   210
+   462
+   924
+  1716
+  3003
+
+   7 |
+     1
+     8
+    36
+   120
+   330
+   792
+  1716
+  3432
+  6435
+
+   8 |
+     1
+     9
+    45
+   165
+   495
+  1287
+  3003
+  6435
+ 12870
+
+
+mono_upto_enum_test
+  Normal end of execution.
+
+mono_next_grlex_test
+  Python version: 3.6.9
+  mono_next_grlex computes the next monomial
+  in M variables in grlex order.
+
+  Let M =  4
+
+  
+ 2
+ 2
+ 0
+ 1
+
+  
+ 2
+ 2
+ 1
+ 0
+
+  
+ 2
+ 3
+ 0
+ 0
+
+  
+ 3
+ 0
+ 0
+ 2
+
+  
+ 3
+ 0
+ 1
+ 1
+
+  
+ 3
+ 0
+ 2
+ 0
+
+
+  
+ 2
+ 0
+ 1
+ 3
+
+  
+ 2
+ 0
+ 2
+ 2
+
+  
+ 2
+ 0
+ 3
+ 1
+
+  
+ 2
+ 0
+ 4
+ 0
+
+  
+ 2
+ 1
+ 0
+ 3
+
+  
+ 2
+ 1
+ 1
+ 2
+
+
+  
+ 1
+ 0
+ 2
+ 1
+
+  
+ 1
+ 0
+ 3
+ 0
+
+  
+ 1
+ 1
+ 0
+ 2
+
+  
+ 1
+ 1
+ 1
+ 1
+
+  
+ 1
+ 1
+ 2
+ 0
+
+  
+ 1
+ 2
+ 0
+ 1
+
+
+  
+ 2
+ 3
+ 0
+ 2
+
+  
+ 2
+ 3
+ 1
+ 1
+
+  
+ 2
+ 3
+ 2
+ 0
+
+  
+ 2
+ 4
+ 0
+ 1
+
+  
+ 2
+ 4
+ 1
+ 0
+
+  
+ 2
+ 5
+ 0
+ 0
+
+
+  
+ 0
+ 0
+ 2
+ 2
+
+  
+ 0
+ 0
+ 3
+ 1
+
+  
+ 0
+ 0
+ 4
+ 0
+
+  
+ 0
+ 1
+ 0
+ 3
+
+  
+ 0
+ 1
+ 1
+ 2
+
+  
+ 0
+ 1
+ 2
+ 1
+
+
+  
+ 0
+ 1
+ 2
+ 2
+
+  
+ 0
+ 1
+ 3
+ 1
+
+  
+ 0
+ 1
+ 4
+ 0
+
+  
+ 0
+ 2
+ 0
+ 3
+
+  
+ 0
+ 2
+ 1
+ 2
+
+  
+ 0
+ 2
+ 2
+ 1
+
+
+  
+ 3
+ 1
+ 2
+ 0
+
+  
+ 3
+ 2
+ 0
+ 1
+
+  
+ 3
+ 2
+ 1
+ 0
+
+  
+ 3
+ 3
+ 0
+ 0
+
+  
+ 4
+ 0
+ 0
+ 2
+
+  
+ 4
+ 0
+ 1
+ 1
+
+
+  
+ 2
+ 1
+ 0
+ 1
+
+  
+ 2
+ 1
+ 1
+ 0
+
+  
+ 2
+ 2
+ 0
+ 0
+
+  
+ 3
+ 0
+ 0
+ 1
+
+  
+ 3
+ 0
+ 1
+ 0
+
+  
+ 3
+ 1
+ 0
+ 0
+
+
+  
+ 3
+ 1
+ 0
+ 2
+
+  
+ 3
+ 1
+ 1
+ 1
+
+  
+ 3
+ 1
+ 2
+ 0
+
+  
+ 3
+ 2
+ 0
+ 1
+
+  
+ 3
+ 2
+ 1
+ 0
+
+  
+ 3
+ 3
+ 0
+ 0
+
+
+  
+ 0
+ 2
+ 1
+ 3
+
+  
+ 0
+ 2
+ 2
+ 2
+
+  
+ 0
+ 2
+ 3
+ 1
+
+  
+ 0
+ 2
+ 4
+ 0
+
+  
+ 0
+ 3
+ 0
+ 3
+
+  
+ 0
+ 3
+ 1
+ 2
+
+
+mono_next_grlex_test
+  Normal end of execution.
+
+mono_rank_grlex_test
+  Python version: 3.6.9
+  mono_rank_grlex returns the rank of a monomial in the sequence
+  of all monomials in M dimensions, in grlex order.
+
+  Print a monomial sequence with ranks assigned.
+
+  Let M = 3
+      N = 4
+
+   1    
+ 0
+ 0
+ 0
+
+   2    
+ 0
+ 0
+ 1
+
+   3    
+ 0
+ 1
+ 0
+
+   4    
+ 1
+ 0
+ 0
+
+   5    
+ 0
+ 0
+ 2
+
+   6    
+ 0
+ 1
+ 1
+
+   7    
+ 0
+ 2
+ 0
+
+   8    
+ 1
+ 0
+ 1
+
+   9    
+ 1
+ 1
+ 0
+
+  10    
+ 2
+ 0
+ 0
+
+  11    
+ 0
+ 0
+ 3
+
+  12    
+ 0
+ 1
+ 2
+
+  13    
+ 0
+ 2
+ 1
+
+  14    
+ 0
+ 3
+ 0
+
+  15    
+ 1
+ 0
+ 2
+
+  16    
+ 1
+ 1
+ 1
+
+  17    
+ 1
+ 2
+ 0
+
+  18    
+ 2
+ 0
+ 1
+
+  19    
+ 2
+ 1
+ 0
+
+  20    
+ 3
+ 0
+ 0
+
+  21    
+ 0
+ 0
+ 4
+
+  22    
+ 0
+ 1
+ 3
+
+  23    
+ 0
+ 2
+ 2
+
+  24    
+ 0
+ 3
+ 1
+
+  25    
+ 0
+ 4
+ 0
+
+  26    
+ 1
+ 0
+ 3
+
+  27    
+ 1
+ 1
+ 2
+
+  28    
+ 1
+ 2
+ 1
+
+  29    
+ 1
+ 3
+ 0
+
+  30    
+ 2
+ 0
+ 2
+
+  31    
+ 2
+ 1
+ 1
+
+  32    
+ 2
+ 2
+ 0
+
+  33    
+ 3
+ 0
+ 1
+
+  34    
+ 3
+ 1
+ 0
+
+  35    
+ 4
+ 0
+ 0
+
+
+  Now, given a monomial, retrieve its rank in the sequence:
+
+    1    
+ 0
+ 0
+ 0
+
+    4    
+ 1
+ 0
+ 0
+
+    2    
+ 0
+ 0
+ 1
+
+    7    
+ 0
+ 2
+ 0
+
+   15    
+ 1
+ 0
+ 2
+
+   24    
+ 0
+ 3
+ 1
+
+   77    
+ 3
+ 2
+ 1
+
+  158    
+ 5
+ 2
+ 1
+
+
+mono_rank_grlex_test
+  Normal end of execution.
+
+mono_total_next_grlex_test
+  Python version: 3.6.9
+  mono_total_next_grlex can list the monomials
+  in M variables, of total degree N,
+  in grlex order, one at a time.
+
+  We start the process with (0,0,...,0,N).
+  The process ends with (N,0,...,0,0)
+
+  Let M =   3
+      N =   3
+
+   1    
+ 0
+ 0
+ 3
+
+   2    
+ 0
+ 1
+ 2
+
+   3    
+ 0
+ 2
+ 1
+
+   4    
+ 0
+ 3
+ 0
+
+   5    
+ 1
+ 0
+ 2
+
+   6    
+ 1
+ 1
+ 1
+
+   7    
+ 1
+ 2
+ 0
+
+   8    
+ 2
+ 0
+ 1
+
+   9    
+ 2
+ 1
+ 0
+
+  10    
+ 3
+ 0
+ 0
+
+
+mono_total_next_grlex_test
+  Normal end of execution.
+
+mono_unrank_grlex
+  Python version: 3.6.9
+  mono_unrank_grlex is given a rank, and returns the corresponding
+  monomial in the sequence of all monomials in M dimensions
+  in grlex order.
+
+  For reference, print a monomial sequence with ranks.
+
+  Let M = 3
+      N = 4
+
+   1    
+ 0
+ 0
+ 0
+
+   2    
+ 0
+ 0
+ 1
+
+   3    
+ 0
+ 1
+ 0
+
+   4    
+ 1
+ 0
+ 0
+
+   5    
+ 0
+ 0
+ 2
+
+   6    
+ 0
+ 1
+ 1
+
+   7    
+ 0
+ 2
+ 0
+
+   8    
+ 1
+ 0
+ 1
+
+   9    
+ 1
+ 1
+ 0
+
+  10    
+ 2
+ 0
+ 0
+
+  11    
+ 0
+ 0
+ 3
+
+  12    
+ 0
+ 1
+ 2
+
+  13    
+ 0
+ 2
+ 1
+
+  14    
+ 0
+ 3
+ 0
+
+  15    
+ 1
+ 0
+ 2
+
+  16    
+ 1
+ 1
+ 1
+
+  17    
+ 1
+ 2
+ 0
+
+  18    
+ 2
+ 0
+ 1
+
+  19    
+ 2
+ 1
+ 0
+
+  20    
+ 3
+ 0
+ 0
+
+  21    
+ 0
+ 0
+ 4
+
+  22    
+ 0
+ 1
+ 3
+
+  23    
+ 0
+ 2
+ 2
+
+  24    
+ 0
+ 3
+ 1
+
+  25    
+ 0
+ 4
+ 0
+
+  26    
+ 1
+ 0
+ 3
+
+  27    
+ 1
+ 1
+ 2
+
+  28    
+ 1
+ 2
+ 1
+
+  29    
+ 1
+ 3
+ 0
+
+  30    
+ 2
+ 0
+ 2
+
+  31    
+ 2
+ 1
+ 1
+
+  32    
+ 2
+ 2
+ 0
+
+  33    
+ 3
+ 0
+ 1
+
+  34    
+ 3
+ 1
+ 0
+
+  35    
+ 4
+ 0
+ 0
+
+
+  Now choose random ranks between 1 and 35
+
+  34    
+ 3
+ 1
+ 0
+
+  31    
+ 2
+ 1
+ 1
+
+  24    
+ 0
+ 3
+ 1
+
+  32    
+ 2
+ 2
+ 0
+
+   9    
+ 1
+ 1
+ 0
+
+
+mono_unrank_grlex_test
+  Normal end of execution.
+
+mono_value_test
+  Python version: 3.6.9
+  mono_value evaluates a monomial.
+
+  Let M = 3
+      N = 6
+
+  M(X) =   x^(0,1,4)
+  M(1,2,3) = 162
+  M(-2,4,1) = 4
+
+  M(X) =   x^(1,3,0)
+  M(1,2,3) = 8
+  M(-2,4,1) = -128
+
+  M(X) =   x^(4,0,0)
+  M(1,2,3) = 1
+  M(-2,4,1) = 16
+
+  M(X) =   x^(5,0,1)
+  M(1,2,3) = 3
+  M(-2,4,1) = -32
+
+  M(X) =   x^(6,0,0)
+  M(1,2,3) = 1
+  M(-2,4,1) = 64
+
+mono_value_test:
+  Normal end of execution.
+
+polynomial_add_test
+  Python version: 3.6.9
+  polynomial_add adds two polynomials
+
+  P1(X):
+    + 7.0 * x^(0,0,0)
+    - 5.0 * x^(0,0,1)
+    + 9.0 * x^(1,0,0)
+    + 11.0 * x^(0,0,2)
+    + 0.0 * x^(0,1,2)
+    - 13.0 * x^(3,0,1).
+
+  P2(X):
+    + 2.0 * x^(0,0,0)
+    + 3.0 * x^(0,1,0)
+    - 8.0 * x^(1,0,0)
+    + 4.0 * x^(2,0,2)
+    + 9.0 * x^(3,0,1).
+
+  P(X) = P1(X) + P2(X):
+    + 9.0 * x^(0,0,0)
+    - 5.0 * x^(0,0,1)
+    + 3.0 * x^(0,1,0)
+    + 1.0 * x^(1,0,0)
+    + 11.0 * x^(0,0,2)
+    + 4.0 * x^(2,0,2)
+    - 4.0 * x^(3,0,1).
+
+polynomial_add_test:
+  Normal end of execution.
+
+polynomial_axpy_test
+  Python version: 3.6.9
+  polynomial_axpy adds a multiple of one polynomial to another.
+
+  P1(X):
+    + 7.0 * x^(0,0,0)
+    - 5.0 * x^(0,0,1)
+    + 9.0 * x^(1,0,0)
+    + 11.0 * x^(0,0,2)
+    + 0.0 * x^(0,1,2)
+    - 13.0 * x^(3,0,1).
+
+  P2(X):
+    + 2.0 * x^(0,0,0)
+    + 3.0 * x^(0,1,0)
+    - 8.0 * x^(1,0,0)
+    + 4.0 * x^(2,0,2)
+    + 9.0 * x^(3,0,1).
+
+  Use the multiplier S = 10
+
+  P(X) = S * P1(X) + P2(X):
+    + 72.0 * x^(0,0,0)
+    - 50.0 * x^(0,0,1)
+    + 3.0 * x^(0,1,0)
+    + 82.0 * x^(1,0,0)
+    + 110.0 * x^(0,0,2)
+    + 4.0 * x^(2,0,2)
+    - 121.0 * x^(3,0,1).
+
+polynomial_axpy_test:
+  Normal end of execution.
+
+polynomial_compress_test
+  Python version: 3.6.9
+  polynomial_compress compresses a polynomial.
+
+  Uncompressed polynomial =
+    + 7.0 * x^(0,0,0)
+    - 5.0 * x^(0,0,1)
+    + 5.0 * x^(0,0,1)
+    + 9.0 * x^(1,0,0)
+    + 11.0 * x^(0,0,2)
+    + 3.0 * x^(0,0,2)
+    + 6.0 * x^(0,0,2)
+    + 0.0 * x^(0,1,2)
+    - 13.0 * x^(3,0,1)
+    + 1e-20 * x^(4,0,0).
+
+  Compressed polynomial =
+    + 7.0 * x^(0,0,0)
+    + 9.0 * x^(1,0,0)
+    + 20.0 * x^(0,0,2)
+    - 13.0 * x^(3,0,1).
+
+polynomial_compress_test:
+  Normal end of execution.
+
+polynomial_dif_test
+  Python version: 3.6.9
+  polynomial_dif differentiates a polynomial.
+
+  P(X):
+    + 2.0 * x^(0,0)
+    + 3.0 * x^(3,0)
+    + 4.0 * x^(1,3)
+    + 5.0 * x^(3,4).
+
+  d3 P(X) dx1 dx1 dx2 =
+    + 120.0 * x^(1,3).
+
+polynomial_dif_test:
+  Normal end of execution.
+
+polynomial_mul_test
+  Python version: 3.6.9
+  polynomial_mul multiplies two polynomials
+
+  P1(X):
+    + 2.0 * x^(0,0,0)
+    + 3.0 * x^(0,1,0)
+    + 4.0 * x^(1,0,0)
+    + 5.0 * x^(0,1,1).
+
+  P2(X):
+    + 6.0 * x^(0,0,1)
+    + 7.0 * x^(0,0,2).
+
+  P(X) = P1(X) * P2(X):
+    + 12.0 * x^(0,0,1)
+    + 14.0 * x^(0,0,2)
+    + 18.0 * x^(0,1,1)
+    + 24.0 * x^(1,0,1)
+    + 51.0 * x^(0,1,2)
+    + 28.0 * x^(1,0,2)
+    + 35.0 * x^(0,1,3).
+
+polynomial_mul_test:
+  Normal end of execution.
+
+polynomial_print_test
+  Python version: 3.6.9
+  polynomial_print prints a polynomial.
+
+  P1(X) =
+    + 7.0 * x^(0,0,0)
+    - 5.0 * x^(0,0,1)
+    + 9.0 * x^(1,0,0)
+    + 11.0 * x^(0,0,2)
+    + 0.0 * x^(0,1,2)
+    - 13.0 * x^(3,0,1).
+
+polynomial_print_test:
+  Normal end of execution.
+
+polynomial_scale_test
+  Python version: 3.6.9
+  polynomial_scale scales a polynomial by a multiplier S.
+
+  Original P(X):
+    + 7.0 * x^(0,0,0)
+    - 5.0 * x^(0,0,1)
+    + 9.0 * x^(1,0,0)
+    + 11.0 * x^(0,0,2)
+    + 0.0 * x^(0,1,2)
+    - 13.0 * x^(3,0,1).
+
+  Apply scale factor S = -0.5
+
+  S * P(X):
+    - 3.5 * x^(0,0,0)
+    + 2.5 * x^(0,0,1)
+    - 4.5 * x^(1,0,0)
+    - 5.5 * x^(0,0,2)
+    + 0.0 * x^(0,1,2)
+    + 6.5 * x^(3,0,1).
+
+polynomial_scale_test:
+  Normal end of execution.
+
+polynomial_sort_test
+  Python version: 3.6.9
+  polynomial_sort sorts a polynomial by exponent index.
+
+  Unsorted polynomial:
+    + 0.0 * x^(0,1,2)
+    + 9.0 * x^(1,0,0)
+    - 5.0 * x^(0,0,1)
+    - 13.0 * x^(3,0,1)
+    + 7.0 * x^(0,0,0)
+    + 11.0 * x^(0,0,2).
+
+  Sorted polynomial:
+    + 7.0 * x^(0,0,0)
+    - 5.0 * x^(0,0,1)
+    + 9.0 * x^(1,0,0)
+    + 11.0 * x^(0,0,2)
+    + 0.0 * x^(0,1,2)
+    - 13.0 * x^(3,0,1).
+
+polynomial_sort_test:
+  Normal end of execution.
+
+polynomial_value_test
+  Python version: 3.6.9
+  polynomial_value evaluates a polynomial.
+
+  P(X) = 
+    + 7.0 * x^(0,0,0)
+    - 5.0 * x^(0,0,1)
+    + 9.0 * x^(1,0,0)
+    + 11.0 * x^(0,0,2)
+    + 0.0 * x^(0,1,2)
+    - 13.0 * x^(3,0,1).
+
+  P(1.000000,2.000000,3.000000) = 61
+  P(-2.000000,4.000000,1.000000) = 99
+
+polynomial_value_test:
+  Normal end of execution.
+
+polynomial_test:
+  Normal end of execution.
+Tue Oct 19 17:00:30 2021

@@ -1,0 +1,21 @@
+Tue Oct 19 11:24:36 2021
+
+brownian_motion_simulation_test():
+  Python version
+  Test brownian_motion_simulation().
+
+  Plot saved as "motion_1d.png".
+
+  Plot saved as "motion_2d.png".
+
+  Plot saved as "motion_3d.png".
+
+  Plot saved as "displacement_1.png".
+
+  Plot saved as "displacement_2.png".
+
+  Plot saved as "displacement_3.png".
+
+brownian_motion_simulation_test():
+  Normal end of execution.
+Tue Oct 19 11:24:39 2021

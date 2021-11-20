@@ -1,0 +1,30 @@
+Tue Oct 19 17:00:19 2021
+
+pendulum_elastic_ode_test():
+  Python version: 3.6.9
+  Solve the elastic pendulum ODE.
+
+  Parameter values:
+    g     =  9.81
+    k     =  100.0
+    l     =  1.0
+    m     =  0.1
+    t0    =  0.0
+    y0    =  [1.   0.   0.01 0.  ]
+    tstop =  10.0
+
+pendulum_elastic_solve_ivp():
+  Use solve_ivp() to solve the elastic pendulum ODE.
+  Graphics saved as "pendulum_elastic_solve_ivp_theta.png"
+  Graphics saved as "pendulum_elastic_solve_ivp_theta_phase.png"
+  Graphics saved as "pendulum_elastic_solve_ivp_nu.png"
+  Graphics saved as "pendulum_elastic_solve_ivp_nu_phase.png"
+  Graphics saved as "pendulum_elastic_solve_ivp_energy.png"
+
+pendulum_elastic_solve_ivp:
+  Normal end of execution.
+
+pendulum_elastic_ode_test:
+  Normal end of execution.
+
+Tue Oct 19 17:00:20 2021

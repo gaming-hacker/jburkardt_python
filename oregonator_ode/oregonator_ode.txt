@@ -1,0 +1,26 @@
+Tue Oct 19 12:01:21 2021
+
+oregonator_ode_test():
+  Python version: 3.6.9
+  Solve the oregonator ODE.
+
+  Parameter values:
+    eta1  =  0.00992063492063492
+    eta2  =  2.48015873015873e-05
+    q     =  9.523809523809524e-05
+    f     =  1.0
+    t0    =  0.0
+    y0    =  [1. 1. 1.]
+    tstop =  25.0
+
+oregonator_solve_ivp():
+  Solve the oregonator ODE using solve_ivp().
+  Graphics saved as "oregonator_solve_ivp_x.png"
+  Graphics saved as "oregonator_solve_ivp_y.png"
+  Graphics saved as "oregonator_solve_ivp_z.png"
+  Graphics saved as "oregonator_solve_ivp_xyz.png"
+
+oregonator_ode_test():
+  Normal end of execution.
+
+Tue Oct 19 12:01:55 2021

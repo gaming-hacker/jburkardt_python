@@ -1,0 +1,33 @@
+Tue Oct 19 17:25:42 2021
+
+two_body_ode_test:
+  Python version: 3.6.9
+  Test two_body_ode().
+
+initial_orbit:
+  This simulation follows a small body for two orbits
+  around a relatively massive body - such as Mercury around
+  the sun.
+  Keplers equations for a two body system are used.
+  Note that the orbit is NOT an ellipse.  But thats OK,
+  because the planet is far from its equilibrium orbit.
+  Graphics saved as "initial_orbit.png"
+
+initial_orbit:
+  Normal end of execution.
+
+orbital_decay
+  This simulation follows a small body for 20 orbits
+  around a relatively massive body - such as Mercury around
+  the sun.
+  Keplers equations for a two body system are used.
+  Initially, the orbit is NOT an ellipse, but as time passes,
+  the orbit decays into an elliptical shape.
+  Graphics saved as "orbital_decay"
+
+orbital_decay():
+  Normal end of execution.
+
+two_body_ode_test:
+  Normal end of execution.
+Tue Oct 19 17:25:42 2021

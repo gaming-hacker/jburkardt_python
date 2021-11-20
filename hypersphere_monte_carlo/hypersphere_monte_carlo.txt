@@ -1,0 +1,121 @@
+Tue Oct 19 11:53:28 2021
+
+hypersphere_monte_carlo_test
+  Python version: 3.6.9
+  Test hypersphere_monte_carlo().
+
+hypersphere01_area_test
+  Python version: 3.6.9
+  hypersphere01_area returns the volume of the unit hypersphere.
+
+   M  Area
+
+   1  2
+   2  6.28319
+   3  12.5664
+   4  19.7392
+   5  26.3189
+   6  31.0063
+   7  33.0734
+   8  32.4697
+   9  29.6866
+  10  25.5016
+
+hypersphere01_area_test
+  Normal end of execution.
+
+hypersphere01_monomial_integral
+  Python version: 3.6.9
+  hypersphere01_monomial_integral returns the integral of
+  a monomial over the surface of the unit hypersphere in 3D.
+  Compare with a Monte Carlo estimate.
+
+  Number of sample points used is 4192
+
+  If any exponent is odd, the integral is zero.
+  We will restrict this test to randomly chosen even exponents.
+
+  Ex  Ey  Ez     MC-Estimate           Exact      Error
+
+   0   8   8        0.004159       0.0040205     0.00014
+   4   6   4     0.000815368     0.000836921     2.2e-05
+   4   2   0        0.371485        0.359039       0.012
+   0   4   6       0.0559823       0.0543999      0.0016
+   6   4   4     0.000791271     0.000836921     4.6e-05
+   2   2   0        0.860216        0.837758       0.022
+   6   8   6     2.08337e-05     2.15924e-05     7.6e-07
+   2   8   8     0.000213158     0.000211605     1.6e-06
+   6   0   2        0.189291        0.199466        0.01
+   4   4   0        0.125598         0.11968      0.0059
+   4   0   8       0.0281981       0.0292922      0.0011
+   8   0   4       0.0276585       0.0292922      0.0016
+   6   0   4       0.0513949       0.0543999       0.003
+   4   2   2       0.0383593       0.0398932      0.0015
+   4   4   6     0.000809341     0.000836921     2.8e-05
+   8   2   8     0.000196801     0.000211605     1.5e-05
+   2   0   2        0.806473        0.837758       0.031
+   6   4   8     8.61208e-05      9.0688e-05     4.6e-06
+   2   8   6     0.000571382     0.000574358       3e-06
+   0   8   8        0.004159       0.0040205     0.00014
+
+hypersphere01_monomial_integral_test
+  Normal end of execution.
+
+hypersphere01_monte_carlo_test01
+  Python version: 3.6.9
+  Use hypersphere01_sample to estimate integrals over 
+  the surface of the unit hypersphere in M dimensions.
+
+  Spatial dimension M = 3
+
+         N        1              X^2             Y^2             Z^2             X^4           X^2Y^2           Z^4
+
+         1       12.566371        8.183185        1.798701        2.584485        5.328866        1.171309        0.531543
+         2       12.566371        3.420995        2.936002        6.209374        1.327925        0.655491        3.229381
+         4       12.566371        3.244291        2.887844        6.434235        1.870689        0.663151        4.744852
+         8       12.566371        4.606685        5.281289        2.678397        2.579404        1.147435        1.190796
+        16       12.566371        5.786362        4.041196        2.738812        4.133228        0.722531        1.383682
+        32       12.566371        4.165495        4.044550        4.356326        2.181682        0.967303        2.467601
+        64       12.566371        5.015865        3.506621        4.043884        3.390918        0.622851        2.231051
+       128       12.566371        4.024959        4.365073        4.176339        2.434728        0.780303        2.431578
+       256       12.566371        3.811097        4.595652        4.159621        2.229431        0.804272        2.561513
+       512       12.566371        4.020320        4.285271        4.260780        2.365300        0.823824        2.640604
+      1024       12.566371        4.337147        3.964142        4.265081        2.628564        0.847258        2.568614
+      2048       12.566371        4.228945        4.092334        4.245091        2.560854        0.822686        2.553451
+      4096       12.566371        4.180630        4.220121        4.165620        2.509451        0.828976        2.464029
+      8192       12.566371        4.228002        4.118142        4.220227        2.542721        0.829375        2.536299
+     16384       12.566371        4.158294        4.235469        4.172607        2.493456        0.841501        2.516416
+     32768       12.566371        4.218940        4.166894        4.180537        2.543422        0.836145        2.504107
+     65536       12.566371        4.198558        4.181755        4.186058        2.521060        0.833040        2.503540
+
+     Exact       12.566371        4.188790        4.188790        4.188790        2.513274        0.837758        2.513274
+
+hypersphere01_monte_carlo_test01
+  Normal end of execution.
+
+hypersphere01_sample_test
+  Python version: 3.6.9
+  hypersphere01_sample samples the unit hypersphere
+  in M dimensions.
+
+  Sample points on the unit hypersphere.
+
+  Row:       0             1             2       
+  Col
+      0 :   -0.708945      0.513168      0.483793  
+      1 :   -0.584801     -0.687099      0.431164  
+      2 :    0.613622     -0.327327      0.718558  
+      3 :   -0.669375      0.133836       0.73077  
+      4 :    0.527075      0.295937      0.796626  
+      5 :    0.791978      0.608609    -0.0486417  
+      6 :   -0.139747     -0.368813     -0.918938  
+      7 :    0.176479     -0.371589      -0.91147  
+      8 :   -0.663303      0.747623      0.032989  
+      9 :    0.110936      0.970432     -0.214373  
+
+hypersphere01_sample_test
+  Normal end of execution.
+
+hypersphere_monte_carlo_test:
+  Normal end of execution.
+Tue Oct 19 11:53:30 2021

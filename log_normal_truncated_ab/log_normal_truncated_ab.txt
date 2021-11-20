@@ -1,0 +1,266 @@
+Tue Oct 19 11:58:48 2021
+
+log_normal_truncated_ab_test
+  Python version: 3.6.9
+  Test log_normal_truncated_ab().
+
+log_normal_cdf_test
+  Python version: 3.6.9
+  log_normal_cdf evaluates the Log Normal CDF
+  log_normal_cdf_inv inverts the Log Normal CDF.
+  log_normal_pdf evaluates the Log Normal PDF
+
+  PDF parameter MU =                          1
+  PDF parameter SIGMA =                     0.5
+
+       X            PDF           CDF            CDF_inv
+
+        5.64353       0.0486263        0.927995         5.64353
+        6.14122       0.0344123        0.948454         6.14122
+        3.74714        0.173278        0.739559         3.74714
+        1.06812        0.130448       0.0308668         1.06812
+        2.92945        0.269334        0.559472         2.92945
+       0.981689        0.102088        0.020827        0.981689
+          3.155        0.241914        0.617139           3.155
+        4.40621        0.113561        0.832985         4.40621
+        2.52007        0.313003        0.439821         2.52007
+        4.41342        0.113018        0.833802         4.41342
+
+log_normal_cdf_test
+  Normal end of execution.
+
+log_normal_sample_test
+  Python version: 3.6.9
+  log_normal_mean computes the Log Normal mean
+  log_normal_sample samples the Log Normal distribution
+  log_normal_variance computes the Log Normal variance.
+
+  PDF parameter MU =                         1
+  PDF parameter SIGMA =                    0.5
+  PDF mean =                           3.08022
+  PDF variance =                       2.69476
+
+  Sample size =       1000
+  Sample mean =            3.06341
+  Sample variance =        2.47562
+  Sample maximum =         13.5851
+  Sample minimum =        0.552195
+
+log_normal_sample_test
+  Normal end of execution.
+
+log_normal_truncated_ab_cdf_test
+  Python version: 3.6.9
+  log_normal_truncated_ab_cdf evaluates the Log Normal Truncated AB CDF
+  log_normal_truncated_ab_cdf_inv inverts the Log Normal Truncated AB CDF.
+  log_normal_truncated_ab_pdf evaluates the Log Normal Truncated AB PDF
+
+  PDF parameter MU =                       0.5
+  PDF parameter SIGMA =                      3
+  PDF parameter A =                    1.64872
+  PDF parameter B =                    665.142
+
+              X             PDF             CDF         CDF_inv
+
+        28.5965      0.00619872        0.689832         28.5965
+         2.4227        0.114069         0.10695          2.4227
+        2.61793        0.105178         0.12833         2.61793
+        117.315     0.000864637        0.885138         117.315
+        2.24248        0.123604       0.0855551         2.24248
+        321.642     0.000184802        0.965135         321.642
+        3.49859       0.0771779         0.20746         3.49859
+        44.3325      0.00344263        0.762141         44.3325
+        14.4608       0.0148281        0.556124         14.4608
+         24.203       0.0077098        0.659482          24.203
+
+log_normal_truncated_ab_cdf_test
+  Normal end of execution.
+
+log_normal_truncated_ab_sample_test
+  Python version: 3.6.9
+  log_normal_truncated_ab_mean computes the Log Normal Truncated AB mean
+  log_normal_truncated_ab_sample samples the Log Normal Truncated AB distribution
+  log_normal_truncated_ab_variance computes the Log Normal Truncated AB variance.
+
+  PDF parameter MU =                        0.5
+  PDF parameter SIGMA =                       3
+  PDF parameter A =                     1.64872
+  PDF parameter B =                     665.142
+
+  PDF mean =                           48.9182
+  PDF variance =                       9451.08
+
+  Sample size =       1000
+  Sample mean =            49.3335
+  Sample variance =        9535.42
+  Sample maximum =         662.761
+  Sample minimum =         1.65068
+
+log_normal_truncated_ab_sample_test
+  Normal end of execution.
+
+normal_01_cdf_test
+  Python version: 3.6.9
+  normal_01_cdf evaluates the Normal 01 CDF
+  normal_01_cdf_inv inverts the Normal 01 CDF.
+  normal_01_pdf evaluates the Normal 01 PDF
+
+       X            PDF           CDF            CDF_inv
+
+        -0.9278         0.25941        0.176756         -0.9278
+        1.07521        0.223806        0.858859         1.07521
+       0.556902        0.341636        0.711203        0.556902
+      -0.288373        0.382695        0.386531       -0.288373
+        0.95156        0.253683         0.82934         0.95156
+      -0.824787        0.283917        0.204746       -0.824787
+       0.929702        0.258952        0.823737        0.929702
+      -0.203373        0.390777        0.419422       -0.203373
+         1.2075         0.19244        0.886381          1.2075
+       0.149886        0.394486        0.559573        0.149886
+
+normal_01_cdf_test
+  Normal end of execution.
+
+normal_01_cdf_values_test:
+  Python version: 3.6.9
+  normal_01_cdf_values stores values of the unit normal CDF.
+
+      X         normal_01_cdf(X)
+
+      0.000000        0.5000000000000000
+      0.100000        0.5398278372770290
+      0.200000        0.5792597094391030
+      0.300000        0.6179114221889526
+      0.400000        0.6554217416103242
+      0.500000        0.6914624612740131
+      0.600000        0.7257468822499270
+      0.700000        0.7580363477769270
+      0.800000        0.7881446014166033
+      0.900000        0.8159398746532405
+      1.000000        0.8413447460685429
+      1.500000        0.9331927987311419
+      2.000000        0.9772498680518208
+      2.500000        0.9937903346742240
+      3.000000        0.9986501019683699
+      3.500000        0.9997673709209645
+      4.000000        0.9999683287581669
+
+normal_01_cdf_values_test:
+  Normal end of execution.
+
+normal_01_sample_test
+  Python version: 3.6.9
+  normal_01_mean computes the Normal 01 mean
+  normal_01_sample samples the Normal 01 distribution
+  normal_01_variance returns the Normal 01 variance.
+
+  PDF mean =                   0
+  PDF variance =               1
+
+  Sample size =       1000
+  Sample mean =         -0.0128385
+  Sample variance =        1.03369
+  Sample maximum =         2.94113
+  Sample minimum =        -3.05274
+
+normal_01_sample_test
+  Normal end of execution.
+
+normal_cdf_test
+  Python version: 3.6.9
+  normal_cdf evaluates the Normal CDF
+  normal_cdf_inv inverts the Normal CDF.
+  normal_pdf evaluates the Normal PDF
+
+  PDF parameter A =                        100
+  PDF parameter B =                         15
+
+       X            PDF           CDF            CDF_inv
+
+        90.9688       0.0221872        0.273561         90.9688
+        85.6684       0.0168497        0.169677         85.6684
+        90.6235        0.021876        0.265952         90.6235
+        81.6041       0.0125378        0.110025         81.6041
+        100.471        0.026583        0.512532         100.471
+        102.324       0.0262788        0.561564         102.324
+        117.295       0.0136815        0.875548         117.295
+         111.83        0.019487        0.784855          111.83
+        117.688       0.0132699        0.880842         117.688
+        94.9137       0.0251103        0.367273         94.9137
+
+normal_cdf_test
+  Normal end of execution.
+
+normal_sample_test
+  Python version: 3.6.9
+  normal_mean computes the Normal mean
+  normal_sample samples the Normal distribution
+  normal_variance returns the Normal variance.
+
+  PDF parameter A =                100
+  PDF parameter B =                 15
+  PDF mean =                       100
+  PDF variance =                   225
+
+  Sample size =       1000
+  Sample mean =            100.681
+  Sample variance =        197.462
+  Sample maximum =          144.29
+  Sample minimum =         48.4613
+
+normal_sample_test
+  Normal end of execution.
+
+r8poly_print_test
+  Python version: 3.6.9
+  r8poly_print prints an R8POLY.
+
+  The R8POLY:
+
+  p(x) =   9 * x^5
+         + 0.78 * x^4
+         + 56 * x^2
+         - 3.4 * x
+         + 12
+
+r8poly_print_test:
+  Normal end of execution.
+
+r8poly_value_horner_test
+  Python version: 3.6.9
+  r8poly_value_horner evaluates a polynomial at a point
+  using Horners method.
+
+  The polynomial coefficients:
+
+  p(x) =   1 * x^4
+         - 10 * x^3
+         + 35 * x^2
+         - 50 * x
+         + 24
+
+   I    X    P(X)
+
+   0    0.0000              24
+   1    0.3333         10.8642
+   2    0.6667         3.45679
+   3    1.0000               0
+   4    1.3333       -0.987654
+   5    1.6667       -0.691358
+   6    2.0000               0
+   7    2.3333        0.493827
+   8    2.6667        0.493827
+   9    3.0000               0
+  10    3.3333       -0.691358
+  11    3.6667       -0.987654
+  12    4.0000               0
+  13    4.3333         3.45679
+  14    4.6667         10.8642
+  15    5.0000              24
+
+r8poly_value_horner_test:
+  Normal end of execution.
+
+log_normal_truncated_ab_test:
+  Normal end of execution.
+Tue Oct 19 11:58:48 2021

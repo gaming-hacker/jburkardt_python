@@ -1,0 +1,1012 @@
+Tue Oct 19 11:33:56 2021
+
+exactness_test():
+  Python version: 3.6.9
+  Test exactness().
+
+chebyshev1_exactness_test
+  Python version: 3.6.9
+  Test Gauss-Chebyshev1 rules for the Chebyshev1 integral.
+  Density function rho(x) = 1/sqrt(1-x^2).
+  Region: -1 <= x <= +1.
+  exactness: 2*N-1.
+
+chebyshev1_exactness:
+  Quadrature rule for Chebyshev1 integral.
+  Order N = 1
+
+  Degree            Relative Error
+
+       0        0.0000000000000000
+       1        0.0000000000000000
+       2        1.0000000000000000
+
+chebyshev1_exactness:
+  Quadrature rule for Chebyshev1 integral.
+  Order N = 2
+
+  Degree            Relative Error
+
+       0        0.0000000000000003
+       1        0.0000000000000002
+       2        0.0000000000000003
+       3        0.0000000000000003
+       4        0.3333333333333331
+
+chebyshev1_exactness:
+  Quadrature rule for Chebyshev1 integral.
+  Order N = 3
+
+  Degree            Relative Error
+
+       0        0.0000000000000003
+       1        0.0000000000000000
+       2        0.0000000000000006
+       3        0.0000000000000000
+       4        0.0000000000000006
+       5        0.0000000000000000
+       6        0.0999999999999992
+
+chebyshev1_exactness:
+  Quadrature rule for Chebyshev1 integral.
+  Order N = 4
+
+  Degree            Relative Error
+
+       0        0.0000000000000000
+       1        0.0000000000000001
+       2        0.0000000000000000
+       3        0.0000000000000001
+       4        0.0000000000000000
+       5        0.0000000000000000
+       6        0.0000000000000000
+       7        0.0000000000000000
+       8        0.0285714285714287
+
+chebyshev1_exactness:
+  Quadrature rule for Chebyshev1 integral.
+  Order N = 5
+
+  Degree            Relative Error
+
+       0        0.0000000000000000
+       1        0.0000000000000001
+       2        0.0000000000000001
+       3        0.0000000000000001
+       4        0.0000000000000002
+       5        0.0000000000000000
+       6        0.0000000000000002
+       7        0.0000000000000000
+       8        0.0000000000000005
+       9        0.0000000000000000
+      10        0.0079365079365082
+
+chebyshev1_exactness_test
+  Normal end of execution.
+
+chebyshev1_integral_test
+  Python version: 3.6.9
+  chebyshev1_integral returns Chebyshev1 integrals of monomials:
+  M(k) = integral ( -1 <= x <= 1 ) x^k / sqrt ( 1 - x^2 ) dx
+
+     K            M(K)
+
+     0         3.14159
+     1               0
+     2          1.5708
+     3               0
+     4          1.1781
+     5               0
+     6        0.981748
+     7               0
+     8        0.859029
+     9               0
+    10        0.773126
+
+chebyshev1_integral_test
+  Normal end of execution.
+
+chebyshev2_exactness_test
+  Python version: 3.6.9
+  Test Gauss-Chebyshev2 rules for the Chebyshev2 integral.
+  Density function rho(x) = sqrt(1-x^2).
+  Region: -1 <= x <= +1.
+  exactness: 2*N-1.
+
+chebyshev2_exactness:
+  Quadrature rule for Chebyshev2 integral.
+  Order N = 1
+
+  Degree          Relative Error
+
+       0        0.0000000000000003
+       1        0.0000000000000000
+       2        1.0000000000000000
+
+chebyshev2_exactness:
+  Quadrature rule for Chebyshev2 integral.
+  Order N = 2
+
+  Degree          Relative Error
+
+       0        0.0000000000000000
+       1        0.0000000000000002
+       2        0.0000000000000000
+       3        0.0000000000000000
+       4        0.5000000000000000
+
+chebyshev2_exactness:
+  Quadrature rule for Chebyshev2 integral.
+  Order N = 3
+
+  Degree          Relative Error
+
+       0        0.0000000000000000
+       1        0.0000000000000002
+       2        0.0000000000000000
+       3        0.0000000000000001
+       4        0.0000000000000000
+       5        0.0000000000000000
+       6        0.1999999999999999
+
+chebyshev2_exactness:
+  Quadrature rule for Chebyshev2 integral.
+  Order N = 4
+
+  Degree          Relative Error
+
+       0        0.0000000000000001
+       1        0.0000000000000000
+       2        0.0000000000000001
+       3        0.0000000000000000
+       4        0.0000000000000001
+       5        0.0000000000000000
+       6        0.0000000000000002
+       7        0.0000000000000000
+       8        0.0714285714285715
+
+chebyshev2_exactness:
+  Quadrature rule for Chebyshev2 integral.
+  Order N = 5
+
+  Degree          Relative Error
+
+       0        0.0000000000000000
+       1        0.0000000000000001
+       2        0.0000000000000000
+       3        0.0000000000000000
+       4        0.0000000000000000
+       5        0.0000000000000000
+       6        0.0000000000000005
+       7        0.0000000000000000
+       8        0.0000000000000005
+       9        0.0000000000000000
+      10        0.0238095238095231
+
+chebyshev2_exactness_test
+  Normal end of execution.
+
+chebyshev2_integral_test
+  Python version: 3.6.9
+  chebyshev2_integral returns Chebyshev2 integrals of monomials:
+  M(k) = integral ( -1 <= x <= 1 ) x^k * sqrt ( 1 - x^2 ) dx
+
+     K            M(K)
+
+     0          1.5708
+     1               0
+     2        0.392699
+     3               0
+     4         0.19635
+     5               0
+     6        0.122718
+     7               0
+     8       0.0859029
+     9               0
+    10       0.0644272
+
+chebyshev2_integral_test
+  Normal end of execution.
+
+chebyshev3_exactness_test
+  Python version: 3.6.9
+  Test Gauss-Chebyshev3 rules for the Chebyshev1 integral.
+  Density function rho(x) = 1/sqrt(1-x^2).
+  Region: -1 <= x <= +1.
+  exactness: 2*N-3.
+
+chebyshev1_exactness:
+  Quadrature rule for Chebyshev1 integral.
+  Order N = 1
+
+  Degree            Relative Error
+
+       0        0.0000000000000000
+       1        0.0000000000000000
+       2        1.0000000000000000
+
+chebyshev1_exactness:
+  Quadrature rule for Chebyshev1 integral.
+  Order N = 2
+
+  Degree            Relative Error
+
+       0        0.0000000000000003
+       1        0.0000000000000000
+       2        1.0000000000000007
+
+chebyshev1_exactness:
+  Quadrature rule for Chebyshev1 integral.
+  Order N = 3
+
+  Degree            Relative Error
+
+       0        0.0000000000000001
+       1        0.0000000000000000
+       2        0.0000000000000000
+       3        0.0000000000000000
+       4        0.3333333333333333
+
+chebyshev1_exactness:
+  Quadrature rule for Chebyshev1 integral.
+  Order N = 4
+
+  Degree            Relative Error
+
+       0        0.0000000000000001
+       1        0.0000000000000000
+       2        0.0000000000000000
+       3        0.0000000000000000
+       4        0.0000000000000000
+       5        0.0000000000000000
+       6        0.1000000000000000
+
+chebyshev1_exactness:
+  Quadrature rule for Chebyshev1 integral.
+  Order N = 5
+
+  Degree            Relative Error
+
+       0        0.0000000000000000
+       1        0.0000000000000001
+       2        0.0000000000000000
+       3        0.0000000000000001
+       4        0.0000000000000002
+       5        0.0000000000000001
+       6        0.0000000000000001
+       7        0.0000000000000001
+       8        0.0285714285714283
+
+chebyshev3_exactness_test
+  Normal end of execution.
+
+clenshaw_curtis_exactness_test
+  Python version: 3.6.9
+  Test Clenshaw-Curtis rules on Legendre integrals.
+  Density function rho(x) = 1.
+  Region: -1 <= x <= +1.
+  exactness: N   for N odd,
+             N-1 for N even.
+
+legendre_exactness:
+  Quadrature rule for Legendre integral.
+  Rule of order N = 1
+  Degree          Relative Error
+
+       0        0.0000000000000000
+       1        0.0000000000000000
+       2        1.0000000000000000
+
+legendre_exactness:
+  Quadrature rule for Legendre integral.
+  Rule of order N = 2
+  Degree          Relative Error
+
+       0        0.0000000000000000
+       1        0.0000000000000000
+       2        2.0000000000000004
+
+legendre_exactness:
+  Quadrature rule for Legendre integral.
+  Rule of order N = 3
+  Degree          Relative Error
+
+       0        0.0000000000000001
+       1        0.0000000000000000
+       2        0.0000000000000000
+       3        0.0000000000000000
+       4        0.6666666666666665
+
+legendre_exactness:
+  Quadrature rule for Legendre integral.
+  Rule of order N = 4
+  Degree          Relative Error
+
+       0        0.0000000000000000
+       1        0.0000000000000001
+       2        0.0000000000000002
+       3        0.0000000000000000
+       4        0.1666666666666668
+
+legendre_exactness:
+  Quadrature rule for Legendre integral.
+  Rule of order N = 5
+  Degree          Relative Error
+
+       0        0.0000000000000001
+       1        0.0000000000000000
+       2        0.0000000000000002
+       3        0.0000000000000000
+       4        0.0000000000000001
+       5        0.0000000000000000
+       6        0.0666666666666664
+
+clenshaw_curtis_exactness_test
+  Normal end of execution.
+
+fejer1_exactness_test
+  Python version: 3.6.9
+  Test Fejer Type 1 rules on Legendre integrals.
+  Density function rho(x) = 1.
+  Region: -1 <= x <= +1.
+  exactness: N   for N odd,
+             N-1 for N even.
+
+legendre_exactness:
+  Quadrature rule for Legendre integral.
+  Rule of order N = 1
+  Degree          Relative Error
+
+       0        0.0000000000000000
+       1        0.0000000000000000
+       2        1.0000000000000000
+
+legendre_exactness:
+  Quadrature rule for Legendre integral.
+  Rule of order N = 2
+  Degree          Relative Error
+
+       0        0.0000000000000000
+       1        0.0000000000000000
+       2        0.4999999999999997
+
+legendre_exactness:
+  Quadrature rule for Legendre integral.
+  Rule of order N = 3
+  Degree          Relative Error
+
+       0        0.0000000000000001
+       1        0.0000000000000000
+       2        0.0000000000000002
+       3        0.0000000000000000
+       4        0.2500000000000002
+
+legendre_exactness:
+  Quadrature rule for Legendre integral.
+  Rule of order N = 4
+  Degree          Relative Error
+
+       0        0.0000000000000001
+       1        0.0000000000000000
+       2        0.0000000000000002
+       3        0.0000000000000000
+       4        0.0416666666666664
+
+legendre_exactness:
+  Quadrature rule for Legendre integral.
+  Rule of order N = 5
+  Degree          Relative Error
+
+       0        0.0000000000000000
+       1        0.0000000000000001
+       2        0.0000000000000002
+       3        0.0000000000000000
+       4        0.0000000000000003
+       5        0.0000000000000000
+       6        0.0208333333333333
+
+fejer1_exactness_test
+  Normal end of execution.
+
+fejer2_exactness_test;
+  Python version: 3.6.9
+  Test Fejer Type 2 rules on Legendre integrals.
+  Density function rho(x) = 1.
+  Region: -1 <= x <= +1.
+  exactness: N   for N odd,
+             N-1 for N even.
+
+legendre_exactness:
+  Quadrature rule for Legendre integral.
+  Rule of order N = 1
+  Degree          Relative Error
+
+       0        0.0000000000000000
+       1        0.0000000000000000
+       2        1.0000000000000000
+
+legendre_exactness:
+  Quadrature rule for Legendre integral.
+  Rule of order N = 2
+  Degree          Relative Error
+
+       0        0.0000000000000000
+       1        0.0000000000000000
+       2        0.2499999999999999
+
+legendre_exactness:
+  Quadrature rule for Legendre integral.
+  Rule of order N = 3
+  Degree          Relative Error
+
+       0        0.0000000000000000
+       1        0.0000000000000000
+       2        0.0000000000000002
+       3        0.0000000000000000
+       4        0.1666666666666666
+
+legendre_exactness:
+  Quadrature rule for Legendre integral.
+  Rule of order N = 4
+  Degree          Relative Error
+
+       0        0.0000000000000000
+       1        0.0000000000000000
+       2        0.0000000000000002
+       3        0.0000000000000000
+       4        0.0624999999999999
+
+legendre_exactness:
+  Quadrature rule for Legendre integral.
+  Rule of order N = 5
+  Degree          Relative Error
+
+       0        0.0000000000000001
+       1        0.0000000000000000
+       2        0.0000000000000002
+       3        0.0000000000000000
+       4        0.0000000000000001
+       5        0.0000000000000000
+       6        0.0374999999999995
+
+fejer2_exactness_test
+  Normal end of execution.
+
+gegenbauer_exactness_test
+  Python version: 3.6.9
+  Test Gauss-Gegenbauer rules on Gegenbauer integrals.
+  Density function rho(x) = 1.
+  Using Lambda = 1.75
+  Region: -1 <= x <= +1.
+  exactness: 2*N-1.
+
+gegenbauer_exactness:
+  Quadrature rule for Gegenbauer integral.
+  Lambda = 1.75
+  Rule of order N = 1
+  Degree          Relative Error
+
+       0        0.0000000000000005
+       1        0.0000000000000000
+       2        1.0000000000000000
+
+gegenbauer_exactness:
+  Quadrature rule for Gegenbauer integral.
+  Lambda = 1.75
+  Rule of order N = 2
+  Degree          Relative Error
+
+       0        0.0000000000000007
+       1        0.0000000000000000
+       2        0.0000000000000012
+       3        0.0000000000000000
+       4        0.5454545454545461
+
+gegenbauer_exactness:
+  Quadrature rule for Gegenbauer integral.
+  Lambda = 1.75
+  Rule of order N = 3
+  Degree          Relative Error
+
+       0        0.0000000000000002
+       1        0.0000000000000000
+       2        0.0000000000000005
+       3        0.0000000000000000
+       4        0.0000000000000012
+       5        0.0000000000000000
+       6        0.2400000000000015
+
+gegenbauer_exactness:
+  Quadrature rule for Gegenbauer integral.
+  Lambda = 1.75
+  Rule of order N = 4
+  Degree          Relative Error
+
+       0        0.0000000000000005
+       1        0.0000000000000000
+       2        0.0000000000000015
+       3        0.0000000000000001
+       4        0.0000000000000024
+       5        0.0000000000000001
+       6        0.0000000000000030
+       7        0.0000000000000001
+       8        0.0938345864661686
+
+gegenbauer_exactness:
+  Quadrature rule for Gegenbauer integral.
+  Lambda = 1.75
+  Rule of order N = 5
+  Degree          Relative Error
+
+       0        0.0000000000000005
+       1        0.0000000000000002
+       2        0.0000000000000010
+       3        0.0000000000000000
+       4        0.0000000000000008
+       5        0.0000000000000000
+       6        0.0000000000000010
+       7        0.0000000000000000
+       8        0.0000000000000014
+       9        0.0000000000000000
+      10        0.0339980385746993
+
+gegenbauer_exactness_test
+  Normal end of execution.
+
+gegenbauer_integral_test
+  Python version: 3.6.9
+  gegenbauer_integral returns Gegenbauer integrals of monomials:
+  M(k) = integral ( -1 <= x <= 1 ) (1-x^2)^(lambda-1/2) dx
+  Here, we use lambda = 1.75
+
+     K            M(K)
+
+     0          1.2486
+     1               0
+     2        0.227018
+     3               0
+     4       0.0908072
+     5               0
+     6       0.0477933
+     7               0
+     8       0.0290915
+     9               0
+    10       0.0193944
+
+gegenbauer_integral_test
+  Normal end of execution.
+
+hermite_1_exactness_test
+  Python version: 3.6.9
+  Test Gauss-Hermite rules on Hermite integrals.
+  Density function rho(x) = 1.
+  Region: -oo < x < +oo.
+  exactness: 2N-1.
+
+hermite_exactness:
+  Quadrature rule for Hermite integral.
+  Rule of order N = 1
+  Degree          Relative Error
+
+       0        0.0000000000000001
+       1        0.0000000000000000
+       2        1.0000000000000000
+
+hermite_exactness:
+  Quadrature rule for Hermite integral.
+  Rule of order N = 2
+  Degree          Relative Error
+
+       0        0.0000000000000000
+       1        0.0000000000000001
+       2        0.0000000000000003
+       3        0.0000000000000000
+       4        0.6666666666666666
+
+hermite_exactness:
+  Quadrature rule for Hermite integral.
+  Rule of order N = 3
+  Degree          Relative Error
+
+       0        0.0000000000000000
+       1        0.0000000000000000
+       2        0.0000000000000003
+       3        0.0000000000000000
+       4        0.0000000000000005
+       5        0.0000000000000000
+       6        0.4000000000000005
+
+hermite_exactness:
+  Quadrature rule for Hermite integral.
+  Rule of order N = 4
+  Degree          Relative Error
+
+       0        0.0000000000000000
+       1        0.0000000000000000
+       2        0.0000000000000000
+       3        0.0000000000000000
+       4        0.0000000000000003
+       5        0.0000000000000001
+       6        0.0000000000000007
+       7        0.0000000000000002
+       8        0.2285714285714292
+
+hermite_exactness:
+  Quadrature rule for Hermite integral.
+  Rule of order N = 5
+  Degree          Relative Error
+
+       0        0.0000000000000000
+       1        0.0000000000000000
+       2        0.0000000000000001
+       3        0.0000000000000001
+       4        0.0000000000000000
+       5        0.0000000000000000
+       6        0.0000000000000003
+       7        0.0000000000000001
+       8        0.0000000000000002
+       9        0.0000000000000006
+      10        0.1269841269841271
+
+hermite_1_exactness_test
+  Normal end of execution.
+
+hermite_exactness_test
+  Python version: 3.6.9
+  Test Gauss-Hermite rules on Hermite integrals.
+  Density function rho(x) = exp(-x^2).
+  Region: -oo < x < +oo.
+  exactness: 2N-1.
+
+hermite_exactness:
+  Quadrature rule for Hermite integral.
+  Rule of order N = 1
+  Degree          Relative Error
+
+       0        0.0000000000000001
+       1        0.0000000000000000
+       2        1.0000000000000000
+
+hermite_exactness:
+  Quadrature rule for Hermite integral.
+  Rule of order N = 2
+  Degree          Relative Error
+
+       0        0.0000000000000001
+       1        0.0000000000000000
+       2        0.0000000000000004
+       3        0.0000000000000000
+       4        0.6666666666666666
+
+hermite_exactness:
+  Quadrature rule for Hermite integral.
+  Rule of order N = 3
+  Degree          Relative Error
+
+       0        0.0000000000000000
+       1        0.0000000000000000
+       2        0.0000000000000000
+       3        0.0000000000000000
+       4        0.0000000000000003
+       5        0.0000000000000000
+       6        0.4000000000000004
+
+hermite_exactness:
+  Quadrature rule for Hermite integral.
+  Rule of order N = 4
+  Degree          Relative Error
+
+       0        0.0000000000000001
+       1        0.0000000000000000
+       2        0.0000000000000000
+       3        0.0000000000000000
+       4        0.0000000000000002
+       5        0.0000000000000001
+       6        0.0000000000000005
+       7        0.0000000000000002
+       8        0.2285714285714292
+
+hermite_exactness:
+  Quadrature rule for Hermite integral.
+  Rule of order N = 5
+  Degree          Relative Error
+
+       0        0.0000000000000000
+       1        0.0000000000000000
+       2        0.0000000000000001
+       3        0.0000000000000001
+       4        0.0000000000000000
+       5        0.0000000000000000
+       6        0.0000000000000003
+       7        0.0000000000000001
+       8        0.0000000000000002
+       9        0.0000000000000006
+      10        0.1269841269841271
+
+hermite_exactness_test
+  Normal end of execution.
+
+hermite_integral_test
+  Python version: 3.6.9
+  hermite_integral returns Hermite integrals of monomials:
+  M(k) = integral ( -oo <= x <= +oo ) x^k exp(-x^2) dx
+
+     K            M(K)
+
+     0         1.77245
+     1               0
+     2        0.886227
+     3               0
+     4         1.32934
+     5               0
+     6         3.32335
+     7               0
+     8         11.6317
+     9               0
+    10         52.3428
+
+hermite_integral_test
+  Normal end of execution.
+
+laguerre_1_exactness_test
+  Python version: 3.6.9
+  Test quadrature rules on Laguerre integrals.
+  Density function rho(x) = 1.
+  Region: 0 <= x < +oo.
+  exactness: 2N-1.
+
+  Quadrature rule for Laguerre integral.
+  Rule of order N = 1
+  Degree          Relative Error
+
+       0        0.0000000000000000
+       1        0.0000000000000000
+       2        0.5000000000000000
+
+  Quadrature rule for Laguerre integral.
+  Rule of order N = 2
+  Degree          Relative Error
+
+       0        0.0000000000000000
+       1        0.0000000000000000
+       2        0.0000000000000000
+       3        0.0000000000000000
+       4        0.1666666666666668
+
+  Quadrature rule for Laguerre integral.
+  Rule of order N = 3
+  Degree          Relative Error
+
+       0        0.0000000000000000
+       1        0.0000000000000000
+       2        0.0000000000000000
+       3        0.0000000000000000
+       4        0.0000000000000000
+       5        0.0000000000000000
+       6        0.0500000000000000
+
+  Quadrature rule for Laguerre integral.
+  Rule of order N = 4
+  Degree          Relative Error
+
+       0        0.0000000000000001
+       1        0.0000000000000001
+       2        0.0000000000000001
+       3        0.0000000000000003
+       4        0.0000000000000003
+       5        0.0000000000000002
+       6        0.0000000000000002
+       7        0.0000000000000002
+       8        0.0142857142857146
+
+  Quadrature rule for Laguerre integral.
+  Rule of order N = 5
+  Degree          Relative Error
+
+       0        0.0000000000000001
+       1        0.0000000000000001
+       2        0.0000000000000002
+       3        0.0000000000000001
+       4        0.0000000000000001
+       5        0.0000000000000002
+       6        0.0000000000000002
+       7        0.0000000000000002
+       8        0.0000000000000002
+       9        0.0000000000000002
+      10        0.0039682539682544
+
+laguerre_1_exactness_test
+  Normal end of execution.
+
+laguerre_exactness_test
+  Python version: 3.6.9
+  Test Gauss-Laguerre rules on Laguerre integrals.
+  Density function rho(x) = exp(-x).
+  Region: 0 <= x < +oo.
+  exactness: 2N-1.
+
+  Quadrature rule for Laguerre integral.
+  Rule of order N = 1
+  Degree          Relative Error
+
+       0        0.0000000000000000
+       1        0.0000000000000000
+       2        0.5000000000000000
+
+  Quadrature rule for Laguerre integral.
+  Rule of order N = 2
+  Degree          Relative Error
+
+       0        0.0000000000000000
+       1        0.0000000000000000
+       2        0.0000000000000000
+       3        0.0000000000000000
+       4        0.1666666666666668
+
+  Quadrature rule for Laguerre integral.
+  Rule of order N = 3
+  Degree          Relative Error
+
+       0        0.0000000000000000
+       1        0.0000000000000000
+       2        0.0000000000000000
+       3        0.0000000000000000
+       4        0.0000000000000001
+       5        0.0000000000000001
+       6        0.0499999999999998
+
+  Quadrature rule for Laguerre integral.
+  Rule of order N = 4
+  Degree          Relative Error
+
+       0        0.0000000000000000
+       1        0.0000000000000001
+       2        0.0000000000000001
+       3        0.0000000000000003
+       4        0.0000000000000003
+       5        0.0000000000000002
+       6        0.0000000000000002
+       7        0.0000000000000002
+       8        0.0142857142857146
+
+  Quadrature rule for Laguerre integral.
+  Rule of order N = 5
+  Degree          Relative Error
+
+       0        0.0000000000000001
+       1        0.0000000000000001
+       2        0.0000000000000001
+       3        0.0000000000000000
+       4        0.0000000000000001
+       5        0.0000000000000002
+       6        0.0000000000000002
+       7        0.0000000000000002
+       8        0.0000000000000002
+       9        0.0000000000000003
+      10        0.0039682539682544
+
+laguerre_exactness_test
+  Normal end of execution.
+
+laguerre_integral_test
+  Python version: 3.6.9
+  laguerre_integral returns Laguerre integrals of monomials:
+  M(k) = integral ( 0 <= x < +oo ) x^k exp(-x) dx
+
+     K            M(K)
+
+     0               1
+     1               1
+     2               2
+     3               6
+     4              24
+     5             120
+     6             720
+     7            5040
+     8           40320
+     9          362880
+    10      3.6288e+06
+
+laguerre_integral_test
+  Normal end of execution.
+
+legendre_exactness_test
+  Python version: 3.6.9
+  Test Gauss-Legendre rules on Legendre integrals.
+  Density function rho(x) = 1.
+  Region: -1 <= x <= +1.
+  exactness: 2*N-1.
+
+legendre_exactness:
+  Quadrature rule for Legendre integral.
+  Rule of order N = 1
+  Degree          Relative Error
+
+       0        0.0000000000000000
+       1        0.0000000000000000
+       2        1.0000000000000000
+
+legendre_exactness:
+  Quadrature rule for Legendre integral.
+  Rule of order N = 2
+  Degree          Relative Error
+
+       0        0.0000000000000000
+       1        0.0000000000000000
+       2        0.0000000000000000
+       3        0.0000000000000000
+       4        0.4444444444444446
+
+legendre_exactness:
+  Quadrature rule for Legendre integral.
+  Rule of order N = 3
+  Degree          Relative Error
+
+       0        0.0000000000000000
+       1        0.0000000000000000
+       2        0.0000000000000002
+       3        0.0000000000000000
+       4        0.0000000000000001
+       5        0.0000000000000000
+       6        0.1599999999999997
+
+legendre_exactness:
+  Quadrature rule for Legendre integral.
+  Rule of order N = 4
+  Degree          Relative Error
+
+       0        0.0000000000000000
+       1        0.0000000000000000
+       2        0.0000000000000000
+       3        0.0000000000000000
+       4        0.0000000000000000
+       5        0.0000000000000000
+       6        0.0000000000000002
+       7        0.0000000000000000
+       8        0.0522448979591837
+
+legendre_exactness:
+  Quadrature rule for Legendre integral.
+  Rule of order N = 5
+  Degree          Relative Error
+
+       0        0.0000000000000000
+       1        0.0000000000000000
+       2        0.0000000000000000
+       3        0.0000000000000000
+       4        0.0000000000000001
+       5        0.0000000000000000
+       6        0.0000000000000000
+       7        0.0000000000000000
+       8        0.0000000000000001
+       9        0.0000000000000000
+      10        0.0161249685059213
+
+legendre_exactness_test
+  Normal end of execution.
+
+legendre_integral_test
+  Python version: 3.6.9
+  legendre_integral returns Legendre integrals of monomials:
+  M(k) = integral ( -1 <= x <= 1 ) x^k dx
+
+     K            M(K)
+
+     0               2
+     1               0
+     2        0.666667
+     3               0
+     4             0.4
+     5               0
+     6        0.285714
+     7               0
+     8        0.222222
+     9               0
+    10        0.181818
+
+legendre_integral_test
+  Normal end of execution.
+
+exactness_test:
+  Normal end of execution.
+Tue Oct 19 11:33:56 2021
